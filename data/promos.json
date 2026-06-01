@@ -44,7 +44,8 @@
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
     "lastSeen": "2026-06-01T05:36:08.820Z",
-    "working": true
+    "working": true,
+    "used": false
   },
   {
     "id": "5992e8ea91fe5e2e",

@@ -30,6 +30,8 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
   const [activeOnly, setActiveOnly] = useState(true);
   const [expiringSoon, setExpiringSoon] = useState(false);
   const [hasCodeOnly, setHasCodeOnly] = useState(false);
+  const [workingFilter, setWorkingFilter] = useState<"All" | "Working" | "Not Working">("All");
+  const [usedOnly, setUsedOnly] = useState(false);
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
 
@@ -60,12 +62,29 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
       const matchesService = service === "All" || promoService === service;
       const matchesSource = source === "All" || promoSource === source;
       const matchesActive = !activeOnly || promo.status === "active";
+      const matchesWorking =
+        workingFilter === "All"
+          ? true
+          : workingFilter === "Working"
+          ? promo.working === true
+          : promo.working === false;
+      const matchesUsed = !usedOnly || promo.used === true;
       const matchesExpiry = !expiringSoon || isExpiringSoon(promo.endDate);
       const matchesCode = !hasCodeOnly || Boolean(promo.code);
 
-      return matchesQuery && matchesPlatform && matchesService && matchesSource && matchesActive && matchesExpiry && matchesCode;
+      return (
+        matchesQuery &&
+        matchesPlatform &&
+        matchesService &&
+        matchesSource &&
+        matchesActive &&
+        matchesWorking &&
+        matchesUsed &&
+        matchesExpiry &&
+        matchesCode
+      );
     });
-  }, [activeOnly, expiringSoon, hasCodeOnly, platform, promos, query, service, source]);
+  }, [activeOnly, expiringSoon, hasCodeOnly, workingFilter, usedOnly, platform, promos, query, service, source]);
 
   async function runScrape() {
     setIsScraping(true);
@@ -188,11 +207,22 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
                   options={sourceOptions}
                   onChange={(event) => setSource(event.target.value)}
                 />
+                <Select
+                  aria-label="Working status"
+                  value={workingFilter}
+                  options={[
+                    { label: "All", value: "All" },
+                    { label: "Working", value: "Working" },
+                    { label: "Not Working", value: "Not Working" }
+                  ]}
+                  onChange={(event) => setWorkingFilter(event.target.value as "All" | "Working" | "Not Working")}
+                />
                 <Checkbox
                   label="Active only"
                   checked={activeOnly}
                   onChange={(event) => setActiveOnly(event.target.checked)}
                 />
+                <Checkbox label="Used only" checked={usedOnly} onChange={(event) => setUsedOnly(event.target.checked)} />
                 <Checkbox
                   label="Expiring soon"
                   checked={expiringSoon}
