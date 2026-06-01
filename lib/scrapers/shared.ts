@@ -5,7 +5,7 @@ import type { Platform, Promo, RawPromo } from "../types";
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36 PHRidePromoAggregator/0.1";
 
-export async function fetchText(url: string, timeoutMs = 15000) {
+export async function fetchText(url: string, timeoutMs = 15000, headers: HeadersInit = {}) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -13,7 +13,8 @@ export async function fetchText(url: string, timeoutMs = 15000) {
     const response = await fetch(url, {
       headers: {
         "user-agent": USER_AGENT,
-        accept: "text/html,application/xhtml+xml,application/json"
+        accept: "text/html,application/xhtml+xml,application/json",
+        ...headers
       },
       signal: controller.signal
     });

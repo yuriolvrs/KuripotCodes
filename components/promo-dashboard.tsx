@@ -10,6 +10,7 @@ import { Select } from "@/components/ui/select";
 import { PLATFORMS, type Platform, type Promo } from "@/lib/types";
 import { isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
+import { promoServiceName } from "@/lib/service";
 
 const platformOptions = [
   { label: "All platforms", value: "All" },
@@ -24,31 +25,47 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
   const [promos, setPromos] = useState(initialPromos);
   const [query, setQuery] = useState("");
   const [platform, setPlatform] = useState<Platform | "All">("All");
+  const [service, setService] = useState("All");
+  const [source, setSource] = useState("All");
   const [activeOnly, setActiveOnly] = useState(true);
   const [expiringSoon, setExpiringSoon] = useState(false);
   const [hasCodeOnly, setHasCodeOnly] = useState(false);
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
 
+  const serviceOptions = useMemo(() => {
+    const services = Array.from(new Set(promos.map((promo) => promoServiceName(promo) ?? promo.platform))).sort();
+    return [{ label: "All services", value: "All" }, ...services.map((value) => ({ label: value, value }))];
+  }, [promos]);
+
+  const sourceOptions = useMemo(() => {
+    const sources = Array.from(new Set(promos.map((promo) => sourceSiteName(promo.sourceUrl)))).sort();
+    return [{ label: "All sources", value: "All" }, ...sources.map((value) => ({ label: value, value }))];
+  }, [promos]);
+
   const filteredPromos = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
     return promos.filter((promo) => {
+      const promoService = promoServiceName(promo) ?? promo.platform;
+      const promoSource = sourceSiteName(promo.sourceUrl);
       const matchesQuery =
         !normalizedQuery ||
-        [promo.title, promo.code, promo.description, promo.platform, promo.region, sourceSiteName(promo.sourceUrl)]
+        [promo.title, promo.code, promo.description, promo.platform, promo.region, promoSource, promoService]
           .filter(Boolean)
           .join(" ")
           .toLowerCase()
           .includes(normalizedQuery);
       const matchesPlatform = platform === "All" || promo.platform === platform;
+      const matchesService = service === "All" || promoService === service;
+      const matchesSource = source === "All" || promoSource === source;
       const matchesActive = !activeOnly || promo.status === "active";
       const matchesExpiry = !expiringSoon || isExpiringSoon(promo.endDate);
       const matchesCode = !hasCodeOnly || Boolean(promo.code);
 
-      return matchesQuery && matchesPlatform && matchesActive && matchesExpiry && matchesCode;
+      return matchesQuery && matchesPlatform && matchesService && matchesSource && matchesActive && matchesExpiry && matchesCode;
     });
-  }, [activeOnly, expiringSoon, hasCodeOnly, platform, promos, query]);
+  }, [activeOnly, expiringSoon, hasCodeOnly, platform, promos, query, service, source]);
 
   async function runScrape() {
     setIsScraping(true);
@@ -143,7 +160,7 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
                 <Input
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
-                  placeholder="Search platform, code, region, or details"
+                  placeholder="Search platform, service, code, region, or details"
                   className="pl-9"
                 />
               </label>
@@ -154,6 +171,18 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
                   value={platform}
                   options={platformOptions}
                   onChange={(event) => setPlatform(event.target.value as Platform | "All")}
+                />
+                <Select
+                  aria-label="Service"
+                  value={service}
+                  options={serviceOptions}
+                  onChange={(event) => setService(event.target.value)}
+                />
+                <Select
+                  aria-label="Source"
+                  value={source}
+                  options={sourceOptions}
+                  onChange={(event) => setSource(event.target.value)}
                 />
                 <Checkbox
                   label="Active only"

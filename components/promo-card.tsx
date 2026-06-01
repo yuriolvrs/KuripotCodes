@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import type { Platform, Promo } from "@/lib/types";
 import { sourceSiteName } from "@/lib/source";
+import { promoServiceName } from "@/lib/service";
 
 const platformClasses: Record<Platform, string> = {
   Grab: "bg-emerald-50 text-emerald-700 border-emerald-200",
@@ -27,6 +28,7 @@ function statusVariant(status: Promo["status"]) {
 export function PromoCard({ promo }: { promo: Promo }) {
   const [copied, setCopied] = useState(false);
   const sourceName = sourceSiteName(promo.sourceUrl);
+  const serviceName = promoServiceName(promo);
 
   async function copyCode() {
     if (!promo.code) return;
@@ -39,9 +41,16 @@ export function PromoCard({ promo }: { promo: Promo }) {
     <Card className="flex h-full flex-col overflow-hidden">
       <CardHeader className="space-y-3">
         <div className="flex items-start justify-between gap-3">
-          <Badge variant="outline" className={cn("shrink-0", platformClasses[promo.platform])}>
-            {promo.platform}
-          </Badge>
+          <div className="flex min-w-0 flex-wrap gap-2">
+            <Badge variant="outline" className={cn("shrink-0", platformClasses[promo.platform])}>
+              {promo.platform}
+            </Badge>
+            {serviceName && serviceName !== promo.platform ? (
+              <Badge variant="outline" className="shrink-0 border-slate-300 bg-white text-slate-700">
+                {serviceName}
+              </Badge>
+            ) : null}
+          </div>
           <Badge variant={statusVariant(promo.status)} className="capitalize">
             {promo.status}
           </Badge>

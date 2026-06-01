@@ -12,8 +12,9 @@ type CouponTarget = {
 const COUPON_TARGETS: CouponTarget[] = [
   { source: "iprice", platform: "Grab", url: "https://iprice.ph/coupons/grab/" },
   { source: "iprice", platform: "Grab", url: "https://iprice.ph/coupons/grabfood/" },
-  { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/grabfood-coupons/" },
   { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/coupons-food-e-hailing/" },
+  { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/grab-coupons/" },
+  { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/grabfood-coupons/" },
   { source: "everysaving", platform: "Grab", url: "https://www.everysaving.ph/shop/grab.com" },
   { source: "everysaving", platform: "Angkas", url: "https://www.everysaving.ph/shop/angkas.com" },
   { source: "everysaving", platform: "JoyRide", url: "https://www.everysaving.ph/shop/joyride.com.ph" }
@@ -90,10 +91,10 @@ function parseRapplerPage(platform: Platform, sourceUrl: string, html: string): 
     html.matchAll(/<tr>\s*<td>[\s\S]*?<a\b([^>]*)>([\s\S]*?)<\/a>[\s\S]*?<\/td>\s*<td>([\s\S]*?)<\/td>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>/gi)
   );
 
-  const rawPromos = rows.flatMap((match): RawPromo[] => {
+  const tablePromos = rows.flatMap((match): RawPromo[] => {
     const attrs = decodeAttribute(match[1]);
     const title = clean(match[2]);
-    if (!title || !/\bgrab/i.test(title)) return [];
+    if (!title || !isPlatformMention(title, platform)) return [];
 
     const code = visibleCode(match[3]);
     const expiry = clean(match[4]);
@@ -122,7 +123,84 @@ function parseRapplerPage(platform: Platform, sourceUrl: string, html: string): 
     ];
   });
 
-  return uniqueBy(rawPromos, (promo) => `${promo.platform}:${promo.code || promo.title}`);
+  const cardPromos = parseRapplerCards(platform, sourceUrl, html);
+
+  return uniqueBy([...tablePromos, ...cardPromos], (promo) => `${promo.platform}:${promo.code || promo.title}`);
+}
+
+function isPlatformMention(text: string, platform: Platform) {
+  if (platform === "Move It") return /\bmove\s*it\b/i.test(text);
+  if (platform === "JoyRide") return /\bjoy\s*ride\b/i.test(text);
+  return new RegExp(`\\b${platform}\\b`, "i").test(text);
+}
+
+function buildRapplerOfferUrl(sourceUrl: string, attrs: string) {
+  const offerId = attrs.match(/"_id":"([^"]+)"/)?.[1];
+  const position = attrs.match(/"position":(\d+)/)?.[1];
+  const subProduct = attrs.match(/"sub_product":"([^"]+)"/)?.[1];
+  const offerUrl = new URL(sourceUrl);
+
+  if (offerId) {
+    offerUrl.searchParams.set("_id", offerId);
+    offerUrl.searchParams.set("position", position ?? "0");
+    if (subProduct) offerUrl.searchParams.set("sub_product", subProduct);
+    offerUrl.searchParams.set("_exit", sourceUrl);
+  }
+
+  return offerId ? offerUrl.toString() : sourceUrl;
+}
+
+function parseRapplerCards(platform: Platform, sourceUrl: string, html: string): RawPromo[] {
+  const items = Array.from(html.matchAll(/<li class="(?:code|deal)">([\s\S]*?)<\/li>/gi));
+
+  return items.flatMap((match): RawPromo[] => {
+    const block = match[1];
+    const attrs = decodeAttribute(block.match(/onclick='(coupons\.util\.r[\s\S]*?)'/i)?.[1]);
+    const title = clean(block.match(/<h3>([\s\S]*?)<\/h3>/i)?.[1]);
+    if (!title || !isPlatformMention(title, platform)) return [];
+
+    const offerText = clean(block.match(/<div class="offer-text[^"]*">([\s\S]*?)<\/div>/i)?.[1]);
+    const detail = clean(block.match(/<div class="dn coupon-detail-text[^"]*">([\s\S]*?)<\/div>/i)?.[1]);
+    const combinedDescription = [offerText, detail].filter(Boolean).join(" - ");
+    const code = visibleCode(block.match(/<p id="code">([\s\S]*?)<\/p>/i)?.[1]);
+
+    return [
+      {
+        platform,
+        title,
+        code,
+        description: combinedDescription || title,
+        sourceUrl: buildRapplerOfferUrl(sourceUrl, attrs),
+        status: /\bexpired\b/i.test(block) ? "expired" : "active"
+      }
+    ];
+  });
+}
+
+function extractRapplerRevealCode(html: string) {
+  return visibleCode(html.match(/<p id="code">([\s\S]*?)<\/p>/i)?.[1]);
+}
+
+function isRapplerRevealUrl(url: string) {
+  try {
+    return new URL(url).searchParams.has("_id");
+  } catch {
+    return false;
+  }
+}
+
+async function addRapplerRevealCodes(rawPromos: RawPromo[], referer: string) {
+  const settled = await Promise.allSettled(
+    rawPromos.map(async (promo): Promise<RawPromo> => {
+      if (promo.code || !isRapplerRevealUrl(promo.sourceUrl)) return promo;
+
+      const revealHtml = await fetchText(promo.sourceUrl, 15000, { referer });
+      const code = extractRapplerRevealCode(revealHtml);
+      return code ? { ...promo, code } : promo;
+    })
+  );
+
+  return settled.map((result, index) => (result.status === "fulfilled" ? result.value : rawPromos[index]));
 }
 
 function linesFromHtml(html: string) {
@@ -167,12 +245,12 @@ function parseEverySavingPage(platform: Platform, sourceUrl: string, html: strin
   return uniqueBy(rawPromos, (promo) => `${promo.platform}:${promo.code || promo.title}`);
 }
 
-function parseCouponPage(target: CouponTarget, html: string, now: Date) {
+async function parseCouponPage(target: CouponTarget, html: string, now: Date) {
   switch (target.source) {
     case "iprice":
       return parseIpricePage(target.platform, target.url, html, now);
     case "rappler":
-      return parseRapplerPage(target.platform, target.url, html);
+      return addRapplerRevealCodes(parseRapplerPage(target.platform, target.url, html), target.url);
     case "everysaving":
       return parseEverySavingPage(target.platform, target.url, html);
   }

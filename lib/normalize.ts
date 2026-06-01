@@ -98,6 +98,16 @@ export function mergePromos(existing: Promo[], incoming: Promo[], now = new Date
       if (previousNoCode && !previousNoCode.code) {
         map.delete(previousNoCodeId);
       }
+
+      for (const [existingId, existingPromo] of map.entries()) {
+        if (
+          !existingPromo.code &&
+          existingPromo.platform === promo.platform &&
+          existingPromo.title === promo.title
+        ) {
+          map.delete(existingId);
+        }
+      }
     } else {
       for (const [existingId, existingPromo] of map.entries()) {
         if (
