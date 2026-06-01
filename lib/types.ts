@@ -28,6 +28,8 @@ export interface Promo {
   status: PromoStatus;
   firstSeen: string;
   lastSeen: string;
+  working?: boolean;
+  used?: boolean;
 }
 
 export interface RawPromo {

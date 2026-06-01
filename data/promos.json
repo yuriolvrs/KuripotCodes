@@ -11,7 +11,9 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=a3piR3o0Vng2QVNxcVdybGNnTHpmUm9DMEtveks2Z2UyMUVrMVpDbmRmRG0wdXJwUE10dXVSaVh1dDIzRFUxcE4yYzJtZVh4WE4vOGZmYk83N1EvbEE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "used": false,
+    "working": false
   },
   {
     "id": "39e77ad027f69904",
@@ -25,7 +27,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=YlpxenBUZFdFbUo5eTNteTZBUnlLK3kvT05UeU1lYzZtRjk1MUNRMUxpOXRKVHRrWXFlMUprbk5zNmJTQ0J5Y0xLaWdLejAxZk50RytZcm9BRHljQUE9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "c5922f5ff760b4dc",
@@ -40,7 +43,8 @@
     "endDate": "2026-07-03",
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": true
   },
   {
     "id": "5992e8ea91fe5e2e",
@@ -55,7 +59,8 @@
     "endDate": "2026-07-03",
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": true
   },
   {
     "id": "f9eeadc7a176dc0d",
@@ -70,7 +75,8 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "59984ccb9067fcb5",
@@ -84,7 +90,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ZnVGWGxXeTNuS01NeEFhMjBQYytsSlE1b0d5bms2MW1NUGVoNjdrY0VOQkVnbkd1TWlGSmRybmFPa1gwMWh1SVlUNVQ1Z3VKd0RrSXArMUNhL29kUmc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "874436399a310f97",
@@ -98,7 +105,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=SmRHalBvajNUMXlzcCtyRkhES052OGJUZjdDa0Y0M0dNZCtUTnN4MHRlUGRDbEx6SlV5bUR4TzY0TVVtU0tyMlpqSVptODNWWkNkQzdXblZpbnROTHc9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "986aee02890d5ee0",
@@ -112,7 +120,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=OWZZMGo5dVFueTJNNU8zaWRyVHU2bTNKejJsU1FVMFY0VFIyV2ZJQ2N4dGFFTllmeUg4bTlCZlFUblFrZkRoQ1FHMW5pU005MzVpZjByTE1pcmdIYnc9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "a937834f94467dc1",
@@ -142,7 +151,8 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "eaed7d1c9435521c",
@@ -156,7 +166,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ejlVUzkycEZuWWgzTEFCY2pUb2lWZkQvQ2lHTHkrS0diTnhFdnUrR1haZ1JRV0FtZE5jNzU0Z2RYSytFSE5BbjE3U3ZNelcyUmtpZlRlbS9PUkwrdkE9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "79c2f4175366c1ed",
@@ -170,7 +181,8 @@
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
     "lastSeen": "2026-06-01T05:36:08.820Z",
-    "description": "PHP100 OFF - Valid for a min. spending of PHP1,500."
+    "description": "PHP100 OFF - Valid for a min. spending of PHP1,500.",
+    "working": false
   },
   {
     "id": "978f2717aed3b60f",
@@ -230,7 +242,8 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "3e5bb2d65ef6ba3b",
@@ -245,7 +258,8 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-06-01T03:11:30.075Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "3c849aa45252dc79",
@@ -394,7 +408,8 @@
     "sourceUrl": "https://www.wethrift.com/angkas",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "2852e679548974ba",
@@ -407,7 +422,8 @@
     "sourceUrl": "https://www.wethrift.com/angkas",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "63810b38b92dedc5",
@@ -472,7 +488,8 @@
     "sourceUrl": "https://www.wethrift.com/move-it",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "7ad884c14527f8bf",
@@ -485,7 +502,8 @@
     "sourceUrl": "https://www.wethrift.com/move-it",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "08fea5d482dc844f",
@@ -497,7 +515,8 @@
     "sourceUrl": "https://www.wethrift.com/move-it",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "83f04f50c823e4e3",
@@ -510,7 +529,8 @@
     "sourceUrl": "https://www.wethrift.com/move-it",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "a36072eb1d1d9b58",
@@ -523,7 +543,8 @@
     "sourceUrl": "https://www.wethrift.com/move-it",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "d250342bfa321e52",
@@ -549,7 +570,8 @@
     "sourceUrl": "https://www.wethrift.com/move-it",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "6a45aba9bf8142e0",
@@ -562,7 +584,8 @@
     "sourceUrl": "https://www.wethrift.com/joyride",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "240f70bcb62325fd",
@@ -574,7 +597,8 @@
     "sourceUrl": "https://www.wethrift.com/joyride",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "01e66f76d3552069",
@@ -587,7 +611,8 @@
     "sourceUrl": "https://www.wethrift.com/joyride",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "ea6abd8557e1e481",
@@ -613,7 +638,8 @@
     "sourceUrl": "https://www.wethrift.com/joyride",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "037966761f308cc6",
@@ -626,7 +652,8 @@
     "sourceUrl": "https://www.wethrift.com/joyride",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": true
   },
   {
     "id": "5898c30da5452d01",
@@ -691,7 +718,8 @@
     "sourceUrl": "https://www.wethrift.com/indrive",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "15aa6b2a117480c0",
@@ -703,7 +731,8 @@
     "sourceUrl": "https://www.wethrift.com/indrive",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "f39ca74e24984aa7",
@@ -715,7 +744,8 @@
     "sourceUrl": "https://www.wethrift.com/indrive",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "732164b8cee31161",
@@ -728,7 +758,8 @@
     "sourceUrl": "https://www.wethrift.com/indrive",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "0dad2f970b30e1da",
@@ -741,7 +772,8 @@
     "sourceUrl": "https://www.wethrift.com/indrive",
     "status": "active",
     "firstSeen": "2026-06-01T03:32:21.757Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "9db74d2260b0d53a",
@@ -768,7 +800,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=V1FWYnR5cnoyR0gwc1FrYlU4Z3FXQ3BRamZrQVVxdDBzZStsZTI3K3p1ZFJpb1hsdEltekUzK2V5d1NVcmlYUFROM3EreENEV1krWklydXhXVllQUWc9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T05:16:27.528Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "e34edcedf2fdb321",
@@ -782,7 +815,8 @@
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ODB6WUJuYy9aNEI4cTRSZEhRN2wwRFZjZGtHdGtNQS9rU0dVMVlpUDVVZTFQVUo4Y3ZkZG84bW1PRVpXdHVzTm43STJOOVN1U1QxLy9hVEpVek96VFE9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
     "status": "active",
     "firstSeen": "2026-06-01T05:16:27.528Z",
-    "lastSeen": "2026-06-01T05:36:08.820Z"
+    "lastSeen": "2026-06-01T05:36:08.820Z",
+    "working": false
   },
   {
     "id": "e22c3a69a7d8bdfb",

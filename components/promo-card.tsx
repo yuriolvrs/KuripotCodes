@@ -1,10 +1,11 @@
 "use client";
 
-import { CalendarDays, Check, Copy, ExternalLink, Ticket } from "lucide-react";
+import { CalendarDays, Check, Copy, ExternalLink, MoreVertical, Ticket } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Menu } from "@/components/ui/menu";
 import { cn } from "@/lib/utils";
 import type { Platform, Promo } from "@/lib/types";
 import { sourceSiteName } from "@/lib/source";
@@ -25,8 +26,11 @@ function statusVariant(status: Promo["status"]) {
   return "muted";
 }
 
-export function PromoCard({ promo }: { promo: Promo }) {
+export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updated: Promo) => void }) {
   const [copied, setCopied] = useState(false);
+  const [working, setWorking] = useState(promo.working);
+  const [used, setUsed] = useState(promo.used);
+  const [isUpdating, setIsUpdating] = useState(false);
   const sourceName = sourceSiteName(promo.sourceUrl);
   const serviceName = promoServiceName(promo);
 
@@ -37,8 +41,66 @@ export function PromoCard({ promo }: { promo: Promo }) {
     window.setTimeout(() => setCopied(false), 1400);
   }
 
+  async function updatePromoStatus(field: "working" | "used", value: boolean | null) {
+    try {
+      setIsUpdating(true);
+      const response = await fetch("/api/promo", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: promo.id, [field]: value })
+      });
+
+      if (!response.ok) throw new Error("Failed to update promo");
+
+      const { promo: updated } = await response.json();
+      if (field === "working") setWorking(value === null ? undefined : value);
+      if (field === "used") setUsed(value === null ? undefined : value);
+      onUpdate?.({ ...promo, ...updated });
+    } catch (error) {
+      console.error("Error updating promo:", error);
+    } finally {
+      setIsUpdating(false);
+    }
+  }
+
+  const menuGroups = [
+    {
+      label: "Status",
+      options: [
+        {
+          label: "Working",
+          value: "working",
+          active: working === true,
+          onClick: () => updatePromoStatus("working", working === true ? null : true)
+        },
+        {
+          label: "Not Working",
+          value: "not-working",
+          active: working === false,
+          onClick: () => updatePromoStatus("working", working === false ? null : false)
+        }
+      ]
+    },
+    {
+      label: "Usage",
+      options: [
+        {
+          label: "Used",
+          value: "used",
+          active: used === true,
+          onClick: () => updatePromoStatus("used", !used)
+        }
+      ]
+    }
+  ];
+
   return (
-    <Card className="flex h-full flex-col overflow-hidden">
+    <Card
+      className={cn(
+        "flex h-full flex-col overflow-hidden",
+        used ? "bg-gray-50 text-muted-foreground" : working === true ? "bg-emerald-50" : working === false ? "bg-rose-50" : ""
+      )}
+    >
       <CardHeader className="space-y-3">
         <div className="flex items-start justify-between gap-3">
           <div className="flex min-w-0 flex-wrap gap-2">
@@ -51,9 +113,24 @@ export function PromoCard({ promo }: { promo: Promo }) {
               </Badge>
             ) : null}
           </div>
-          <Badge variant={statusVariant(promo.status)} className="capitalize">
-            {promo.status}
-          </Badge>
+          <div className="flex items-center gap-2">
+            <div className="flex gap-1">
+              {working !== undefined && (
+                <Badge variant={working ? "success" : "danger"} className="text-xs">
+                  {working ? "✓ Working" : "✗ Not Working"}
+                </Badge>
+              )}
+              {used === true && (
+                <Badge variant="secondary" className="text-xs">
+                  ✓ Used
+                </Badge>
+              )}
+            </div>
+            <Menu groups={menuGroups} trigger={<MoreVertical className="size-4" />} />
+            <Badge variant={statusVariant(promo.status)} className="capitalize">
+              {promo.status}
+            </Badge>
+          </div>
         </div>
         <CardTitle>{promo.title}</CardTitle>
       </CardHeader>

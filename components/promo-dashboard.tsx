@@ -99,6 +99,10 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
     }
   }
 
+  function handlePromoUpdate(updated: Promo) {
+    setPromos((prevPromos) => prevPromos.map((p) => (p.id === updated.id ? updated : p)));
+  }
+
   const activeCount = promos.filter((promo) => promo.status === "active").length;
   const lastUpdated = promos[0]?.lastSeen
     ? new Intl.DateTimeFormat("en-PH", {
@@ -209,7 +213,7 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
         {filteredPromos.length > 0 ? (
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {filteredPromos.map((promo) => (
-              <PromoCard key={promo.id} promo={promo} />
+              <PromoCard key={promo.id} promo={promo} onUpdate={handlePromoUpdate} />
             ))}
           </div>
         ) : (
