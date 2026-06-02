@@ -1,8 +1,9 @@
 "use client";
 
-import { RefreshCw, Search, SlidersHorizontal } from "lucide-react";
+import { Plus, RefreshCw, Search, SlidersHorizontal } from "lucide-react";
 import { useMemo, useState } from "react";
 import { PromoCard } from "@/components/promo-card";
+import { AddPromoModal } from "@/components/AddPromoModal";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
@@ -34,6 +35,7 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
   const [usedOnly, setUsedOnly] = useState(false);
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   const serviceOptions = useMemo(() => {
     const services = Array.from(new Set(promos.map((promo) => promoServiceName(promo) ?? promo.platform))).sort();
@@ -145,10 +147,16 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
             </div>
 
             <div className="flex flex-col gap-3 sm:items-end">
-              <Button type="button" onClick={runScrape} disabled={isScraping} className="w-full sm:w-auto">
-                <RefreshCw className={isScraping ? "size-4 animate-spin" : "size-4"} aria-hidden />
-                {isScraping ? "Scraping" : "Scrape"}
-              </Button>
+              <div className="flex flex-col gap-2 sm:flex-row">
+                <Button type="button" onClick={() => setIsAddModalOpen(true)} className="w-full sm:w-auto">
+                  <Plus className="size-4" aria-hidden />
+                  Add promo
+                </Button>
+                <Button type="button" onClick={runScrape} disabled={isScraping} variant="outline" className="w-full sm:w-auto">
+                  <RefreshCw className={isScraping ? "size-4 animate-spin" : "size-4"} aria-hidden />
+                  {isScraping ? "Scraping" : "Scrape"}
+                </Button>
+              </div>
               {scrapeMessage ? (
                 <p className="max-w-xs text-left text-xs leading-5 text-muted-foreground sm:text-right">{scrapeMessage}</p>
               ) : null}
@@ -255,6 +263,15 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
           </div>
         )}
       </section>
+
+      <AddPromoModal
+        open={isAddModalOpen}
+        onOpenChange={setIsAddModalOpen}
+        onAdded={(promo) => {
+          setPromos((prev) => [promo, ...prev]);
+          setScrapeMessage(`Added ${promo.title}.`);
+        }}
+      />
     </main>
   );
 }
