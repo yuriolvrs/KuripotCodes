@@ -1,13 +1,15 @@
-6/1/2026
-
-[X] - Add manual "Working" checkbox
-[X] - Set code as "used"
-
-[ ] - Filter for Working and Not Working
 [ ] - Figure out other sites for non-Grab services
 [ ] - Figure out social media site scraping (big source)
 [ ] - Manual Add
 [ ] - Better Filter UI
 [ ] - Bigger lettering of platform and services
 [ ] - Better filtering from the start of codes that dont work anymore
+
+6/1/2026
+
+[X] - Add manual "Working" checkbox
+[X] - Set code as "used"
+[X] - Add Filter for Working and Not Working
+
+6/2/2026
 
