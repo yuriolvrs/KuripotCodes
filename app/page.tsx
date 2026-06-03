@@ -3,8 +3,18 @@ import { loadPromos } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 
-export default async function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ bookmarked?: string }>;
+}) {
   const promos = await loadPromos();
-
-  return <PromoDashboard initialPromos={promos} />;
+  const params = await searchParams;
+  return (
+    <PromoDashboard
+      initialPromos={promos}
+      initialPlatform="All"
+      initialBookmarked={params.bookmarked === "1"}
+    />
+  );
 }

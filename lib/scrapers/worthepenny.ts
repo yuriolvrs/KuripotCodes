@@ -1,5 +1,6 @@
 import { parseLooseDate } from "../date";
 import fs from "node:fs";
+import type { Page } from "puppeteer";
 import type { Platform, RawPromo } from "../types";
 
 interface WorthPennyOffer {
@@ -41,7 +42,7 @@ async function findChrome(): Promise<string | undefined> {
   return undefined;
 }
 
-async function extractOffers(page: any, url: string): Promise<WorthPennyOffer[]> {
+async function extractOffers(page: Page, url: string): Promise<WorthPennyOffer[]> {
   return (await page.evaluate((pageUrl: string) => {
     const seen = new Set<string>();
     const results: Array<{
@@ -93,7 +94,7 @@ async function extractOffers(page: any, url: string): Promise<WorthPennyOffer[]>
   }, url)) as WorthPennyOffer[];
 }
 
-async function setupPage(page: any, url: string, platform: string): Promise<boolean> {
+async function setupPage(page: Page, url: string, platform: string): Promise<boolean> {
   await page.setViewport({ width: 1920, height: 1080 });
   await page.evaluateOnNewDocument(() => {
     Object.defineProperty(navigator, "webdriver", { get: () => undefined });
