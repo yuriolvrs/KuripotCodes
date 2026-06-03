@@ -7,7 +7,7 @@ import {
   Gift, Infinity, LayoutDashboard, Menu, Package, Plane,
   ShoppingBag, ShoppingCart, Ticket, Truck, UtensilsCrossed, X
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const grabServices = [
@@ -23,10 +23,6 @@ const angkasServices = [
   { href: "/angkas?service=Motorcycle", label: "Motorcycle", icon: <Bike className="size-3.5" /> },
   { href: "/angkas?service=Padala", label: "Padala", icon: <Package className="size-3.5" /> },
   { href: "/angkas?service=AngCars", label: "AngCars", icon: <Car className="size-3.5" /> },
-];
-
-const moveitServices = [
-  { href: "/move-it?service=Motorcycle", label: "Motorcycle", icon: <Bike className="size-3.5" /> },
 ];
 
 const indriveServices = [
@@ -53,7 +49,7 @@ const navItems = [
   { href: "/grab", label: "Grab", color: "bg-emerald-500", children: grabServices },
   { href: "/angkas", label: "Angkas", color: "bg-cyan-500", children: angkasServices },
   { href: "/indrive", label: "inDrive", color: "bg-lime-500", children: indriveServices },
-  { href: "/move-it", label: "Move It", color: "bg-red-500", children: moveitServices },
+  { href: "/move-it", label: "Move It", color: "bg-red-500", children: undefined },
   { href: "/joyride", label: "JoyRide", color: "bg-blue-500", children: joyrideServices },
 ] as const;
 
@@ -78,6 +74,15 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
   const searchParams = useSearchParams();
   const [expanded, setExpanded] = useState<string | null>(null);
 
+  useEffect(() => {
+    const activeItem = navItems.find((item) =>
+      item.children && pathname.startsWith(item.href)
+    );
+    if (activeItem) {
+      setExpanded(activeItem.href);
+    }
+  }, [pathname]);
+
   return (
     <>
       <div className="flex h-[61px] items-center gap-2 border-b px-4">
@@ -99,28 +104,38 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
           return (
             <div key={item.href}>
               {item.children ? (
-                <button
-                  type="button"
-                  onClick={() => setExpanded(expanded === item.href ? null : item.href)}
+                <div
                   className={cn(
-                    "mb-0.5 flex w-full items-center gap-3 rounded-md px-3 py-2 text-sm transition-colors",
+                    "mb-0.5 flex items-center gap-0 rounded-md text-sm transition-colors",
                     isActive
                       ? "bg-muted font-medium text-foreground"
                       : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
                   )}
                 >
-                  <span className={cn("size-2 shrink-0 rounded-full", item.color)} />
-                  <span className="flex flex-1 items-center gap-2.5">
-                    {platformIcons[item.href]}
-                    {item.label}
-                  </span>
-                  <ChevronDown
-                    className={cn(
-                      "size-3.5 shrink-0 transition-transform",
-                      expanded === item.href && "rotate-180"
-                    )}
-                  />
-                </button>
+                  <Link
+                    href={item.href}
+                    onClick={onNavigate}
+                    className="flex flex-1 items-center gap-3 px-3 py-2"
+                  >
+                    <span className={cn("size-2 shrink-0 rounded-full", item.color)} />
+                    <span className="flex items-center gap-2.5">
+                      {platformIcons[item.href]}
+                      {item.label}
+                    </span>
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setExpanded(expanded === item.href ? null : item.href)}
+                    className="px-2 py-2"
+                  >
+                    <ChevronDown
+                      className={cn(
+                        "size-3.5 shrink-0 transition-transform",
+                        expanded === item.href && "rotate-180"
+                      )}
+                    />
+                  </button>
+                </div>
               ) : (
                 <Link
                   href={item.href}
