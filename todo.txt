@@ -1,9 +1,16 @@
+---------TODO--------- 
+6/1/2026
 [ ] - Figure out other sites for non-Grab services
 [ ] - Figure out social media site scraping (big source)
 [ ] - Better Filter UI
 [ ] - Bigger lettering of platform and services
 [ ] - Better filtering from the start of codes that dont work anymore
 
+6/3/2026
+[ ] - Apply other site logic from Angkas to other services
+[ ] - Fix getting codes for other stores (traveloka, airpaz, emirates in Angkas Everysaving)
+
+---------DONE---------
 6/1/2026
 
 [X] - Add manual "Working" checkbox
@@ -16,3 +23,4 @@
 
 6/3/2026
 
+[X] - Other sources for Angkas (Everysaving working)
