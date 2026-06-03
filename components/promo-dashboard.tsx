@@ -7,17 +7,16 @@ import { FilterSheet } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { type Platform, type Promo } from "@/lib/types";
+import { type Platform, type Promo, type PromoStatus } from "@/lib/types";
 import { isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
 import { promoServiceName } from "@/lib/service";
 
 interface FilterState {
-  platform: Platform | "All";
-  service: string;
+  platforms: Platform[];
+  services: string[];
   source: string;
-  workingFilter: "All" | "Working" | "Not Working";
-  activeOnly: boolean;
+  statuses: PromoStatus[];
   usedOnly: boolean;
   bookmarkedOnly: boolean;
   expiringSoon: boolean;
@@ -25,11 +24,10 @@ interface FilterState {
 }
 
 const DEFAULT_FILTERS: FilterState = {
-  platform: "All",
-  service: "All",
+  platforms: [],
+  services: [],
   source: "All",
-  workingFilter: "All",
-  activeOnly: false,
+  statuses: [],
   usedOnly: false,
   bookmarkedOnly: false,
   expiringSoon: false,
@@ -53,10 +51,9 @@ export function PromoDashboard({
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState<FilterState>(() => ({
     ...DEFAULT_FILTERS,
-    platform: initialPlatform,
-    activeOnly: initialPlatform !== "All",
+    platforms: initialPlatform === "All" ? [] : [initialPlatform],
+    services: initialService !== "All" ? [initialService] : [],
     bookmarkedOnly: initialBookmarked,
-    service: initialService,
   }));
   const [filterOpen, setFilterOpen] = useState(false);
   const [isScraping, setIsScraping] = useState(false);
@@ -64,7 +61,11 @@ export function PromoDashboard({
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   useEffect(() => {
-    setFilters((prev) => ({ ...prev, service: initialService, bookmarkedOnly: initialBookmarked }));
+    setFilters((prev) => ({
+      ...prev,
+      services: initialService !== "All" ? [initialService] : [],
+      bookmarkedOnly: initialBookmarked,
+    }));
   }, [initialService, initialBookmarked]);
 
   const activeCount = promos.filter((p) => p.status === "active").length;
@@ -76,16 +77,6 @@ export function PromoDashboard({
         timeZone: "Asia/Manila",
       }).format(new Date(promos[0].lastSeen))
     : "Not scraped yet";
-
-  const serviceOptions = useMemo(() => {
-    const services = Array.from(
-      new Set(promos.map((p) => promoServiceName(p) ?? p.platform))
-    ).sort();
-    return [
-      { label: "All services", value: "All" },
-      ...services.map((v) => ({ label: v, value: v })),
-    ];
-  }, [promos]);
 
   const sourceOptions = useMemo(() => {
     const sources = Array.from(new Set(promos.map((p) => sourceSiteName(p.sourceUrl)))).sort();
@@ -110,16 +101,11 @@ export function PromoDashboard({
           .toLowerCase()
           .includes(q);
 
-      const matchesPlatform = filters.platform === "All" || p.platform === filters.platform;
-      const matchesService = filters.service === "All" || service === filters.service;
+      const matchesPlatform = filters.platforms.length === 0 || filters.platforms.includes(p.platform);
+      const matchesService =
+        filters.services.length === 0 || (service && filters.services.includes(service));
       const matchesSource = filters.source === "All" || source === filters.source;
-      const matchesActive = !filters.activeOnly || p.status === "active";
-      const matchesWorking =
-        filters.workingFilter === "All"
-          ? true
-          : filters.workingFilter === "Working"
-            ? p.working === true
-            : p.working === false;
+      const matchesStatus = filters.statuses.length === 0 || filters.statuses.includes(p.status);
       const matchesUsed = !filters.usedOnly || p.used === true;
       const matchesExpiry = !filters.expiringSoon || isExpiringSoon(p.endDate);
       const matchesCode = !filters.hasCodeOnly || Boolean(p.code);
@@ -130,8 +116,7 @@ export function PromoDashboard({
         matchesPlatform &&
         matchesService &&
         matchesSource &&
-        matchesActive &&
-        matchesWorking &&
+        matchesStatus &&
         matchesUsed &&
         matchesExpiry &&
         matchesCode &&
@@ -142,10 +127,10 @@ export function PromoDashboard({
 
   const activeFilterCount = (() => {
     let count = 0;
-    if (filters.service !== "All") count++;
+    if (filters.platforms.length > 0) count += filters.platforms.length;
+    if (filters.services.length > 0) count += filters.services.length;
     if (filters.source !== "All") count++;
-    if (filters.workingFilter !== "All") count++;
-    if (filters.activeOnly) count++;
+    if (filters.statuses.length > 0) count += filters.statuses.length;
     if (filters.usedOnly) count++;
     if (filters.bookmarkedOnly) count++;
     if (filters.expiringSoon) count++;
@@ -158,7 +143,10 @@ export function PromoDashboard({
   }
 
   function resetFilters() {
-    setFilters({ ...DEFAULT_FILTERS, platform: initialPlatform });
+    setFilters({
+      ...DEFAULT_FILTERS,
+      platforms: initialPlatform === "All" ? [] : [initialPlatform],
+    });
   }
 
   async function runScrape() {
@@ -279,7 +267,6 @@ export function PromoDashboard({
         state={filters}
         onChange={updateFilters}
         onReset={resetFilters}
-        serviceOptions={serviceOptions}
         sourceOptions={sourceOptions}
         promos={promos}
       />

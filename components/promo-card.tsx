@@ -29,6 +29,12 @@ const platformDots: Record<Platform, string> = {
   Other: "bg-slate-400",
 };
 
+function statusLabel(status: Promo["status"]) {
+  if (status === "active") return "Active";
+  if (status === "expired") return "Inactive";
+  return "Unverified";
+}
+
 function statusVariant(status: Promo["status"]) {
   if (status === "active") return "success";
   if (status === "expired") return "danger";
@@ -215,8 +221,8 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
             )}
 
             <span className="ml-auto flex items-center gap-1">
-              <Badge variant={statusVariant(promo.status)} className="text-[10px] capitalize">
-                {promo.status}
+              <Badge variant={statusVariant(promo.status)} className="text-[10px]">
+                {statusLabel(promo.status)}
               </Badge>
             </span>
           </div>

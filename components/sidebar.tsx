@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import {
-  Bike, Bookmark, Car, ChevronDown, Gift, Infinity,
-  LayoutDashboard, Menu, Package, ShoppingBag, ShoppingCart,
-  Ticket, UtensilsCrossed, X
+  Bike, Bookmark, Bus, Car, ChevronDown, Coins,
+  Gift, Infinity, LayoutDashboard, Menu, Package, Plane,
+  ShoppingBag, ShoppingCart, Ticket, Truck, UtensilsCrossed, X
 } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -19,13 +19,42 @@ const grabServices = [
   { href: "/grab?service=GrabGifts", label: "GrabGifts", icon: <Gift className="size-3.5" /> },
 ];
 
+const angkasServices = [
+  { href: "/angkas?service=Motorcycle", label: "Motorcycle", icon: <Bike className="size-3.5" /> },
+  { href: "/angkas?service=Padala", label: "Padala", icon: <Package className="size-3.5" /> },
+  { href: "/angkas?service=AngCars", label: "AngCars", icon: <Car className="size-3.5" /> },
+];
+
+const moveitServices = [
+  { href: "/move-it?service=Motorcycle", label: "Motorcycle", icon: <Bike className="size-3.5" /> },
+];
+
+const indriveServices = [
+  { href: "/indrive?service=City rides", label: "City rides", icon: <Car className="size-3.5" /> },
+  { href: "/indrive?service=Groceries", label: "Groceries", icon: <ShoppingCart className="size-3.5" /> },
+  { href: "/indrive?service=Couriers", label: "Couriers", icon: <Package className="size-3.5" /> },
+];
+
+const joyrideServices = [
+  { href: "/joyride?service=MC Taxi", label: "MC Taxi", icon: <Bike className="size-3.5" /> },
+  { href: "/joyride?service=Car", label: "Car", icon: <Car className="size-3.5" /> },
+  { href: "/joyride?service=Taxi Cab", label: "Taxi Cab", icon: <Car className="size-3.5" /> },
+  { href: "/joyride?service=Bus", label: "Bus", icon: <Bus className="size-3.5" /> },
+  { href: "/joyride?service=Airport Transfer", label: "Airport Transfer", icon: <Plane className="size-3.5" /> },
+  { href: "/joyride?service=RentaCar", label: "RentaCar", icon: <Car className="size-3.5" /> },
+  { href: "/joyride?service=Delivery", label: "Delivery", icon: <Package className="size-3.5" /> },
+  { href: "/joyride?service=HappyMove", label: "HappyMove", icon: <Truck className="size-3.5" /> },
+  { href: "/joyride?service=Pabili", label: "Pabili", icon: <ShoppingCart className="size-3.5" /> },
+  { href: "/joyride?service=Load", label: "Load", icon: <Coins className="size-3.5" /> },
+];
+
 const navItems = [
   { href: "/", label: "All Promos", color: "bg-primary", children: undefined },
   { href: "/grab", label: "Grab", color: "bg-emerald-500", children: grabServices },
-  { href: "/angkas", label: "Angkas", color: "bg-cyan-500", children: undefined },
-  { href: "/indrive", label: "inDrive", color: "bg-lime-500", children: undefined },
-  { href: "/move-it", label: "Move It", color: "bg-red-500", children: undefined },
-  { href: "/joyride", label: "JoyRide", color: "bg-blue-500", children: undefined },
+  { href: "/angkas", label: "Angkas", color: "bg-cyan-500", children: angkasServices },
+  { href: "/indrive", label: "inDrive", color: "bg-lime-500", children: indriveServices },
+  { href: "/move-it", label: "Move It", color: "bg-red-500", children: moveitServices },
+  { href: "/joyride", label: "JoyRide", color: "bg-blue-500", children: joyrideServices },
 ] as const;
 
 const platformIcons: Record<string, React.ReactNode> = {
@@ -115,10 +144,10 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
                 <div className="mb-1 ml-9 space-y-0.5">
                   {item.children.map((child) => {
                     const childActive = isServiceActive(
-                        child.href,
-                        pathname,
-                        searchParams.get("service")
-                      );
+                      child.href,
+                      pathname,
+                      searchParams.get("service")
+                    );
                     return (
                       <Link
                         key={child.href}

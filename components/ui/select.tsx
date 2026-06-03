@@ -13,7 +13,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 
 export function Select({ className, options, ...props }: SelectProps) {
   return (
-    <span className="relative inline-flex min-w-40">
+    <span className="relative inline-flex w-full">
       <select
         className={cn(
           "h-10 w-full appearance-none rounded-md border border-input bg-background px-3 pr-9 text-sm font-medium outline-none focus-visible:ring-2 focus-visible:ring-ring",
