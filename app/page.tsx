@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export default async function Home({
   searchParams,
 }: {
-  searchParams: Promise<{ bookmarked?: string }>;
+  searchParams: Promise<{ bookmarked?: string; service?: string }>;
 }) {
   const promos = await loadPromos();
   const params = await searchParams;
@@ -15,6 +15,7 @@ export default async function Home({
       initialPromos={promos}
       initialPlatform="All"
       initialBookmarked={params.bookmarked === "1"}
+      initialService={params.service ?? "All"}
     />
   );
 }

@@ -18,11 +18,14 @@ export async function generateStaticParams() {
 
 export default async function PlatformPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ service?: string }>;
 }) {
   const promos = await loadPromos();
   const { slug } = await params;
+  const sp = await searchParams;
   const platform = SLUG_MAP[slug];
 
   if (!platform) {
@@ -36,5 +39,11 @@ export default async function PlatformPage({
     );
   }
 
-  return <PromoDashboard initialPromos={promos} initialPlatform={platform} />;
+  return (
+    <PromoDashboard
+      initialPromos={promos}
+      initialPlatform={platform}
+      initialService={sp.service ?? "All"}
+    />
+  );
 }

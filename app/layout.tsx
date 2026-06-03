@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Sidebar } from "@/components/sidebar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PH Ride Promo Aggregator",
+  title: "KuripotCodes",
   description: "Private ride-hailing promo dashboard for the Philippines"
 };
 
@@ -14,9 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen">
-        <Sidebar />
-        <div className="flex-1 overflow-x-hidden">{children}</div>
+      <body className="flex h-screen overflow-hidden">
+        <Suspense fallback={<div className="w-56 border-r bg-white" />}>
+          <Sidebar />
+        </Suspense>
+        <div className="flex-1 overflow-y-auto">{children}</div>
       </body>
     </html>
   );

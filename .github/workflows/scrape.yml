@@ -2,7 +2,10 @@ name: Scrape promos
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "5 0 * * *"      # 12:05 AM
+    - cron: "30 5 * * *"     # 5:30 AM
+    - cron: "45 10 * * *"    # 10:45 AM
+    - cron: "30 15 * * *"    # 3:30 PM
   workflow_dispatch:
 
 permissions:

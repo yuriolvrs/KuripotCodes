@@ -1,7 +1,7 @@
 "use client";
 
 import { Filter, Plus, RefreshCw, Search } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { AddPromoModal } from "@/components/AddPromoModal";
 import { FilterSheet } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
@@ -40,12 +40,14 @@ interface PromoDashboardProps {
   initialPromos: Promo[];
   initialPlatform?: Platform | "All";
   initialBookmarked?: boolean;
+  initialService?: string;
 }
 
 export function PromoDashboard({
   initialPromos,
   initialPlatform = "All",
   initialBookmarked = false,
+  initialService = "All",
 }: PromoDashboardProps) {
   const [promos, setPromos] = useState(initialPromos);
   const [query, setQuery] = useState("");
@@ -54,11 +56,16 @@ export function PromoDashboard({
     platform: initialPlatform,
     activeOnly: initialPlatform !== "All",
     bookmarkedOnly: initialBookmarked,
+    service: initialService,
   }));
   const [filterOpen, setFilterOpen] = useState(false);
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+
+  useEffect(() => {
+    setFilters((prev) => ({ ...prev, service: initialService, bookmarkedOnly: initialBookmarked }));
+  }, [initialService, initialBookmarked]);
 
   const activeCount = promos.filter((p) => p.status === "active").length;
 
@@ -186,7 +193,7 @@ export function PromoDashboard({
 
   return (
     <main className="flex min-h-screen flex-col">
-      <div className="sticky top-0 z-30 border-b bg-white/95 backdrop-blur">
+      <div className="sticky top-0 z-30 border-b bg-white/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.03)]">
         <div className="flex items-center gap-3 px-4 py-3 lg:px-6">
           <label className="relative flex-1 sm:max-w-md">
             <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
