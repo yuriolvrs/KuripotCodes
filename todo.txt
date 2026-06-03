@@ -38,3 +38,4 @@
 [X] - Other sources for other services (worthepenny working)
 [X] - Add Bookmark feature and filter bookmarked
 [X] - Overhaul UI
+[X] - UI: fix platform icons and colors

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bike, Bookmark, Car, LayoutDashboard, Menu, ShoppingCart, Ticket, X, Zap } from "lucide-react";
+import { Bike, Bookmark, Car, LayoutDashboard, Menu, ShoppingCart, Ticket, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -10,18 +10,18 @@ const navItems = [
   { href: "/", label: "All Promos", color: "bg-primary" },
   { href: "/grab", label: "Grab", color: "bg-emerald-500" },
   { href: "/angkas", label: "Angkas", color: "bg-cyan-500" },
-  { href: "/move-it", label: "Move It", color: "bg-yellow-500" },
+  { href: "/move-it", label: "Move It", color: "bg-red-500" },
   { href: "/indrive", label: "inDrive", color: "bg-lime-500" },
-  { href: "/joyride", label: "JoyRide", color: "bg-rose-500" },
+  { href: "/joyride", label: "JoyRide", color: "bg-blue-500" },
 ] as const;
 
 const platformIcons: Record<string, React.ReactNode> = {
   "/": <LayoutDashboard className="size-4" />,
   "/grab": <ShoppingCart className="size-4" />,
   "/angkas": <Bike className="size-4" />,
-  "/move-it": <Zap className="size-4" />,
+  "/move-it": <Bike className="size-4" />,
   "/indrive": <Car className="size-4" />,
-  "/joyride": <Car className="size-4" />,
+  "/joyride": <Bike className="size-4" />,
 };
 
 function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
@@ -33,7 +33,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
         <div className="flex size-7 items-center justify-center rounded-md bg-primary">
           <Ticket className="size-4 text-primary-foreground" />
         </div>
-        <span className="text-sm font-semibold">Ride Promos</span>
+        <span className="text-sm font-semibold">KuripotCodes</span>
       </div>
 
       <nav className="flex-1 overflow-y-auto p-3">

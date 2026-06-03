@@ -14,18 +14,18 @@ import { promoServiceName } from "@/lib/service";
 const platformColors: Record<Platform, string> = {
   Grab: "bg-emerald-50 text-emerald-700 border-emerald-200",
   Angkas: "bg-cyan-50 text-cyan-700 border-cyan-200",
-  "Move It": "bg-yellow-50 text-yellow-800 border-yellow-200",
+  "Move It": "bg-red-50 text-red-700 border-red-200",
   inDrive: "bg-lime-50 text-lime-800 border-lime-200",
-  JoyRide: "bg-rose-50 text-rose-700 border-rose-200",
+  JoyRide: "bg-blue-50 text-blue-700 border-blue-200",
   Other: "bg-slate-100 text-slate-700 border-slate-200",
 };
 
 const platformDots: Record<Platform, string> = {
   Grab: "bg-emerald-500",
   Angkas: "bg-cyan-500",
-  "Move It": "bg-yellow-500",
+  "Move It": "bg-red-500",
   inDrive: "bg-lime-500",
-  JoyRide: "bg-rose-500",
+  JoyRide: "bg-blue-500",
   Other: "bg-slate-400",
 };
 
