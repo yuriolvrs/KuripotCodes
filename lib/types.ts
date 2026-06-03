@@ -30,6 +30,7 @@ export interface Promo {
   lastSeen: string;
   working?: boolean;
   used?: boolean;
+  bookmarked?: boolean;
 }
 
 export interface RawPromo {

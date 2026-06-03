@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarDays, Check, Copy, ExternalLink, MoreVertical, Ticket } from "lucide-react";
+import { CalendarDays, Check, Copy, ExternalLink, MoreVertical, Star, Ticket } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -30,6 +30,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
   const [copied, setCopied] = useState(false);
   const [working, setWorking] = useState(promo.working);
   const [used, setUsed] = useState(promo.used);
+  const [bookmarked, setBookmarked] = useState(promo.bookmarked);
   const [isUpdating, setIsUpdating] = useState(false);
   const sourceName = sourceSiteName(promo.sourceUrl);
   const serviceName = promoServiceName(promo);
@@ -39,6 +40,29 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
     await navigator.clipboard.writeText(promo.code);
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1400);
+  }
+
+  async function toggleBookmark() {
+    try {
+      const newValue = !bookmarked;
+      setBookmarked(newValue);
+      const response = await fetch("/api/promo", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: promo.id, bookmarked: newValue })
+      });
+
+      if (!response.ok) {
+        setBookmarked(!newValue);
+        return;
+      }
+
+      const { promo: updated } = await response.json();
+      onUpdate?.({ ...promo, ...updated });
+    } catch (error) {
+      setBookmarked(!bookmarked);
+      console.error("Error bookmarking promo:", error);
+    }
   }
 
   async function updatePromoStatus(field: "working" | "used", value: boolean | null) {
@@ -113,7 +137,16 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
               </Badge>
             ) : null}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={toggleBookmark}
+              title={bookmarked ? "Remove bookmark" : "Bookmark this promo"}
+              aria-label={bookmarked ? "Remove bookmark" : "Bookmark this promo"}
+              className="rounded p-0.5 hover:bg-black/5"
+            >
+              <Star className={bookmarked ? "size-4 fill-amber-400 text-amber-400" : "size-4 text-muted-foreground"} />
+            </button>
             <div className="flex gap-1">
               {working !== undefined && (
                 <Badge variant={working ? "success" : "danger"} className="text-xs">

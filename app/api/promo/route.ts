@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
 
 export async function PATCH(request: NextRequest) {
   try {
-    const { id, working, used } = await request.json();
+    const { id, working, used, bookmarked } = await request.json();
 
     if (!id) {
       return NextResponse.json({ ok: false, message: "Missing promo id" }, { status: 400 });
@@ -72,6 +72,11 @@ export async function PATCH(request: NextRequest) {
       delete promo.used;
     } else if (used !== undefined) {
       promo.used = used;
+    }
+    if (bookmarked === null) {
+      delete promo.bookmarked;
+    } else if (bookmarked !== undefined) {
+      promo.bookmarked = bookmarked;
     }
 
     await savePromos(promos);

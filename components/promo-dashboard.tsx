@@ -33,6 +33,7 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
   const [hasCodeOnly, setHasCodeOnly] = useState(false);
   const [workingFilter, setWorkingFilter] = useState<"All" | "Working" | "Not Working">("All");
   const [usedOnly, setUsedOnly] = useState(false);
+  const [bookmarkedOnly, setBookmarkedOnly] = useState(false);
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -73,6 +74,7 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
       const matchesUsed = !usedOnly || promo.used === true;
       const matchesExpiry = !expiringSoon || isExpiringSoon(promo.endDate);
       const matchesCode = !hasCodeOnly || Boolean(promo.code);
+      const matchesBookmarked = !bookmarkedOnly || promo.bookmarked === true;
 
       return (
         matchesQuery &&
@@ -83,10 +85,11 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
         matchesWorking &&
         matchesUsed &&
         matchesExpiry &&
-        matchesCode
+        matchesCode &&
+        matchesBookmarked
       );
     });
-  }, [activeOnly, expiringSoon, hasCodeOnly, workingFilter, usedOnly, platform, promos, query, service, source]);
+  }, [activeOnly, expiringSoon, hasCodeOnly, workingFilter, usedOnly, bookmarkedOnly, platform, promos, query, service, source]);
 
   async function runScrape() {
     setIsScraping(true);
@@ -231,6 +234,11 @@ export function PromoDashboard({ initialPromos }: { initialPromos: Promo[] }) {
                   onChange={(event) => setActiveOnly(event.target.checked)}
                 />
                 <Checkbox label="Used only" checked={usedOnly} onChange={(event) => setUsedOnly(event.target.checked)} />
+                <Checkbox
+                  label="Bookmarked"
+                  checked={bookmarkedOnly}
+                  onChange={(event) => setBookmarkedOnly(event.target.checked)}
+                />
                 <Checkbox
                   label="Expiring soon"
                   checked={expiringSoon}
