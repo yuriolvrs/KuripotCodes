@@ -1,14 +1,25 @@
 ---------TODO--------- 
 6/1/2026
-[ ] - Figure out other sites for non-Grab services
+
 [ ] - Figure out social media site scraping (big source)
-[ ] - Better Filter UI
+[ ] - Improve Filter UI
 [ ] - Bigger lettering of platform and services
 [ ] - Better filtering from the start of codes that dont work anymore (idk how)
 
 6/3/2026
-[ ] - Apply other site logic from Angkas to other services
-[ ] - Fix getting codes for other stores (traveloka, airpaz, emirates in Angkas Everysaving)
+[ ] - Bug: Fix getting codes for other stores (traveloka, airpaz, emirates in Angkas Everysaving)
+[ ] - UI: sidebar and main window line alignment
+[ ] - Bug: View Bookmarked not working?
+[ ] - UI/UX: Fix button placement of filter, refresh, and Add
+[ ] - Feat: add sort
+[ ] - UI/UX: Fix filter dropdowns placement
+[ ] - UX: when a Platform is selected, the services that show up in the dropdown should be of that platform only
+[ ] - UX: make all worthepenny one source only when filtering
+[ ] - UI: checking Expiring, Bookmarked, and Used moves the Filter sidebar to the right. it should stay in place 
+[ ] - UI/UX: Promo code dropdown visibility bug, probably needs overhaul
+[ ] - UI: center code in container
+[ ] - UI/UX: long descriptions get cut off and there's no way to view the whole text
+
 
 ---------DONE---------
 6/1/2026
@@ -24,4 +35,6 @@
 6/3/2026
 
 [X] - Other sources for Angkas (Everysaving working)
+[X] - Other sources for other services (worthepenny working)
 [X] - Add Bookmark feature and filter bookmarked
+[X] - Overhaul UI

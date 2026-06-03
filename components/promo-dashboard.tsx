@@ -215,7 +215,7 @@ export function PromoDashboard({
 
           <Button size="sm" variant="outline" onClick={runScrape} disabled={isScraping}>
             <RefreshCw className={isScraping ? "size-4 animate-spin" : "size-4"} />
-            <span className="hidden sm:inline">{isScraping ? "Scraping..." : "Scrape"}</span>
+            <span className="hidden sm:inline">{isScraping ? "Refreshing..." : "Refresh"}</span>
           </Button>
 
           <Button size="sm" onClick={() => setIsAddModalOpen(true)}>
