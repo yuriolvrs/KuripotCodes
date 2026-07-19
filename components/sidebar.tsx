@@ -169,7 +169,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
                         href={child.href}
                         onClick={onNavigate}
                         className={cn(
-                          "flex items-center gap-2.5 rounded-md px-3 py-1.5 text-[13px] transition-colors",
+                          "flex items-center gap-2.5 rounded-md px-3 py-1.5 text-sm transition-colors",
                           childActive
                             ? "bg-muted font-medium text-foreground"
                             : "text-muted-foreground/80 hover:bg-muted/50 hover:text-foreground"

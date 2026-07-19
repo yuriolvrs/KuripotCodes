@@ -159,7 +159,7 @@ export function FilterSheet({
                     type="button"
                     onClick={() => togglePlatform(chip.value)}
                     className={cn(
-                      "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
+                      "rounded-md border px-2.5 py-1.5 text-sm font-medium transition-all",
                       color.bg, color.text,
                       isActive
                         ? `${color.ring} ring-1`
@@ -188,7 +188,7 @@ export function FilterSheet({
                       type="button"
                       onClick={() => toggleService(service)}
                       className={cn(
-                        "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
+                        "rounded-md border px-2.5 py-1.5 text-sm font-medium transition-all",
                         color.bg, color.text,
                         isActive
                           ? `${color.ring} ring-1`
@@ -216,7 +216,7 @@ export function FilterSheet({
                     type="button"
                     onClick={() => toggleStatus(chip.value)}
                     className={cn(
-                      "rounded-md border px-2.5 py-1.5 text-xs font-medium transition-all",
+                      "rounded-md border px-2.5 py-1.5 text-sm font-medium transition-all",
                       chip.bg, chip.text,
                       isActive
                         ? `${chip.ring} ring-1`
@@ -256,7 +256,7 @@ export function FilterSheet({
                     type="button"
                     onClick={() => onChange({ [key]: !checked })}
                     className={cn(
-                      "rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+                      "rounded-full border px-3 py-1 text-sm font-medium transition-colors",
                       checked
                         ? "border-primary bg-primary/10 text-primary"
                         : "border-input bg-white text-muted-foreground hover:border-muted-foreground/30"

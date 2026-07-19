@@ -92,12 +92,15 @@ export const wethriftScraper: Scraper = {
     );
 
     const rawPromos = settled.flatMap((result) => (result.status === "fulfilled" ? result.value : []));
-    const failures = settled.filter((result) => result.status === "rejected");
 
-    if (rawPromos.length === 0 && failures.length === WETHRIFT_TARGETS.length) {
-      return rawToPromos(WETHRIFT_FALLBACKS, now);
-    }
+    const platformsWithLiveResults = new Set(rawPromos.map((promo) => promo.platform));
+    const fallbacksForMissingPlatforms = WETHRIFT_FALLBACKS.filter(
+      (fallback) => !platformsWithLiveResults.has(fallback.platform)
+    );
 
-    return rawToPromos(uniqueBy([...rawPromos, ...WETHRIFT_FALLBACKS], (promo) => `${promo.platform}:${promo.code || promo.title}`), now);
+    return rawToPromos(
+      uniqueBy([...rawPromos, ...fallbacksForMissingPlatforms], (promo) => `${promo.platform}:${promo.code || promo.title}`),
+      now
+    );
   }
 };

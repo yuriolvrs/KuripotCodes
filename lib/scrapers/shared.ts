@@ -5,7 +5,7 @@ import type { Platform, Promo, RawPromo } from "../types";
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36 PHRidePromoAggregator/0.1";
 
-export async function fetchText(url: string, timeoutMs = 15000, headers: HeadersInit = {}) {
+async function fetchTextOnce(url: string, timeoutMs: number, headers: HeadersInit) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -27,6 +27,54 @@ export async function fetchText(url: string, timeoutMs = 15000, headers: Headers
   } finally {
     clearTimeout(timeout);
   }
+}
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export async function fetchText(
+  url: string,
+  timeoutMs = 15000,
+  headers: HeadersInit = {},
+  retries = 2
+) {
+  let lastError: unknown;
+
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      return await fetchTextOnce(url, timeoutMs, headers);
+    } catch (error) {
+      lastError = error;
+      if (attempt < retries) await delay(500 * 2 ** attempt);
+    }
+  }
+
+  throw lastError;
+}
+
+export async function mapWithConcurrency<T, R>(
+  items: T[],
+  limit: number,
+  fn: (item: T, index: number) => Promise<R>
+): Promise<PromiseSettledResult<R>[]> {
+  const results: PromiseSettledResult<R>[] = new Array(items.length);
+  let cursor = 0;
+
+  async function worker() {
+    while (cursor < items.length) {
+      const index = cursor;
+      cursor += 1;
+      try {
+        results[index] = { status: "fulfilled", value: await fn(items[index], index) };
+      } catch (error) {
+        results[index] = { status: "rejected", reason: error };
+      }
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
 }
 
 export function stripHtml(html: string) {

@@ -6,7 +6,8 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "lint": "eslint .",
-    "scrape": "tsx scripts/scrape.ts"
+    "scrape": "tsx scripts/scrape.ts",
+    "cleanup": "tsx scripts/cleanup.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",

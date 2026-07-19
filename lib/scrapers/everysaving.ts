@@ -1,6 +1,17 @@
 import { parseLooseDate } from "../date";
+import { isPlausibleCode } from "../normalize";
 import type { Platform, RawPromo } from "../types";
 import { fetchText, stripHtml, uniqueBy } from "./shared";
+
+// EverySaving shop pages cross-promote unrelated brands alongside the target
+// platform's deals; these entries would otherwise get mistagged with the
+// wrong platform. Skip anything that clearly belongs to a different brand.
+const FOREIGN_BRAND_BLOCKLIST =
+  /\b(traveloka|airpaz|emirates|klook|agoda|expedia|booking\.com|cebu\s*pacific|philippine\s*airlines|airasia|scoot|qatar\s*airways|singapore\s*airlines|cathay\s*pacific|zalora|lazada|shopee|foodpanda|grubhub)\b/i;
+
+function isRelevantEntry(title: string, description: string): boolean {
+  return !FOREIGN_BRAND_BLOCKLIST.test(`${title} ${description}`);
+}
 
 interface EverySavingEntry {
   title: string;
@@ -109,10 +120,13 @@ async function scrapeEverySavingWithPuppeteer(url: string, platform: Platform): 
       return results;
     });
 
-    return entries.map((entry: EverySavingEntry) => ({
-      ...entry,
-      code: decodeEntryCodes(entry.code)
-    }));
+    return entries
+      .filter((entry: EverySavingEntry) => isRelevantEntry(entry.title, entry.description))
+      .map((entry: EverySavingEntry) => ({
+        ...entry,
+        code: decodeEntryCodes(entry.code)
+      }))
+      .filter((entry: EverySavingEntry) => isPlausibleCode(entry.code));
   } finally {
     await browser.close();
   }
@@ -145,7 +159,10 @@ function parseEverySavingFromHtml(html: string, url: string, platform: Platform)
     const expiryStr = (parsed["entry.exd"] as string) || undefined;
     const isExpired = (parsed["entry.crossed"] as number) === 1;
 
+    if (!isRelevantEntry(stripHtml(title), stripHtml(description))) continue;
+
     const code = decodeEntryCodes(encoded);
+    if (!isPlausibleCode(code)) continue;
 
     rawPromos.push({
       platform,

@@ -8,6 +8,7 @@ import { PromoCard } from "@/components/promo-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
+import { useToast } from "@/components/ui/toast";
 import { type Platform, type Promo, type PromoStatus } from "@/lib/types";
 import { isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
@@ -111,14 +112,16 @@ export function PromoDashboard({
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     setFilters((prev) => ({
       ...prev,
+      platforms: initialPlatform === "All" ? [] : [initialPlatform],
       services: initialService !== "All" ? [initialService] : [],
       bookmarkedOnly: initialBookmarked,
     }));
-  }, [initialService, initialBookmarked]);
+  }, [initialPlatform, initialService, initialBookmarked]);
 
   const activeCount = promos.filter((p) => p.status === "active").length;
 
@@ -231,6 +234,8 @@ export function PromoDashboard({
     setFilters({
       ...DEFAULT_FILTERS,
       platforms: initialPlatform === "All" ? [] : [initialPlatform],
+      services: initialService !== "All" ? [initialService] : [],
+      bookmarkedOnly: initialBookmarked,
     });
   }
 
@@ -252,9 +257,13 @@ export function PromoDashboard({
       const warnings = payload.failures?.length
         ? ` ${payload.failures.length} source${payload.failures.length !== 1 ? "s" : ""} blocked or failed.`
         : "";
-      setScrapeMessage(`Found ${payload.foundCount ?? 0}; saved ${payload.savedCount ?? 0}.${warnings}`);
+      const message = `Found ${payload.foundCount ?? 0}; saved ${payload.savedCount ?? 0}.${warnings}`;
+      setScrapeMessage(message);
+      toast({ title: message, variant: warnings ? "default" : "success" });
     } catch (err) {
-      setScrapeMessage(err instanceof Error ? err.message : "Scrape failed");
+      const message = err instanceof Error ? err.message : "Scrape failed";
+      setScrapeMessage(message);
+      toast({ title: message, variant: "error" });
     } finally {
       setIsScraping(false);
     }
@@ -267,8 +276,8 @@ export function PromoDashboard({
   return (
     <main className="flex min-h-screen flex-col">
       <div className="sticky top-0 z-30 border-b bg-white/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.03)]">
-        <div className="flex items-center gap-3 px-4 py-3 lg:px-6">
-          <label className="relative flex-1 sm:max-w-md">
+        <div className="flex flex-wrap items-center gap-3 py-3 pl-14 pr-4 lg:px-6">
+          <label className="relative min-w-[140px] flex-1 sm:max-w-md">
             <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               value={query}
@@ -293,15 +302,17 @@ export function PromoDashboard({
             )}
           </Button>
 
-          <Button size="sm" variant="outline" onClick={runScrape} disabled={isScraping}>
-            <RefreshCw className={isScraping ? "size-4 animate-spin" : "size-4"} />
-            <span className="hidden sm:inline">{isScraping ? "Refreshing..." : "Refresh"}</span>
-          </Button>
+          <div className="ml-auto flex items-center gap-2">
+            <Button size="sm" variant="outline" onClick={runScrape} disabled={isScraping}>
+              <RefreshCw className={isScraping ? "size-4 animate-spin" : "size-4"} />
+              <span className="hidden sm:inline">{isScraping ? "Refreshing..." : "Refresh"}</span>
+            </Button>
 
-          <Button size="sm" onClick={() => setIsAddModalOpen(true)}>
-            <Plus className="size-4" />
-            <span className="hidden sm:inline">Add</span>
-          </Button>
+            <Button size="sm" onClick={() => setIsAddModalOpen(true)}>
+              <Plus className="size-4" />
+              <span className="hidden sm:inline">Add</span>
+            </Button>
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-2 border-t px-4 py-2 lg:px-6">
@@ -403,6 +414,7 @@ export function PromoDashboard({
         onAdded={(promo) => {
           setPromos((prev) => [promo, ...prev]);
           setScrapeMessage(`Added ${promo.title}.`);
+          toast({ title: `Added ${promo.title}`, variant: "success" });
         }}
       />
     </main>

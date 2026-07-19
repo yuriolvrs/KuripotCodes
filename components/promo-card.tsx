@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Menu } from "@/components/ui/menu";
+import { useToast } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
 import type { Platform, Promo } from "@/lib/types";
 import { sourceSiteName } from "@/lib/source";
@@ -41,19 +42,27 @@ function statusVariant(status: Promo["status"]) {
   return "muted";
 }
 
+const DESCRIPTION_EXPAND_THRESHOLD = 110;
+
 export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updated: Promo) => void }) {
   const [copied, setCopied] = useState(false);
   const [working, setWorking] = useState(promo.working);
   const [used, setUsed] = useState(promo.used);
   const [bookmarked, setBookmarked] = useState(promo.bookmarked);
+  const [descriptionExpanded, setDescriptionExpanded] = useState(false);
   const sourceName = sourceSiteName(promo.sourceUrl);
   const serviceName = promoServiceName(promo);
+  const { toast } = useToast();
 
   async function copyCode() {
     if (!promo.code) return;
-    await navigator.clipboard.writeText(promo.code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1400);
+    try {
+      await navigator.clipboard.writeText(promo.code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1400);
+    } catch {
+      toast({ title: "Couldn't copy code — copy it manually", variant: "error" });
+    }
   }
 
   async function toggleBookmark() {
@@ -67,12 +76,14 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
       });
       if (!res.ok) {
         setBookmarked(!newVal);
+        toast({ title: "Couldn't update bookmark", variant: "error" });
         return;
       }
       const { promo: updated } = await res.json();
       onUpdate?.({ ...promo, ...updated });
     } catch {
       setBookmarked(!bookmarked);
+      toast({ title: "Couldn't update bookmark", variant: "error" });
     }
   }
 
@@ -89,7 +100,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
       if (field === "used") setUsed(value === null ? undefined : value);
       onUpdate?.({ ...promo, ...updated });
     } catch {
-      // revert silently
+      toast({ title: `Couldn't update ${field} status`, variant: "error" });
     }
   }
 
@@ -127,7 +138,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
   return (
     <Card
       className={cn(
-        "group flex h-full flex-col overflow-hidden transition-shadow hover:shadow-md",
+        "group flex h-full flex-col transition-shadow hover:shadow-md",
         used && "opacity-60",
         working === true && "ring-1 ring-emerald-200",
         working === false && "ring-1 ring-red-200"
@@ -137,11 +148,11 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
         <div className="flex items-start justify-between gap-2">
           <div className="flex min-w-0 flex-wrap items-center gap-1.5">
             <span className={cn("size-2 shrink-0 rounded-full", platformDots[promo.platform])} />
-            <Badge variant="outline" className={cn("shrink-0 text-[11px]", platformColors[promo.platform])}>
+            <Badge variant="outline" className={cn("shrink-0 text-xs font-semibold", platformColors[promo.platform])}>
               {promo.platform}
             </Badge>
             {serviceName && serviceName !== promo.platform && (
-              <Badge variant="muted" className="shrink-0 text-[11px]">
+              <Badge variant="muted" className="shrink-0 text-xs">
                 {serviceName}
               </Badge>
             )}
@@ -177,12 +188,30 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
 
       <CardContent className="flex flex-1 flex-col gap-3">
         {promo.description && (
-          <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">{promo.description}</p>
+          <div>
+            <p
+              className={cn(
+                "text-xs leading-relaxed text-muted-foreground",
+                !descriptionExpanded && "line-clamp-2"
+              )}
+            >
+              {promo.description}
+            </p>
+            {promo.description.length > DESCRIPTION_EXPAND_THRESHOLD && (
+              <button
+                type="button"
+                onClick={() => setDescriptionExpanded((prev) => !prev)}
+                className="mt-0.5 text-xs font-medium text-primary hover:underline"
+              >
+                {descriptionExpanded ? "Less" : "More"}
+              </button>
+            )}
+          </div>
         )}
 
         <div className="mt-auto space-y-2.5">
           {promo.code && (
-            <div className="flex items-center justify-between rounded-lg bg-muted/60 px-3 py-2">
+            <div className="flex items-center justify-center gap-2 rounded-lg border border-dashed bg-muted/60 px-3 py-2">
               <code className="text-sm font-semibold tracking-wide">{promo.code}</code>
               <Button
                 type="button"

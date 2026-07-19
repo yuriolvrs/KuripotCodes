@@ -22,6 +22,11 @@ export function normalizeCode(code?: string) {
     .slice(0, 64);
 }
 
+export function isPlausibleCode(code?: string) {
+  if (!code) return true;
+  return /^[A-Z0-9][A-Z0-9_-]{3,}$/.test(code);
+}
+
 export function createPromoId(promo: Pick<Promo, "platform" | "code" | "title" | "sourceUrl">) {
   const stableKey = promo.code
     ? `${promo.platform}:${promo.code}`
@@ -53,7 +58,8 @@ export function normalizePromo(raw: RawPromo, now = new Date()): Promo {
   const sourceText = [title, raw.description, raw.sourceUrl].filter(Boolean).join(" ");
   const platform =
     raw.platform && PLATFORMS.includes(raw.platform) ? raw.platform : detectPlatform(sourceText);
-  const code = normalizeCode(raw.code);
+  const rawCode = normalizeCode(raw.code);
+  const code = isPlausibleCode(rawCode) ? rawCode : "";
   const inferred = inferDiscount(sourceText);
   const status = raw.status ?? getPromoStatus(raw.endDate);
   const seenAt = now.toISOString();
@@ -77,6 +83,24 @@ export function normalizePromo(raw: RawPromo, now = new Date()): Promo {
 
   promo.id = createPromoId(promo);
   return promo;
+}
+
+const EXPIRED_RETENTION_DAYS = 14;
+const STALE_RETENTION_DAYS = 30;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function daysSince(isoDate: string, now: Date) {
+  return (now.getTime() - new Date(isoDate).getTime()) / DAY_MS;
+}
+
+function shouldPrune(promo: Promo, now: Date) {
+  if (promo.bookmarked || promo.working) return false;
+
+  if (promo.status === "expired") {
+    return daysSince(promo.lastSeen, now) > EXPIRED_RETENTION_DAYS;
+  }
+
+  return daysSince(promo.lastSeen, now) > STALE_RETENTION_DAYS;
 }
 
 export function mergePromos(existing: Promo[], incoming: Promo[], now = new Date()) {
@@ -133,7 +157,9 @@ export function mergePromos(existing: Promo[], incoming: Promo[], now = new Date
     });
   }
 
-  return Array.from(map.values()).sort((a, b) => {
+  return Array.from(map.values())
+    .filter((promo) => !shouldPrune(promo, now))
+    .sort((a, b) => {
     const codeSort = Number(Boolean(b.code)) - Number(Boolean(a.code));
     if (codeSort !== 0) return codeSort;
     return b.lastSeen.localeCompare(a.lastSeen);

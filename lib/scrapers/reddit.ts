@@ -1,7 +1,10 @@
 import { detectPlatform } from "../normalize";
 import type { RawPromo } from "../types";
-import { extractCodes, extractExpiry, fetchText, rawToPromos, titleFromText, uniqueBy } from "./shared";
+import { extractCodes, extractExpiry, fetchText, mapWithConcurrency, rawToPromos, titleFromText, uniqueBy } from "./shared";
 import type { Scraper } from "./types";
+
+const REQUEST_CONCURRENCY = 2;
+const REQUEST_SPACING_MS = 750;
 
 const SUBREDDITS = ["Philippines", "PHMotorcycles", "GrabPH"];
 const TERMS = ["promo code", "voucher", "discount code"];
@@ -32,7 +35,10 @@ export const redditScraper: Scraper = {
       )
     );
 
-    const settled = await Promise.allSettled(urls.map((url) => fetchText(url)));
+    const settled = await mapWithConcurrency(urls, REQUEST_CONCURRENCY, async (url) => {
+      await new Promise((resolve) => setTimeout(resolve, REQUEST_SPACING_MS));
+      return fetchText(url);
+    });
     const rawPromos: RawPromo[] = [];
     let successfulRequests = 0;
 

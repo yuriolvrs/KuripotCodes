@@ -30,8 +30,16 @@ export function Menu({ groups, trigger = "Menu" }: MenuProps) {
       }
     }
 
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") setIsOpen(false);
+    }
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   return (
@@ -42,12 +50,14 @@ export function Menu({ groups, trigger = "Menu" }: MenuProps) {
         onClick={() => setIsOpen(!isOpen)}
         className="h-8 w-8 p-0"
         title="Toggle options"
+        aria-haspopup="menu"
+        aria-expanded={isOpen}
       >
         {trigger}
       </Button>
 
       {isOpen && (
-        <div className="absolute right-0 z-50 mt-1 w-48 rounded-md border bg-white shadow-lg">
+        <div role="menu" className="absolute right-0 z-50 mt-1 w-48 rounded-md border bg-white shadow-lg">
           {groups.map((group, groupIndex) => (
             <div key={groupIndex}>
               {group.label && (
@@ -59,6 +69,7 @@ export function Menu({ groups, trigger = "Menu" }: MenuProps) {
                 {group.options.map((option, optionIndex) => (
                   <button
                     key={optionIndex}
+                    role="menuitem"
                     onClick={() => {
                       option.onClick();
                       setIsOpen(false);

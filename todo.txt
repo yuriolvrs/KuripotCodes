@@ -1,19 +1,8 @@
----------TODO--------- 
+---------TODO---------
 6/1/2026
 
-[ ] - Figure out social media site scraping (big source)
+[ ] - Figure out social media site scraping (big source) (facebook.ts stub removed; still needs a real implementation)
 [ ] - Improve Filter UI
-[ ] - Bigger lettering of platform and services
-[ ] - Better filtering from the start of codes that dont work anymore (idk how)
-
-6/3/2026
-[ ] - Bug: Fix getting codes for other stores (traveloka, airpaz, emirates in Angkas Everysaving)
-[ ] - UI/UX: Fix button placement of filter, refresh, and Add
-[ ] - UX: make all worthepenny one source only when filtering
-[ ] - UI: checking Expiring, Bookmarked, and Used nudges the Filter sidebar to the right. it should stay in place 
-[ ] - UI/UX: Promo code dropdown visibility bug, probably needs overhaul
-[ ] - UI: center code in container
-[ ] - UI/UX: long descriptions get cut off and there's no way to view the whole text
 
 
 ---------DONE---------
@@ -39,3 +28,19 @@
 [X] - UI/UX: Improve filter menu
 [X] - UX: in Filter, when a Platform is selected, the services that show up in the dropdown should be of that platform only
 [X] - Feat: add sort (and group by platform/service/status)
+
+7/19/2026
+
+[X] - Bigger lettering of platform and services
+[X] - Better filtering from the start of codes that dont work anymore (added expired/stale pruning + garbage-code gate + one-time data cleanup)
+[X] - Bug: Fix getting codes for other stores (traveloka, airpaz, emirates in Angkas Everysaving)
+[X] - UI/UX: Fix button placement of filter, refresh, and Add
+[X] - UX: make all worthepenny one source only when filtering
+[X] - UI: checking Expiring, Bookmarked, and Used nudges the Filter sidebar to the right. it should stay in place
+[X] - UI/UX: Promo code dropdown visibility bug, probably needs overhaul
+[X] - UI: center code in container
+[X] - UI/UX: long descriptions get cut off and there's no way to view the whole text (expand-in-place)
+[X] - Removed dead/broken scrapers (couponfollow, facebook, official-pages, unused discovery plumbing)
+[X] - Hardened scraper fetches with retries + throttled Reddit requests
+[X] - Added Chrome/xvfb install to CI so WorthePenny can run headed there
+[X] - Added toast notifications for copy/bookmark/working/used/scrape/add failures and successes

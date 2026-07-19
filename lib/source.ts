@@ -4,6 +4,7 @@ const SOURCE_LABELS: Array<[RegExp, string]> = [
   [/wethrift\.com$/i, "Wethrift"],
   [/picodi\.com$/i, "Picodi"],
   [/everysaving\.ph$/i, "EverySaving"],
+  [/(^|\.)worthepenny\.com$/i, "WorthePenny"],
   [/reddit\.com$/i, "Reddit"],
   [/facebook\.com$/i, "Facebook"],
   [/grab\.com$/i, "Grab"],

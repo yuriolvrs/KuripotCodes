@@ -74,21 +74,14 @@ The scraper interface lives in `lib/scrapers/types.ts`.
 
 Implemented:
 
-- `wethrift.ts`: fetches Wethrift coupon pages, extracts likely promo codes, parses discount and expiry hints, and normalizes results.
+- `coupon-sites.ts`: scrapes iPrice, Rappler, and EverySaving coupon listing pages.
+- `picodi.ts`: scrapes Picodi's Grab coupon page.
+- `wethrift.ts`: fetches Wethrift coupon pages, extracts likely promo codes, parses discount and expiry hints, and normalizes results. Falls back to a small set of hardcoded codes per platform only when the live fetch fails or returns nothing.
 - `reddit.ts`: searches public Reddit JSON endpoints for recent posts mentioning ride-hailing promos.
-- `grab.ts`: simple official-source scraper for the Grab Philippines blog.
+- `grab.ts`: official-source scraper for the Grab Philippines blog plus Worthepenny.
+- `angkas.ts`, `moveit.ts`, `indrive.ts`, `joyride.ts`: platform-specific scrapers combining EverySaving/Worthepenny with Reddit.
 
-Scaffolded for extension:
-
-- `angkas.ts`
-- `moveit.ts`
-- `indrive.ts`
-- `joyride.ts`
-- `couponfollow.ts`
-- `facebook.ts`
-- `discovery.ts`
-
-Facebook scraping is intentionally limited to public pages/posts that are accessible without login.
+Facebook and CouponFollow scraping were scaffolded but never implemented reliably (no public API access, or a stub); they were removed rather than left as always-failing/no-op entries in the pipeline.
 
 ## Data Model
 
