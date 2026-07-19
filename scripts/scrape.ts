@@ -10,7 +10,12 @@ async function writeStepSummary(result: Awaited<ReturnType<typeof runScrapePipel
     "",
     `- Found: ${result.found.length}`,
     `- Saved: ${result.saved.length}`,
-    `- Failures: ${result.failures.length}`
+    `- New promos this run: ${result.newPromos}`,
+    `- Failures: ${result.failures.length}`,
+    "",
+    "| Scraper | Found |",
+    "| --- | --- |",
+    ...result.counts.map((c) => `| ${c.scraper} | ${c.found} |`)
   ];
 
   if (result.failures.length > 0) {
@@ -29,6 +34,10 @@ async function main() {
   console.log(`Scrape complete`);
   console.log(`Found: ${result.found.length}`);
   console.log(`Saved: ${result.saved.length}`);
+  console.log(`New promos this run: ${result.newPromos}`);
+  for (const c of result.counts) {
+    console.log(`- ${c.scraper}: ${c.found} promos`);
+  }
 
   if (result.failures.length > 0) {
     console.log(`Failures: ${result.failures.length}`);

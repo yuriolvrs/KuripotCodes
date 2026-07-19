@@ -5,6 +5,7 @@ import { angkasScraper } from "./scrapers/angkas";
 import { couponSitesScraper } from "./scrapers/coupon-sites";
 import { grabScraper } from "./scrapers/grab";
 import { inDriveScraper } from "./scrapers/indrive";
+import { ivoucherCodesScraper } from "./scrapers/ivouchercodes";
 import { joyRideScraper } from "./scrapers/joyride";
 import { moveItScraper } from "./scrapers/moveit";
 import { picodiScraper } from "./scrapers/picodi";
@@ -21,7 +22,8 @@ const SCRAPERS: Scraper[] = [
   angkasScraper,
   moveItScraper,
   inDriveScraper,
-  joyRideScraper
+  joyRideScraper,
+  ivoucherCodesScraper
 ];
 
 export const SCRAPER_COUNT = SCRAPERS.length;
@@ -30,6 +32,8 @@ export interface ScrapeResult {
   found: Promo[];
   saved: Promo[];
   failures: Array<{ scraper: string; message: string }>;
+  counts: Array<{ scraper: string; found: number }>;
+  newPromos: number;
 }
 
 export async function runScrapePipeline(now = new Date()): Promise<ScrapeResult> {
@@ -48,17 +52,22 @@ export async function runScrapePipeline(now = new Date()): Promise<ScrapeResult>
 
   const found: Promo[] = [];
   const failures: ScrapeResult["failures"] = [];
+  const counts: ScrapeResult["counts"] = [];
 
   for (const result of settled) {
     found.push(...result.promos);
+    counts.push({ scraper: result.scraper, found: result.promos.length });
     if (result.error) {
       failures.push({ scraper: result.scraper, message: result.error });
     }
   }
 
   const current = await loadPromos();
+  const existingIds = new Set(current.map((promo) => promo.id));
   const saved = mergePromos(current, found, now);
   await savePromos(saved);
 
-  return { found, saved, failures };
+  const newPromos = saved.filter((promo) => !existingIds.has(promo.id)).length;
+
+  return { found, saved, failures, counts, newPromos };
 }

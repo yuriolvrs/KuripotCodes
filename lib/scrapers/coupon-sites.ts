@@ -1,7 +1,10 @@
 import { parseLooseDate, toIsoDate } from "../date";
 import type { Platform, RawPromo } from "../types";
-import { decodeEntities, fetchText, rawToPromos, stripHtml, uniqueBy } from "./shared";
+import { decodeEntities, fetchText, mapWithConcurrency, rawToPromos, stripHtml, uniqueBy } from "./shared";
 import type { Scraper } from "./types";
+
+const RAPPLER_REVEAL_CONCURRENCY = 2;
+const RAPPLER_REVEAL_SPACING_MS = 500;
 
 type CouponTarget = {
   source: "iprice" | "rappler" | "everysaving";
@@ -19,6 +22,14 @@ const COUPON_TARGETS: CouponTarget[] = [
   { source: "everysaving", platform: "Angkas", url: "https://www.everysaving.ph/shop/angkas.com" },
   { source: "everysaving", platform: "JoyRide", url: "https://www.everysaving.ph/shop/joyride.com.ph" }
 ];
+
+// iprice/rappler list pages mix in unrelated e-commerce/travel deals
+// alongside the target platform's coupons. Word-boundary title checks like
+// isPlatformMention alone aren't enough — "Grab" also reads as a verb in ad
+// copy ("Grab P2,000 off sitewide at Lazada"). Veto anything that clearly
+// belongs to a different brand.
+const FOREIGN_BRAND_BLOCKLIST =
+  /\b(lazada|shopee|zalora|foodpanda|grubhub|traveloka|airpaz|emirates|klook|agoda|expedia|booking\.com)\b/i;
 
 function clean(value?: string) {
   return decodeEntities(stripHtml(value ?? "")).trim();
@@ -64,8 +75,10 @@ export function parseIpricePage(platform: Platform, sourceUrl: string, html: str
     if (!title || !/\b(grab|angkas|joy\s*ride|ride|voucher|promo|coupon|discount)\b/i.test(title)) {
       return [];
     }
+    if (FOREIGN_BRAND_BLOCKLIST.test(title)) return [];
 
     const description = clean(block.match(/<div class="rh_gr_middle_desc[^"]*"[^>]*>([\s\S]*?)<\/div>/i)?.[1]);
+    if (FOREIGN_BRAND_BLOCKLIST.test(description)) return [];
     const code = visibleCode(block.match(/\bdata-clipboard-text="([^"]+)"/i)?.[1]);
     const dealUrl = decodeAttribute(block.match(/<h2\b[\s\S]*?<a\b[^>]*href="([^"]+)"/i)?.[1]);
     const status = parseStatus(block);
@@ -129,6 +142,7 @@ export function parseRapplerPage(platform: Platform, sourceUrl: string, html: st
 }
 
 function isPlatformMention(text: string, platform: Platform) {
+  if (FOREIGN_BRAND_BLOCKLIST.test(text)) return false;
   if (platform === "Move It") return /\bmove\s*it\b/i.test(text);
   if (platform === "JoyRide") return /\bjoy\s*ride\b/i.test(text);
   return new RegExp(`\\b${platform}\\b`, "i").test(text);
@@ -177,7 +191,7 @@ function parseRapplerCards(platform: Platform, sourceUrl: string, html: string):
   });
 }
 
-function extractRapplerRevealCode(html: string) {
+export function extractRapplerRevealCode(html: string) {
   return visibleCode(html.match(/<p id="code">([\s\S]*?)<\/p>/i)?.[1]);
 }
 
@@ -190,15 +204,26 @@ function isRapplerRevealUrl(url: string) {
 }
 
 async function addRapplerRevealCodes(rawPromos: RawPromo[], referer: string) {
-  const settled = await Promise.allSettled(
-    rawPromos.map(async (promo): Promise<RawPromo> => {
-      if (promo.code || !isRapplerRevealUrl(promo.sourceUrl)) return promo;
+  let attempted = 0;
+  let revealed = 0;
 
-      const revealHtml = await fetchText(promo.sourceUrl, 15000, { referer });
-      const code = extractRapplerRevealCode(revealHtml);
-      return code ? { ...promo, code } : promo;
-    })
-  );
+  const settled = await mapWithConcurrency(rawPromos, RAPPLER_REVEAL_CONCURRENCY, async (promo): Promise<RawPromo> => {
+    if (promo.code || !isRapplerRevealUrl(promo.sourceUrl)) return promo;
+
+    attempted += 1;
+    await new Promise((resolve) => setTimeout(resolve, RAPPLER_REVEAL_SPACING_MS));
+
+    const revealHtml = await fetchText(promo.sourceUrl, 15000, { referer });
+    const code = extractRapplerRevealCode(revealHtml);
+    if (code) revealed += 1;
+    return code ? { ...promo, code } : promo;
+  });
+
+  if (attempted > 0) {
+    const message = `[coupon-sites] rappler reveal: ${revealed}/${attempted} codes revealed for ${referer}`;
+    if (revealed === 0) console.warn(message);
+    else console.log(message);
+  }
 
   return settled.map((result, index) => (result.status === "fulfilled" ? result.value : rawPromos[index]));
 }

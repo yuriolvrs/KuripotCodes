@@ -51,3 +51,11 @@
 [X] - Dark mode with a sidebar toggle, persisted, and no flash-of-wrong-theme on load
 [X] - Stable ids for codeless promos (title-based, not tied to sourceUrl) so bookmarks/flags survive a source URL changing
 [X] - Added vitest + fixture/unit tests for scraper parsers and normalize/merge logic (38 tests)
+
+7/19/2026 (scraping fix)
+
+[X] - Bug: scraper wasn't finding new codes. Diagnosed: wethrift.com 403 masked by hardcoded fallback codes (removed, now surfaces as an honest failure); reddit www.reddit.com/*.json blocked (switched to old.reddit.com RSS + deduped the copy embedded in angkas.ts); rappler reveal-code fetches were silently rate-limited (throttled to concurrency 2, now succeeds ~50%+ of the time, logs N/M revealed)
+[X] - New source: ivouchercodes.ph for Grab/Angkas/JoyRide (inline codes via data-clipboard-text, platform-filtered via the site's own stores-<slug> class)
+[X] - Bug: iprice/rappler were tagging unrelated Lazada/foodpanda/etc ads as "Grab" promos because "grab" also reads as a verb in ad copy - added a foreign-brand blocklist veto (same pattern as the EverySaving fix)
+[X] - Pipeline now reports per-scraper found counts + "new promos this run" in console and CI step summary, so a dead source is visible immediately instead of silently churning lastSeen timestamps
+[X] - Verified via two consecutive local scrape runs: first run found 3 genuine new codes (HELLOGRABBER, GRABFREE, NOLATE) with zero junk; second run confirmed idempotence (0 new promos, no duplicate/drift)

@@ -2,15 +2,14 @@ import { detectPlatform } from "../normalize";
 import type { RawPromo } from "../types";
 import { extractCodes, extractExpiry, fetchText, rawToPromos, stripHtml, titleFromText, uniqueBy } from "./shared";
 import { scrapeEverySaving } from "./everysaving";
+import { searchSubredditRss } from "./reddit";
 import type { Scraper } from "./types";
 
 const EVERYSAVING_URL = "https://www.everysaving.ph/shop/angkas.com";
 const OFFICIAL_URL = "https://www.angkas.com/";
 
-const REDDIT_SEARCH_URLS = [
-  `https://www.reddit.com/r/Philippines/search.json?q=${encodeURIComponent("Angkas promo code voucher")}&restrict_sr=1&sort=new&t=month&limit=25`,
-  `https://www.reddit.com/r/PHMotorcycles/search.json?q=${encodeURIComponent("Angkas promo code voucher")}&restrict_sr=1&sort=new&t=month&limit=25`
-];
+const REDDIT_QUERY = "Angkas promo code voucher";
+const REDDIT_SUBREDDITS = ["Philippines", "PHMotorcycles"];
 
 function parseOfficialPage(html: string): RawPromo[] {
   const text = stripHtml(html);
@@ -29,41 +28,18 @@ function parseOfficialPage(html: string): RawPromo[] {
   );
 }
 
-interface RedditListing {
-  data?: {
-    children?: Array<{
-      data?: {
-        title?: string;
-        selftext?: string;
-        url?: string;
-        permalink?: string;
-        created_utc?: number;
-      };
-    }>;
-  };
-}
-
 async function scrapeReddit(): Promise<RawPromo[]> {
-  const settled = await Promise.allSettled(REDDIT_SEARCH_URLS.map((url) => fetchText(url)));
+  const settled = await Promise.allSettled(
+    REDDIT_SUBREDDITS.map((subreddit) => searchSubredditRss(subreddit, REDDIT_QUERY))
+  );
+
   const rawPromos: RawPromo[] = [];
-  let successfulRequests = 0;
 
   for (const result of settled) {
     if (result.status !== "fulfilled") continue;
-    successfulRequests += 1;
 
-    let listing: RedditListing;
-    try {
-      listing = JSON.parse(result.value) as RedditListing;
-    } catch {
-      continue;
-    }
-
-    for (const child of listing.data?.children ?? []) {
-      const post = child.data;
-      if (!post) continue;
-
-      const text = [post.title, post.selftext].filter(Boolean).join(" ");
+    for (const entry of result.value) {
+      const text = [entry.title, entry.content].filter(Boolean).join(" ");
       const platform = detectPlatform(text);
       if (platform !== "Angkas") continue;
 
@@ -73,14 +49,13 @@ async function scrapeReddit(): Promise<RawPromo[]> {
           title: titleFromText("Angkas", code, text),
           code,
           description: text.slice(0, 260),
-          sourceUrl: post.permalink ? `https://www.reddit.com${post.permalink}` : post.url ?? "https://www.reddit.com",
+          sourceUrl: entry.link || "https://old.reddit.com",
           endDate: extractExpiry(text)
         });
       }
     }
   }
 
-  if (successfulRequests === 0) return [];
   return rawPromos;
 }
 
