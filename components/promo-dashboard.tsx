@@ -1,7 +1,8 @@
 "use client";
 
 import { ArrowUpDown, Filter, LayoutGrid, Plus, RefreshCw, Search } from "lucide-react";
-import { useMemo, useState, useEffect } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useMemo, useRef, useState, useEffect } from "react";
 import { AddPromoModal } from "@/components/AddPromoModal";
 import { FilterSheet } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
@@ -85,6 +86,10 @@ const DEFAULT_FILTERS: FilterState = {
   hasCodeOnly: false,
 };
 
+function parseListParam(value: string | null): string[] {
+  return value ? value.split(",").filter(Boolean) : [];
+}
+
 interface PromoDashboardProps {
   initialPromos: Promo[];
   initialPlatform?: Platform | "All";
@@ -98,21 +103,57 @@ export function PromoDashboard({
   initialBookmarked = false,
   initialService = "All",
 }: PromoDashboardProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   const [promos, setPromos] = useState(initialPromos);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
   const [filters, setFilters] = useState<FilterState>(() => ({
-    ...DEFAULT_FILTERS,
     platforms: initialPlatform === "All" ? [] : [initialPlatform],
     services: initialService !== "All" ? [initialService] : [],
+    source: searchParams.get("src") ?? DEFAULT_FILTERS.source,
+    statuses: parseListParam(searchParams.get("status")) as PromoStatus[],
+    usedOnly: searchParams.get("used") === "1",
     bookmarkedOnly: initialBookmarked,
+    expiringSoon: searchParams.get("expiring") === "1",
+    hasCodeOnly: searchParams.get("code") === "1",
   }));
   const [filterOpen, setFilterOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<SortOption>("newest");
-  const [groupBy, setGroupBy] = useState<GroupOption>("none");
+  const [sortBy, setSortBy] = useState<SortOption>(() => {
+    const fromUrl = searchParams.get("sort");
+    return SORT_OPTIONS.some((o) => o.value === fromUrl) ? (fromUrl as SortOption) : "newest";
+  });
+  const [groupBy, setGroupBy] = useState<GroupOption>(() => {
+    const fromUrl = searchParams.get("group");
+    return GROUP_OPTIONS.some((o) => o.value === fromUrl) ? (fromUrl as GroupOption) : "none";
+  });
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const { toast } = useToast();
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      const target = event.target as HTMLElement | null;
+      const isTyping = target?.tagName === "INPUT" || target?.tagName === "TEXTAREA" || target?.isContentEditable;
+
+      if (event.key === "/" && !isTyping) {
+        event.preventDefault();
+        searchInputRef.current?.focus();
+        return;
+      }
+
+      if (event.key === "Escape" && target === searchInputRef.current) {
+        setQuery("");
+        searchInputRef.current?.blur();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   useEffect(() => {
     setFilters((prev) => ({
@@ -122,6 +163,45 @@ export function PromoDashboard({
       bookmarkedOnly: initialBookmarked,
     }));
   }, [initialPlatform, initialService, initialBookmarked]);
+
+  // Persist search/sort/group/quick-filters (not the sidebar-driven
+  // platform/service/bookmarked ones, which already round-trip through
+  // route props) so a reload doesn't reset them.
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    function setOrDelete(key: string, value: string, defaultValue: string) {
+      if (value && value !== defaultValue) params.set(key, value);
+      else params.delete(key);
+    }
+
+    setOrDelete("q", query, "");
+    setOrDelete("src", filters.source, "All");
+    setOrDelete("status", filters.statuses.join(","), "");
+    setOrDelete("used", filters.usedOnly ? "1" : "", "");
+    setOrDelete("expiring", filters.expiringSoon ? "1" : "", "");
+    setOrDelete("code", filters.hasCodeOnly ? "1" : "", "");
+    setOrDelete("sort", sortBy, "newest");
+    setOrDelete("group", groupBy, "none");
+
+    const next = params.toString();
+    if (next === searchParams.toString()) return;
+
+    const timeout = setTimeout(() => {
+      router.replace(`${pathname}${next ? `?${next}` : ""}`, { scroll: false });
+    }, 300);
+    return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    query,
+    filters.source,
+    filters.statuses,
+    filters.usedOnly,
+    filters.expiringSoon,
+    filters.hasCodeOnly,
+    sortBy,
+    groupBy,
+  ]);
 
   const activeCount = promos.filter((p) => p.status === "active").length;
 
@@ -275,14 +355,15 @@ export function PromoDashboard({
 
   return (
     <main className="flex min-h-screen flex-col">
-      <div className="sticky top-0 z-30 border-b bg-white/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.03)]">
+      <div className="sticky top-0 z-30 border-b bg-background/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.03)]">
         <div className="flex flex-wrap items-center gap-3 py-3 pl-14 pr-4 lg:px-6">
           <label className="relative min-w-[140px] flex-1 sm:max-w-md">
             <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
             <Input
+              ref={searchInputRef}
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search promos..."
+              placeholder="Search promos... (press / to focus)"
               className="h-9 pl-9"
             />
           </label>

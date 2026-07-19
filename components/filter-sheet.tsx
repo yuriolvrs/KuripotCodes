@@ -9,18 +9,18 @@ import { ALL_SERVICES } from "@/lib/service";
 import type { Platform, Promo, PromoStatus } from "@/lib/types";
 
 const PLATFORM_CHIPS: { value: Platform; label: string; bg: string; text: string; ring: string }[] = [
-  { value: "Grab", label: "Grab", bg: "bg-emerald-50", text: "text-emerald-700", ring: "ring-emerald-400 border-emerald-400" },
-  { value: "Angkas", label: "Angkas", bg: "bg-cyan-50", text: "text-cyan-700", ring: "ring-cyan-400 border-cyan-400" },
-  { value: "Move It", label: "Move It", bg: "bg-red-50", text: "text-red-700", ring: "ring-red-400 border-red-400" },
-  { value: "inDrive", label: "inDrive", bg: "bg-lime-50", text: "text-lime-700", ring: "ring-lime-400 border-lime-400" },
-  { value: "JoyRide", label: "JoyRide", bg: "bg-blue-50", text: "text-blue-700", ring: "ring-blue-400 border-blue-400" },
-  { value: "Other", label: "Other", bg: "bg-slate-100", text: "text-slate-600", ring: "ring-slate-400 border-slate-400" },
+  { value: "Grab", label: "Grab", bg: "bg-emerald-50 dark:bg-emerald-950", text: "text-emerald-700 dark:text-emerald-400", ring: "ring-emerald-400 border-emerald-400" },
+  { value: "Angkas", label: "Angkas", bg: "bg-cyan-50 dark:bg-cyan-950", text: "text-cyan-700 dark:text-cyan-400", ring: "ring-cyan-400 border-cyan-400" },
+  { value: "Move It", label: "Move It", bg: "bg-red-50 dark:bg-red-950", text: "text-red-700 dark:text-red-400", ring: "ring-red-400 border-red-400" },
+  { value: "inDrive", label: "inDrive", bg: "bg-lime-50 dark:bg-lime-950", text: "text-lime-700 dark:text-lime-400", ring: "ring-lime-400 border-lime-400" },
+  { value: "JoyRide", label: "JoyRide", bg: "bg-blue-50 dark:bg-blue-950", text: "text-blue-700 dark:text-blue-400", ring: "ring-blue-400 border-blue-400" },
+  { value: "Other", label: "Other", bg: "bg-slate-100 dark:bg-slate-800", text: "text-slate-600 dark:text-slate-300", ring: "ring-slate-400 border-slate-400" },
 ];
 
 const STATUS_CHIPS: { value: PromoStatus; label: string; bg: string; text: string; ring: string }[] = [
-  { value: "active", label: "Active", bg: "bg-emerald-50", text: "text-emerald-700", ring: "ring-emerald-400 border-emerald-400" },
-  { value: "expired", label: "Inactive", bg: "bg-red-50", text: "text-red-700", ring: "ring-red-400 border-red-400" },
-  { value: "unknown", label: "Unverified", bg: "bg-slate-100", text: "text-slate-600", ring: "ring-slate-400 border-slate-400" },
+  { value: "active", label: "Active", bg: "bg-emerald-50 dark:bg-emerald-950", text: "text-emerald-700 dark:text-emerald-400", ring: "ring-emerald-400 border-emerald-400" },
+  { value: "expired", label: "Inactive", bg: "bg-red-50 dark:bg-red-950", text: "text-red-700 dark:text-red-400", ring: "ring-red-400 border-red-400" },
+  { value: "unknown", label: "Unverified", bg: "bg-slate-100 dark:bg-slate-800", text: "text-slate-600 dark:text-slate-300", ring: "ring-slate-400 border-slate-400" },
 ];
 
 const TOGGLE_ITEMS = [
@@ -124,7 +124,7 @@ export function FilterSheet({
         onClick={onClose}
       />
 
-      <div className="relative z-50 flex h-full w-full max-w-xs flex-col border-l bg-white shadow-2xl animate-in slide-in-from-right">
+      <div className="relative z-50 flex h-full w-full max-w-xs flex-col border-l bg-background shadow-2xl animate-in slide-in-from-right">
         <div className="flex items-center justify-between border-b px-4 py-3.5">
           <div className="flex items-center gap-2">
             <h2 className="text-sm font-semibold">Filters</h2>
@@ -259,7 +259,7 @@ export function FilterSheet({
                       "rounded-full border px-3 py-1 text-sm font-medium transition-colors",
                       checked
                         ? "border-primary bg-primary/10 text-primary"
-                        : "border-input bg-white text-muted-foreground hover:border-muted-foreground/30"
+                        : "border-input bg-background text-muted-foreground hover:border-muted-foreground/30"
                     )}
                   >
                     {label}

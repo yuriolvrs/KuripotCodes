@@ -53,7 +53,7 @@ function parseStatus(block: string) {
   return /\bexpired\b/i.test(stripHtml(block)) ? ("expired" as const) : undefined;
 }
 
-function parseIpricePage(platform: Platform, sourceUrl: string, html: string, now: Date): RawPromo[] {
+export function parseIpricePage(platform: Platform, sourceUrl: string, html: string, now: Date): RawPromo[] {
   const blocks = html
     .split(/<div class="rh_offer_list\b/gi)
     .slice(1)
@@ -86,7 +86,7 @@ function parseIpricePage(platform: Platform, sourceUrl: string, html: string, no
   return uniqueBy(rawPromos, (promo) => `${promo.platform}:${promo.code || promo.title}`);
 }
 
-function parseRapplerPage(platform: Platform, sourceUrl: string, html: string): RawPromo[] {
+export function parseRapplerPage(platform: Platform, sourceUrl: string, html: string): RawPromo[] {
   const rows = Array.from(
     html.matchAll(/<tr>\s*<td>[\s\S]*?<a\b([^>]*)>([\s\S]*?)<\/a>[\s\S]*?<\/td>\s*<td>([\s\S]*?)<\/td>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>/gi)
   );
@@ -217,7 +217,7 @@ function linesFromHtml(html: string) {
     .filter(Boolean);
 }
 
-function parseEverySavingPage(platform: Platform, sourceUrl: string, html: string): RawPromo[] {
+export function parseEverySavingPage(platform: Platform, sourceUrl: string, html: string): RawPromo[] {
   const lines = linesFromHtml(html);
   const rawPromos: RawPromo[] = [];
 

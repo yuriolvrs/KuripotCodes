@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { PromoDashboard } from "@/components/promo-dashboard";
 import { loadPromos } from "@/lib/storage";
 import type { Platform } from "@/lib/types";
@@ -40,10 +41,12 @@ export default async function PlatformPage({
   }
 
   return (
-    <PromoDashboard
-      initialPromos={promos}
-      initialPlatform={platform}
-      initialService={sp.service ?? "All"}
-    />
+    <Suspense>
+      <PromoDashboard
+        initialPromos={promos}
+        initialPlatform={platform}
+        initialService={sp.service ?? "All"}
+      />
+    </Suspense>
   );
 }

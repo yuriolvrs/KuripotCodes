@@ -27,10 +27,17 @@ export function isPlausibleCode(code?: string) {
   return /^[A-Z0-9][A-Z0-9_-]{3,}$/.test(code);
 }
 
+function normalizeTitleForId(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
 export function createPromoId(promo: Pick<Promo, "platform" | "code" | "title" | "sourceUrl">) {
+  // Codeless promos key off platform+title only (not sourceUrl) so the same
+  // deal re-found on a different page, or a page whose URL shifts, keeps its
+  // id and doesn't lose its bookmarked/working/used flags.
   const stableKey = promo.code
     ? `${promo.platform}:${promo.code}`
-    : `${promo.platform}:${promo.title}:${promo.sourceUrl}`;
+    : `${promo.platform}:${normalizeTitleForId(promo.title)}`;
 
   return crypto.createHash("sha1").update(stableKey).digest("hex").slice(0, 16);
 }
@@ -108,8 +115,10 @@ export function mergePromos(existing: Promo[], incoming: Promo[], now = new Date
   const nowIso = now.toISOString();
 
   for (const promo of existing) {
-    map.set(createPromoId(promo), {
+    const id = createPromoId(promo);
+    map.set(id, {
       ...promo,
+      id,
       status: getPromoStatus(promo.endDate)
     });
   }

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { PromoDashboard } from "@/components/promo-dashboard";
 import { loadPromos } from "@/lib/storage";
 
@@ -11,11 +12,13 @@ export default async function Home({
   const promos = await loadPromos();
   const params = await searchParams;
   return (
-    <PromoDashboard
-      initialPromos={promos}
-      initialPlatform="All"
-      initialBookmarked={params.bookmarked === "1"}
-      initialService={params.service ?? "All"}
-    />
+    <Suspense>
+      <PromoDashboard
+        initialPromos={promos}
+        initialPlatform="All"
+        initialBookmarked={params.bookmarked === "1"}
+        initialService={params.service ?? "All"}
+      />
+    </Suspense>
   );
 }

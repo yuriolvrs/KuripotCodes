@@ -19,7 +19,7 @@ function clean(value?: string) {
   return decodeEntities(stripHtml(value ?? "")).trim();
 }
 
-function parsePicodiPage(platform: RawPromo["platform"], sourceUrl: string, html: string): RawPromo[] {
+export function parsePicodiPage(platform: RawPromo["platform"], sourceUrl: string, html: string): RawPromo[] {
   const blocks = Array.from(html.matchAll(/<li class="of[\s\S]*?<\/li>/gi)).map((match) => match[0]);
   const rawPromos: RawPromo[] = [];
 

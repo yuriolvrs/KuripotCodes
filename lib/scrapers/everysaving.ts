@@ -9,7 +9,7 @@ import { fetchText, stripHtml, uniqueBy } from "./shared";
 const FOREIGN_BRAND_BLOCKLIST =
   /\b(traveloka|airpaz|emirates|klook|agoda|expedia|booking\.com|cebu\s*pacific|philippine\s*airlines|airasia|scoot|qatar\s*airways|singapore\s*airlines|cathay\s*pacific|zalora|lazada|shopee|foodpanda|grubhub)\b/i;
 
-function isRelevantEntry(title: string, description: string): boolean {
+export function isRelevantEntry(title: string, description: string): boolean {
   return !FOREIGN_BRAND_BLOCKLIST.test(`${title} ${description}`);
 }
 
@@ -22,7 +22,7 @@ interface EverySavingEntry {
   totalCodes: number;
 }
 
-function decodeEntryCodes(encoded: string): string {
+export function decodeEntryCodes(encoded: string): string {
   if (!encoded) return "";
 
   encoded = encoded.slice(0, -3);
@@ -132,7 +132,7 @@ async function scrapeEverySavingWithPuppeteer(url: string, platform: Platform): 
   }
 }
 
-function parseEverySavingFromHtml(html: string, url: string, platform: Platform): RawPromo[] {
+export function parseEverySavingFromHtml(html: string, url: string, platform: Platform): RawPromo[] {
   const rawPromos: RawPromo[] = [];
 
   const entryBlocks = html.match(/<article[^>]*class="[^"]*js-ed[^"]*"[^>]*>[\s\S]*?<\/article>/gi) ?? [];

@@ -11,7 +11,7 @@ interface CheckboxProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>
 export function Checkbox({ className, label, checked, onChange, ...props }: CheckboxProps) {
   return (
     <label className="inline-flex w-full cursor-pointer items-center gap-2.5 rounded-md px-2 py-2 text-sm hover:bg-muted/50">
-      <span className="relative grid size-4 shrink-0 place-items-center rounded border border-input bg-white">
+      <span className="relative grid size-4 shrink-0 place-items-center rounded border border-input bg-background">
         <input
           type="checkbox"
           checked={checked}

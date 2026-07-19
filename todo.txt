@@ -44,3 +44,10 @@
 [X] - Hardened scraper fetches with retries + throttled Reddit requests
 [X] - Added Chrome/xvfb install to CI so WorthePenny can run headed there
 [X] - Added toast notifications for copy/bookmark/working/used/scrape/add failures and successes
+[X] - URL-persisted search/sort/group/quick-filters (survive reload, shareable links)
+[X] - Keyboard shortcuts: "/" to focus search, Esc to clear it
+[X] - Pending states on bookmark/working/used actions while saving
+[X] - Used-card readability (muted background + strikethrough code instead of full opacity fade)
+[X] - Dark mode with a sidebar toggle, persisted, and no flash-of-wrong-theme on load
+[X] - Stable ids for codeless promos (title-based, not tied to sourceUrl) so bookmarks/flags survive a source URL changing
+[X] - Added vitest + fixture/unit tests for scraper parsers and normalize/merge logic (38 tests)

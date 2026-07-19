@@ -17,9 +17,10 @@ interface MenuGroup {
 interface MenuProps {
   groups: MenuGroup[];
   trigger?: React.ReactNode;
+  disabled?: boolean;
 }
 
-export function Menu({ groups, trigger = "Menu" }: MenuProps) {
+export function Menu({ groups, trigger = "Menu", disabled = false }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -48,6 +49,7 @@ export function Menu({ groups, trigger = "Menu" }: MenuProps) {
         variant="ghost"
         size="sm"
         onClick={() => setIsOpen(!isOpen)}
+        disabled={disabled}
         className="h-8 w-8 p-0"
         title="Toggle options"
         aria-haspopup="menu"
@@ -56,12 +58,12 @@ export function Menu({ groups, trigger = "Menu" }: MenuProps) {
         {trigger}
       </Button>
 
-      {isOpen && (
-        <div role="menu" className="absolute right-0 z-50 mt-1 w-48 rounded-md border bg-white shadow-lg">
+      {isOpen && !disabled && (
+        <div role="menu" className="absolute right-0 z-50 mt-1 w-48 rounded-md border bg-popover text-popover-foreground shadow-lg">
           {groups.map((group, groupIndex) => (
             <div key={groupIndex}>
               {group.label && (
-                <div className="px-3 py-2 text-xs font-semibold uppercase text-gray-500">
+                <div className="px-3 py-2 text-xs font-semibold uppercase text-muted-foreground">
                   {group.label}
                 </div>
               )}
@@ -74,10 +76,10 @@ export function Menu({ groups, trigger = "Menu" }: MenuProps) {
                       option.onClick();
                       setIsOpen(false);
                     }}
-                    className="flex w-full items-center justify-between px-3 py-2 text-sm hover:bg-gray-100"
+                    className="flex w-full items-center justify-between px-3 py-2 text-sm hover:bg-muted"
                   >
                     <span>{option.label}</span>
-                    {option.active && <Check className="size-4 text-green-600" />}
+                    {option.active && <Check className="size-4 text-emerald-500" />}
                   </button>
                 ))}
               </div>

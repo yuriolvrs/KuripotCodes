@@ -8,6 +8,7 @@ import {
   ShoppingBag, ShoppingCart, Ticket, Truck, UtensilsCrossed, X
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 const grabServices = [
@@ -204,7 +205,8 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
       </nav>
 
       <div className="border-t p-3">
-        <p className="px-2 text-[11px] text-muted-foreground">
+        <ThemeToggle />
+        <p className="mt-2 px-2 text-[11px] text-muted-foreground">
           PH Ride Promo Aggregator
         </p>
       </div>
@@ -219,7 +221,7 @@ export function Sidebar() {
     <>
       <button
         type="button"
-        className="fixed left-3 top-3 z-50 rounded-md border bg-white p-2 lg:hidden"
+        className="fixed left-3 top-3 z-50 rounded-md border bg-background p-2 lg:hidden"
         onClick={() => setMobileOpen(true)}
         aria-label="Open menu"
       >
@@ -235,7 +237,7 @@ export function Sidebar() {
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-50 flex w-56 flex-col border-r bg-white transition-transform lg:sticky lg:top-0 lg:h-screen lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-50 flex w-56 flex-col border-r bg-background transition-transform lg:sticky lg:top-0 lg:h-screen lg:translate-x-0",
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >

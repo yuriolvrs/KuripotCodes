@@ -15,10 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="flex h-screen overflow-hidden">
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()"
+          }}
+        />
         <ToastProvider>
-          <Suspense fallback={<div className="w-56 border-r bg-white" />}>
+          <Suspense fallback={<div className="w-56 border-r bg-background" />}>
             <Sidebar />
           </Suspense>
           <div className="flex-1 overflow-y-auto [scrollbar-gutter:stable]">{children}</div>

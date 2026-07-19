@@ -13,12 +13,12 @@ import { sourceSiteName } from "@/lib/source";
 import { promoServiceName } from "@/lib/service";
 
 const platformColors: Record<Platform, string> = {
-  Grab: "bg-emerald-50 text-emerald-700 border-emerald-200",
-  Angkas: "bg-cyan-50 text-cyan-700 border-cyan-200",
-  "Move It": "bg-red-50 text-red-700 border-red-200",
-  inDrive: "bg-lime-50 text-lime-800 border-lime-200",
-  JoyRide: "bg-blue-50 text-blue-700 border-blue-200",
-  Other: "bg-slate-100 text-slate-700 border-slate-200",
+  Grab: "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-400 dark:border-emerald-800",
+  Angkas: "bg-cyan-50 text-cyan-700 border-cyan-200 dark:bg-cyan-950 dark:text-cyan-400 dark:border-cyan-800",
+  "Move It": "bg-red-50 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-400 dark:border-red-800",
+  inDrive: "bg-lime-50 text-lime-800 border-lime-200 dark:bg-lime-950 dark:text-lime-400 dark:border-lime-800",
+  JoyRide: "bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-400 dark:border-blue-800",
+  Other: "bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700",
 };
 
 const platformDots: Record<Platform, string> = {
@@ -50,6 +50,8 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
   const [used, setUsed] = useState(promo.used);
   const [bookmarked, setBookmarked] = useState(promo.bookmarked);
   const [descriptionExpanded, setDescriptionExpanded] = useState(false);
+  const [isBookmarkPending, setIsBookmarkPending] = useState(false);
+  const [isFieldPending, setIsFieldPending] = useState(false);
   const sourceName = sourceSiteName(promo.sourceUrl);
   const serviceName = promoServiceName(promo);
   const { toast } = useToast();
@@ -66,6 +68,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
   }
 
   async function toggleBookmark() {
+    setIsBookmarkPending(true);
     try {
       const newVal = !bookmarked;
       setBookmarked(newVal);
@@ -84,10 +87,13 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
     } catch {
       setBookmarked(!bookmarked);
       toast({ title: "Couldn't update bookmark", variant: "error" });
+    } finally {
+      setIsBookmarkPending(false);
     }
   }
 
   async function updateField(field: "working" | "used", value: boolean | null) {
+    setIsFieldPending(true);
     try {
       const res = await fetch("/api/promo", {
         method: "PATCH",
@@ -101,6 +107,8 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
       onUpdate?.({ ...promo, ...updated });
     } catch {
       toast({ title: `Couldn't update ${field} status`, variant: "error" });
+    } finally {
+      setIsFieldPending(false);
     }
   }
 
@@ -139,7 +147,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
     <Card
       className={cn(
         "group flex h-full flex-col transition-shadow hover:shadow-md",
-        used && "opacity-60",
+        used && "bg-muted/40",
         working === true && "ring-1 ring-emerald-200",
         working === false && "ring-1 ring-red-200"
       )}
@@ -162,7 +170,8 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
             <button
               type="button"
               onClick={toggleBookmark}
-              className="rounded p-1 hover:bg-muted"
+              disabled={isBookmarkPending}
+              className="rounded p-1 hover:bg-muted disabled:opacity-50"
               aria-label={bookmarked ? "Remove bookmark" : "Bookmark"}
             >
               <Star
@@ -174,6 +183,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
             </button>
             <Menu
               groups={menuGroups}
+              disabled={isFieldPending}
               trigger={
                 <span className="flex size-7 items-center justify-center rounded hover:bg-muted">
                   <MoreVertical className="size-3.5 text-muted-foreground" />

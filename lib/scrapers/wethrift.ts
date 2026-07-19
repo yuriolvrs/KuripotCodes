@@ -56,7 +56,7 @@ function getRelevantSnippets(html: string) {
   return snippets.map(stripHtml).filter(Boolean);
 }
 
-function parseWethriftPage(platform: RawPromo["platform"], sourceUrl: string, html: string): RawPromo[] {
+export function parseWethriftPage(platform: RawPromo["platform"], sourceUrl: string, html: string): RawPromo[] {
   const pageText = stripHtml(html);
   const snippets = getRelevantSnippets(html);
   const codes = extractCodes(pageText);

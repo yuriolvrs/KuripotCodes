@@ -48,9 +48,9 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
             key={t.id}
             role="status"
             className={cn(
-              "pointer-events-auto flex w-full max-w-sm items-start gap-2 rounded-md border bg-white px-3 py-2.5 text-sm shadow-lg",
-              t.variant === "success" && "border-emerald-200",
-              t.variant === "error" && "border-red-200"
+              "pointer-events-auto flex w-full max-w-sm items-start gap-2 rounded-md border bg-popover px-3 py-2.5 text-sm text-popover-foreground shadow-lg",
+              t.variant === "success" && "border-emerald-300 dark:border-emerald-800",
+              t.variant === "error" && "border-red-300 dark:border-red-800"
             )}
           >
             {t.variant === "success" && <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-600" />}
