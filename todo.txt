@@ -9,7 +9,6 @@
 6/3/2026
 [ ] - Bug: Fix getting codes for other stores (traveloka, airpaz, emirates in Angkas Everysaving)
 [ ] - UI/UX: Fix button placement of filter, refresh, and Add
-[ ] - Feat: add sort
 [ ] - UX: make all worthepenny one source only when filtering
 [ ] - UI: checking Expiring, Bookmarked, and Used nudges the Filter sidebar to the right. it should stay in place 
 [ ] - UI/UX: Promo code dropdown visibility bug, probably needs overhaul
@@ -39,3 +38,4 @@
 [X] - UI: sidebar and main window line alignment
 [X] - UI/UX: Improve filter menu
 [X] - UX: in Filter, when a Platform is selected, the services that show up in the dropdown should be of that platform only
+[X] - Feat: add sort (and group by platform/service/status)

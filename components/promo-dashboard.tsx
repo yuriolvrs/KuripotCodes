@@ -1,16 +1,66 @@
 "use client";
 
-import { Filter, Plus, RefreshCw, Search } from "lucide-react";
+import { ArrowUpDown, Filter, LayoutGrid, Plus, RefreshCw, Search } from "lucide-react";
 import { useMemo, useState, useEffect } from "react";
 import { AddPromoModal } from "@/components/AddPromoModal";
 import { FilterSheet } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Select } from "@/components/ui/select";
 import { type Platform, type Promo, type PromoStatus } from "@/lib/types";
 import { isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
 import { promoServiceName } from "@/lib/service";
+
+type SortOption = "newest" | "oldest" | "expiring" | "platform";
+type GroupOption = "none" | "platform" | "service" | "status";
+
+const SORT_OPTIONS: { label: string; value: SortOption }[] = [
+  { label: "Newest", value: "newest" },
+  { label: "Oldest", value: "oldest" },
+  { label: "Expiring soon", value: "expiring" },
+  { label: "Platform (A-Z)", value: "platform" },
+];
+
+const GROUP_OPTIONS: { label: string; value: GroupOption }[] = [
+  { label: "No grouping", value: "none" },
+  { label: "Platform", value: "platform" },
+  { label: "Service", value: "service" },
+  { label: "Status", value: "status" },
+];
+
+const STATUS_LABELS: Record<PromoStatus, string> = {
+  active: "Active",
+  expired: "Expired",
+  unknown: "Unknown",
+};
+
+const STATUS_ORDER: PromoStatus[] = ["active", "unknown", "expired"];
+
+function sortPromos(list: Promo[], sortBy: SortOption): Promo[] {
+  const sorted = [...list];
+  switch (sortBy) {
+    case "newest":
+      sorted.sort((a, b) => b.lastSeen.localeCompare(a.lastSeen));
+      break;
+    case "oldest":
+      sorted.sort((a, b) => a.firstSeen.localeCompare(b.firstSeen));
+      break;
+    case "expiring":
+      sorted.sort((a, b) => {
+        if (!a.endDate && !b.endDate) return 0;
+        if (!a.endDate) return 1;
+        if (!b.endDate) return -1;
+        return a.endDate.localeCompare(b.endDate);
+      });
+      break;
+    case "platform":
+      sorted.sort((a, b) => a.platform.localeCompare(b.platform));
+      break;
+  }
+  return sorted;
+}
 
 interface FilterState {
   platforms: Platform[];
@@ -56,6 +106,8 @@ export function PromoDashboard({
     bookmarkedOnly: initialBookmarked,
   }));
   const [filterOpen, setFilterOpen] = useState(false);
+  const [sortBy, setSortBy] = useState<SortOption>("newest");
+  const [groupBy, setGroupBy] = useState<GroupOption>("none");
   const [isScraping, setIsScraping] = useState(false);
   const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -124,6 +176,39 @@ export function PromoDashboard({
       );
     });
   }, [promos, query, filters]);
+
+  const sortedPromos = useMemo(
+    () => sortPromos(filteredPromos, sortBy),
+    [filteredPromos, sortBy]
+  );
+
+  const groupedPromos = useMemo(() => {
+    if (groupBy === "none") return null;
+
+    const groups = new Map<string, Promo[]>();
+    for (const promo of sortedPromos) {
+      const key =
+        groupBy === "platform"
+          ? promo.platform
+          : groupBy === "service"
+            ? promoServiceName(promo) ?? promo.platform
+            : promo.status;
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key)!.push(promo);
+    }
+
+    const entries = Array.from(groups.entries());
+    if (groupBy === "status") {
+      entries.sort(
+        ([a], [b]) =>
+          STATUS_ORDER.indexOf(a as PromoStatus) - STATUS_ORDER.indexOf(b as PromoStatus)
+      );
+      return entries.map(([key, items]) => [STATUS_LABELS[key as PromoStatus], items] as const);
+    }
+
+    entries.sort(([a], [b]) => a.localeCompare(b));
+    return entries as [string, Promo[]][];
+  }, [sortedPromos, groupBy]);
 
   const activeFilterCount = (() => {
     let count = 0;
@@ -219,6 +304,27 @@ export function PromoDashboard({
           </Button>
         </div>
 
+        <div className="flex flex-wrap items-center gap-2 border-t px-4 py-2 lg:px-6">
+          <div className="flex items-center gap-1.5">
+            <ArrowUpDown className="size-3.5 shrink-0 text-muted-foreground" />
+            <Select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              options={SORT_OPTIONS}
+              className="h-8 w-[135px] text-xs"
+            />
+          </div>
+          <div className="flex items-center gap-1.5">
+            <LayoutGrid className="size-3.5 shrink-0 text-muted-foreground" />
+            <Select
+              value={groupBy}
+              onChange={(e) => setGroupBy(e.target.value as GroupOption)}
+              options={GROUP_OPTIONS}
+              className="h-8 w-[135px] text-xs"
+            />
+          </div>
+        </div>
+
         <div className="flex items-center gap-4 border-t px-4 py-2 text-xs text-muted-foreground lg:px-6">
           <span>
             <strong className="text-foreground">{promos.length}</strong> Total
@@ -237,12 +343,32 @@ export function PromoDashboard({
       </div>
 
       <section className="flex-1 px-4 py-5 lg:px-6">
-        {filteredPromos.length > 0 ? (
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {filteredPromos.map((promo) => (
-              <PromoCard key={promo.id} promo={promo} onUpdate={handlePromoUpdate} />
-            ))}
-          </div>
+        {sortedPromos.length > 0 ? (
+          groupedPromos ? (
+            <div className="space-y-8">
+              {groupedPromos.map(([label, items]) => (
+                <div key={label}>
+                  <h2 className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
+                    {label}
+                    <span className="rounded-full bg-muted px-2 py-0.5 text-xs font-normal text-muted-foreground">
+                      {items.length}
+                    </span>
+                  </h2>
+                  <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                    {items.map((promo) => (
+                      <PromoCard key={promo.id} promo={promo} onUpdate={handlePromoUpdate} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {sortedPromos.map((promo) => (
+                <PromoCard key={promo.id} promo={promo} onUpdate={handlePromoUpdate} />
+              ))}
+            </div>
+          )
         ) : (
           <div className="flex min-h-64 flex-col items-center justify-center rounded-lg border border-dashed p-8 text-center">
             <p className="text-lg font-semibold">No promos match your filters</p>
