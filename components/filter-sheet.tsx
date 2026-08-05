@@ -14,6 +14,9 @@ const PLATFORM_CHIPS: { value: Platform; label: string; bg: string; text: string
   { value: "Move It", label: "Move It", bg: "bg-red-50 dark:bg-red-950", text: "text-red-700 dark:text-red-400", ring: "ring-red-400 border-red-400" },
   { value: "inDrive", label: "inDrive", bg: "bg-lime-50 dark:bg-lime-950", text: "text-lime-700 dark:text-lime-400", ring: "ring-lime-400 border-lime-400" },
   { value: "JoyRide", label: "JoyRide", bg: "bg-blue-50 dark:bg-blue-950", text: "text-blue-700 dark:text-blue-400", ring: "ring-blue-400 border-blue-400" },
+  { value: "Shopee", label: "Shopee", bg: "bg-orange-50 dark:bg-orange-950", text: "text-orange-700 dark:text-orange-400", ring: "ring-orange-400 border-orange-400" },
+  { value: "Lazada", label: "Lazada", bg: "bg-violet-50 dark:bg-violet-950", text: "text-violet-700 dark:text-violet-400", ring: "ring-violet-400 border-violet-400" },
+  { value: "Foodpanda", label: "Foodpanda", bg: "bg-pink-50 dark:bg-pink-950", text: "text-pink-700 dark:text-pink-400", ring: "ring-pink-400 border-pink-400" },
   { value: "Other", label: "Other", bg: "bg-slate-100 dark:bg-slate-800", text: "text-slate-600 dark:text-slate-300", ring: "ring-slate-400 border-slate-400" },
 ];
 
@@ -30,6 +33,8 @@ const TOGGLE_ITEMS = [
   { key: "usedOnly", label: "Used" },
 ] as const;
 
+type NewUserFilter = "any" | "only" | "exclude";
+
 interface FilterState {
   platforms: Platform[];
   services: string[];
@@ -39,7 +44,14 @@ interface FilterState {
   bookmarkedOnly: boolean;
   expiringSoon: boolean;
   hasCodeOnly: boolean;
+  newUserFilter: NewUserFilter;
 }
+
+const NEW_USER_FILTER_OPTIONS: { value: NewUserFilter; label: string }[] = [
+  { value: "any", label: "Any" },
+  { value: "only", label: "New users only" },
+  { value: "exclude", label: "Exclude new-user-only" },
+];
 
 interface FilterSheetProps {
   open: boolean;
@@ -86,7 +98,8 @@ export function FilterSheet({
     (state.usedOnly ? 1 : 0) +
     (state.bookmarkedOnly ? 1 : 0) +
     (state.expiringSoon ? 1 : 0) +
-    (state.hasCodeOnly ? 1 : 0);
+    (state.hasCodeOnly ? 1 : 0) +
+    (state.newUserFilter !== "any" ? 1 : 0);
 
   const visibleServices = getVisibleServices(state.platforms);
 
@@ -95,7 +108,7 @@ export function FilterSheet({
       ? state.platforms.filter((x) => x !== p)
       : [...state.platforms, p];
     const nextServices = state.services.filter((s) => {
-      const stillVisible = getVisibleServices(next).some((vs) => vs.service === s);
+      const stillVisible = getVisibleServices(next).some((vs) => `${vs.platform}::${vs.service}` === s);
       return stillVisible;
     });
     onChange({ platforms: next, services: nextServices });
@@ -180,13 +193,14 @@ export function FilterSheet({
               </label>
               <div className="flex flex-wrap gap-1.5">
                 {visibleServices.map(({ platform, service }) => {
-                  const isActive = state.services.includes(service);
+                  const value = `${platform}::${service}`;
+                  const isActive = state.services.includes(value);
                   const color = PLATFORM_CHIPS.find((c) => c.value === platform)!;
                   return (
                     <button
-                      key={service}
+                      key={value}
                       type="button"
-                      onClick={() => toggleService(service)}
+                      onClick={() => toggleService(value)}
                       className={cn(
                         "rounded-md border px-2.5 py-1.5 text-sm font-medium transition-all",
                         color.bg, color.text,
@@ -241,6 +255,32 @@ export function FilterSheet({
               onChange={(e) => onChange({ source: e.target.value })}
               className="w-full"
             />
+          </div>
+
+          <div className="space-y-2">
+            <label className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+              New user promos
+            </label>
+            <div className="flex flex-wrap gap-1.5">
+              {NEW_USER_FILTER_OPTIONS.map((opt) => {
+                const isActive = state.newUserFilter === opt.value;
+                return (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    onClick={() => onChange({ newUserFilter: opt.value })}
+                    className={cn(
+                      "rounded-full border px-3 py-1 text-sm font-medium transition-colors",
+                      isActive
+                        ? "border-primary bg-primary/10 text-primary"
+                        : "border-input bg-background text-muted-foreground hover:border-muted-foreground/30"
+                    )}
+                  >
+                    {opt.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           <div className="space-y-0.5">

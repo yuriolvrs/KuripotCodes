@@ -84,7 +84,10 @@ export const redditScraper: Scraper = {
   name: "reddit",
   async run({ now }) {
     const queries = SUBREDDITS.flatMap((subreddit) =>
-      TERMS.map((term) => ({ subreddit, query: `Grab Angkas "Move It" inDrive JoyRide ${term}` }))
+      TERMS.map((term) => ({
+        subreddit,
+        query: `Grab Angkas "Move It" inDrive JoyRide Shopee Lazada foodpanda ${term}`
+      }))
     );
 
     const settled = await mapWithConcurrency(queries, REQUEST_CONCURRENCY, async ({ subreddit, query }) => {

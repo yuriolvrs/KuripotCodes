@@ -10,7 +10,7 @@ import { useToast } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
 import type { Platform, Promo } from "@/lib/types";
 import { sourceSiteName } from "@/lib/source";
-import { promoServiceName } from "@/lib/service";
+import { promoServiceName, isNewUserOnly } from "@/lib/service";
 
 const platformColors: Record<Platform, string> = {
   Grab: "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-400 dark:border-emerald-800",
@@ -18,6 +18,9 @@ const platformColors: Record<Platform, string> = {
   "Move It": "bg-red-50 text-red-700 border-red-200 dark:bg-red-950 dark:text-red-400 dark:border-red-800",
   inDrive: "bg-lime-50 text-lime-800 border-lime-200 dark:bg-lime-950 dark:text-lime-400 dark:border-lime-800",
   JoyRide: "bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-400 dark:border-blue-800",
+  Shopee: "bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-950 dark:text-orange-400 dark:border-orange-800",
+  Lazada: "bg-violet-50 text-violet-700 border-violet-200 dark:bg-violet-950 dark:text-violet-400 dark:border-violet-800",
+  Foodpanda: "bg-pink-50 text-pink-700 border-pink-200 dark:bg-pink-950 dark:text-pink-400 dark:border-pink-800",
   Other: "bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700",
 };
 
@@ -27,6 +30,9 @@ const platformDots: Record<Platform, string> = {
   "Move It": "bg-red-500",
   inDrive: "bg-lime-500",
   JoyRide: "bg-blue-500",
+  Shopee: "bg-orange-500",
+  Lazada: "bg-violet-500",
+  Foodpanda: "bg-pink-500",
   Other: "bg-slate-400",
 };
 
@@ -54,6 +60,7 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
   const [isFieldPending, setIsFieldPending] = useState(false);
   const sourceName = sourceSiteName(promo.sourceUrl);
   const serviceName = promoServiceName(promo);
+  const newUserOnly = isNewUserOnly(promo);
   const { toast } = useToast();
 
   async function copyCode() {
@@ -162,6 +169,11 @@ export function PromoCard({ promo, onUpdate }: { promo: Promo; onUpdate?: (updat
             {serviceName && serviceName !== promo.platform && (
               <Badge variant="muted" className="shrink-0 text-xs">
                 {serviceName}
+              </Badge>
+            )}
+            {newUserOnly && (
+              <Badge variant="muted" className="shrink-0 text-xs">
+                New users only
               </Badge>
             )}
           </div>

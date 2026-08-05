@@ -5,7 +5,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import {
   Bike, Bookmark, Bus, Car, ChevronDown, Coins,
   Gift, Infinity, LayoutDashboard, Menu, Package, Plane,
-  ShoppingBag, ShoppingCart, Ticket, Truck, UtensilsCrossed, X
+  ShoppingBag, ShoppingCart, Store, Ticket, Truck, UtensilsCrossed, Wallet, X
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -45,6 +45,28 @@ const joyrideServices = [
   { href: "/joyride?service=Load", label: "Load", icon: <Coins className="size-3.5" /> },
 ];
 
+const shopeeServices = [
+  { href: "/shopee?service=ShopeeMall", label: "ShopeeMall", icon: <Store className="size-3.5" /> },
+  { href: "/shopee?service=ShopeeFood", label: "ShopeeFood", icon: <UtensilsCrossed className="size-3.5" /> },
+  { href: "/shopee?service=ShopeePay", label: "ShopeePay", icon: <Wallet className="size-3.5" /> },
+  { href: "/shopee?service=Free Shipping", label: "Free Shipping", icon: <Truck className="size-3.5" /> },
+  { href: "/shopee?service=Cashback", label: "Cashback", icon: <Coins className="size-3.5" /> },
+];
+
+const lazadaServices = [
+  { href: "/lazada?service=LazMall", label: "LazMall", icon: <Store className="size-3.5" /> },
+  { href: "/lazada?service=LazWallet", label: "LazWallet", icon: <Wallet className="size-3.5" /> },
+  { href: "/lazada?service=Free Shipping", label: "Free Shipping", icon: <Truck className="size-3.5" /> },
+  { href: "/lazada?service=Cashback", label: "Cashback", icon: <Coins className="size-3.5" /> },
+];
+
+const foodpandaServices = [
+  { href: "/foodpanda?service=pandamart", label: "pandamart", icon: <ShoppingCart className="size-3.5" /> },
+  { href: "/foodpanda?service=pandapro", label: "pandapro", icon: <Gift className="size-3.5" /> },
+  { href: "/foodpanda?service=Restaurant Delivery", label: "Restaurant Delivery", icon: <UtensilsCrossed className="size-3.5" /> },
+  { href: "/foodpanda?service=Free Delivery", label: "Free Delivery", icon: <Truck className="size-3.5" /> },
+];
+
 const navItems = [
   { href: "/", label: "All Promos", color: "bg-primary", children: undefined },
   { href: "/grab", label: "Grab", color: "bg-emerald-500", children: grabServices },
@@ -52,6 +74,9 @@ const navItems = [
   { href: "/indrive", label: "inDrive", color: "bg-lime-500", children: indriveServices },
   { href: "/move-it", label: "Move It", color: "bg-red-500", children: undefined },
   { href: "/joyride", label: "JoyRide", color: "bg-blue-500", children: joyrideServices },
+  { href: "/shopee", label: "Shopee", color: "bg-orange-500", children: shopeeServices },
+  { href: "/lazada", label: "Lazada", color: "bg-violet-500", children: lazadaServices },
+  { href: "/foodpanda", label: "Foodpanda", color: "bg-pink-500", children: foodpandaServices },
 ] as const;
 
 const platformIcons: Record<string, React.ReactNode> = {
@@ -61,6 +86,9 @@ const platformIcons: Record<string, React.ReactNode> = {
   "/indrive": <Car className="size-4" />,
   "/move-it": <Bike className="size-4" />,
   "/joyride": <Bike className="size-4" />,
+  "/shopee": <Store className="size-4" />,
+  "/lazada": <Store className="size-4" />,
+  "/foodpanda": <UtensilsCrossed className="size-4" />,
 };
 
 function isServiceActive(childHref: string, pathname: string, service: string | null) {
@@ -207,7 +235,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
       <div className="border-t p-3">
         <ThemeToggle />
         <p className="mt-2 px-2 text-[11px] text-muted-foreground">
-          PH Ride Promo Aggregator
+          PH Promo Code Aggregator
         </p>
       </div>
     </>

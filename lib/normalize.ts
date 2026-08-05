@@ -7,7 +7,10 @@ const PLATFORM_ALIASES: Array<[Platform, RegExp]> = [
   ["Angkas", /\bangkas\b/i],
   ["Move It", /\bmove\s*it\b/i],
   ["inDrive", /\bindrive\b/i],
-  ["JoyRide", /\bjoy\s*ride\b/i]
+  ["JoyRide", /\bjoy\s*ride\b/i],
+  ["Shopee", /\bshopee\b/i],
+  ["Lazada", /\blazada\b/i],
+  ["Foodpanda", /\bfoodpanda\b/i]
 ];
 
 export function detectPlatform(value: string): Platform {

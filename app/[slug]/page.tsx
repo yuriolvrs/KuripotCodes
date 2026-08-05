@@ -11,6 +11,9 @@ const SLUG_MAP: Record<string, Platform> = {
   "move-it": "Move It",
   indrive: "inDrive",
   joyride: "JoyRide",
+  shopee: "Shopee",
+  lazada: "Lazada",
+  foodpanda: "Foodpanda",
 };
 
 export async function generateStaticParams() {

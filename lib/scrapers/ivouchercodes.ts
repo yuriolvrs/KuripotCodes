@@ -12,7 +12,10 @@ const REQUEST_CONCURRENCY = 2;
 const TARGETS: Array<{ platform: Platform; slug: string; url: string }> = [
   { platform: "Grab", slug: "grab", url: "https://ivouchercodes.ph/store/grab" },
   { platform: "Angkas", slug: "angkas", url: "https://ivouchercodes.ph/store/angkas" },
-  { platform: "JoyRide", slug: "joyride", url: "https://ivouchercodes.ph/store/joyride" }
+  { platform: "JoyRide", slug: "joyride", url: "https://ivouchercodes.ph/store/joyride" },
+  { platform: "Shopee", slug: "shopee", url: "https://ivouchercodes.ph/store/shopee" },
+  { platform: "Lazada", slug: "lazada", url: "https://ivouchercodes.ph/store/lazada" },
+  { platform: "Foodpanda", slug: "foodpanda", url: "https://ivouchercodes.ph/store/foodpanda" }
 ];
 
 export function parseIVoucherCodesPage(platform: Platform, slug: string, sourceUrl: string, html: string): RawPromo[] {

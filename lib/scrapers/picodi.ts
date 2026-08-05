@@ -3,7 +3,12 @@ import type { RawPromo } from "../types";
 import { decodeEntities, extractCodes, fetchText, rawToPromos, stripHtml, uniqueBy } from "./shared";
 import type { Scraper } from "./types";
 
-const PICODI_TARGETS = [{ platform: "Grab" as const, url: "https://www.picodi.com/ph/grab" }];
+const PICODI_TARGETS = [
+  { platform: "Grab" as const, url: "https://www.picodi.com/ph/grab" },
+  { platform: "Shopee" as const, url: "https://www.picodi.com/ph/shopee" },
+  { platform: "Lazada" as const, url: "https://www.picodi.com/ph/lazada" },
+  { platform: "Foodpanda" as const, url: "https://www.picodi.com/ph/foodpanda" }
+];
 
 function parsePicodiExpiry(block: string) {
   const dataDate = block.match(/\sdata-c=(?:"([^"]+)"|([^\s>]+))/i)?.[1] ?? block.match(/\sdata-c=(?:"([^"]+)"|([^\s>]+))/i)?.[2];

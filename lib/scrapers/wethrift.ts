@@ -7,7 +7,8 @@ const WETHRIFT_TARGETS = [
   { platform: "Angkas" as const, url: "https://www.wethrift.com/angkas" },
   { platform: "Move It" as const, url: "https://www.wethrift.com/move-it" },
   { platform: "inDrive" as const, url: "https://www.wethrift.com/indrive" },
-  { platform: "JoyRide" as const, url: "https://www.wethrift.com/joyride" }
+  { platform: "JoyRide" as const, url: "https://www.wethrift.com/joyride" },
+  { platform: "Foodpanda" as const, url: "https://www.wethrift.com/foodpanda" }
 ];
 
 function getRelevantSnippets(html: string) {

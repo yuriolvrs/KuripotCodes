@@ -4,6 +4,9 @@ export const PLATFORMS = [
   "Move It",
   "inDrive",
   "JoyRide",
+  "Shopee",
+  "Lazada",
+  "Foodpanda",
   "Other"
 ] as const;
 

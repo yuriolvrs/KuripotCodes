@@ -34,7 +34,34 @@ const SERVICE_RULES: Record<Exclude<Platform, "Other">, Array<{ name: string; pa
     { name: "Pabili", pattern: /pabili|buy for me|personal shopper|pasabuy/i },
     { name: "Load", pattern: /\bload\b|top.up|prepaid/i },
   ],
+  Shopee: [
+    { name: "ShopeeMall", pattern: /shopee\s*mall|official store|authentic/i },
+    { name: "ShopeeFood", pattern: /shopee\s*food|food delivery/i },
+    { name: "ShopeePay", pattern: /shopee\s*pay|shopeepay|e-?wallet/i },
+    { name: "Free Shipping", pattern: /free ship|freeship|shipping fee/i },
+    { name: "Cashback", pattern: /cashback|coins/i },
+  ],
+  Lazada: [
+    { name: "LazMall", pattern: /lazmall|official store|authentic/i },
+    { name: "LazWallet", pattern: /lazwallet|e-?wallet/i },
+    { name: "Free Shipping", pattern: /free ship|freeship|shipping fee/i },
+    { name: "Cashback", pattern: /cashback/i },
+  ],
+  Foodpanda: [
+    { name: "pandamart", pattern: /pandamart|grocery|grocer/i },
+    { name: "pandapro", pattern: /pandapro|subscription/i },
+    { name: "Restaurant Delivery", pattern: /restaurant|meal|food delivery|jollibee|burger king|mang inasal|pizza/i },
+    { name: "Free Delivery", pattern: /free deliver|free ship/i },
+  ],
 };
+
+const NEW_USER_PATTERN =
+  /\bfirst[\s-]?(?:\w+[\s-]?)?(order|ride|trip|booking|purchase|delivery)s?\b|\bnew\s?(user|customer|rider)s?\b|\b1st[\s-]?(?:\w+[\s-]?)?(order|ride|trip|booking)\b|\bwelcome\s?(offer|promo|voucher|deal)\b|\bsign[\s-]?up\b/i;
+
+export function isNewUserOnly(promo: Promo): boolean {
+  const text = [promo.title, promo.description].filter(Boolean).join(" ");
+  return NEW_USER_PATTERN.test(text);
+}
 
 export function promoServiceName(promo: Promo): string | undefined {
   if (promo.platform === "Other") return undefined;
@@ -61,4 +88,7 @@ export const ALL_SERVICES: Record<Exclude<Platform, "Other">, string[]> = {
   "Move It": SERVICE_RULES["Move It"].map((r) => r.name),
   inDrive: SERVICE_RULES.inDrive.map((r) => r.name),
   JoyRide: SERVICE_RULES.JoyRide.map((r) => r.name),
+  Shopee: SERVICE_RULES.Shopee.map((r) => r.name),
+  Lazada: SERVICE_RULES.Lazada.map((r) => r.name),
+  Foodpanda: SERVICE_RULES.Foodpanda.map((r) => r.name),
 };

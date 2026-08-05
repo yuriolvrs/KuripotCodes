@@ -15,9 +15,15 @@ type CouponTarget = {
 const COUPON_TARGETS: CouponTarget[] = [
   { source: "iprice", platform: "Grab", url: "https://iprice.ph/coupons/grab/" },
   { source: "iprice", platform: "Grab", url: "https://iprice.ph/coupons/grabfood/" },
+  { source: "iprice", platform: "Shopee", url: "https://iprice.ph/coupons/shopee/" },
+  { source: "iprice", platform: "Lazada", url: "https://iprice.ph/coupons/lazada/" },
+  { source: "iprice", platform: "Foodpanda", url: "https://iprice.ph/coupons/foodpanda/" },
   { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/coupons-food-e-hailing/" },
   { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/grab-coupons/" },
   { source: "rappler", platform: "Grab", url: "https://coupons.rappler.com/grabfood-coupons/" },
+  { source: "rappler", platform: "Shopee", url: "https://coupons.rappler.com/shopee-coupons/" },
+  { source: "rappler", platform: "Lazada", url: "https://coupons.rappler.com/lazada-coupons/" },
+  { source: "rappler", platform: "Foodpanda", url: "https://coupons.rappler.com/foodpanda-coupons/" },
   { source: "everysaving", platform: "Grab", url: "https://www.everysaving.ph/shop/grab.com" },
   { source: "everysaving", platform: "Angkas", url: "https://www.everysaving.ph/shop/angkas.com" },
   { source: "everysaving", platform: "JoyRide", url: "https://www.everysaving.ph/shop/joyride.com.ph" }
@@ -27,9 +33,33 @@ const COUPON_TARGETS: CouponTarget[] = [
 // alongside the target platform's coupons. Word-boundary title checks like
 // isPlatformMention alone aren't enough — "Grab" also reads as a verb in ad
 // copy ("Grab P2,000 off sitewide at Lazada"). Veto anything that clearly
-// belongs to a different brand.
-const FOREIGN_BRAND_BLOCKLIST =
-  /\b(lazada|shopee|zalora|foodpanda|grubhub|traveloka|airpaz|emirates|klook|agoda|expedia|booking\.com)\b/i;
+// belongs to a different brand than the one we're currently scraping.
+const FOREIGN_BRAND_TERMS = [
+  "lazada",
+  "shopee",
+  "zalora",
+  "foodpanda",
+  "grubhub",
+  "traveloka",
+  "airpaz",
+  "emirates",
+  "klook",
+  "agoda",
+  "expedia",
+  "booking\\.com"
+];
+
+const PLATFORM_BRAND_TERM: Partial<Record<Platform, string>> = {
+  Shopee: "shopee",
+  Lazada: "lazada",
+  Foodpanda: "foodpanda"
+};
+
+function foreignBrandBlocklist(platform: Platform) {
+  const ownTerm = PLATFORM_BRAND_TERM[platform];
+  const terms = FOREIGN_BRAND_TERMS.filter((term) => term !== ownTerm);
+  return new RegExp(`\\b(${terms.join("|")})\\b`, "i");
+}
 
 function clean(value?: string) {
   return decodeEntities(stripHtml(value ?? "")).trim();
@@ -75,10 +105,10 @@ export function parseIpricePage(platform: Platform, sourceUrl: string, html: str
     if (!title || !/\b(grab|angkas|joy\s*ride|ride|voucher|promo|coupon|discount)\b/i.test(title)) {
       return [];
     }
-    if (FOREIGN_BRAND_BLOCKLIST.test(title)) return [];
+    if (foreignBrandBlocklist(platform).test(title)) return [];
 
     const description = clean(block.match(/<div class="rh_gr_middle_desc[^"]*"[^>]*>([\s\S]*?)<\/div>/i)?.[1]);
-    if (FOREIGN_BRAND_BLOCKLIST.test(description)) return [];
+    if (foreignBrandBlocklist(platform).test(description)) return [];
     const code = visibleCode(block.match(/\bdata-clipboard-text="([^"]+)"/i)?.[1]);
     const dealUrl = decodeAttribute(block.match(/<h2\b[\s\S]*?<a\b[^>]*href="([^"]+)"/i)?.[1]);
     const status = parseStatus(block);
@@ -142,7 +172,7 @@ export function parseRapplerPage(platform: Platform, sourceUrl: string, html: st
 }
 
 function isPlatformMention(text: string, platform: Platform) {
-  if (FOREIGN_BRAND_BLOCKLIST.test(text)) return false;
+  if (foreignBrandBlocklist(platform).test(text)) return false;
   if (platform === "Move It") return /\bmove\s*it\b/i.test(text);
   if (platform === "JoyRide") return /\bjoy\s*ride\b/i.test(text);
   return new RegExp(`\\b${platform}\\b`, "i").test(text);

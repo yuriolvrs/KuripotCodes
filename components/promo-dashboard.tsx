@@ -13,7 +13,7 @@ import { useToast } from "@/components/ui/toast";
 import { type Platform, type Promo, type PromoStatus } from "@/lib/types";
 import { isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
-import { promoServiceName } from "@/lib/service";
+import { promoServiceName, isNewUserOnly } from "@/lib/service";
 
 type SortOption = "newest" | "oldest" | "expiring" | "platform";
 type GroupOption = "none" | "platform" | "service" | "status";
@@ -44,7 +44,7 @@ function sortPromos(list: Promo[], sortBy: SortOption): Promo[] {
   const sorted = [...list];
   switch (sortBy) {
     case "newest":
-      sorted.sort((a, b) => b.lastSeen.localeCompare(a.lastSeen));
+      sorted.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen));
       break;
     case "oldest":
       sorted.sort((a, b) => a.firstSeen.localeCompare(b.firstSeen));
@@ -64,6 +64,8 @@ function sortPromos(list: Promo[], sortBy: SortOption): Promo[] {
   return sorted;
 }
 
+type NewUserFilter = "any" | "only" | "exclude";
+
 interface FilterState {
   platforms: Platform[];
   services: string[];
@@ -73,6 +75,7 @@ interface FilterState {
   bookmarkedOnly: boolean;
   expiringSoon: boolean;
   hasCodeOnly: boolean;
+  newUserFilter: NewUserFilter;
 }
 
 const DEFAULT_FILTERS: FilterState = {
@@ -84,6 +87,7 @@ const DEFAULT_FILTERS: FilterState = {
   bookmarkedOnly: false,
   expiringSoon: false,
   hasCodeOnly: false,
+  newUserFilter: "any",
 };
 
 function parseListParam(value: string | null): string[] {
@@ -111,13 +115,16 @@ export function PromoDashboard({
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
   const [filters, setFilters] = useState<FilterState>(() => ({
     platforms: initialPlatform === "All" ? [] : [initialPlatform],
-    services: initialService !== "All" ? [initialService] : [],
+    services: initialService !== "All" && initialPlatform !== "All" ? [`${initialPlatform}::${initialService}`] : [],
     source: searchParams.get("src") ?? DEFAULT_FILTERS.source,
     statuses: parseListParam(searchParams.get("status")) as PromoStatus[],
     usedOnly: searchParams.get("used") === "1",
     bookmarkedOnly: initialBookmarked,
     expiringSoon: searchParams.get("expiring") === "1",
     hasCodeOnly: searchParams.get("code") === "1",
+    newUserFilter: (["any", "only", "exclude"].includes(searchParams.get("newUser") ?? "")
+      ? (searchParams.get("newUser") as NewUserFilter)
+      : "any"),
   }));
   const [filterOpen, setFilterOpen] = useState(false);
   const [sortBy, setSortBy] = useState<SortOption>(() => {
@@ -159,7 +166,7 @@ export function PromoDashboard({
     setFilters((prev) => ({
       ...prev,
       platforms: initialPlatform === "All" ? [] : [initialPlatform],
-      services: initialService !== "All" ? [initialService] : [],
+      services: initialService !== "All" && initialPlatform !== "All" ? [`${initialPlatform}::${initialService}`] : [],
       bookmarkedOnly: initialBookmarked,
     }));
   }, [initialPlatform, initialService, initialBookmarked]);
@@ -181,6 +188,7 @@ export function PromoDashboard({
     setOrDelete("used", filters.usedOnly ? "1" : "", "");
     setOrDelete("expiring", filters.expiringSoon ? "1" : "", "");
     setOrDelete("code", filters.hasCodeOnly ? "1" : "", "");
+    setOrDelete("newUser", filters.newUserFilter, "any");
     setOrDelete("sort", sortBy, "newest");
     setOrDelete("group", groupBy, "none");
 
@@ -199,6 +207,7 @@ export function PromoDashboard({
     filters.usedOnly,
     filters.expiringSoon,
     filters.hasCodeOnly,
+    filters.newUserFilter,
     sortBy,
     groupBy,
   ]);
@@ -238,13 +247,17 @@ export function PromoDashboard({
 
       const matchesPlatform = filters.platforms.length === 0 || filters.platforms.includes(p.platform);
       const matchesService =
-        filters.services.length === 0 || (service && filters.services.includes(service));
+        filters.services.length === 0 ||
+        (service && filters.services.includes(`${p.platform}::${service}`));
       const matchesSource = filters.source === "All" || source === filters.source;
       const matchesStatus = filters.statuses.length === 0 || filters.statuses.includes(p.status);
       const matchesUsed = !filters.usedOnly || p.used === true;
       const matchesExpiry = !filters.expiringSoon || isExpiringSoon(p.endDate);
       const matchesCode = !filters.hasCodeOnly || Boolean(p.code);
       const matchesBookmark = !filters.bookmarkedOnly || p.bookmarked === true;
+      const matchesNewUser =
+        filters.newUserFilter === "any" ||
+        (filters.newUserFilter === "only" ? isNewUserOnly(p) : !isNewUserOnly(p));
 
       return (
         matchesQuery &&
@@ -255,7 +268,8 @@ export function PromoDashboard({
         matchesUsed &&
         matchesExpiry &&
         matchesCode &&
-        matchesBookmark
+        matchesBookmark &&
+        matchesNewUser
       );
     });
   }, [promos, query, filters]);
@@ -303,6 +317,7 @@ export function PromoDashboard({
     if (filters.bookmarkedOnly) count++;
     if (filters.expiringSoon) count++;
     if (filters.hasCodeOnly) count++;
+    if (filters.newUserFilter !== "any") count++;
     return count;
   })();
 
@@ -314,7 +329,7 @@ export function PromoDashboard({
     setFilters({
       ...DEFAULT_FILTERS,
       platforms: initialPlatform === "All" ? [] : [initialPlatform],
-      services: initialService !== "All" ? [initialService] : [],
+      services: initialService !== "All" && initialPlatform !== "All" ? [`${initialPlatform}::${initialService}`] : [],
       bookmarkedOnly: initialBookmarked,
     });
   }
