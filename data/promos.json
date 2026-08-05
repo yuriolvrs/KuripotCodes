@@ -1,6 +1,5 @@
 [
   {
-<<<<<<< Updated upstream
     "id": "e0193db869840b3c",
     "platform": "Grab",
     "title": "Take 60% Off Your Order With Grab Food Offer",
@@ -241,8 +240,6 @@
     "lastSeen": "2026-08-05T08:01:33.922Z"
   },
   {
-=======
->>>>>>> Stashed changes
     "id": "fea308a823617450",
     "platform": "JoyRide",
     "title": "Extra 30% Off Voucher Code For Your First JoyRide Car Ride",
@@ -254,11 +251,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "65eafaaae74ab263",
@@ -272,11 +265,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "47216ec9a64d7500",
@@ -290,11 +279,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "08daaa5bec2410bf",
@@ -307,11 +292,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "c396367da955b4e7",
@@ -324,7 +305,6 @@
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
   },
   {
@@ -555,9 +535,6 @@
     "status": "unknown",
     "firstSeen": "2026-07-19T02:07:19.425Z",
     "lastSeen": "2026-07-26T16:28:22.915Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "c4b673f72b533a60",
@@ -847,637 +824,6 @@
     "working": false
   },
   {
-<<<<<<< Updated upstream
-=======
-    "id": "1ce35fbb97073627",
-    "platform": "Foodpanda",
-    "title": "Score PHP50 off foodpanda voucher code for Burger King",
-    "code": "FPBKING",
-    "description": "Score PHP50 off foodpanda voucher code for Burger King",
-    "discountType": "fixed",
-    "discountValue": "PHP 50",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=NWs0SHBzR1Rlb3cyL3lPNndTUENkTXJqakdJTjZmdmJVeE5Gd2llbFRKSndQZEc4UjVqN3RERm9VRVJuNlo2c1RuN053WGFIczdhSWZrOVphZWd5UEE9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "bc1b8619dbcd874a",
-    "platform": "Foodpanda",
-    "title": "Enjoy PHP100 off foodpanda promo code for groceries",
-    "code": "GROCERY",
-    "description": "Enjoy PHP100 off foodpanda promo code for groceries",
-    "discountType": "fixed",
-    "discountValue": "PHP 100",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=ME5BNjJId3g0ZndTNTd0QnZ6dE05VnpXeTdkYUN5WGs3UHZiYUM4blZTYm1KYlJodG1VL2hVbFlCNnhiZUZXLzV2Qi9naUkzU1J3Wjc3REtneHB0ZVE9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "58e7bfa21beeb7d1",
-    "platform": "Foodpanda",
-    "title": "Take PHP500 off foodpanda coupon code for your Monday orders",
-    "code": "MONDAY500",
-    "description": "Take PHP500 off foodpanda coupon code for your Monday orders",
-    "discountType": "fixed",
-    "discountValue": "PHP 500",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=UERjYlRIclUyRWsyY3phZWNkY2xiZVo4TGROdE82RUZGZ2EzT0pKNE9UU0NWUkJ2dTNaQS9iUy8ycitza2JldzQvMVVoZ3pBKzl3cGxaREVVcm45VWc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "55880101308c76a6",
-    "platform": "Foodpanda",
-    "title": "[Friday] foodpanda promo code: P150 off min. spend P1,500 using Metrobank",
-    "code": "MFRIDEALS",
-    "description": "Satisfy your end-of-week cravings by ordering from top-rated restaurants, fast-food chains, and local cafes straight to your doorstep. Apply this exclusive bank voucher at checkout today to lock in instant savings on your Friday feasts and group meals.",
-    "discountType": "fixed",
-    "discountValue": "PHP 150",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/food-and-e-hailing/friday-foodpanda-promo-code-p150-off-min-spend-p1500-using-metrobank/",
-    "endDate": "2026-09-30",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "040776386047d8a7",
-    "platform": "Foodpanda",
-    "title": "foodpanda BDO promo code: P150 off min. spend P800 on weeekends",
-    "code": "BDODEALS",
-    "description": "Order your favorite meals and food staples on weekends at an exceptional price. Hit the P800 minimum spend milestone using your BDO card to claim ultimate checkout savings with wonderful value.",
-    "discountType": "fixed",
-    "discountValue": "PHP 150",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/food-and-e-hailing/foodpanda-bdo-promo-code-p150-off-min-spend-p800-on-weeekends/",
-    "endDate": "2026-08-12",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "897d9e63fa2365b7",
-    "platform": "Foodpanda",
-    "title": "Extra ₱100 Off Voucher Code for foodpanda , Min Spend ₱199",
-    "code": "SARAP",
-    "description": "₱100 off | varying min. order values: ₱199 Valid for selected restaurants, varying durations.\"... more",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "efec89411d92c1f7",
-    "platform": "Foodpanda",
-    "title": "Claim PHP200 off foodpanda discount code on food delivery",
-    "code": "PANDA200",
-    "description": "PHP200 OFF - Minimum spend varies.",
-    "discountType": "fixed",
-    "discountValue": "PHP 200",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=ekJLUWVlVEFHalIrSjJES1M4VjhsWDV3Z3RXZXgvTjREMHY0SXNydVpsQmdLTmVyTlZXaUloNnB6RUVUNlZZRnRSZ01KTUNXSjhaV011eXJhYmEwQ2c9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "bcf7314a893a2233",
-    "platform": "Foodpanda",
-    "title": "Enjoy PHP300 cashback with foodpanda coupon code every weekend",
-    "code": "WEEKENDER",
-    "description": "PHP300 Cashback - Valid for a min. spending of PHP999.",
-    "discountType": "fixed",
-    "discountValue": "PHP 300",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=WXhCa0NZalVEbGYzb0xhb1U4blRaSWVhaENpb3pxVVNvWUZ4TFp0QnhrcDRtSC9TdGVxMG4rTjlId0t6THREVFQyd1RuTXVBWEJuNm45MHNkUGNPUEE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "d239a455289e227c",
-    "platform": "Foodpanda",
-    "title": "Claim PHP100 cashback with foodpanda voucher code for pick-up dinner order",
-    "code": "DINNER",
-    "description": "PHP100 Cashback - Valid from 5PM to 8PM. Valid for a min. spending of PHP499.",
-    "discountType": "fixed",
-    "discountValue": "PHP 100",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=a3lyUWlUc2NjYmdSM2FZSlZXVEE0Sm5MMnVUK1hoRDJITVR0QlVhaitKM1pFaHpCMytnQlF6MW9OT0U5RDJTRmFheElRM2tVbEZOaFpLSmhHQ0ZoeXc9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "26df0e3d7438404d",
-    "platform": "Foodpanda",
-    "title": "Extra 50% Off Voucher Code + Free Delivery for New Users",
-    "code": "NEWPANDA",
-    "description": "Valid for New Users... more",
-    "discountType": "percent",
-    "discountValue": "50%",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "7bda5a7cfcefe1bd",
-    "platform": "Foodpanda",
-    "title": "Take P500 cashback on pandamart with foodpanda promo code",
-    "code": "SHOPNA",
-    "description": "Take P500 cashback on pandamart with foodpanda promo code",
-    "discountType": "fixed",
-    "discountValue": "PHP 500",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/food-and-e-hailing/take-p500-cashback-on-pandamart-with-foodpanda-promo-code/",
-    "endDate": "2026-12-31",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "320b312b040db96a",
-    "platform": "Foodpanda",
-    "title": "Use foodpanda coupon code & get 30% cashback on pick-up breakfast order",
-    "code": "BREKKY",
-    "description": "30% Cashback - Valid from 6AM to 10AM. No minimum spend. Discount capped at PHP150.",
-    "discountType": "percent",
-    "discountValue": "30%",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MUZ5bjEwMUFSWWV1KzB4V2tHWFViUHlDdHdjYUhqS0tLSFA3QVpvNHVnSzdaQ2k3TTY5N0RCOUFMY2JHOUt3UStQaTF0eGVINldOc2FtcktVZXRmV3c9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "85390b89ef3947c2",
-    "platform": "Foodpanda",
-    "title": "Extra ₱100 Off Voucher Code for Orders for Pickup",
-    "code": "PICKUP",
-    "description": "₱100 off | varying min. order values: ₱399\"... more",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "1d407cd56bd89456",
-    "platform": "Foodpanda",
-    "title": "Get PHP500 cashback with foodpanda voucher code on pandamart",
-    "code": "SUPERMARKETS",
-    "description": "PHP500 Cashback - Minimum spend varies.",
-    "discountType": "fixed",
-    "discountValue": "PHP 500",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=Q3J6RERvNTNJUkRtSVlqV09MbzlqdTdCOWY2NGtCRi94eWdGTjRGU3BQWGtxTUJNZEsva0gyZkdNam5qMkc5dVpkVUVWVUg2aU5vOWtmd1hCaE9kWEE9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "47916afa87a2e794",
-    "platform": "Foodpanda",
-    "title": "Use PHP100 off foodpanda voucher code for Red Ribbon",
-    "code": "PANDA100",
-    "description": "PHP100 OFF - Minimum spend varies.",
-    "discountType": "fixed",
-    "discountValue": "PHP 100",
-    "region": "Philippines",
-    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MHZBdEVlMkFqWDZsdngwM0V6SzhFRU5rQ3dxbXdBNy9BUFZ4R2k0Y2t0MzBHcmxRaWc2ZWpnUzlzTk9mR3RnWDhEbFQ3cEVGTkZrQmMvbVdXRzRUU1E9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "43f045836b55e971",
-    "platform": "Shopee",
-    "title": "Shopee Mall Deals: 30% Off Voucher + 20% Cashback + FS",
-    "code": "MALLJUL10OFF",
-    "description": "Shopee Mall sale refreshed weekly! Enjoy 20% cashback and free shipping on your orders from Shopee Mall... more",
-    "discountType": "percent",
-    "discountValue": "30%",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "edd03a77d8de7802",
-    "platform": "Shopee",
-    "title": "Gadget Zone Tech Brands Exclusives: 8% Off Voucher Code + Free Shipping",
-    "code": "GADGETZONE8",
-    "description": "save on these gadgets and techs when you buy from Shopee Philippines. Get 8% off and save on shipping fees! Get your free voucher codes now... more",
-    "discountType": "percent",
-    "discountValue": "8%",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "adebedba9944a872",
-    "platform": "Shopee",
-    "title": "Ariel, Tide, Downy, Joy & AmbiPur Up to 16% Off + Extra ₱90 Off Voucher",
-    "code": "PGHOANREV",
-    "description": "Save up to 16% off on Ariel, Tide, Downy, Joy & AmbiPur... more",
-    "discountType": "percent",
-    "discountValue": "16%",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "008eb566097fe4bf",
-    "platform": "Shopee",
-    "title": "Extra ₱100 Off Voucher Code on Shopee",
-    "code": "ONLIN246",
-    "description": "Download the Shopee app and use this code to get ₱100 off your first order!... more",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "2bb67bd83f234a6c",
-    "platform": "Foodpanda",
-    "title": "50% OFF voucher code for a 6-month pandapro subscription – Visa",
-    "code": "VISAPRO",
-    "description": "... more",
-    "discountType": "percent",
-    "discountValue": "50%",
-    "region": "Philippines",
-    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:54:33.869Z"
-  },
-  {
-    "id": "e0193db869840b3c",
-    "platform": "Grab",
-    "title": "Take 60% Off Your Order With Grab Food Offer",
-    "code": "MCGRAB",
-    "discountType": "percent",
-    "discountValue": "60%",
-    "region": "Philippines",
-    "sourceUrl": "https://www.worthepenny.com/offer/outb609cfe019b4ddbe",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "1a1871bb88c7d734",
-    "platform": "Grab",
-    "title": "Take 50% Off Your Order With Grab Food Daily Code",
-    "code": "FLASHSALE42",
-    "discountType": "percent",
-    "discountValue": "50%",
-    "region": "Philippines",
-    "sourceUrl": "https://www.worthepenny.com/offer/out3f0be3a2b1eebbb7",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "91dc93813df37a8e",
-    "platform": "Grab",
-    "title": "30% Off - Grab promo code",
-    "code": "NEW2PICKUP",
-    "discountType": "percent",
-    "discountValue": "30%",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "e1f2cd54bf320a8c",
-    "platform": "Grab",
-    "title": "$15 Off - Grab promo code",
-    "code": "KTCNEW",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "07200fec043f7734",
-    "platform": "Grab",
-    "title": "20% Off - Grab promo code",
-    "code": "NEW2MART",
-    "discountType": "percent",
-    "discountValue": "20%",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "f030f67afa112c26",
-    "platform": "Grab",
-    "title": "$5BONUS Off - Grab promo code",
-    "code": "FREE5",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "b264567814ab4e18",
-    "platform": "Grab",
-    "title": "5% Off - Grab promo code",
-    "code": "PICKUP5",
-    "discountType": "percent",
-    "discountValue": "5%",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "5f2fb50726d380b7",
-    "platform": "Move It",
-    "title": "30% Off - Move It promo code",
-    "code": "TARAMOVEIT",
-    "discountType": "percent",
-    "discountValue": "30%",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "add4fe0e2bfde0a2",
-    "platform": "Move It",
-    "title": "60% Off - Move It promo code",
-    "code": "WEEKENDNAMI",
-    "discountType": "percent",
-    "discountValue": "60%",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "5278c36472e88613",
-    "platform": "Move It",
-    "title": "50% Off - Move It promo code",
-    "code": "LONGWEEKEND",
-    "discountType": "percent",
-    "discountValue": "50%",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "4e4c76e4345cf025",
-    "platform": "Move It",
-    "title": "70% Off - Move It promo code",
-    "code": "BERITIPID",
-    "discountType": "percent",
-    "discountValue": "70%",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "a3c72a14e2531b86",
-    "platform": "Move It",
-    "title": "₱100 Off - Move It promo code",
-    "code": "TARASAMOVEIT",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "4f9a56abe2bc4d2d",
-    "platform": "Move It",
-    "title": "₱15 Off - Move It promo code",
-    "code": "KAPITMI",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "6ec828fae977f2db",
-    "platform": "Move It",
-    "title": "LAYOBYAHEMI - Move It promo code",
-    "code": "LAYOBYAHEMI",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "6e5b0e69ae59de93",
-    "platform": "Move It",
-    "title": "25% Off - Move It promo code",
-    "code": "MIBUHAY",
-    "discountType": "percent",
-    "discountValue": "25%",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "26f484fa0c9c6bc9",
-    "platform": "Move It",
-    "title": "₱10 - Move It promo code",
-    "code": "NASAAN1010",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-06-03T03:25:52.715Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "558d9d2cd83407b4",
-    "platform": "Grab",
-    "title": "GRABLOVENHAM - Grab promo code",
-    "code": "GRABLOVENHAM",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "396aa7a0826f931b",
-    "platform": "Grab",
-    "title": "GRABALLNIGHT - Grab promo code",
-    "code": "GRABALLNIGHT",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "4c35916a0fbd0f8a",
-    "platform": "Move It",
-    "title": "Best Moveit Code: Up To 35% Off",
-    "code": "CAMPUSCREWCJ",
-    "discountType": "percent",
-    "discountValue": "35%",
-    "region": "Philippines",
-    "sourceUrl": "https://www.worthepenny.com/offer/out408d01dc49899156",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "d6c2f39d06cb603c",
-    "platform": "Move It",
-    "title": "Get Up To 50% Off Move It Motorcycle Taxi Services",
-    "code": "MOVEWITHPRIDE",
-    "discountType": "percent",
-    "discountValue": "50%",
-    "region": "Philippines",
-    "sourceUrl": "https://www.worthepenny.com/offer/out3c7363d6b1feb2fe",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "0eaf1060d33b9022",
-    "platform": "Move It",
-    "title": "₱100 Off - Move It promo code",
-    "code": "OTHERHALF",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "9ea3d060eb4a8833",
-    "platform": "Grab",
-    "title": "8AND12MONTHS - Grab promo code",
-    "code": "8AND12MONTHS",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "e865b33a57691ecb",
-    "platform": "Grab",
-    "title": "BALIKKANA - Grab promo code",
-    "code": "BALIKKANA",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "659eee0f99f192eb",
-    "platform": "Grab",
-    "title": "DURIANDEAL - Grab promo code",
-    "code": "DURIANDEAL",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-05T07:45:05.962Z"
-  },
-  {
-    "id": "cbaaafff1920b9b9",
-    "platform": "Grab",
-    "title": "GRABLOVESCAV - Grab promo code",
-    "code": "GRABLOVESCAV",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-07-19T16:25:32.273Z"
-  },
-  {
-    "id": "8f9f77651b85911f",
-    "platform": "Grab",
-    "title": "ANGKORBEER - Grab promo code",
-    "code": "ANGKORBEER",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-07-19T16:25:32.273Z"
-  },
-  {
-    "id": "5fc4ac09f35939e9",
-    "platform": "Grab",
-    "title": "COOKFORDAD - Grab promo code",
-    "code": "COOKFORDAD",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T16:25:32.273Z",
-    "lastSeen": "2026-07-19T16:25:32.273Z"
-  },
-  {
-    "id": "59255ace30946a5a",
-    "platform": "Grab",
-    "title": "NHAMOT - Grab promo code",
-    "code": "NHAMOT",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "unknown",
-    "firstSeen": "2026-07-19T02:07:19.425Z",
-    "lastSeen": "2026-07-19T13:15:41.693Z"
-  },
-  {
->>>>>>> Stashed changes
     "id": "2b1af9debd3ff8db",
     "platform": "Angkas",
     "title": "Angkas 10% off your first ride",
@@ -2388,11 +1734,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "63315a55d279bf7e",
@@ -2405,11 +1747,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -2422,11 +1760,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "de90633a9565c965",
@@ -2439,11 +1773,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-<<<<<<< Updated upstream
     "lastSeen": "2026-08-05T08:01:33.922Z"
-=======
-    "lastSeen": "2026-08-05T07:54:33.869Z"
->>>>>>> Stashed changes
   },
   {
     "id": "205c07891f19f7e4",
@@ -5528,5 +4858,285 @@
     "status": "active",
     "firstSeen": "2026-06-01T03:09:24.040Z",
     "lastSeen": "2026-07-19T13:15:23.168Z"
+  },
+  {
+    "id": "1ce35fbb97073627",
+    "platform": "Foodpanda",
+    "title": "Score PHP50 off foodpanda voucher code for Burger King",
+    "code": "FPBKING",
+    "description": "Score PHP50 off foodpanda voucher code for Burger King",
+    "discountType": "fixed",
+    "discountValue": "PHP 50",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=NWs0SHBzR1Rlb3cyL3lPNndTUENkTXJqakdJTjZmdmJVeE5Gd2llbFRKSndQZEc4UjVqN3RERm9VRVJuNlo2c1RuN053WGFIczdhSWZrOVphZWd5UEE9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "bc1b8619dbcd874a",
+    "platform": "Foodpanda",
+    "title": "Enjoy PHP100 off foodpanda promo code for groceries",
+    "code": "GROCERY",
+    "description": "Enjoy PHP100 off foodpanda promo code for groceries",
+    "discountType": "fixed",
+    "discountValue": "PHP 100",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=ME5BNjJId3g0ZndTNTd0QnZ6dE05VnpXeTdkYUN5WGs3UHZiYUM4blZTYm1KYlJodG1VL2hVbFlCNnhiZUZXLzV2Qi9naUkzU1J3Wjc3REtneHB0ZVE9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "58e7bfa21beeb7d1",
+    "platform": "Foodpanda",
+    "title": "Take PHP500 off foodpanda coupon code for your Monday orders",
+    "code": "MONDAY500",
+    "description": "Take PHP500 off foodpanda coupon code for your Monday orders",
+    "discountType": "fixed",
+    "discountValue": "PHP 500",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=UERjYlRIclUyRWsyY3phZWNkY2xiZVo4TGROdE82RUZGZ2EzT0pKNE9UU0NWUkJ2dTNaQS9iUy8ycitza2JldzQvMVVoZ3pBKzl3cGxaREVVcm45VWc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "55880101308c76a6",
+    "platform": "Foodpanda",
+    "title": "[Friday] foodpanda promo code: P150 off min. spend P1,500 using Metrobank",
+    "code": "MFRIDEALS",
+    "description": "Satisfy your end-of-week cravings by ordering from top-rated restaurants, fast-food chains, and local cafes straight to your doorstep. Apply this exclusive bank voucher at checkout today to lock in instant savings on your Friday feasts and group meals.",
+    "discountType": "fixed",
+    "discountValue": "PHP 150",
+    "region": "Philippines",
+    "sourceUrl": "https://iprice.ph/food-and-e-hailing/friday-foodpanda-promo-code-p150-off-min-spend-p1500-using-metrobank/",
+    "endDate": "2026-09-30",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "040776386047d8a7",
+    "platform": "Foodpanda",
+    "title": "foodpanda BDO promo code: P150 off min. spend P800 on weeekends",
+    "code": "BDODEALS",
+    "description": "Order your favorite meals and food staples on weekends at an exceptional price. Hit the P800 minimum spend milestone using your BDO card to claim ultimate checkout savings with wonderful value.",
+    "discountType": "fixed",
+    "discountValue": "PHP 150",
+    "region": "Philippines",
+    "sourceUrl": "https://iprice.ph/food-and-e-hailing/foodpanda-bdo-promo-code-p150-off-min-spend-p800-on-weeekends/",
+    "endDate": "2026-08-12",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "897d9e63fa2365b7",
+    "platform": "Foodpanda",
+    "title": "Extra ₱100 Off Voucher Code for foodpanda , Min Spend ₱199",
+    "code": "SARAP",
+    "description": "₱100 off | varying min. order values: ₱199 Valid for selected restaurants, varying durations.\"... more",
+    "discountType": "unknown",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "efec89411d92c1f7",
+    "platform": "Foodpanda",
+    "title": "Claim PHP200 off foodpanda discount code on food delivery",
+    "code": "PANDA200",
+    "description": "PHP200 OFF - Minimum spend varies.",
+    "discountType": "fixed",
+    "discountValue": "PHP 200",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=ekJLUWVlVEFHalIrSjJES1M4VjhsWDV3Z3RXZXgvTjREMHY0SXNydVpsQmdLTmVyTlZXaUloNnB6RUVUNlZZRnRSZ01KTUNXSjhaV011eXJhYmEwQ2c9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "bcf7314a893a2233",
+    "platform": "Foodpanda",
+    "title": "Enjoy PHP300 cashback with foodpanda coupon code every weekend",
+    "code": "WEEKENDER",
+    "description": "PHP300 Cashback - Valid for a min. spending of PHP999.",
+    "discountType": "fixed",
+    "discountValue": "PHP 300",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=WXhCa0NZalVEbGYzb0xhb1U4blRaSWVhaENpb3pxVVNvWUZ4TFp0QnhrcDRtSC9TdGVxMG4rTjlId0t6THREVFQyd1RuTXVBWEJuNm45MHNkUGNPUEE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "d239a455289e227c",
+    "platform": "Foodpanda",
+    "title": "Claim PHP100 cashback with foodpanda voucher code for pick-up dinner order",
+    "code": "DINNER",
+    "description": "PHP100 Cashback - Valid from 5PM to 8PM. Valid for a min. spending of PHP499.",
+    "discountType": "fixed",
+    "discountValue": "PHP 100",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=a3lyUWlUc2NjYmdSM2FZSlZXVEE0Sm5MMnVUK1hoRDJITVR0QlVhaitKM1pFaHpCMytnQlF6MW9OT0U5RDJTRmFheElRM2tVbEZOaFpLSmhHQ0ZoeXc9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "26df0e3d7438404d",
+    "platform": "Foodpanda",
+    "title": "Extra 50% Off Voucher Code + Free Delivery for New Users",
+    "code": "NEWPANDA",
+    "description": "Valid for New Users... more",
+    "discountType": "percent",
+    "discountValue": "50%",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "7bda5a7cfcefe1bd",
+    "platform": "Foodpanda",
+    "title": "Take P500 cashback on pandamart with foodpanda promo code",
+    "code": "SHOPNA",
+    "description": "Take P500 cashback on pandamart with foodpanda promo code",
+    "discountType": "fixed",
+    "discountValue": "PHP 500",
+    "region": "Philippines",
+    "sourceUrl": "https://iprice.ph/food-and-e-hailing/take-p500-cashback-on-pandamart-with-foodpanda-promo-code/",
+    "endDate": "2026-12-31",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "320b312b040db96a",
+    "platform": "Foodpanda",
+    "title": "Use foodpanda coupon code & get 30% cashback on pick-up breakfast order",
+    "code": "BREKKY",
+    "description": "30% Cashback - Valid from 6AM to 10AM. No minimum spend. Discount capped at PHP150.",
+    "discountType": "percent",
+    "discountValue": "30%",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MUZ5bjEwMUFSWWV1KzB4V2tHWFViUHlDdHdjYUhqS0tLSFA3QVpvNHVnSzdaQ2k3TTY5N0RCOUFMY2JHOUt3UStQaTF0eGVINldOc2FtcktVZXRmV3c9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "85390b89ef3947c2",
+    "platform": "Foodpanda",
+    "title": "Extra ₱100 Off Voucher Code for Orders for Pickup",
+    "code": "PICKUP",
+    "description": "₱100 off | varying min. order values: ₱399\"... more",
+    "discountType": "unknown",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "1d407cd56bd89456",
+    "platform": "Foodpanda",
+    "title": "Get PHP500 cashback with foodpanda voucher code on pandamart",
+    "code": "SUPERMARKETS",
+    "description": "PHP500 Cashback - Minimum spend varies.",
+    "discountType": "fixed",
+    "discountValue": "PHP 500",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=Q3J6RERvNTNJUkRtSVlqV09MbzlqdTdCOWY2NGtCRi94eWdGTjRGU3BQWGtxTUJNZEsva0gyZkdNam5qMkc5dVpkVUVWVUg2aU5vOWtmd1hCaE9kWEE9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "47916afa87a2e794",
+    "platform": "Foodpanda",
+    "title": "Use PHP100 off foodpanda voucher code for Red Ribbon",
+    "code": "PANDA100",
+    "description": "PHP100 OFF - Minimum spend varies.",
+    "discountType": "fixed",
+    "discountValue": "PHP 100",
+    "region": "Philippines",
+    "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MHZBdEVlMkFqWDZsdngwM0V6SzhFRU5rQ3dxbXdBNy9BUFZ4R2k0Y2t0MzBHcmxRaWc2ZWpnUzlzTk9mR3RnWDhEbFQ3cEVGTkZrQmMvbVdXRzRUU1E9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "43f045836b55e971",
+    "platform": "Shopee",
+    "title": "Shopee Mall Deals: 30% Off Voucher + 20% Cashback + FS",
+    "code": "MALLJUL10OFF",
+    "description": "Shopee Mall sale refreshed weekly! Enjoy 20% cashback and free shipping on your orders from Shopee Mall... more",
+    "discountType": "percent",
+    "discountValue": "30%",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "edd03a77d8de7802",
+    "platform": "Shopee",
+    "title": "Gadget Zone Tech Brands Exclusives: 8% Off Voucher Code + Free Shipping",
+    "code": "GADGETZONE8",
+    "description": "save on these gadgets and techs when you buy from Shopee Philippines. Get 8% off and save on shipping fees! Get your free voucher codes now... more",
+    "discountType": "percent",
+    "discountValue": "8%",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "adebedba9944a872",
+    "platform": "Shopee",
+    "title": "Ariel, Tide, Downy, Joy & AmbiPur Up to 16% Off + Extra ₱90 Off Voucher",
+    "code": "PGHOANREV",
+    "description": "Save up to 16% off on Ariel, Tide, Downy, Joy & AmbiPur... more",
+    "discountType": "percent",
+    "discountValue": "16%",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "008eb566097fe4bf",
+    "platform": "Shopee",
+    "title": "Extra ₱100 Off Voucher Code on Shopee",
+    "code": "ONLIN246",
+    "description": "Download the Shopee app and use this code to get ₱100 off your first order!... more",
+    "discountType": "unknown",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/shopee",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
+  },
+  {
+    "id": "2bb67bd83f234a6c",
+    "platform": "Foodpanda",
+    "title": "50% OFF voucher code for a 6-month pandapro subscription – Visa",
+    "code": "VISAPRO",
+    "description": "... more",
+    "discountType": "percent",
+    "discountValue": "50%",
+    "region": "Philippines",
+    "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
+    "status": "active",
+    "firstSeen": "2026-08-05T07:45:05.962Z",
+    "lastSeen": "2026-08-05T07:54:33.869Z"
   }
 ]
