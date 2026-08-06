@@ -2,10 +2,7 @@ name: Scrape promos
 
 on:
   schedule:
-    - cron: "5 0 * * *"      # 12:05 AM
-    - cron: "30 5 * * *"     # 5:30 AM
-    - cron: "45 10 * * *"    # 10:45 AM
-    - cron: "30 15 * * *"    # 3:30 PM
+    - cron: "*/30 * * * *"   # every 30 minutes
   workflow_dispatch:
 
 permissions:
@@ -27,19 +24,31 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable xvfb
-
       - name: Run scraper
-        run: xvfb-run -a npm run scrape
+        run: npm run scrape
 
       - name: Commit updated promos
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- data/promos.json; then
+            echo "No changes to promos.json"
+            exit 0
+          fi
+
+          # lastSeen is bumped on every promo re-found each run, which would
+          # otherwise cause a commit every run even with no new/removed codes.
+          # Ignore lastSeen-only diffs and skip committing when nothing else changed.
+          before=$(git show HEAD:data/promos.json | jq 'map(del(.lastSeen)) | sort_by(.id)')
+          after=$(jq 'map(del(.lastSeen)) | sort_by(.id)' data/promos.json)
+
+          if [ "$before" = "$after" ]; then
+            echo "Only lastSeen timestamps changed; skipping commit"
+            exit 0
+          fi
+
           git add data/promos.json
-          git diff --cached --quiet || git commit -m "Update scraped promos"
+          git commit -m "Update scraped promos"
           git push

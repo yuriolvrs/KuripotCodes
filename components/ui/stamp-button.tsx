@@ -23,7 +23,7 @@ export function StampButton({
   showLabel
 }: StampButtonProps) {
   return (
-    <div className="flex flex-col items-center gap-1.5">
+    <div className={cn("flex flex-col items-center gap-1.5", showLabel && "w-[72px]")}>
       <button
         type="button"
         title={label}
@@ -35,7 +35,7 @@ export function StampButton({
           onClick(e);
         }}
         className={cn(
-          "flex size-[30px] items-center justify-center rounded border-2 transition-transform disabled:opacity-50 [&_svg]:size-4",
+          "flex size-[30px] items-center justify-center rounded border-2 transition-transform disabled:opacity-50 [&_svg]:size-4 [backface-visibility:hidden] [transform-style:preserve-3d]",
           active
             ? cn(activeClassName, "-rotate-[8deg]")
             : "border-line bg-card text-ink hover:border-ink"

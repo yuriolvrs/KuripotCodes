@@ -51,7 +51,7 @@ export function inferDiscount(text: string): Pick<Promo, "discountType" | "disco
     return { discountType: "percent", discountValue: `${percent[1]}%` };
   }
 
-  const fixed = text.match(/\b(?:PHP|P|₱)\s?(\d{2,4})\b/i);
+  const fixed = text.match(/(?:\b(?:PHP|P)|₱)\s?(\d{2,4})\b/i);
   if (fixed) {
     return { discountType: "fixed", discountValue: `PHP ${fixed[1]}` };
   }
@@ -64,7 +64,7 @@ export function inferDiscount(text: string): Pick<Promo, "discountType" | "disco
 }
 
 const FIRST_TIME_ONLY_PATTERN =
-  /\b(first[\s-]?time|1st[\s-]?time|new)\s+(user|users|customer|customers|rider|riders|driver)s?\b|\bfirst\s+(ride|trip|order|booking|purchase|delivery)\b|\b1st\s+(ride|trip|order|booking|purchase|delivery)\b|\bnew\s+to\s+(grab|angkas|move\s*it|indrive|joyride|shopee|lazada|foodpanda)\b/i;
+  /\b(first[\s-]?time|1st[\s-]?time|new)\s+(user|users|customer|customers|rider|riders|driver)s?\b|\b(first|1st)\s+(?:\w+\s+){0,2}(ride|trip|order|booking|bookings|purchase|delivery)\b|\bnew\s+to\s+(grab|angkas|move\s*it|indrive|joyride|shopee|lazada|foodpanda)\b/i;
 
 export function detectFirstTimeOnly(text: string): boolean {
   return FIRST_TIME_ONLY_PATTERN.test(text);

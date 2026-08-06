@@ -5,6 +5,25 @@ import type { Platform, Promo, RawPromo } from "../types";
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36 PHRidePromoAggregator/0.1";
 
+class RateLimitError extends Error {
+  retryAfterMs?: number;
+
+  constructor(message: string, retryAfterMs?: number) {
+    super(message);
+    this.retryAfterMs = retryAfterMs;
+  }
+}
+
+function parseRetryAfter(header: string | null): number | undefined {
+  if (!header) return undefined;
+
+  const seconds = Number(header);
+  if (Number.isFinite(seconds)) return seconds * 1000;
+
+  const date = Date.parse(header);
+  return Number.isFinite(date) ? Math.max(0, date - Date.now()) : undefined;
+}
+
 async function fetchTextOnce(url: string, timeoutMs: number, headers: HeadersInit) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
@@ -18,6 +37,13 @@ async function fetchTextOnce(url: string, timeoutMs: number, headers: HeadersIni
       },
       signal: controller.signal
     });
+
+    if (response.status === 429) {
+      throw new RateLimitError(
+        `${response.status} ${response.statusText}`,
+        parseRetryAfter(response.headers.get("retry-after"))
+      );
+    }
 
     if (!response.ok) {
       throw new Error(`${response.status} ${response.statusText}`);
@@ -46,7 +72,14 @@ export async function fetchText(
       return await fetchTextOnce(url, timeoutMs, headers);
     } catch (error) {
       lastError = error;
-      if (attempt < retries) await delay(500 * 2 ** attempt);
+      if (attempt < retries) {
+        const backoff = 500 * 2 ** attempt;
+        const wait =
+          error instanceof RateLimitError
+            ? Math.max(error.retryAfterMs ?? 0, backoff)
+            : backoff;
+        await delay(wait);
+      }
     }
   }
 

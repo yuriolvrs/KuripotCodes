@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUp, Plus, RefreshCw } from "lucide-react";
+import { ArrowUp, Plus, RefreshCw, TicketPercent } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AddPromoModal } from "@/components/AddPromoModal";
@@ -8,12 +8,12 @@ import { FilterSheet, type BottomFilterState } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
 import { PromoDetailModal } from "@/components/promo-detail-modal";
 import { useToast } from "@/components/ui/toast";
-import { PLATFORMS, type Promo } from "@/lib/types";
-import { isExpiringSoon } from "@/lib/date";
+import type { Promo } from "@/lib/types";
+import { formatRelativeTime, isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
 import { promoServiceName } from "@/lib/service";
 import { FAMILIES, FAMILY_LABELS, platformFamily, type Family } from "@/lib/family";
-import { displayStatus, FAMILY_CLASSNAMES } from "@/lib/promo-display";
+import { displayStatus, FAMILY_CLASSNAMES, FAMILY_ICONS } from "@/lib/promo-display";
 
 type FamilyTab = "all" | Family;
 
@@ -28,8 +28,6 @@ const DEFAULT_BOTTOM_FILTERS: BottomFilterState = { platforms: [], statuses: [],
 const DEFAULT_TOGGLES: QuickToggles = { hasCode: false, expiring: false, bookmarked: false, used: false };
 
 const FAMILY_TAB_ORDER: FamilyTab[] = ["all", ...FAMILIES];
-
-const NUM_PLATFORMS = PLATFORMS.filter((p) => p !== "Other").length;
 
 interface PromoDashboardProps {
   initialPromos: Promo[];
@@ -55,6 +53,17 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const { toast } = useToast();
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const [now, setNow] = useState(() => new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => setNow(new Date()), 60_000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const lastRefreshed = useMemo(
+    () => promos.reduce<string | null>((latest, p) => (!latest || p.lastSeen > latest ? p.lastSeen : latest), null),
+    [promos]
+  );
 
   useEffect(() => {
     function handleScroll() {
@@ -185,53 +194,48 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
       <div className="bg-brand px-5 pb-6 pt-5">
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-end justify-between gap-2">
           <div>
-            <div className="font-display leading-none text-white" style={{ fontSize: "clamp(28px, 6vw, 42px)", letterSpacing: "0.02em" }}>
-              KURIPOTCODES
+            <div className="flex items-center gap-2.5">
+              <TicketPercent className="size-[clamp(24px,5vw,36px)] shrink-0 text-white" strokeWidth={2.25} />
+              <div className="font-display leading-none text-white" style={{ fontSize: "clamp(28px, 6vw, 42px)", letterSpacing: "0.02em" }}>
+                KuripotCodes
+              </div>
             </div>
             <div className="mt-1 text-sm text-white/85">Bawas gastos. All the promo codes in one place!</div>
           </div>
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={runScrape}
-              disabled={isScraping}
-              className="flex items-center gap-1.5 rounded border-2 border-white/70 px-3 py-1.5 font-display text-xs tracking-wide text-white disabled:opacity-60"
-            >
-              <RefreshCw className={isScraping ? "size-3.5 animate-spin" : "size-3.5"} />
-              {isScraping ? "REFRESHING" : "REFRESH"}
-            </button>
-            <button
-              type="button"
-              onClick={() => setIsAddModalOpen(true)}
-              className="flex items-center gap-1.5 rounded border-2 border-white/70 px-3 py-1.5 font-display text-xs tracking-wide text-white"
-            >
-              <Plus className="size-3.5" />
-              ADD
-            </button>
-          </div>
           <div className="font-mono text-xs tracking-wide text-white/85">
-            {promos.length} CODES TRACKED · {NUM_PLATFORMS} PLATFORMS
+            {promos.length} CODES TRACKED
+            {lastRefreshed ? ` · UPDATED ${formatRelativeTime(lastRefreshed, now).toUpperCase()}` : ""}
           </div>
         </div>
       </div>
 
       <div className="flex flex-col gap-3 border-b-[3px] border-ink bg-paper px-5 py-3.5">
-        <div className="mx-auto flex w-full max-w-[1200px] gap-2.5 overflow-x-auto pb-0.5">
+        <div className="mx-auto flex w-full max-w-[1200px] gap-2.5 overflow-x-auto overflow-y-hidden pb-1">
           {FAMILY_TAB_ORDER.map((tab) => {
             const active = tab === family;
             const color = tab === "all" ? "bg-brand" : FAMILY_CLASSNAMES[tab].split(" ")[0];
+            const Icon = tab === "all" ? TicketPercent : FAMILY_ICONS[tab];
             return (
-              <button
-                key={tab}
-                type="button"
-                onClick={() => setFamily(tab)}
-                className={
-                  "whitespace-nowrap rounded-[6px] border-2 border-ink px-5 py-2.5 font-display text-[15px] tracking-wide transition-transform " +
-                  (active ? `${color} text-white shadow-[4px_4px_0_oklch(var(--ink))] -translate-x-0.5 -translate-y-0.5` : "bg-card text-ink shadow-[2px_2px_0_oklch(var(--ink))]")
-                }
-              >
-                {tab === "all" ? "ALL" : FAMILY_LABELS[tab].toUpperCase()}
-              </button>
+              <div key={tab} className="relative shrink-0">
+                <span
+                  aria-hidden
+                  className={
+                    "pointer-events-none absolute inset-0 rounded-[6px] bg-[oklch(var(--ink))] transition-transform " +
+                    (active ? "translate-x-1 translate-y-1" : "translate-x-0.5 translate-y-0.5")
+                  }
+                />
+                <button
+                  type="button"
+                  onClick={() => setFamily(tab)}
+                  className={
+                    "relative flex items-center gap-2 whitespace-nowrap rounded-[6px] border-2 border-ink px-5 py-2.5 font-display text-[15px] tracking-wide " +
+                    (active ? `${color} text-white` : "bg-card text-ink")
+                  }
+                >
+                  <Icon className="size-4 shrink-0" strokeWidth={2.25} />
+                  {tab === "all" ? "ALL" : FAMILY_LABELS[tab].toUpperCase()}
+                </button>
+              </div>
             );
           })}
         </div>
@@ -254,34 +258,36 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
           </button>
         </div>
 
-        <div className="mx-auto flex w-full max-w-[1200px] gap-2 overflow-x-auto">
-          {(
-            [
-              { key: "hasCode", label: "HAS CODE" },
-              { key: "expiring", label: "EXPIRING SOON" },
-              { key: "bookmarked", label: "BOOKMARKED" },
-              { key: "used", label: "USED" }
-            ] as const
-          ).map((chip) => {
-            const active = toggles[chip.key];
-            return (
-              <button
-                key={chip.key}
-                type="button"
-                onClick={() => setToggles((prev) => ({ ...prev, [chip.key]: !prev[chip.key] }))}
-                className={
-                  "whitespace-nowrap rounded-full border-2 px-3.5 py-2 font-sans text-sm font-semibold " +
-                  (active ? "border-ink bg-ink text-white" : "border-line bg-transparent text-ink")
-                }
-              >
-                {chip.label}
-              </button>
-            );
-          })}
-        </div>
+        <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-2">
+          <div className="flex gap-2 overflow-x-auto">
+            {(
+              [
+                { key: "hasCode", label: "HAS CODE" },
+                { key: "expiring", label: "EXPIRING SOON" },
+                { key: "bookmarked", label: "BOOKMARKED" },
+                { key: "used", label: "USED" }
+              ] as const
+            ).map((chip) => {
+              const active = toggles[chip.key];
+              return (
+                <button
+                  key={chip.key}
+                  type="button"
+                  onClick={() => setToggles((prev) => ({ ...prev, [chip.key]: !prev[chip.key] }))}
+                  className={
+                    "whitespace-nowrap rounded-full border-2 px-3.5 py-2 font-sans text-sm font-semibold " +
+                    (active ? "border-ink bg-ink text-white" : "border-line bg-transparent text-ink")
+                  }
+                >
+                  {chip.label}
+                </button>
+              );
+            })}
+          </div>
 
-        <div className="mx-auto w-full max-w-[1200px] font-mono text-xs text-ink-soft">
-          SHOWING {filteredPromos.length} OF {promos.length}
+          <div className="whitespace-nowrap font-mono text-xs text-ink-soft">
+            SHOWING {filteredPromos.length} OF {promos.length}
+          </div>
         </div>
       </div>
 
@@ -312,6 +318,29 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
             ))}
           </div>
         )}
+      </div>
+
+      <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-2 px-5 pb-2 opacity-60">
+        <button
+          type="button"
+          onClick={runScrape}
+          disabled={isScraping}
+          className="flex items-center gap-1.5 rounded border border-line px-2.5 py-1 font-mono text-[11px] tracking-wide text-ink-soft disabled:opacity-60"
+        >
+          <RefreshCw className={isScraping ? "size-3 animate-spin" : "size-3"} />
+          {isScraping ? "refreshing…" : "refresh"}
+        </button>
+        <button
+          type="button"
+          onClick={() => setIsAddModalOpen(true)}
+          className="flex items-center gap-1.5 rounded border border-line px-2.5 py-1 font-mono text-[11px] tracking-wide text-ink-soft"
+        >
+          <Plus className="size-3" />
+          add promo manually
+        </button>
+        <span className="font-mono text-[11px] text-ink-soft">
+          (local dev only — won&apos;t run on the vercel site)
+        </span>
       </div>
 
       <FilterSheet

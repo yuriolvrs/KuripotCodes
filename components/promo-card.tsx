@@ -15,6 +15,7 @@ import {
   displayStatus,
   FAMILY_BADGE_FALLBACK,
   FAMILY_CLASSNAMES,
+  FAMILY_ICONS,
   FIRST_TIME_ONLY_CLASSNAMES,
   FIRST_TIME_ONLY_LABEL,
   serviceLabel,
@@ -58,31 +59,36 @@ export function PromoCard({
       onClick={onOpen}
       className="relative flex cursor-pointer flex-col rounded border-2 border-ink bg-card shadow-[4px_4px_0_oklch(84%_0.015_60)]"
     >
-      <div className="flex flex-col gap-2 p-4 pb-4">
+      <div className="flex flex-1 flex-col gap-2 p-4 pb-4">
         <div className="flex items-center justify-between gap-2">
           <span
             className={cn(
-              "rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
+              "flex items-center gap-1 rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
               family ? FAMILY_CLASSNAMES[family] : FAMILY_BADGE_FALLBACK
             )}
           >
+            {family && (() => {
+              const Icon = FAMILY_ICONS[family];
+              return <Icon className="size-3 shrink-0" strokeWidth={2.5} />;
+            })()}
             {(family ?? "other").toUpperCase()}
           </span>
-          <span className={cn("rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider", STATUS_CLASSNAMES[status])}>
-            {STATUS_LABELS[status].toUpperCase()}
-          </span>
-        </div>
-
-        {promo.firstTimeOnly && (
-          <span
-            className={cn(
-              "w-fit rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
-              FIRST_TIME_ONLY_CLASSNAMES
+          <div className="flex items-center gap-2">
+            {promo.firstTimeOnly && (
+              <span
+                className={cn(
+                  "w-fit rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
+                  FIRST_TIME_ONLY_CLASSNAMES
+                )}
+              >
+                {FIRST_TIME_ONLY_LABEL.toUpperCase()}
+              </span>
             )}
-          >
-            {FIRST_TIME_ONLY_LABEL.toUpperCase()}
-          </span>
-        )}
+            <span className={cn("rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider", STATUS_CLASSNAMES[status])}>
+              {STATUS_LABELS[status].toUpperCase()}
+            </span>
+          </div>
+        </div>
 
         <div
           className="font-display text-[13px] tracking-wide"
@@ -98,10 +104,7 @@ export function PromoCard({
         )}
       </div>
 
-      <div className="relative border-t-2 border-dashed border-line">
-        <div className="absolute -left-[10px] -top-[9px] size-[18px] rounded-full border-2 border-ink bg-paper" />
-        <div className="absolute -right-[10px] -top-[9px] size-[18px] rounded-full border-2 border-ink bg-paper" />
-      </div>
+      <div className="mx-4 border-t-2 border-dashed border-line" />
 
       <div className="flex flex-col gap-2.5 p-4 pt-4">
         <div className="flex flex-wrap items-center justify-between gap-2.5">

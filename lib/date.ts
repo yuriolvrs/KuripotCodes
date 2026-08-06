@@ -26,6 +26,20 @@ export function getPromoStatus(endDate?: string) {
   return endDate < today ? ("expired" as const) : ("active" as const);
 }
 
+export function formatRelativeTime(iso: string, now = new Date()) {
+  const diffMs = now.getTime() - new Date(iso).getTime();
+  const diffMin = Math.round(diffMs / 60000);
+
+  if (diffMin < 1) return "just now";
+  if (diffMin < 60) return `${diffMin}m ago`;
+
+  const diffHr = Math.round(diffMin / 60);
+  if (diffHr < 24) return `${diffHr}h ago`;
+
+  const diffDay = Math.round(diffHr / 24);
+  return `${diffDay}d ago`;
+}
+
 export function isExpiringSoon(endDate?: string, days = 7) {
   if (!endDate) return false;
 

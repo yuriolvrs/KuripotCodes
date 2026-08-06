@@ -16,6 +16,7 @@ import {
   displayStatus,
   FAMILY_BADGE_FALLBACK,
   FAMILY_CLASSNAMES,
+  FAMILY_ICONS,
   FIRST_TIME_ONLY_CLASSNAMES,
   FIRST_TIME_ONLY_LABEL,
   serviceLabel,
@@ -79,10 +80,14 @@ export function PromoDetailModal({
         <div className="flex gap-2">
           <span
             className={cn(
-              "rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
+              "flex items-center gap-1 rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
               family ? FAMILY_CLASSNAMES[family] : FAMILY_BADGE_FALLBACK
             )}
           >
+            {family && (() => {
+              const Icon = FAMILY_ICONS[family];
+              return <Icon className="size-3 shrink-0" strokeWidth={2.5} />;
+            })()}
             {(family ?? "other").toUpperCase()}
           </span>
           <span className={cn("rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider", STATUS_CLASSNAMES[status])}>
@@ -111,19 +116,21 @@ export function PromoDetailModal({
 
         {current.description && <p className="text-sm leading-relaxed text-ink-soft">{current.description}</p>}
 
-        <div className="mt-1 flex flex-wrap items-center gap-2.5">
-          {current.code && (
-            <span className="rounded-[3px] border-2 border-dashed border-ink bg-paper px-3.5 py-2 font-mono text-xl font-bold tracking-wide">
-              {current.code}
-            </span>
-          )}
-          {current.discountValue && <span className="font-display text-[15px] text-brand">{current.discountValue}</span>}
+        <div className="mt-1 flex flex-wrap items-center justify-between gap-2.5">
+          <div className="flex flex-wrap items-baseline gap-2.5">
+            {current.code && (
+              <span className="rounded-[3px] border-2 border-dashed border-ink bg-paper px-3.5 py-2 font-mono text-xl font-bold tracking-wide">
+                {current.code}
+              </span>
+            )}
+            {current.discountValue && <span className="font-display text-[15px] text-brand">{current.discountValue}</span>}
+          </div>
           {current.code && (
             <button
               type="button"
               onClick={copyCode}
               className={cn(
-                "rounded-[3px] border-2 px-4 py-2.5 font-display text-[13px] tracking-wide shadow-[2px_2px_0_oklch(var(--ink))]",
+                "whitespace-nowrap rounded-[3px] border-2 px-4 py-2.5 font-display text-[13px] tracking-wide shadow-[2px_2px_0_oklch(var(--ink))]",
                 copied ? "border-status-active bg-status-active text-white" : "border-brand bg-brand text-brand-foreground"
               )}
             >
@@ -132,7 +139,7 @@ export function PromoDetailModal({
           )}
         </div>
 
-        <div className="mt-1.5 grid grid-cols-2 gap-2.5 text-[13px] text-ink-soft">
+        <div className="mt-1.5 grid grid-cols-3 gap-2.5 text-[13px] text-ink-soft">
           <div>
             <b className="text-ink">Source</b>
             <br />
@@ -150,10 +157,10 @@ export function PromoDetailModal({
           </div>
         </div>
 
-        <div className="mt-2 flex gap-3.5 border-t-2 border-dashed border-line pt-3.5">
+        <div className="mt-2 flex justify-center gap-4 border-t-2 border-dashed border-line pt-3.5">
           <StampButton
             glyph={<Bookmark className={cn(bookmarked === true && "fill-current")} />}
-            label="Bookmarked"
+            label={bookmarked === true ? "Bookmarked" : "Bookmark?"}
             showLabel
             active={bookmarked === true}
             disabled={pending}
@@ -162,7 +169,7 @@ export function PromoDetailModal({
           />
           <StampButton
             glyph={<ThumbsUp className={cn(working === true && "fill-current")} />}
-            label="Working"
+            label={working === true ? "Working" : "Working?"}
             showLabel
             active={working === true}
             disabled={pending}
@@ -171,7 +178,7 @@ export function PromoDetailModal({
           />
           <StampButton
             glyph={<SquareCheck />}
-            label="Used"
+            label={used === true ? "Used" : "Used?"}
             showLabel
             active={used === true}
             disabled={pending}

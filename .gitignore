@@ -6,3 +6,4 @@ out
 *.log
 *.tsbuildinfo
 /KuripotCodes UI reinvention/
+SUPABASE_MIGRATION_PLAN.md
