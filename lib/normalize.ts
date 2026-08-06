@@ -63,6 +63,13 @@ export function inferDiscount(text: string): Pick<Promo, "discountType" | "disco
   return { discountType: "unknown" };
 }
 
+const FIRST_TIME_ONLY_PATTERN =
+  /\b(first[\s-]?time|1st[\s-]?time|new)\s+(user|users|customer|customers|rider|riders|driver)s?\b|\bfirst\s+(ride|trip|order|booking|purchase|delivery)\b|\b1st\s+(ride|trip|order|booking|purchase|delivery)\b|\bnew\s+to\s+(grab|angkas|move\s*it|indrive|joyride|shopee|lazada|foodpanda)\b/i;
+
+export function detectFirstTimeOnly(text: string): boolean {
+  return FIRST_TIME_ONLY_PATTERN.test(text);
+}
+
 export function normalizePromo(raw: RawPromo, now = new Date()): Promo {
   const title = (raw.title || raw.description || "Ride-hailing promo").trim();
   const sourceText = [title, raw.description, raw.sourceUrl].filter(Boolean).join(" ");
@@ -88,7 +95,8 @@ export function normalizePromo(raw: RawPromo, now = new Date()): Promo {
     endDate: raw.endDate,
     status,
     firstSeen: seenAt,
-    lastSeen: seenAt
+    lastSeen: seenAt,
+    firstTimeOnly: raw.firstTimeOnly ?? (detectFirstTimeOnly(sourceText) || undefined)
   };
 
   promo.id = createPromoId(promo);

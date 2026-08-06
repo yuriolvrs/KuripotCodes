@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
-import { Sidebar } from "@/components/sidebar";
+import { Fjalla_One, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { ToastProvider } from "@/components/ui/toast";
 import "./globals.css";
+
+const display = Fjalla_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display"
+});
+
+const sans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans"
+});
+
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-mono"
+});
 
 export const metadata: Metadata = {
   title: "KuripotCodes",
@@ -15,20 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="flex h-screen overflow-hidden">
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()"
-          }}
-        />
-        <ToastProvider>
-          <Suspense fallback={<div className="w-56 border-r bg-background" />}>
-            <Sidebar />
-          </Suspense>
-          <div className="flex-1 overflow-y-auto [scrollbar-gutter:stable]">{children}</div>
-        </ToastProvider>
+    <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+      <body className="font-sans">
+        <ToastProvider>{children}</ToastProvider>
       </body>
     </html>
   );

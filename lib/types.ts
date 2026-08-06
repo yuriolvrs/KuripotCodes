@@ -34,6 +34,7 @@ export interface Promo {
   working?: boolean;
   used?: boolean;
   bookmarked?: boolean;
+  firstTimeOnly?: boolean;
 }
 
 export interface RawPromo {
@@ -48,4 +49,5 @@ export interface RawPromo {
   startDate?: string;
   endDate?: string;
   status?: PromoStatus;
+  firstTimeOnly?: boolean;
 }

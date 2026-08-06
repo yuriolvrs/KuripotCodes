@@ -1,142 +1,56 @@
 "use client";
 
-import { ArrowUpDown, Filter, LayoutGrid, Plus, RefreshCw, Search } from "lucide-react";
+import { Plus, RefreshCw } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useMemo, useRef, useState, useEffect } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AddPromoModal } from "@/components/AddPromoModal";
-import { FilterSheet } from "@/components/filter-sheet";
+import { FilterSheet, type BottomFilterState } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select } from "@/components/ui/select";
+import { PromoDetailModal } from "@/components/promo-detail-modal";
 import { useToast } from "@/components/ui/toast";
-import { type Platform, type Promo, type PromoStatus } from "@/lib/types";
+import { PLATFORMS, type Promo } from "@/lib/types";
 import { isExpiringSoon } from "@/lib/date";
 import { sourceSiteName } from "@/lib/source";
-import { promoServiceName, isNewUserOnly } from "@/lib/service";
+import { promoServiceName } from "@/lib/service";
+import { FAMILIES, FAMILY_LABELS, platformFamily, type Family } from "@/lib/family";
+import { displayStatus, FAMILY_CLASSNAMES } from "@/lib/promo-display";
 
-type SortOption = "newest" | "oldest" | "expiring" | "platform";
-type GroupOption = "none" | "platform" | "service" | "status";
+type FamilyTab = "all" | Family;
 
-const SORT_OPTIONS: { label: string; value: SortOption }[] = [
-  { label: "Newest", value: "newest" },
-  { label: "Oldest", value: "oldest" },
-  { label: "Expiring soon", value: "expiring" },
-  { label: "Platform (A-Z)", value: "platform" },
-];
-
-const GROUP_OPTIONS: { label: string; value: GroupOption }[] = [
-  { label: "No grouping", value: "none" },
-  { label: "Platform", value: "platform" },
-  { label: "Service", value: "service" },
-  { label: "Status", value: "status" },
-];
-
-const STATUS_LABELS: Record<PromoStatus, string> = {
-  active: "Active",
-  expired: "Expired",
-  unknown: "Unknown",
-};
-
-const STATUS_ORDER: PromoStatus[] = ["active", "unknown", "expired"];
-
-function sortPromos(list: Promo[], sortBy: SortOption): Promo[] {
-  const sorted = [...list];
-  switch (sortBy) {
-    case "newest":
-      sorted.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen));
-      break;
-    case "oldest":
-      sorted.sort((a, b) => a.firstSeen.localeCompare(b.firstSeen));
-      break;
-    case "expiring":
-      sorted.sort((a, b) => {
-        if (!a.endDate && !b.endDate) return 0;
-        if (!a.endDate) return 1;
-        if (!b.endDate) return -1;
-        return a.endDate.localeCompare(b.endDate);
-      });
-      break;
-    case "platform":
-      sorted.sort((a, b) => a.platform.localeCompare(b.platform));
-      break;
-  }
-  return sorted;
+interface QuickToggles {
+  hasCode: boolean;
+  expiring: boolean;
+  bookmarked: boolean;
+  used: boolean;
 }
 
-type NewUserFilter = "any" | "only" | "exclude";
+const DEFAULT_BOTTOM_FILTERS: BottomFilterState = { platforms: [], statuses: [], sources: [], firstTimeOnly: "any" };
+const DEFAULT_TOGGLES: QuickToggles = { hasCode: false, expiring: false, bookmarked: false, used: false };
 
-interface FilterState {
-  platforms: Platform[];
-  services: string[];
-  source: string;
-  statuses: PromoStatus[];
-  usedOnly: boolean;
-  bookmarkedOnly: boolean;
-  expiringSoon: boolean;
-  hasCodeOnly: boolean;
-  newUserFilter: NewUserFilter;
-}
+const FAMILY_TAB_ORDER: FamilyTab[] = ["all", ...FAMILIES];
 
-const DEFAULT_FILTERS: FilterState = {
-  platforms: [],
-  services: [],
-  source: "All",
-  statuses: [],
-  usedOnly: false,
-  bookmarkedOnly: false,
-  expiringSoon: false,
-  hasCodeOnly: false,
-  newUserFilter: "any",
-};
-
-function parseListParam(value: string | null): string[] {
-  return value ? value.split(",").filter(Boolean) : [];
-}
+const NUM_PLATFORMS = PLATFORMS.filter((p) => p !== "Other").length;
 
 interface PromoDashboardProps {
   initialPromos: Promo[];
-  initialPlatform?: Platform | "All";
-  initialBookmarked?: boolean;
-  initialService?: string;
 }
 
-export function PromoDashboard({
-  initialPromos,
-  initialPlatform = "All",
-  initialBookmarked = false,
-  initialService = "All",
-}: PromoDashboardProps) {
+export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const [promos, setPromos] = useState(initialPromos);
   const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
-  const [filters, setFilters] = useState<FilterState>(() => ({
-    platforms: initialPlatform === "All" ? [] : [initialPlatform],
-    services: initialService !== "All" && initialPlatform !== "All" ? [`${initialPlatform}::${initialService}`] : [],
-    source: searchParams.get("src") ?? DEFAULT_FILTERS.source,
-    statuses: parseListParam(searchParams.get("status")) as PromoStatus[],
-    usedOnly: searchParams.get("used") === "1",
-    bookmarkedOnly: initialBookmarked,
-    expiringSoon: searchParams.get("expiring") === "1",
-    hasCodeOnly: searchParams.get("code") === "1",
-    newUserFilter: (["any", "only", "exclude"].includes(searchParams.get("newUser") ?? "")
-      ? (searchParams.get("newUser") as NewUserFilter)
-      : "any"),
+  const [family, setFamily] = useState<FamilyTab>("all");
+  const [toggles, setToggles] = useState<QuickToggles>(() => ({
+    ...DEFAULT_TOGGLES,
+    bookmarked: searchParams.get("bookmarked") === "1"
   }));
-  const [filterOpen, setFilterOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<SortOption>(() => {
-    const fromUrl = searchParams.get("sort");
-    return SORT_OPTIONS.some((o) => o.value === fromUrl) ? (fromUrl as SortOption) : "newest";
-  });
-  const [groupBy, setGroupBy] = useState<GroupOption>(() => {
-    const fromUrl = searchParams.get("group");
-    return GROUP_OPTIONS.some((o) => o.value === fromUrl) ? (fromUrl as GroupOption) : "none";
-  });
+  const [bottomFilters, setBottomFilters] = useState<BottomFilterState>(DEFAULT_BOTTOM_FILTERS);
+  const [filterSheetOpen, setFilterSheetOpen] = useState(false);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isScraping, setIsScraping] = useState(false);
-  const [scrapeMessage, setScrapeMessage] = useState<string | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const { toast } = useToast();
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -145,198 +59,89 @@ export function PromoDashboard({
     function handleKeyDown(event: KeyboardEvent) {
       const target = event.target as HTMLElement | null;
       const isTyping = target?.tagName === "INPUT" || target?.tagName === "TEXTAREA" || target?.isContentEditable;
-
       if (event.key === "/" && !isTyping) {
         event.preventDefault();
         searchInputRef.current?.focus();
-        return;
-      }
-
-      if (event.key === "Escape" && target === searchInputRef.current) {
-        setQuery("");
-        searchInputRef.current?.blur();
       }
     }
-
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   useEffect(() => {
-    setFilters((prev) => ({
-      ...prev,
-      platforms: initialPlatform === "All" ? [] : [initialPlatform],
-      services: initialService !== "All" && initialPlatform !== "All" ? [`${initialPlatform}::${initialService}`] : [],
-      bookmarkedOnly: initialBookmarked,
-    }));
-  }, [initialPlatform, initialService, initialBookmarked]);
-
-  // Persist search/sort/group/quick-filters (not the sidebar-driven
-  // platform/service/bookmarked ones, which already round-trip through
-  // route props) so a reload doesn't reset them.
-  useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
-
-    function setOrDelete(key: string, value: string, defaultValue: string) {
-      if (value && value !== defaultValue) params.set(key, value);
-      else params.delete(key);
-    }
-
-    setOrDelete("q", query, "");
-    setOrDelete("src", filters.source, "All");
-    setOrDelete("status", filters.statuses.join(","), "");
-    setOrDelete("used", filters.usedOnly ? "1" : "", "");
-    setOrDelete("expiring", filters.expiringSoon ? "1" : "", "");
-    setOrDelete("code", filters.hasCodeOnly ? "1" : "", "");
-    setOrDelete("newUser", filters.newUserFilter, "any");
-    setOrDelete("sort", sortBy, "newest");
-    setOrDelete("group", groupBy, "none");
+    if (query) params.set("q", query);
+    else params.delete("q");
+    if (toggles.bookmarked) params.set("bookmarked", "1");
+    else params.delete("bookmarked");
 
     const next = params.toString();
     if (next === searchParams.toString()) return;
-
     const timeout = setTimeout(() => {
       router.replace(`${pathname}${next ? `?${next}` : ""}`, { scroll: false });
     }, 300);
     return () => clearTimeout(timeout);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [
-    query,
-    filters.source,
-    filters.statuses,
-    filters.usedOnly,
-    filters.expiringSoon,
-    filters.hasCodeOnly,
-    filters.newUserFilter,
-    sortBy,
-    groupBy,
-  ]);
+  }, [query, toggles.bookmarked]);
 
-  const activeCount = promos.filter((p) => p.status === "active").length;
-
-  const lastUpdated = promos[0]?.lastSeen
-    ? new Intl.DateTimeFormat("en-PH", {
-        dateStyle: "medium",
-        timeStyle: "short",
-        timeZone: "Asia/Manila",
-      }).format(new Date(promos[0].lastSeen))
-    : "Not scraped yet";
-
-  const sourceOptions = useMemo(() => {
-    const sources = Array.from(new Set(promos.map((p) => sourceSiteName(p.sourceUrl)))).sort();
-    return [
-      { label: "All sources", value: "All" },
-      ...sources.map((v) => ({ label: v, value: v })),
-    ];
-  }, [promos]);
+  const sourceOptions = useMemo(
+    () => Array.from(new Set(promos.map((p) => sourceSiteName(p.sourceUrl)))).sort(),
+    [promos]
+  );
 
   const filteredPromos = useMemo(() => {
     const q = query.trim().toLowerCase();
-
     return promos.filter((p) => {
       const service = promoServiceName(p) ?? p.platform;
       const source = sourceSiteName(p.sourceUrl);
+      const promoFamily = platformFamily(p);
+      const status = displayStatus(p);
 
-      const matchesQuery =
-        !q ||
-        [p.title, p.code, p.description, p.platform, p.region, source, service]
+      if (family !== "all" && promoFamily !== family) return false;
+      if (bottomFilters.platforms.length && !bottomFilters.platforms.includes(p.platform)) return false;
+      if (bottomFilters.statuses.length && !bottomFilters.statuses.includes(status)) return false;
+      if (bottomFilters.sources.length && !bottomFilters.sources.includes(source)) return false;
+      if (bottomFilters.firstTimeOnly === "first_only" && !p.firstTimeOnly) return false;
+      if (bottomFilters.firstTimeOnly === "not_first_only" && p.firstTimeOnly) return false;
+      if (toggles.hasCode && !p.code) return false;
+      if (toggles.expiring && !isExpiringSoon(p.endDate)) return false;
+      if (toggles.bookmarked && !p.bookmarked) return false;
+      if (toggles.used && !p.used) return false;
+
+      if (q) {
+        const hay = [p.title, p.code, p.description, p.platform, source, service]
           .filter(Boolean)
           .join(" ")
-          .toLowerCase()
-          .includes(q);
-
-      const matchesPlatform = filters.platforms.length === 0 || filters.platforms.includes(p.platform);
-      const matchesService =
-        filters.services.length === 0 ||
-        (service && filters.services.includes(`${p.platform}::${service}`));
-      const matchesSource = filters.source === "All" || source === filters.source;
-      const matchesStatus = filters.statuses.length === 0 || filters.statuses.includes(p.status);
-      const matchesUsed = !filters.usedOnly || p.used === true;
-      const matchesExpiry = !filters.expiringSoon || isExpiringSoon(p.endDate);
-      const matchesCode = !filters.hasCodeOnly || Boolean(p.code);
-      const matchesBookmark = !filters.bookmarkedOnly || p.bookmarked === true;
-      const matchesNewUser =
-        filters.newUserFilter === "any" ||
-        (filters.newUserFilter === "only" ? isNewUserOnly(p) : !isNewUserOnly(p));
-
-      return (
-        matchesQuery &&
-        matchesPlatform &&
-        matchesService &&
-        matchesSource &&
-        matchesStatus &&
-        matchesUsed &&
-        matchesExpiry &&
-        matchesCode &&
-        matchesBookmark &&
-        matchesNewUser
-      );
+          .toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
     });
-  }, [promos, query, filters]);
+  }, [promos, query, family, bottomFilters, toggles]);
 
-  const sortedPromos = useMemo(
-    () => sortPromos(filteredPromos, sortBy),
-    [filteredPromos, sortBy]
-  );
+  const activeFilterCount =
+    bottomFilters.platforms.length +
+    bottomFilters.statuses.length +
+    bottomFilters.sources.length +
+    (bottomFilters.firstTimeOnly !== "any" ? 1 : 0);
 
-  const groupedPromos = useMemo(() => {
-    if (groupBy === "none") return null;
+  const selectedPromo = selectedId ? promos.find((p) => p.id === selectedId) ?? null : null;
 
-    const groups = new Map<string, Promo[]>();
-    for (const promo of sortedPromos) {
-      const key =
-        groupBy === "platform"
-          ? promo.platform
-          : groupBy === "service"
-            ? promoServiceName(promo) ?? promo.platform
-            : promo.status;
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key)!.push(promo);
-    }
-
-    const entries = Array.from(groups.entries());
-    if (groupBy === "status") {
-      entries.sort(
-        ([a], [b]) =>
-          STATUS_ORDER.indexOf(a as PromoStatus) - STATUS_ORDER.indexOf(b as PromoStatus)
-      );
-      return entries.map(([key, items]) => [STATUS_LABELS[key as PromoStatus], items] as const);
-    }
-
-    entries.sort(([a], [b]) => a.localeCompare(b));
-    return entries as [string, Promo[]][];
-  }, [sortedPromos, groupBy]);
-
-  const activeFilterCount = (() => {
-    let count = 0;
-    if (filters.platforms.length > 0) count += filters.platforms.length;
-    if (filters.services.length > 0) count += filters.services.length;
-    if (filters.source !== "All") count++;
-    if (filters.statuses.length > 0) count += filters.statuses.length;
-    if (filters.usedOnly) count++;
-    if (filters.bookmarkedOnly) count++;
-    if (filters.expiringSoon) count++;
-    if (filters.hasCodeOnly) count++;
-    if (filters.newUserFilter !== "any") count++;
-    return count;
-  })();
-
-  function updateFilters(partial: Partial<FilterState>) {
-    setFilters((prev) => ({ ...prev, ...partial }));
+  function emptyMessage() {
+    if (toggles.bookmarked) return { title: "NO BOOKMARKS YET", sub: "Tap the B stamp on any code to save it here." };
+    if (toggles.used) return { title: "NOTHING USED YET", sub: "Codes you've marked as used will show up here." };
+    return { title: "NOTHING HERE", sub: "Try a different search or clear your filters." };
   }
 
-  function resetFilters() {
-    setFilters({
-      ...DEFAULT_FILTERS,
-      platforms: initialPlatform === "All" ? [] : [initialPlatform],
-      services: initialService !== "All" && initialPlatform !== "All" ? [`${initialPlatform}::${initialService}`] : [],
-      bookmarkedOnly: initialBookmarked,
-    });
+  function clearAllFilters() {
+    setQuery("");
+    setFamily("all");
+    setToggles(DEFAULT_TOGGLES);
+    setBottomFilters(DEFAULT_BOTTOM_FILTERS);
   }
 
   async function runScrape() {
     setIsScraping(true);
-    setScrapeMessage(null);
     try {
       const res = await fetch("/api/scrape", { method: "POST" });
       const payload = (await res.json()) as {
@@ -352,13 +157,9 @@ export function PromoDashboard({
       const warnings = payload.failures?.length
         ? ` ${payload.failures.length} source${payload.failures.length !== 1 ? "s" : ""} blocked or failed.`
         : "";
-      const message = `Found ${payload.foundCount ?? 0}; saved ${payload.savedCount ?? 0}.${warnings}`;
-      setScrapeMessage(message);
-      toast({ title: message, variant: warnings ? "default" : "success" });
+      toast({ title: `Found ${payload.foundCount ?? 0}; saved ${payload.savedCount ?? 0}.${warnings}` });
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Scrape failed";
-      setScrapeMessage(message);
-      toast({ title: message, variant: "error" });
+      toast({ title: err instanceof Error ? err.message : "Scrape failed", variant: "error" });
     } finally {
       setIsScraping(false);
     }
@@ -368,140 +169,156 @@ export function PromoDashboard({
     setPromos((prev) => prev.map((p) => (p.id === updated.id ? updated : p)));
   }
 
+  const empty = emptyMessage();
+
   return (
-    <main className="flex min-h-screen flex-col">
-      <div className="sticky top-0 z-30 border-b bg-background/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.03)]">
-        <div className="flex flex-wrap items-center gap-3 py-3 pl-14 pr-4 lg:px-6">
-          <label className="relative min-w-[140px] flex-1 sm:max-w-md">
-            <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              ref={searchInputRef}
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search promos... (press / to focus)"
-              className="h-9 pl-9"
-            />
-          </label>
-
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setFilterOpen(true)}
-            className="relative shrink-0"
-          >
-            <Filter className="size-4" />
-            Filters
-            {activeFilterCount > 0 && (
-              <span className="ml-1 flex size-5 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-primary-foreground">
-                {activeFilterCount}
-              </span>
-            )}
-          </Button>
-
-          <div className="ml-auto flex items-center gap-2">
-            <Button size="sm" variant="outline" onClick={runScrape} disabled={isScraping}>
-              <RefreshCw className={isScraping ? "size-4 animate-spin" : "size-4"} />
-              <span className="hidden sm:inline">{isScraping ? "Refreshing..." : "Refresh"}</span>
-            </Button>
-
-            <Button size="sm" onClick={() => setIsAddModalOpen(true)}>
-              <Plus className="size-4" />
-              <span className="hidden sm:inline">Add</span>
-            </Button>
+    <main className="min-h-screen bg-paper pb-16">
+      <div className="bg-brand px-5 pb-6 pt-5">
+        <div className="mx-auto flex max-w-[1200px] flex-wrap items-end justify-between gap-2">
+          <div>
+            <div className="font-display leading-none text-white" style={{ fontSize: "clamp(28px, 6vw, 42px)", letterSpacing: "0.02em" }}>
+              KURIPOTCODES
+            </div>
+            <div className="mt-1 text-sm text-white/85">Bawas gastos. All the promo codes in one place!</div>
           </div>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2 border-t px-4 py-2 lg:px-6">
-          <div className="flex items-center gap-1.5">
-            <ArrowUpDown className="size-3.5 shrink-0 text-muted-foreground" />
-            <Select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as SortOption)}
-              options={SORT_OPTIONS}
-              className="h-8 w-[135px] text-xs"
-            />
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={runScrape}
+              disabled={isScraping}
+              className="flex items-center gap-1.5 rounded border-2 border-white/70 px-3 py-1.5 font-display text-xs tracking-wide text-white disabled:opacity-60"
+            >
+              <RefreshCw className={isScraping ? "size-3.5 animate-spin" : "size-3.5"} />
+              {isScraping ? "REFRESHING" : "REFRESH"}
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsAddModalOpen(true)}
+              className="flex items-center gap-1.5 rounded border-2 border-white/70 px-3 py-1.5 font-display text-xs tracking-wide text-white"
+            >
+              <Plus className="size-3.5" />
+              ADD
+            </button>
           </div>
-          <div className="flex items-center gap-1.5">
-            <LayoutGrid className="size-3.5 shrink-0 text-muted-foreground" />
-            <Select
-              value={groupBy}
-              onChange={(e) => setGroupBy(e.target.value as GroupOption)}
-              options={GROUP_OPTIONS}
-              className="h-8 w-[135px] text-xs"
-            />
+          <div className="font-mono text-xs tracking-wide text-white/85">
+            {promos.length} CODES TRACKED · {NUM_PLATFORMS} PLATFORMS
           </div>
-        </div>
-
-        <div className="flex items-center gap-4 border-t px-4 py-2 text-xs text-muted-foreground lg:px-6">
-          <span>
-            <strong className="text-foreground">{promos.length}</strong> Total
-          </span>
-          <span>
-            <strong className="text-foreground">{activeCount}</strong> Active
-          </span>
-          <span>
-            <strong className="text-foreground">{filteredPromos.length}</strong> Shown
-          </span>
-          <span className="ml-auto hidden sm:inline">Updated {lastUpdated}</span>
-          {scrapeMessage && (
-            <span className="truncate text-[11px]">{scrapeMessage}</span>
-          )}
         </div>
       </div>
 
-      <section className="flex-1 px-4 py-5 lg:px-6">
-        {sortedPromos.length > 0 ? (
-          groupedPromos ? (
-            <div className="space-y-8">
-              {groupedPromos.map(([label, items]) => (
-                <div key={label}>
-                  <h2 className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
-                    {label}
-                    <span className="rounded-full bg-muted px-2 py-0.5 text-xs font-normal text-muted-foreground">
-                      {items.length}
-                    </span>
-                  </h2>
-                  <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                    {items.map((promo) => (
-                      <PromoCard key={promo.id} promo={promo} onUpdate={handlePromoUpdate} />
-                    ))}
-                  </div>
-                </div>
-              ))}
+      <div className="sticky top-0 z-20 flex flex-col gap-3 border-b-[3px] border-ink bg-paper px-5 py-3.5">
+        <div className="mx-auto flex w-full max-w-[1200px] gap-2.5 overflow-x-auto pb-0.5">
+          {FAMILY_TAB_ORDER.map((tab) => {
+            const active = tab === family;
+            const color = tab === "all" ? "bg-brand" : FAMILY_CLASSNAMES[tab].split(" ")[0];
+            return (
+              <button
+                key={tab}
+                type="button"
+                onClick={() => setFamily(tab)}
+                className={
+                  "whitespace-nowrap rounded-[6px] border-2 border-ink px-5 py-2.5 font-display text-[15px] tracking-wide transition-transform " +
+                  (active ? `${color} text-white shadow-[4px_4px_0_oklch(var(--ink))] -translate-x-0.5 -translate-y-0.5` : "bg-card text-ink shadow-[2px_2px_0_oklch(var(--ink))]")
+                }
+              >
+                {tab === "all" ? "ALL" : FAMILY_LABELS[tab].toUpperCase()}
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mx-auto flex w-full max-w-[1200px] flex-wrap items-center gap-2.5">
+          <input
+            ref={searchInputRef}
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search codes, platforms, stores..."
+            className="min-w-[200px] flex-1 rounded border-2 border-dashed border-ink bg-card px-3.5 py-3 font-mono text-sm text-ink outline-none focus:border-solid focus:ring-[3px] focus:ring-brand focus:ring-offset-1"
+          />
+          <button
+            type="button"
+            onClick={() => setFilterSheetOpen(true)}
+            className="whitespace-nowrap rounded border-2 border-ink bg-card px-4 py-3 font-display text-sm tracking-wide shadow-[2px_2px_0_oklch(var(--ink))]"
+          >
+            MORE FILTERS{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}
+          </button>
+        </div>
+
+        <div className="mx-auto flex w-full max-w-[1200px] gap-2 overflow-x-auto">
+          {(
+            [
+              { key: "hasCode", label: "HAS CODE" },
+              { key: "expiring", label: "EXPIRING SOON" },
+              { key: "bookmarked", label: "BOOKMARKED" },
+              { key: "used", label: "USED" }
+            ] as const
+          ).map((chip) => {
+            const active = toggles[chip.key];
+            return (
+              <button
+                key={chip.key}
+                type="button"
+                onClick={() => setToggles((prev) => ({ ...prev, [chip.key]: !prev[chip.key] }))}
+                className={
+                  "whitespace-nowrap rounded-full border-2 px-3.5 py-2 font-sans text-sm font-semibold " +
+                  (active ? "border-ink bg-ink text-white" : "border-line bg-transparent text-ink")
+                }
+              >
+                {chip.label}
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mx-auto w-full max-w-[1200px] font-mono text-xs text-ink-soft">
+          SHOWING {filteredPromos.length} OF {promos.length}
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-[1200px] p-5">
+        {filteredPromos.length === 0 ? (
+          <div className="flex flex-col items-center gap-3.5 py-16 text-center">
+            <div className="-rotate-2 border-[3px] border-ink px-6 py-3.5 font-display text-[30px] tracking-wide">
+              {empty.title}
             </div>
-          ) : (
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {sortedPromos.map((promo) => (
-                <PromoCard key={promo.id} promo={promo} onUpdate={handlePromoUpdate} />
-              ))}
-            </div>
-          )
-        ) : (
-          <div className="flex min-h-64 flex-col items-center justify-center rounded-lg border border-dashed p-8 text-center">
-            <p className="text-lg font-semibold">No promos match your filters</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Try adjusting your search or resetting the filters.
-            </p>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={resetFilters}
-              className="mt-4"
+            <div className="max-w-[360px] text-ink-soft">{empty.sub}</div>
+            <button
+              type="button"
+              onClick={clearAllFilters}
+              className="mt-2 rounded border-2 border-brand bg-brand px-5 py-2.5 font-display text-white shadow-[3px_3px_0_oklch(var(--ink))]"
             >
-              Reset filters
-            </Button>
+              CLEAR FILTERS
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[18px]">
+            {filteredPromos.map((promo) => (
+              <PromoCard
+                key={promo.id}
+                promo={promo}
+                onUpdate={handlePromoUpdate}
+                onOpen={() => setSelectedId(promo.id)}
+              />
+            ))}
           </div>
         )}
-      </section>
+      </div>
 
       <FilterSheet
-        open={filterOpen}
-        onClose={() => setFilterOpen(false)}
-        state={filters}
-        onChange={updateFilters}
-        onReset={resetFilters}
+        open={filterSheetOpen}
+        onClose={() => setFilterSheetOpen(false)}
+        state={bottomFilters}
+        onChange={(partial) => setBottomFilters((prev) => ({ ...prev, ...partial }))}
+        onReset={() => setBottomFilters(DEFAULT_BOTTOM_FILTERS)}
         sourceOptions={sourceOptions}
-        promos={promos}
+      />
+
+      <PromoDetailModal
+        key={selectedPromo?.id ?? "none"}
+        promo={selectedPromo}
+        onClose={() => setSelectedId(null)}
+        onUpdate={handlePromoUpdate}
       />
 
       <AddPromoModal
@@ -509,8 +326,7 @@ export function PromoDashboard({
         onOpenChange={setIsAddModalOpen}
         onAdded={(promo) => {
           setPromos((prev) => [promo, ...prev]);
-          setScrapeMessage(`Added ${promo.title}.`);
-          toast({ title: `Added ${promo.title}`, variant: "success" });
+          toast({ title: `Added ${promo.title}` });
         }}
       />
     </main>

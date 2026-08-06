@@ -4,48 +4,38 @@
 
 @layer base {
   :root {
-    --background: 204 33% 97%;
-    --foreground: 222 31% 13%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 31% 13%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 31% 13%;
-    --primary: 174 72% 28%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 39 76% 54%;
-    --secondary-foreground: 222 31% 13%;
-    --muted: 207 22% 91%;
-    --muted-foreground: 218 12% 42%;
-    --accent: 347 71% 54%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 72% 50%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 210 16% 84%;
-    --input: 210 16% 84%;
-    --ring: 174 72% 28%;
-    --radius: 0.5rem;
-  }
+    --paper: 96% 0.016 70;
+    --card: 99% 0.008 70;
+    --ink: 19% 0.025 45;
+    --ink-soft: 42% 0.02 50;
+    --line: 76% 0.02 60;
+    --skeleton: 92% 0.02 65;
 
-  .dark {
-    --background: 222 26% 9%;
-    --foreground: 210 20% 92%;
-    --card: 222 24% 12%;
-    --card-foreground: 210 20% 92%;
-    --popover: 222 24% 12%;
-    --popover-foreground: 210 20% 92%;
-    --primary: 174 55% 45%;
-    --primary-foreground: 222 31% 10%;
-    --secondary: 39 65% 55%;
-    --secondary-foreground: 222 31% 10%;
-    --muted: 222 20% 18%;
-    --muted-foreground: 218 12% 65%;
-    --accent: 347 60% 55%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 222 16% 22%;
-    --input: 222 16% 22%;
-    --ring: 174 55% 45%;
+    --brand: 48% 0.19 10;
+    --brand-foreground: 99% 0 0;
+
+    --family-rides: 38% 0.15 335;
+    --family-delivery: 34% 0.11 150;
+    --family-shopping: 42% 0.12 50;
+
+    --status-active: 42% 0.13 145;
+    --status-expiring: 50% 0.19 35;
+    --status-expired: 48% 0.008 60;
+    --status-unknown: 42% 0.03 250;
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --border: var(--line);
+    --input: var(--line);
+    --ring: var(--brand);
+    --muted: 92% 0.012 65;
+    --muted-foreground: var(--ink-soft);
+    --destructive: var(--status-expiring);
+    --destructive-foreground: 99% 0 0;
+    --popover: var(--card);
+    --popover-foreground: var(--ink);
+
+    --radius: 4px;
   }
 
   * {
@@ -58,15 +48,119 @@
   }
 }
 
-@keyframes slide-in-from-right {
-  from {
-    transform: translateX(100%);
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
   }
-  to {
-    transform: translateX(0);
+  100% {
+    background-position: 0 0;
   }
 }
 
-.animate-in.slide-in-from-right {
-  animation: slide-in-from-right 0.2s ease-out;
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.animate-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    oklch(var(--skeleton)) 25%,
+    oklch(var(--paper)) 37%,
+    oklch(var(--skeleton)) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.animate-pop-in {
+  animation: pop-in 0.25s ease;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.22s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.18s ease-in forwards;
+}
+
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlay-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes dialog-out {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95) translateY(8px);
+  }
+}
+
+.animate-overlay-in {
+  animation: overlay-in 0.18s ease-out forwards;
+}
+
+.animate-overlay-out {
+  animation: overlay-out 0.18s ease-in forwards;
+}
+
+.animate-dialog-in {
+  animation: dialog-in 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-dialog-out {
+  animation: dialog-out 0.16s ease-in forwards;
 }

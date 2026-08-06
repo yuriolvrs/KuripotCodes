@@ -55,14 +55,6 @@ const SERVICE_RULES: Record<Exclude<Platform, "Other">, Array<{ name: string; pa
   ],
 };
 
-const NEW_USER_PATTERN =
-  /\bfirst[\s-]?(?:\w+[\s-]?)?(order|ride|trip|booking|purchase|delivery)s?\b|\bnew\s?(user|customer|rider)s?\b|\b1st[\s-]?(?:\w+[\s-]?)?(order|ride|trip|booking)\b|\bwelcome\s?(offer|promo|voucher|deal)\b|\bsign[\s-]?up\b/i;
-
-export function isNewUserOnly(promo: Promo): boolean {
-  const text = [promo.title, promo.description].filter(Boolean).join(" ");
-  return NEW_USER_PATTERN.test(text);
-}
-
 export function promoServiceName(promo: Promo): string | undefined {
   if (promo.platform === "Other") return undefined;
   const rules = SERVICE_RULES[promo.platform];

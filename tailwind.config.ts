@@ -1,8 +1,11 @@
 import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 
+function withAlpha(varName: string) {
+  return `oklch(var(${varName}) / <alpha-value>)`;
+}
+
 const config: Config = {
-  darkMode: ["class"],
   content: [
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -11,44 +14,59 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))"
+        border: withAlpha("--border"),
+        input: withAlpha("--input"),
+        ring: withAlpha("--ring"),
+        background: withAlpha("--background"),
+        foreground: withAlpha("--foreground"),
+        paper: withAlpha("--paper"),
+        ink: {
+          DEFAULT: withAlpha("--ink"),
+          soft: withAlpha("--ink-soft")
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))"
+        line: withAlpha("--line"),
+        skeleton: withAlpha("--skeleton"),
+        brand: {
+          DEFAULT: withAlpha("--brand"),
+          foreground: withAlpha("--brand-foreground")
+        },
+        family: {
+          rides: withAlpha("--family-rides"),
+          delivery: withAlpha("--family-delivery"),
+          shopping: withAlpha("--family-shopping")
+        },
+        status: {
+          active: withAlpha("--status-active"),
+          expiring: withAlpha("--status-expiring"),
+          expired: withAlpha("--status-expired"),
+          unknown: withAlpha("--status-unknown")
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))"
+          DEFAULT: withAlpha("--destructive"),
+          foreground: withAlpha("--destructive-foreground")
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))"
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))"
+          DEFAULT: withAlpha("--muted"),
+          foreground: withAlpha("--muted-foreground")
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))"
+          DEFAULT: withAlpha("--popover"),
+          foreground: withAlpha("--popover-foreground")
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))"
+          DEFAULT: withAlpha("--card"),
+          foreground: withAlpha("--foreground")
         }
+      },
+      fontFamily: {
+        display: ["var(--font-display)"],
+        sans: ["var(--font-sans)"],
+        mono: ["var(--font-mono)"]
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)"
+        md: "var(--radius)",
+        sm: "var(--radius)"
       }
     }
   },

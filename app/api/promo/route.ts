@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { loadPromos, savePromos, upsertPromo } from "@/lib/storage";
+import { loadPromos, savePromos, upsertPromo, withStorageLock } from "@/lib/storage";
 import { PLATFORMS, type Platform, type Promo } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -54,32 +54,37 @@ export async function PATCH(request: NextRequest) {
       return NextResponse.json({ ok: false, message: "Missing promo id" }, { status: 400 });
     }
 
-    const promos = await loadPromos();
-    const promoIndex = promos.findIndex((p) => p.id === id);
+    const promo = await withStorageLock(async () => {
+      const promos = await loadPromos();
+      const promoIndex = promos.findIndex((p) => p.id === id);
 
-    if (promoIndex === -1) {
+      if (promoIndex === -1) return null;
+
+      const target = promos[promoIndex];
+
+      if (working === null) {
+        delete target.working;
+      } else if (working !== undefined) {
+        target.working = working;
+      }
+      if (used === null) {
+        delete target.used;
+      } else if (used !== undefined) {
+        target.used = used;
+      }
+      if (bookmarked === null) {
+        delete target.bookmarked;
+      } else if (bookmarked !== undefined) {
+        target.bookmarked = bookmarked;
+      }
+
+      await savePromos(promos);
+      return target;
+    });
+
+    if (!promo) {
       return NextResponse.json({ ok: false, message: "Promo not found" }, { status: 404 });
     }
-
-    const promo = promos[promoIndex];
-
-    if (working === null) {
-      delete promo.working;
-    } else if (working !== undefined) {
-      promo.working = working;
-    }
-    if (used === null) {
-      delete promo.used;
-    } else if (used !== undefined) {
-      promo.used = used;
-    }
-    if (bookmarked === null) {
-      delete promo.bookmarked;
-    } else if (bookmarked !== undefined) {
-      promo.bookmarked = bookmarked;
-    }
-
-    await savePromos(promos);
 
     return NextResponse.json({ ok: true, promo });
   } catch (error) {

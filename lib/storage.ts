@@ -6,6 +6,21 @@ import type { Promo } from "./types";
 const DATA_DIR = path.join(process.cwd(), "data");
 const PROMOS_FILE = path.join(DATA_DIR, "promos.json");
 
+let writeLock: Promise<unknown> = Promise.resolve();
+
+// Flat-file storage has no transactions, so concurrent read-modify-write
+// cycles (e.g. two PATCH requests for different promos landing close
+// together) can race and silently drop one write. Chaining every
+// read-modify-write cycle onto this lock serializes them within the process.
+export function withStorageLock<T>(fn: () => Promise<T>): Promise<T> {
+  const run = writeLock.then(fn, fn);
+  writeLock = run.then(
+    () => undefined,
+    () => undefined
+  );
+  return run;
+}
+
 export async function loadPromos(): Promise<Promo[]> {
   try {
     const contents = await fs.readFile(PROMOS_FILE, "utf8");
@@ -23,10 +38,12 @@ export async function savePromos(promos: Promo[]) {
 }
 
 export async function upsertPromo(promo: Promo) {
-  const current = await loadPromos();
-  const next = mergePromos(current, [promo]);
-  await savePromos(next);
-  return promo;
+  return withStorageLock(async () => {
+    const current = await loadPromos();
+    const next = mergePromos(current, [promo]);
+    await savePromos(next);
+    return promo;
+  });
 }
 
 export async function getActivePromos() {

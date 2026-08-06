@@ -4,20 +4,22 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex h-9 items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded font-display text-sm tracking-wide transition-transform focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-brand focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
-        outline: "border border-input bg-background hover:bg-muted",
-        ghost: "hover:bg-muted",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+        default:
+          "border-2 border-brand bg-brand text-brand-foreground shadow-[2px_2px_0_oklch(var(--ink))] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_oklch(var(--ink))]",
+        outline:
+          "border-2 border-ink bg-card text-ink shadow-[2px_2px_0_oklch(var(--ink))] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0_oklch(var(--ink))]",
+        ghost: "text-ink hover:bg-muted",
+        destructive:
+          "border-2 border-status-expiring bg-status-expiring text-white shadow-[2px_2px_0_oklch(var(--ink))]"
       },
       size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 px-3",
-        icon: "size-9"
+        default: "px-4 py-2",
+        sm: "h-9 px-3 text-xs",
+        icon: "size-9 p-0"
       }
     },
     defaultVariants: {

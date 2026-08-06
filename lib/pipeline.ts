@@ -1,4 +1,4 @@
-import { loadPromos, savePromos } from "./storage";
+import { loadPromos, savePromos, withStorageLock } from "./storage";
 import { mergePromos } from "./normalize";
 import type { Promo } from "./types";
 import { angkasScraper } from "./scrapers/angkas";
@@ -62,12 +62,13 @@ export async function runScrapePipeline(now = new Date()): Promise<ScrapeResult>
     }
   }
 
-  const current = await loadPromos();
-  const existingIds = new Set(current.map((promo) => promo.id));
-  const saved = mergePromos(current, found, now);
-  await savePromos(saved);
-
-  const newPromos = saved.filter((promo) => !existingIds.has(promo.id)).length;
+  const { saved, newPromos } = await withStorageLock(async () => {
+    const current = await loadPromos();
+    const existingIds = new Set(current.map((promo) => promo.id));
+    const merged = mergePromos(current, found, now);
+    await savePromos(merged);
+    return { saved: merged, newPromos: merged.filter((promo) => !existingIds.has(promo.id)).length };
+  });
 
   return { found, saved, failures, counts, newPromos };
 }
