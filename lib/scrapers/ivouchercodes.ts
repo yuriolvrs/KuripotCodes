@@ -41,7 +41,15 @@ export function parseIVoucherCodesPage(platform: Platform, slug: string, sourceU
     const title = titleMatch ? stripHtml(decodeEntities(titleMatch[1])) : `${platform} promo code`;
 
     const descriptionMatch = block.match(/<p class="desc">([\s\S]*?)<\/p>/i);
-    const description = descriptionMatch ? stripHtml(decodeEntities(descriptionMatch[1])) : undefined;
+    // The site always appends a decorative "... more" link to its own
+    // coupon detail page, even when the description isn't actually
+    // truncated (the linked page has no extra text). Strip both the link
+    // and the trailing ellipsis so we don't ship a dead "...more" fragment.
+    const description = descriptionMatch
+      ? stripHtml(decodeEntities(descriptionMatch[1].replace(/<a\b[^>]*\bclass="more"[^>]*>[\s\S]*?<\/a>/i, "")))
+          .replace(/\.{3,}$/, "")
+          .trim() || undefined
+      : undefined;
 
     const combinedText = `${title} ${description ?? ""}`;
 

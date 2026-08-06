@@ -76,6 +76,28 @@ describe("parseIVoucherCodesPage", () => {
     expect(promo.endDate).toBe("2026-12-31");
   });
 
+  it("strips the site's own dead 'more' link and its decorative ellipsis out of the description", () => {
+    const html = buildBlock({
+      storeSlug: "angkas",
+      code: "NOLATE",
+      title: "P40 Off Voucher Code",
+      desc: 'Enjoy a free gift when you sign up.... <a href="https://ivouchercodes.ph/coupon/foo" class="more" title="View the coupon page">more</a>'
+    });
+    const [promo] = parseIVoucherCodesPage("Angkas", "angkas", url, html);
+    expect(promo.description).toBe("Enjoy a free gift when you sign up");
+  });
+
+  it("drops an all-ellipsis description entirely", () => {
+    const html = buildBlock({
+      storeSlug: "angkas",
+      code: "NOLATE",
+      title: "P40 Off Voucher Code",
+      desc: '... <a href="https://ivouchercodes.ph/coupon/foo" class="more">more</a>'
+    });
+    const [promo] = parseIVoucherCodesPage("Angkas", "angkas", url, html);
+    expect(promo.description).toBeUndefined();
+  });
+
   it("deduplicates repeated platform+code entries", () => {
     const block = buildBlock({ storeSlug: "angkas", code: "NOLATE", title: "P40 Off Voucher Code" });
     const html = block + block;

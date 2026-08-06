@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Bookmark, SquareCheck, ThumbsUp } from "lucide-react";
 import { Dialog, DialogCloseButton } from "@/components/ui/dialog";
 import { StampButton } from "@/components/ui/stamp-button";
@@ -39,16 +39,26 @@ export function PromoDetailModal({
   onUpdate?: (updated: Promo) => void;
 }) {
   const [copied, setCopied] = useState(false);
-  const { working, used, bookmarked, pending, updateField } = usePromoFlags(promo, onUpdate);
+  // Keep rendering the last-open promo's content while the dialog plays its
+  // close animation — bailing out to null the instant `promo` goes null would
+  // unmount Dialog before it gets to animate out.
+  const [displayPromo, setDisplayPromo] = useState(promo);
+  useEffect(() => {
+    if (promo) {
+      setDisplayPromo(promo);
+      setCopied(false);
+    }
+  }, [promo]);
+  const { working, used, bookmarked, pending, updateField } = usePromoFlags(displayPromo, onUpdate);
   const { toast } = useToast();
 
-  if (!promo) return null;
-  const current = promo;
+  if (!displayPromo) return null;
+  const current = displayPromo;
 
-  const sourceName = sourceSiteName(promo.sourceUrl);
-  const service = promoServiceName(promo);
-  const family = platformFamily(promo);
-  const status = displayStatus(promo);
+  const sourceName = sourceSiteName(current.sourceUrl);
+  const service = promoServiceName(current);
+  const family = platformFamily(current);
+  const status = displayStatus(current);
 
   async function copyCode() {
     if (!current.code) return;
@@ -78,7 +88,7 @@ export function PromoDetailModal({
           <span className={cn("rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider", STATUS_CLASSNAMES[status])}>
             {STATUS_LABELS[status].toUpperCase()}
           </span>
-          {promo.firstTimeOnly && (
+          {current.firstTimeOnly && (
             <span
               className={cn(
                 "rounded-[3px] px-2 py-0.5 font-display text-[11px] tracking-wider",
@@ -92,23 +102,23 @@ export function PromoDetailModal({
 
         <div
           className="font-display text-sm tracking-wide"
-          style={{ color: PLATFORM_BRAND[promo.platform].textOnLight }}
+          style={{ color: PLATFORM_BRAND[current.platform].textOnLight }}
         >
-          {serviceLabel(promo.platform, service)}
+          {serviceLabel(current.platform, service)}
         </div>
 
-        <h2 className="pr-6 font-display text-2xl leading-tight">{promo.title}</h2>
+        <h2 className="pr-6 font-display text-2xl leading-tight">{current.title}</h2>
 
-        {promo.description && <p className="text-sm leading-relaxed text-ink-soft">{promo.description}</p>}
+        {current.description && <p className="text-sm leading-relaxed text-ink-soft">{current.description}</p>}
 
         <div className="mt-1 flex flex-wrap items-center gap-2.5">
-          {promo.code && (
+          {current.code && (
             <span className="rounded-[3px] border-2 border-dashed border-ink bg-paper px-3.5 py-2 font-mono text-xl font-bold tracking-wide">
-              {promo.code}
+              {current.code}
             </span>
           )}
-          {promo.discountValue && <span className="font-display text-[15px] text-brand">{promo.discountValue}</span>}
-          {promo.code && (
+          {current.discountValue && <span className="font-display text-[15px] text-brand">{current.discountValue}</span>}
+          {current.code && (
             <button
               type="button"
               onClick={copyCode}
@@ -131,12 +141,12 @@ export function PromoDetailModal({
           <div>
             <b className="text-ink">First seen</b>
             <br />
-            {formatDate(promo.firstSeen)}
+            {formatDate(current.firstSeen)}
           </div>
           <div>
             <b className="text-ink">Last seen</b>
             <br />
-            {formatDate(promo.lastSeen)}
+            {formatDate(current.lastSeen)}
           </div>
         </div>
 

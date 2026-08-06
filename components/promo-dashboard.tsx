@@ -1,6 +1,6 @@
 "use client";
 
-import { Plus, RefreshCw } from "lucide-react";
+import { ArrowUp, Plus, RefreshCw } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AddPromoModal } from "@/components/AddPromoModal";
@@ -52,8 +52,17 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isScraping, setIsScraping] = useState(false);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const { toast } = useToast();
   const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    function handleScroll() {
+      setShowBackToTop(window.scrollY > 400);
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -206,7 +215,7 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
         </div>
       </div>
 
-      <div className="sticky top-0 z-20 flex flex-col gap-3 border-b-[3px] border-ink bg-paper px-5 py-3.5">
+      <div className="flex flex-col gap-3 border-b-[3px] border-ink bg-paper px-5 py-3.5">
         <div className="mx-auto flex w-full max-w-[1200px] gap-2.5 overflow-x-auto pb-0.5">
           {FAMILY_TAB_ORDER.map((tab) => {
             const active = tab === family;
@@ -315,7 +324,6 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
       />
 
       <PromoDetailModal
-        key={selectedPromo?.id ?? "none"}
         promo={selectedPromo}
         onClose={() => setSelectedId(null)}
         onUpdate={handlePromoUpdate}
@@ -329,6 +337,17 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
           toast({ title: `Added ${promo.title}` });
         }}
       />
+
+      {showBackToTop && (
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Back to top"
+          className="fixed bottom-6 right-6 z-30 flex size-12 items-center justify-center rounded-full border-2 border-ink bg-brand text-white shadow-[3px_3px_0_oklch(var(--ink))]"
+        >
+          <ArrowUp className="size-5" />
+        </button>
+      )}
     </main>
   );
 }
