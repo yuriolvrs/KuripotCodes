@@ -11,7 +11,8 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "firstTimeOnly": true
   },
   {
     "id": "65eafaaae74ab263",
@@ -25,7 +26,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z",
     "firstTimeOnly": true
   },
   {
@@ -40,7 +41,8 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "firstTimeOnly": true
   },
   {
     "id": "08daaa5bec2410bf",
@@ -48,12 +50,14 @@
     "title": "Get ₱100 Off your First GrabCar Ride",
     "code": "GRABFREE",
     "description": "Enjoy ₱100 off when you put in this code at GrabCar",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 100",
+    "firstTimeOnly": true
   },
   {
     "id": "c396367da955b4e7",
@@ -61,13 +65,14 @@
     "title": "₱40 Off Voucher Code Valid for 3 Rides, Valid for New Users for Android",
     "code": "NOLATE",
     "description": "Valid for New Users for Android",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z",
-    "firstTimeOnly": true
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "firstTimeOnly": true,
+    "discountValue": "PHP 40"
   },
   {
     "id": "897d9e63fa2365b7",
@@ -75,12 +80,13 @@
     "title": "Extra ₱100 Off Voucher Code for foodpanda , Min Spend ₱199",
     "code": "SARAP",
     "description": "₱100 off | varying min. order values: ₱199 Valid for selected restaurants, varying durations.\"",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 100"
   },
   {
     "id": "26df0e3d7438404d",
@@ -94,7 +100,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z",
     "firstTimeOnly": true
   },
   {
@@ -103,12 +109,13 @@
     "title": "Extra ₱100 Off Voucher Code for Orders for Pickup",
     "code": "PICKUP",
     "description": "₱100 off | varying min. order values: ₱399\"",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 100"
   },
   {
     "id": "43f045836b55e971",
@@ -122,7 +129,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "edd03a77d8de7802",
@@ -136,7 +143,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "adebedba9944a872",
@@ -150,7 +157,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -158,13 +165,14 @@
     "title": "Extra ₱100 Off Voucher Code on Shopee",
     "code": "ONLIN246",
     "description": "Download the Shopee app and use this code to get ₱100 off your first order!",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z",
-    "firstTimeOnly": true
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "firstTimeOnly": true,
+    "discountValue": "PHP 100"
   },
   {
     "id": "2bb67bd83f234a6c",
@@ -177,7 +185,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "e0193db869840b3c",
@@ -188,7 +196,7 @@
     "discountValue": "60%",
     "region": "Philippines",
     "sourceUrl": "https://www.worthepenny.com/offer/outb609cfe019b4ddbe",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -201,7 +209,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://www.worthepenny.com/offer/out3f0be3a2b1eebbb7",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -214,7 +222,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -226,7 +234,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -239,7 +247,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -251,7 +259,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -264,7 +272,7 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -277,7 +285,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -290,7 +298,7 @@
     "discountValue": "60%",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -303,7 +311,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -316,7 +324,7 @@
     "discountValue": "70%",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -328,7 +336,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -340,7 +348,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -352,7 +360,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -365,7 +373,7 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -377,7 +385,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-06-03T03:25:52.715Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -390,7 +398,7 @@
     "discountValue": "35%",
     "region": "Philippines",
     "sourceUrl": "https://www.worthepenny.com/offer/out408d01dc49899156",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-07-19T02:07:19.425Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -403,7 +411,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://www.worthepenny.com/offer/out3c7363d6b1feb2fe",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-07-19T02:07:19.425Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -415,7 +423,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://move-it.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-07-19T02:07:19.425Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -427,7 +435,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-07-20T16:52:12.788Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -439,7 +447,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-08-04T12:29:48.950Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -451,7 +459,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-07-19T16:25:32.273Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -463,7 +471,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-08-04T03:23:39.762Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -475,7 +483,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://grab.worthepenny.com/coupon/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-08-02T03:37:24.985Z",
     "lastSeen": "2026-08-06T12:30:28.656Z"
   },
@@ -2045,7 +2053,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "63315a55d279bf7e",
@@ -2058,7 +2066,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -2071,7 +2079,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "de90633a9565c965",
@@ -2084,7 +2092,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -2097,7 +2105,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "86eae33607a27894",
@@ -2112,7 +2120,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -2127,7 +2135,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "d920392c8d138a10",
@@ -2142,7 +2150,7 @@
     "endDate": "2026-08-09",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -2155,7 +2163,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "f93023a5179acdf0",
@@ -2163,13 +2171,14 @@
     "title": "₱650 Off with Security Bank Credit Cards Shopee coupon",
     "code": "",
     "description": "Pay with a Security Bank credit card and get an extra ₱650 off on a minimum spend of ₱6,500.",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "endDate": "2026-08-09",
     "status": "active",
     "firstSeen": "2026-08-05T12:27:10.229Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 650"
   },
   {
     "id": "a346144f802f17ee",
@@ -2177,13 +2186,14 @@
     "title": "₱200 Off with EastWest Cards Shopee coupon",
     "code": "",
     "description": "Get an extra ₱200 off when paying with EastWest and spending at least ₱2,000.",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "endDate": "2026-08-09",
     "status": "active",
     "firstSeen": "2026-08-05T12:27:10.229Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 200"
   },
   {
     "id": "76cfa6b322513bee",
@@ -2191,13 +2201,14 @@
     "title": "₱100 Off with Komo by EastWest Shopee coupon",
     "code": "",
     "description": "Get an extra ₱100 off when paying with Komo by EastWest and spending at least ₱1,000.",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "endDate": "2026-08-19",
     "status": "active",
     "firstSeen": "2026-08-05T12:27:10.229Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 100"
   },
   {
     "id": "31e90053ddb9d987",
@@ -2205,13 +2216,14 @@
     "title": "₱100 Off with EastWest Rural Bank Shopee coupon",
     "code": "",
     "description": "Receive an extra ₱100 off with EastWest Rural Bank on a minimum spend of ₱1,000.",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "endDate": "2026-08-09",
     "status": "active",
     "firstSeen": "2026-08-05T12:27:10.229Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 100"
   },
   {
     "id": "9614af1d1d823a14",
@@ -2226,7 +2238,7 @@
     "endDate": "2026-08-10",
     "status": "active",
     "firstSeen": "2026-08-05T12:27:10.229Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "43291d047dbd8324",
@@ -2234,13 +2246,14 @@
     "title": "₱500 Off Domino's Pizza Orders with foodpanda voucher code",
     "code": "",
     "description": "Get ₱500 OFF on Domino's Pizza orders when you use the foodpanda voucher code on the Foodpanda App. This offer is available on pizzas, drinks, desserts, and sharing platters for added savings on your food delivery.",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-08-13",
     "status": "active",
     "firstSeen": "2026-08-06T08:00:28.933Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 500"
   },
   {
     "id": "65f6d9de92b9593f",
@@ -2248,13 +2261,101 @@
     "title": "₱500 Off Shakeys Pizza Delivery with foodpanda voucher code",
     "code": "",
     "description": "Use the foodpanda voucher code to receive ₱500 OFF on Shakeys Pizza delivery via the Foodpanda App. This offer allows you to save more while ordering your favorite pizzas and other food items.",
-    "discountType": "unknown",
+    "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-08-13",
     "status": "active",
     "firstSeen": "2026-08-06T08:00:28.933Z",
-    "lastSeen": "2026-08-06T12:30:28.656Z"
+    "lastSeen": "2026-08-07T03:09:06.884Z",
+    "discountValue": "PHP 500"
+  },
+  {
+    "id": "951f089a18a5c8ba",
+    "platform": "Shopee",
+    "title": "Up to ₱2,000 Off with Metrobank Cards Shopee coupon",
+    "code": "",
+    "description": "Save up to ₱2,000 when you pay with an eligible Metrobank credit card and use code. The promotion is valid August 5–9, 2026, includes 0% installment plans for up to 24 months, and is available for one-time use only. A minimum spend of ₱10,000 applies.",
+    "discountType": "percent",
+    "discountValue": "0%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/shopee",
+    "endDate": "2026-08-09",
+    "status": "active",
+    "firstSeen": "2026-08-07T03:09:06.884Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z"
+  },
+  {
+    "id": "caffd85b94e46864",
+    "platform": "Shopee",
+    "title": "₱500 Off with BDO Credit Cards Shopee coupon",
+    "code": "",
+    "description": "Get an extra ₱500 off when you pay with a BDO credit card and spend at least ₱5,000. Valid for one-time use from August 7–9.",
+    "discountType": "fixed",
+    "discountValue": "PHP 500",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/shopee",
+    "endDate": "2026-08-09",
+    "status": "active",
+    "firstSeen": "2026-08-07T03:09:06.884Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z"
+  },
+  {
+    "id": "7380e8afcbb51133",
+    "platform": "Shopee",
+    "title": "₱300 Off with LANDBANK Cards Shopee coupon",
+    "code": "",
+    "description": "Enjoy an extra ₱300 off with LANDBANK on a minimum spend of ₱2,500.",
+    "discountType": "fixed",
+    "discountValue": "PHP 300",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/shopee",
+    "endDate": "2026-08-09",
+    "status": "active",
+    "firstSeen": "2026-08-07T03:09:06.884Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z"
+  },
+  {
+    "id": "8f7d59a6c19515f7",
+    "platform": "Shopee",
+    "title": "₱300 Off with Chinabank Credit or Debit Cards Shopee coupon",
+    "code": "",
+    "description": "Receive an extra ₱300 off when paying with a Chinabank credit or debit card and spending at least ₱2,000. Offer is valid for one-time use from August 7–9.",
+    "discountType": "fixed",
+    "discountValue": "PHP 300",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/shopee",
+    "endDate": "2026-08-09",
+    "status": "active",
+    "firstSeen": "2026-08-07T03:09:06.884Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z"
+  },
+  {
+    "id": "8c6ca560e0eaf568",
+    "platform": "Lazada",
+    "title": "Lazada promo code Up to 10% Off Your Order",
+    "code": "",
+    "description": "Grab a fantastic discount of up to 10% on your purchase today! Take advantage of this opportunity and save more while shopping online!",
+    "discountType": "percent",
+    "discountValue": "10%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "status": "active",
+    "firstSeen": "2026-08-07T03:09:06.884Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z"
+  },
+  {
+    "id": "c5dff333d42ff4fe",
+    "platform": "Lazada",
+    "title": "Get a chance to win a condo when you use GCash payment method Lazada promo code",
+    "code": "",
+    "description": "Experience the chance to win a condo by using Gcash for your transactions.",
+    "discountType": "unknown",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "status": "active",
+    "firstSeen": "2026-08-07T03:09:06.884Z",
+    "lastSeen": "2026-08-07T03:09:06.884Z"
   },
   {
     "id": "205c07891f19f7e4",
@@ -5055,7 +5156,7 @@
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-08-06",
-    "status": "active",
+    "status": "expired",
     "firstSeen": "2026-08-05T07:45:05.962Z",
     "lastSeen": "2026-08-06T03:22:01.474Z"
   },
@@ -5069,7 +5170,7 @@
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-08-06",
-    "status": "active",
+    "status": "expired",
     "firstSeen": "2026-08-05T07:45:05.962Z",
     "lastSeen": "2026-08-06T03:22:01.474Z"
   },
