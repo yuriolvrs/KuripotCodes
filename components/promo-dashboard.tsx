@@ -21,11 +21,11 @@ interface QuickToggles {
   hasCode: boolean;
   expiring: boolean;
   bookmarked: boolean;
-  used: boolean;
+  unused: boolean;
 }
 
 const DEFAULT_BOTTOM_FILTERS: BottomFilterState = { platforms: [], statuses: [], sources: [], firstTimeOnly: "any" };
-const DEFAULT_TOGGLES: QuickToggles = { hasCode: false, expiring: false, bookmarked: false, used: false };
+const DEFAULT_TOGGLES: QuickToggles = { hasCode: false, expiring: false, bookmarked: false, unused: false };
 
 const FAMILY_TAB_ORDER: FamilyTab[] = ["all", ...FAMILIES];
 
@@ -114,17 +114,20 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
       const source = sourceSiteName(p.sourceUrl);
       const promoFamily = platformFamily(p);
       const status = displayStatus(p);
+      const statusChips = bottomFilters.statuses.filter((s) => s !== "used" && s !== "unused");
+      const usedChips = bottomFilters.statuses.filter((s) => s === "used" || s === "unused");
 
       if (family !== "all" && promoFamily !== family) return false;
       if (bottomFilters.platforms.length && !bottomFilters.platforms.includes(p.platform)) return false;
-      if (bottomFilters.statuses.length && !bottomFilters.statuses.includes(status)) return false;
+      if (statusChips.length && !statusChips.includes(status)) return false;
+      if (usedChips.length && !usedChips.some((v) => (v === "used" ? p.used : !p.used))) return false;
       if (bottomFilters.sources.length && !bottomFilters.sources.includes(source)) return false;
       if (bottomFilters.firstTimeOnly === "first_only" && !p.firstTimeOnly) return false;
       if (bottomFilters.firstTimeOnly === "not_first_only" && p.firstTimeOnly) return false;
       if (toggles.hasCode && !p.code) return false;
       if (toggles.expiring && !isExpiringSoon(p.endDate)) return false;
       if (toggles.bookmarked && !p.bookmarked) return false;
-      if (toggles.used && !p.used) return false;
+      if (toggles.unused && p.used) return false;
 
       if (q) {
         const hay = [p.title, p.code, p.description, p.platform, source, service]
@@ -147,7 +150,7 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
 
   function emptyMessage() {
     if (toggles.bookmarked) return { title: "NO BOOKMARKS YET", sub: "Tap the B stamp on any code to save it here." };
-    if (toggles.used) return { title: "NOTHING USED YET", sub: "Codes you've marked as used will show up here." };
+    if (toggles.unused) return { title: "NO UNUSED CODES", sub: "Codes you haven't marked as used will show up here." };
     return { title: "NOTHING HERE", sub: "Try a different search or clear your filters." };
   }
 
@@ -210,29 +213,27 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
       </div>
 
       <div className="flex flex-col gap-3 border-b-[3px] border-ink bg-paper px-5 py-3.5">
-        <div className="mx-auto flex w-full max-w-[1200px] gap-2.5 overflow-x-auto overflow-y-hidden pb-1">
+        <div className="mx-auto grid w-full max-w-[1200px] grid-cols-4 gap-1.5 sm:gap-2.5">
           {FAMILY_TAB_ORDER.map((tab) => {
             const active = tab === family;
             const color = tab === "all" ? "bg-brand" : FAMILY_CLASSNAMES[tab].split(" ")[0];
             const Icon = tab === "all" ? TicketPercent : FAMILY_ICONS[tab];
             return (
-              <div key={tab} className="relative shrink-0">
+              <div key={tab} className="relative">
                 <span
                   aria-hidden
-                  className={
-                    "pointer-events-none absolute inset-0 rounded-[6px] bg-[oklch(var(--ink))] transition-transform " +
-                    (active ? "translate-x-1 translate-y-1" : "translate-x-0.5 translate-y-0.5")
-                  }
+                  className="pointer-events-none absolute inset-0 translate-x-1 translate-y-1 rounded-[6px] bg-[oklch(var(--ink))]"
                 />
                 <button
                   type="button"
                   onClick={() => setFamily(tab)}
                   className={
-                    "relative flex items-center gap-2 whitespace-nowrap rounded-[6px] border-2 border-ink px-5 py-2.5 font-display text-[15px] tracking-wide " +
+                    "relative flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-[6px] border-2 border-ink px-1.5 py-2.5 font-display text-[11px] tracking-normal transition-all duration-150 ease-out sm:gap-2 sm:px-5 sm:py-2.5 sm:text-[15px] sm:tracking-wide " +
+                    (active ? "translate-x-1 translate-y-1 " : "translate-x-0 translate-y-0 ") +
                     (active ? `${color} text-white` : "bg-card text-ink")
                   }
                 >
-                  <Icon className="size-4 shrink-0" strokeWidth={2.25} />
+                  <Icon className="size-3.5 shrink-0 sm:size-4" strokeWidth={2.25} />
                   {tab === "all" ? "ALL" : FAMILY_LABELS[tab].toUpperCase()}
                 </button>
               </div>
@@ -240,32 +241,33 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
           })}
         </div>
 
-        <div className="mx-auto flex w-full max-w-[1200px] flex-wrap items-center gap-2.5">
+        <div className="mx-auto flex w-full max-w-[1200px] items-center gap-2 sm:flex-wrap sm:gap-2.5">
           <input
             ref={searchInputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search codes, platforms, stores..."
-            className="min-w-[200px] flex-1 rounded border-2 border-dashed border-ink bg-card px-3.5 py-3 font-mono text-sm text-ink outline-none focus:border-solid focus:ring-[3px] focus:ring-brand focus:ring-offset-1"
+            className="min-w-0 flex-1 rounded border-2 border-dashed border-ink bg-card px-3 py-2.5 font-mono text-sm text-ink outline-none focus:border-solid focus:ring-[3px] focus:ring-brand focus:ring-offset-1 sm:min-w-[200px] sm:px-3.5 sm:py-3"
           />
           <button
             type="button"
             onClick={() => setFilterSheetOpen(true)}
-            className="whitespace-nowrap rounded border-2 border-ink bg-card px-4 py-3 font-display text-sm tracking-wide shadow-[2px_2px_0_oklch(var(--ink))]"
+            className="shrink-0 whitespace-nowrap rounded border-2 border-ink bg-card px-3 py-2.5 font-display text-xs tracking-wide shadow-[2px_2px_0_oklch(var(--ink))] sm:px-4 sm:py-3 sm:text-sm"
           >
-            MORE FILTERS{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}
+            <span className="sm:hidden">FILTERS{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}</span>
+            <span className="hidden sm:inline">MORE FILTERS{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}</span>
           </button>
         </div>
 
-        <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-2">
-          <div className="flex gap-2 overflow-x-auto">
+        <div className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-wrap gap-1.5 sm:flex-nowrap sm:gap-2 sm:overflow-x-auto">
             {(
               [
                 { key: "hasCode", label: "HAS CODE" },
                 { key: "expiring", label: "EXPIRING SOON" },
                 { key: "bookmarked", label: "BOOKMARKED" },
-                { key: "used", label: "USED" }
+                { key: "unused", label: "UNUSED" }
               ] as const
             ).map((chip) => {
               const active = toggles[chip.key];
@@ -275,7 +277,7 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
                   type="button"
                   onClick={() => setToggles((prev) => ({ ...prev, [chip.key]: !prev[chip.key] }))}
                   className={
-                    "whitespace-nowrap rounded-full border-2 px-3.5 py-2 font-sans text-sm font-semibold " +
+                    "whitespace-nowrap rounded-full border-2 px-3 py-1.5 font-sans text-[13px] font-semibold sm:px-3.5 sm:py-2 sm:text-sm " +
                     (active ? "border-ink bg-ink text-white" : "border-line bg-transparent text-ink")
                   }
                 >

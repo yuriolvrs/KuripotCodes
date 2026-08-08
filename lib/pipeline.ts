@@ -3,13 +3,16 @@ import { mergePromos } from "./normalize";
 import type { Promo } from "./types";
 import { angkasScraper } from "./scrapers/angkas";
 import { couponSitesScraper } from "./scrapers/coupon-sites";
+import { foodpandaScraper } from "./scrapers/foodpanda";
 import { grabScraper } from "./scrapers/grab";
 import { inDriveScraper } from "./scrapers/indrive";
 import { ivoucherCodesScraper } from "./scrapers/ivouchercodes";
 import { joyRideScraper } from "./scrapers/joyride";
+import { lazadaScraper } from "./scrapers/lazada";
 import { moveItScraper } from "./scrapers/moveit";
 import { picodiScraper } from "./scrapers/picodi";
 import { redditScraper } from "./scrapers/reddit";
+import { shopeeScraper } from "./scrapers/shopee";
 import type { Scraper } from "./scrapers/types";
 import { wethriftScraper } from "./scrapers/wethrift";
 
@@ -23,7 +26,10 @@ const SCRAPERS: Scraper[] = [
   moveItScraper,
   inDriveScraper,
   joyRideScraper,
-  ivoucherCodesScraper
+  ivoucherCodesScraper,
+  shopeeScraper,
+  lazadaScraper,
+  foodpandaScraper
 ];
 
 export const SCRAPER_COUNT = SCRAPERS.length;

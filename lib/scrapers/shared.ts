@@ -168,13 +168,39 @@ export function extractCodes(text: string) {
     "ANGKAS",
     "INDRIVE",
     "JOYRID",
-    "MOVE"
+    "MOVE",
+    "HAHA",
+    "HAHAHA",
+    "HEHE",
+    "HEHEHE",
+    "HOHO",
+    "LOL",
+    "LMAO",
+    "LMFAO",
+    "ROFL",
+    "OMG",
+    "WOW",
+    "YEAH",
+    "YES",
+    "NOPE",
+    "OKAY",
+    "PLEASE",
+    "THANKS",
+    "THANK",
+    "SORRY",
+    "HELLO",
+    "HELP",
+    "WAIT"
   ]);
+
+  // Catches laughter/filler reduplication (HAHA, HEHEHE, HUHU, HIHI, ...) not
+  // covered by the explicit ignore list above.
+  const isReduplicated = (code: string) => /^(.{1,3})\1+$/.test(code);
 
   return uniqueBy(
     [...explicit, ...generic.filter((code) => /\d/.test(code))]
       .map((code) => code.toUpperCase())
-      .filter((code) => !ignored.has(code))
+      .filter((code) => !ignored.has(code) && !isReduplicated(code))
       .filter((code) => /[A-Z]/.test(code) && /\d|[A-Z]{4,}/.test(code)),
     (code) => code
   );

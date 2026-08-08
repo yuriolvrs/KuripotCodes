@@ -6,11 +6,39 @@ import { fetchText, stripHtml, uniqueBy } from "./shared";
 // EverySaving shop pages cross-promote unrelated brands alongside the target
 // platform's deals; these entries would otherwise get mistagged with the
 // wrong platform. Skip anything that clearly belongs to a different brand.
-const FOREIGN_BRAND_BLOCKLIST =
-  /\b(traveloka|airpaz|emirates|klook|agoda|expedia|booking\.com|cebu\s*pacific|philippine\s*airlines|airasia|scoot|qatar\s*airways|singapore\s*airlines|cathay\s*pacific|zalora|lazada|shopee|foodpanda|grubhub)\b/i;
+const FOREIGN_BRAND_TERMS = [
+  "traveloka",
+  "airpaz",
+  "emirates",
+  "klook",
+  "agoda",
+  "expedia",
+  "booking\\.com",
+  "cebu\\s*pacific",
+  "philippine\\s*airlines",
+  "airasia",
+  "scoot",
+  "qatar\\s*airways",
+  "singapore\\s*airlines",
+  "cathay\\s*pacific",
+  "zalora",
+  "lazada",
+  "shopee",
+  "foodpanda",
+  "grubhub"
+];
 
-export function isRelevantEntry(title: string, description: string): boolean {
-  return !FOREIGN_BRAND_BLOCKLIST.test(`${title} ${description}`);
+const PLATFORM_BRAND_TERM: Partial<Record<Platform, string>> = {
+  Shopee: "shopee",
+  Lazada: "lazada",
+  Foodpanda: "foodpanda"
+};
+
+export function isRelevantEntry(title: string, description: string, platform?: Platform): boolean {
+  const ownTerm = platform ? PLATFORM_BRAND_TERM[platform] : undefined;
+  const terms = FOREIGN_BRAND_TERMS.filter((term) => term !== ownTerm);
+  const blocklist = new RegExp(`\\b(${terms.join("|")})\\b`, "i");
+  return !blocklist.test(`${title} ${description}`);
 }
 
 interface EverySavingEntry {
@@ -121,7 +149,7 @@ async function scrapeEverySavingWithPuppeteer(url: string, platform: Platform): 
     });
 
     return entries
-      .filter((entry: EverySavingEntry) => isRelevantEntry(entry.title, entry.description))
+      .filter((entry: EverySavingEntry) => isRelevantEntry(entry.title, entry.description, platform))
       .map((entry: EverySavingEntry) => ({
         ...entry,
         code: decodeEntryCodes(entry.code)
@@ -159,7 +187,7 @@ export function parseEverySavingFromHtml(html: string, url: string, platform: Pl
     const expiryStr = (parsed["entry.exd"] as string) || undefined;
     const isExpired = (parsed["entry.crossed"] as number) === 1;
 
-    if (!isRelevantEntry(stripHtml(title), stripHtml(description))) continue;
+    if (!isRelevantEntry(stripHtml(title), stripHtml(description), platform)) continue;
 
     const code = decodeEntryCodes(encoded);
     if (!isPlausibleCode(code)) continue;

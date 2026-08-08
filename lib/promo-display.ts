@@ -1,6 +1,5 @@
 import type { ComponentType, SVGProps } from "react";
-import { Car, ShoppingBag } from "lucide-react";
-import { DeliveryBikeIcon } from "@/components/icons/delivery-bike";
+import { Car, Package, ShoppingCart } from "lucide-react";
 import type { Promo, PromoStatus } from "./types";
 import { isExpiringSoon } from "./date";
 import type { Family } from "./family";
@@ -36,8 +35,8 @@ export const FAMILY_BADGE_FALLBACK = "bg-ink-soft text-white";
 
 export const FAMILY_ICONS: Record<Family, ComponentType<SVGProps<SVGSVGElement>>> = {
   rides: Car,
-  delivery: DeliveryBikeIcon,
-  shopping: ShoppingBag
+  delivery: Package,
+  shopping: ShoppingCart
 };
 
 export const FIRST_TIME_ONLY_LABEL = "First-timers only";

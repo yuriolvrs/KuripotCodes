@@ -7,11 +7,13 @@ import { PLATFORM_BRAND } from "@/lib/platform-colors";
 
 const EXIT_DURATION_MS = 180;
 
-const STATUS_CHIPS: { value: PromoStatus | "expiring"; label: string }[] = [
+const STATUS_CHIPS: { value: PromoStatus | "expiring" | "used" | "unused"; label: string }[] = [
   { value: "active", label: "Active" },
   { value: "expiring", label: "Ending soon" },
   { value: "expired", label: "Expired" },
-  { value: "unknown", label: "Unconfirmed" }
+  { value: "unknown", label: "Unconfirmed" },
+  { value: "used", label: "Used" },
+  { value: "unused", label: "Unused" }
 ];
 
 export type FirstTimeOnlyFilter = "any" | "first_only" | "not_first_only";
@@ -23,7 +25,7 @@ const FIRST_TIME_ONLY_CHIPS: { value: FirstTimeOnlyFilter; label: string }[] = [
 
 export interface BottomFilterState {
   platforms: Platform[];
-  statuses: (PromoStatus | "expiring")[];
+  statuses: (PromoStatus | "expiring" | "used" | "unused")[];
   sources: string[];
   firstTimeOnly: FirstTimeOnlyFilter;
 }

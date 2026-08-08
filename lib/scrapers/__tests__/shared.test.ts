@@ -24,6 +24,14 @@ describe("extractCodes", () => {
     const codes = extractCodes("PROMO CODE VOUCHER COUPON DISCOUNT ACTIVE EXPIRED TODAY");
     expect(codes).toHaveLength(0);
   });
+
+  it("does not treat a laughter filler after 'promo code' as an actual code", () => {
+    expect(extractCodes("Angkas promo code HAHA")).toHaveLength(0);
+  });
+
+  it("ignores reduplicated filler words not on the explicit ignore list", () => {
+    expect(extractCodes("Use code HUHU at checkout, sobrang sakit")).toHaveLength(0);
+  });
 });
 
 describe("extractExpiry", () => {
