@@ -143,7 +143,14 @@ export function PromoDetailModal({
           <div>
             <b className="text-ink">Source</b>
             <br />
-            {sourceName}
+            <a
+              href={current.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-dotted underline-offset-2 hover:text-brand"
+            >
+              {sourceName}
+            </a>
           </div>
           <div>
             <b className="text-ink">First seen</b>

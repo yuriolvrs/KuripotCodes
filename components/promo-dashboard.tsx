@@ -7,6 +7,7 @@ import { AddPromoModal } from "@/components/AddPromoModal";
 import { FilterSheet, type BottomFilterState } from "@/components/filter-sheet";
 import { PromoCard } from "@/components/promo-card";
 import { PromoDetailModal } from "@/components/promo-detail-modal";
+import { Select } from "@/components/ui/select";
 import { useToast } from "@/components/ui/toast";
 import type { Promo } from "@/lib/types";
 import { formatRelativeTime, isExpiringSoon } from "@/lib/date";
@@ -29,6 +30,41 @@ const DEFAULT_TOGGLES: QuickToggles = { hasCode: false, expiring: false, bookmar
 
 const FAMILY_TAB_ORDER: FamilyTab[] = ["all", ...FAMILIES];
 
+const SORT_OPTIONS = [
+  { label: "Newest codes first", value: "newest" },
+  { label: "Recently updated", value: "updated" },
+  { label: "Expiring soon", value: "expiring" },
+  { label: "A → Z", value: "alpha" }
+] as const;
+
+type SortKey = (typeof SORT_OPTIONS)[number]["value"];
+
+const NO_END_DATE = Number.POSITIVE_INFINITY;
+
+function sortPromos(list: Promo[], sort: SortKey): Promo[] {
+  const sorted = [...list];
+  switch (sort) {
+    case "updated":
+      sorted.sort((a, b) => b.lastSeen.localeCompare(a.lastSeen));
+      break;
+    case "expiring":
+      sorted.sort((a, b) => {
+        const aTime = a.endDate ? new Date(a.endDate).getTime() : NO_END_DATE;
+        const bTime = b.endDate ? new Date(b.endDate).getTime() : NO_END_DATE;
+        return aTime - bTime;
+      });
+      break;
+    case "alpha":
+      sorted.sort((a, b) => a.title.localeCompare(b.title));
+      break;
+    case "newest":
+    default:
+      sorted.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen));
+      break;
+  }
+  return sorted;
+}
+
 interface PromoDashboardProps {
   initialPromos: Promo[];
 }
@@ -46,6 +82,7 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
     bookmarked: searchParams.get("bookmarked") === "1"
   }));
   const [bottomFilters, setBottomFilters] = useState<BottomFilterState>(DEFAULT_BOTTOM_FILTERS);
+  const [sort, setSort] = useState<SortKey>("newest");
   const [filterSheetOpen, setFilterSheetOpen] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isScraping, setIsScraping] = useState(false);
@@ -109,7 +146,7 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
 
   const filteredPromos = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return promos.filter((p) => {
+    const filtered = promos.filter((p) => {
       const service = promoServiceName(p) ?? p.platform;
       const source = sourceSiteName(p.sourceUrl);
       const promoFamily = platformFamily(p);
@@ -138,7 +175,8 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
       }
       return true;
     });
-  }, [promos, query, family, bottomFilters, toggles]);
+    return sortPromos(filtered, sort);
+  }, [promos, query, family, bottomFilters, toggles, sort]);
 
   const activeFilterCount =
     bottomFilters.platforms.length +
@@ -287,8 +325,17 @@ export function PromoDashboard({ initialPromos }: PromoDashboardProps) {
             })}
           </div>
 
-          <div className="whitespace-nowrap font-mono text-xs text-ink-soft">
-            SHOWING {filteredPromos.length} OF {promos.length}
+          <div className="flex shrink-0 items-center gap-2.5">
+            <div className="whitespace-nowrap font-mono text-xs text-ink-soft">
+              SHOWING {filteredPromos.length} OF {promos.length}
+            </div>
+            <Select
+              aria-label="Sort by"
+              className="h-8 w-auto min-w-0 border-[1.5px] py-0 pl-2.5 pr-7 text-xs font-medium"
+              options={SORT_OPTIONS as unknown as { label: string; value: string }[]}
+              value={sort}
+              onChange={(e) => setSort(e.target.value as SortKey)}
+            />
           </div>
         </div>
       </div>

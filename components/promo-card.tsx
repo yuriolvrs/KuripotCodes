@@ -133,7 +133,15 @@ export function PromoCard({
         </div>
 
         <div className="flex items-center justify-between gap-2">
-          <div className="truncate font-mono text-[11px] text-ink-soft">{sourceName}</div>
+          <a
+            href={promo.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="truncate font-mono text-[11px] text-ink-soft underline decoration-dotted underline-offset-2 hover:text-brand"
+          >
+            {sourceName}
+          </a>
           <div className="flex gap-1.5">
             <StampButton
               glyph={<Bookmark className={cn(bookmarked === true && "fill-current")} />}
