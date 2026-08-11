@@ -9,9 +9,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "firstTimeOnly": true
   },
   {
@@ -24,9 +24,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "firstTimeOnly": true
   },
   {
@@ -39,9 +39,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "firstTimeOnly": true
   },
   {
@@ -53,9 +53,9 @@
     "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "discountValue": "PHP 100",
     "firstTimeOnly": true
   },
@@ -68,9 +68,9 @@
     "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 40"
   },
@@ -83,9 +83,9 @@
     "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "discountValue": "PHP 100"
   },
   {
@@ -98,9 +98,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "firstTimeOnly": true
   },
   {
@@ -112,9 +112,9 @@
     "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "discountValue": "PHP 100"
   },
   {
@@ -127,9 +127,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "edd03a77d8de7802",
@@ -141,9 +141,9 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "adebedba9944a872",
@@ -155,9 +155,9 @@
     "discountValue": "16%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -168,9 +168,9 @@
     "discountType": "fixed",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 100"
   },
@@ -183,9 +183,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T02:12:09.990Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "c4b673f72b533a60",
@@ -2042,7 +2042,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "63315a55d279bf7e",
@@ -2055,7 +2055,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -2068,7 +2068,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "de90633a9565c965",
@@ -2081,7 +2081,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -2094,7 +2094,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "86eae33607a27894",
@@ -2109,7 +2109,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -2124,7 +2124,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -2137,7 +2137,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "76cfa6b322513bee",
@@ -2151,7 +2151,7 @@
     "endDate": "2026-08-19",
     "status": "active",
     "firstSeen": "2026-08-05T12:27:10.229Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "discountValue": "PHP 100"
   },
   {
@@ -2166,7 +2166,7 @@
     "endDate": "2026-08-13",
     "status": "active",
     "firstSeen": "2026-08-06T08:00:28.933Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "discountValue": "PHP 500"
   },
   {
@@ -2181,7 +2181,7 @@
     "endDate": "2026-08-13",
     "status": "active",
     "firstSeen": "2026-08-06T08:00:28.933Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z",
     "discountValue": "PHP 500"
   },
   {
@@ -2195,7 +2195,7 @@
     "sourceUrl": "https://www.picodi.com/ph/lazada",
     "status": "active",
     "firstSeen": "2026-08-07T03:09:06.884Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "28eddd93079e956e",
@@ -2210,7 +2210,7 @@
     "endDate": "2026-08-31",
     "status": "active",
     "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "be5f322e64978bf6",
@@ -2225,7 +2225,7 @@
     "endDate": "2026-08-31",
     "status": "active",
     "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-11T06:13:24.298Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "d920392c8d138a10",
@@ -2237,10 +2237,25 @@
     "discountValue": "0%",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/lazada",
-    "endDate": "2026-08-09",
-    "status": "expired",
+    "endDate": "2026-08-31",
+    "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-09T11:11:56.693Z"
+    "lastSeen": "2026-08-11T11:30:52.226Z"
+  },
+  {
+    "id": "ce6e6f600e1a1355",
+    "platform": "Lazada",
+    "title": "Up to 85% off Beauty at Lazada",
+    "code": "",
+    "description": "Access discounts of up to 85% on beauty products at Lazada.",
+    "discountType": "percent",
+    "discountValue": "85%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "endDate": "2026-08-31",
+    "status": "active",
+    "firstSeen": "2026-08-11T11:30:52.226Z",
+    "lastSeen": "2026-08-11T11:30:52.226Z"
   },
   {
     "id": "f93023a5179acdf0",
