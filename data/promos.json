@@ -11,7 +11,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true
   },
   {
@@ -26,7 +26,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true
   },
   {
@@ -41,7 +41,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true
   },
   {
@@ -55,7 +55,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "discountValue": "PHP 100",
     "firstTimeOnly": true
   },
@@ -70,7 +70,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 40"
   },
@@ -85,7 +85,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "discountValue": "PHP 100"
   },
   {
@@ -100,7 +100,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true
   },
   {
@@ -114,7 +114,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "discountValue": "PHP 100"
   },
   {
@@ -129,7 +129,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "adebedba9944a872",
@@ -143,7 +143,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -156,7 +156,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 100"
   },
@@ -171,7 +171,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "e3c2eaa193ae6c4e",
@@ -185,7 +185,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-15T15:42:23.784Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "43f045836b55e971",
@@ -558,21 +558,6 @@
     "sourceUrl": "https://iprice.ph/food-and-e-hailing/friday-foodpanda-promo-code-p150-off-min-spend-p1500-using-metrobank/",
     "endDate": "2026-10-01",
     "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "040776386047d8a7",
-    "platform": "Foodpanda",
-    "title": "foodpanda BDO promo code: P150 off min. spend P800 on weeekends",
-    "code": "BDODEALS",
-    "description": "Order your favorite meals and food staples on weekends at an exceptional price. Hit the P800 minimum spend milestone using your BDO card to claim ultimate checkout savings with wonderful value.",
-    "discountType": "fixed",
-    "discountValue": "PHP 150",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/food-and-e-hailing/foodpanda-bdo-promo-code-p150-off-min-spend-p800-on-weeekends/",
-    "endDate": "2026-08-13",
-    "status": "expired",
     "firstSeen": "2026-08-05T07:45:05.962Z",
     "lastSeen": "2026-08-08T10:59:38.678Z"
   },
@@ -1205,7 +1190,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "63315a55d279bf7e",
@@ -1218,7 +1203,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -1231,7 +1216,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "de90633a9565c965",
@@ -1244,7 +1229,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -1257,7 +1242,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "86eae33607a27894",
@@ -1272,7 +1257,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -1287,7 +1272,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -1300,7 +1285,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "c5dff333d42ff4fe",
@@ -1313,7 +1298,7 @@
     "sourceUrl": "https://www.picodi.com/ph/lazada",
     "status": "active",
     "firstSeen": "2026-08-07T03:09:06.884Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "be5f322e64978bf6",
@@ -1328,7 +1313,7 @@
     "endDate": "2026-08-31",
     "status": "active",
     "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "d920392c8d138a10",
@@ -1343,7 +1328,7 @@
     "endDate": "2026-08-31",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "b9a9fc9dbfeeb09a",
@@ -1358,7 +1343,7 @@
     "endDate": "2026-08-31",
     "status": "active",
     "firstSeen": "2026-08-12T11:30:25.000Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "9a497a7e518d6082",
@@ -1373,7 +1358,7 @@
     "endDate": "2026-08-28",
     "status": "active",
     "firstSeen": "2026-08-21T11:03:11.487Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true
   },
   {
@@ -1389,7 +1374,7 @@
     "endDate": "2026-08-28",
     "status": "active",
     "firstSeen": "2026-08-21T11:03:11.487Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z",
+    "lastSeen": "2026-08-22T15:42:53.594Z",
     "firstTimeOnly": true
   },
   {
@@ -1405,7 +1390,7 @@
     "endDate": "2026-08-23",
     "status": "active",
     "firstSeen": "2026-08-21T15:56:02.366Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "c4d052249a978496",
@@ -1420,7 +1405,7 @@
     "endDate": "2026-08-23",
     "status": "active",
     "firstSeen": "2026-08-21T15:56:02.366Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "b5236755dce80f4e",
@@ -1435,7 +1420,7 @@
     "endDate": "2026-08-23",
     "status": "active",
     "firstSeen": "2026-08-21T15:56:02.366Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "3577f53621806bf4",
@@ -1450,7 +1435,7 @@
     "endDate": "2026-08-23",
     "status": "active",
     "firstSeen": "2026-08-21T15:56:02.366Z",
-    "lastSeen": "2026-08-22T01:40:05.938Z"
+    "lastSeen": "2026-08-22T15:42:53.594Z"
   },
   {
     "id": "473ae5dbcda22627",
@@ -2212,51 +2197,6 @@
     "lastSeen": "2026-08-08T10:59:38.678Z"
   },
   {
-    "id": "2c73297b1274f2cc",
-    "platform": "Shopee",
-    "title": "[Eastwest] Shopee 8.8 Coupon: P100 off on any products",
-    "code": "",
-    "description": "Save more during the Shopee 8.8 Sale with EastWest! Use this coupon to enjoy PHP 100 off on any product and make your Shopee shopping even more rewarding",
-    "discountType": "fixed",
-    "discountValue": "PHP 100",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/eastwest-shopee-8-8-coupon-p100-off-on-any-products/",
-    "endDate": "2026-08-10",
-    "status": "expired",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "a3d77c096a1224b3",
-    "platform": "Shopee",
-    "title": "[Security Bank] Shopee 8.8 Voucher: P650 off on all items",
-    "code": "",
-    "description": "Enjoy bigger savings during the Shopee 8.8 Sale with Security Bank! Use this voucher to get PHP 650 off on all items and shop your favorite products at even lower prices",
-    "discountType": "fixed",
-    "discountValue": "PHP 650",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/security-bank-shopee-8-8-voucher-p650-off-on-all-items/",
-    "endDate": "2026-08-10",
-    "status": "expired",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "736f275e972e1bce",
-    "platform": "Shopee",
-    "title": "[Komo] Shopee 8.8 Voucher: extra P200 off on all products",
-    "code": "",
-    "description": "Save even more during the Shopee 8.8 Sale with Komo! Use this voucher to get an extra P200 off on all products and enjoy bigger savings on your favorite purchases.",
-    "discountType": "fixed",
-    "discountValue": "PHP 200",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/komo-shopee-8-8-voucher-extra-p200-off-on-all-products/",
-    "endDate": "2026-08-10",
-    "status": "expired",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
     "id": "b41cd4ed37163b6d",
     "platform": "Shopee",
     "title": "Shopee Promo: up to 50% off on TCL brand",
@@ -2509,36 +2449,6 @@
     "sourceUrl": "https://iprice.ph/weekly-exclusive/get-20-coins-cashback-up-to-300-with-shopee-coupon/",
     "endDate": "2027-01-02",
     "status": "active",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "305450bf8fa4b659",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale coupon: P3,000 off min. spend P14,999",
-    "code": "",
-    "description": "Save big on premium gadgets, appliances, furniture, and other high-value purchases during the Lazada 8.8 Sale. Redeem this coupon to enjoy P3,000 off when you spend at least P14,999.",
-    "discountType": "fixed",
-    "discountValue": "PHP 14",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-coupon-p3000-off-min-spend-p14999/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "1e197f4eb3f0bf1f",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: 15% off up to P2,000 with min. spend P5,999",
-    "code": "",
-    "description": "Maximize your savings on big-ticket purchases during the Lazada 8.8 Sale. Use this voucher to enjoy 15% off (up to P2,000) when you spend at least P5,999 on eligible items.",
-    "discountType": "percent",
-    "discountValue": "15%",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-15-off-up-to-p2000-with-min-spend-p5999/",
-    "endDate": "2026-08-11",
-    "status": "expired",
     "firstSeen": "2026-08-05T07:45:05.962Z",
     "lastSeen": "2026-08-08T10:59:38.678Z"
   },
@@ -4233,51 +4143,6 @@
     "lastSeen": "2026-08-08T10:59:38.678Z"
   },
   {
-    "id": "e96302e7826c80bb",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: 12% off up to P850 with min. spend P5,699",
-    "code": "",
-    "description": "Score bigger discounts on your favorite brands during the Lazada 8.8 Sale. Apply this voucher to get 12% off (up to P850) when you spend at least P5,699.",
-    "discountType": "percent",
-    "discountValue": "12%",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-12-off-up-to-p850-with-min-spend-p5699/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-06T10:15:35.785Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "5dc214140754423b",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale coupon: P530 off min. spend P4,499",
-    "code": "",
-    "description": "Unlock bigger savings on electronics, home essentials, fashion, and more during the Lazada 8.8 Sale. Redeem this coupon to enjoy P530 off when you spend at least P4,499.",
-    "discountType": "fixed",
-    "discountValue": "PHP 530",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-coupon-p530-off-min-spend-p4499/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-06T10:15:35.785Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "06b5f36e10670c02",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: P390 off min. spend P3,299",
-    "code": "",
-    "description": "Stretch your budget further during the Lazada 8.8 Sale with extra savings on your favorite products. Use this voucher to enjoy P390 off when you spend at least P3,299 on eligible purchases.",
-    "discountType": "fixed",
-    "discountValue": "PHP 390",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-p390-off-min-spend-p3299/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-06T10:15:35.785Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
     "id": "4686b1e0b0cb4927",
     "platform": "Foodpanda",
     "title": "foodpanda voucher today: 50% off selected KFC menus",
@@ -4388,141 +4253,6 @@
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=RythNHhrVGVEUXlRQnhocFBlWWFiV29YN0UzS1VoSlVwdW5sWGNEeU41TmY4Z2gxT0lYWjBReTNRZlNGZG5kWlByZmt0OEo1eTlyd0xCWnhEOUVoWXc9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
     "status": "unknown",
     "firstSeen": "2026-08-06T10:15:35.785Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "2b45ea74241d0837",
-    "platform": "Shopee",
-    "title": "[Hourly-drop] Shopee 8.8 Sale voucher: P1,000 off Shopee Mall brands",
-    "code": "",
-    "description": "Catch this limited-time hourly deal and save big on authentic products from Shopee Mall. Claim the Shopee 8.8 Sale voucher to enjoy P1,000 off while the offer is available.",
-    "discountType": "fixed",
-    "discountValue": "PHP 1000",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/hourly-drop-shopee-8-8-sale-voucher-p1000-off-shopee-mall-brands/",
-    "endDate": "2026-08-10",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "f9380a32c21a58b4",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale coupon: up to P200 off for GCash users",
-    "code": "",
-    "description": "Make your 8.8 shopping haul even more rewarding with extra savings at checkout. Use this Lazada 8.8 Sale coupon and enjoy up to P200 off when paying with GCash.",
-    "discountType": "fixed",
-    "discountValue": "PHP 200",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-coupon-up-to-p200-off-for-gcash-users/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "96a66d94436224a5",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: P650 off min. spend P6,500 with Security Bank",
-    "code": "",
-    "description": "Make your big-ticket 8.8 purchases more budget-friendly with an exclusive Security Bank offer. Redeem this Lazada 8.8 Sale voucher to enjoy P650 off when you spend at least P6,500 with Security Bank.",
-    "discountType": "fixed",
-    "discountValue": "PHP 650",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-p650-off-min-spend-p6500-with-security-bank/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "82d25de4cf3d9c5a",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale coupon: P300 off min. spend P2,500 with LANDBANK",
-    "code": "",
-    "description": "Save more on your 8.8 shopping haul with an exclusive LANDBANK offer. Use this Lazada 8.8 Sale coupon to enjoy P300 off when you spend at least P2,500 with LANDBANK.",
-    "discountType": "fixed",
-    "discountValue": "PHP 300",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-coupon-p300-off-min-spend-p2500-with-landbank/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "f293b8f6818a5313",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: P100 off min. spend P1,000 with Komo Visa Debit Card",
-    "code": "",
-    "description": "Make your Lazada 8.8 shopping more rewarding with an exclusive Komo cardholder deal. Use this voucher to enjoy P100 off when you spend at least P1,000 with a Komo Visa Debit Card.",
-    "discountType": "fixed",
-    "discountValue": "PHP 100",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-p100-off-min-spend-p1000-with-komo-visa-debit-card/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "3bebcf179b3bb385",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale coupon: P200 off min. spend P2,000 with EastWest Debit Card",
-    "code": "",
-    "description": "Make your 8.8 shopping haul more affordable with an exclusive EastWest cardholder deal. Use this Lazada 8.8 Sale coupon to enjoy P200 off when you spend at least P2,000 with an EastWest Debit Card.",
-    "discountType": "fixed",
-    "discountValue": "PHP 200",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-coupon-p200-off-min-spend-p2000-with-eastwest-debit-card/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "181a19aa6a69d101",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: 15% off min. spend P5,000 with EastWest Credit Card",
-    "code": "",
-    "description": "Make your 8.8 shopping haul more affordable with an exclusive cardholder deal. Use this Lazada 8.8 Sale voucher to enjoy 15% off with a minimum spend of P5,000 when paying with an EastWest Credit Card.",
-    "discountType": "percent",
-    "discountValue": "15%",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-15-off-min-spend-p5000-with-eastwest-credit-card/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "d8aea0af2d752f07",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale coupon: up to P1,000 off min. spend P2,000 with UnionBank Lazada Debit Card",
-    "code": "",
-    "description": "Enjoy extra savings on your 8.8 purchases when you pay with a UnionBank Lazada Debit Card. Use this Lazada 8.8 Sale coupon to get up to P1,000 off with a minimum spend of P2,000.",
-    "discountType": "fixed",
-    "discountValue": "PHP 1000",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/travel-and-hotels/lazada-8-8-sale-coupon-up-to-p1000-off-min-spend-p2000-with-unionbank-lazada-debit-card/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
-    "lastSeen": "2026-08-08T10:59:38.678Z"
-  },
-  {
-    "id": "5501070dbf9a626b",
-    "platform": "Lazada",
-    "title": "Lazada 8.8 Sale voucher: up to P1,500 off min. spend P3,000 with UnionBank Lazada Credit Card",
-    "code": "",
-    "description": "Make the most of your Lazada 8.8 shopping spree with extra savings when you pay using a UnionBank Lazada Credit Card. Enjoy up to P1,500 off with a minimum spend of P3,000.",
-    "discountType": "fixed",
-    "discountValue": "PHP 1500",
-    "region": "Philippines",
-    "sourceUrl": "https://iprice.ph/weekly-exclusive/lazada-8-8-sale-voucher-up-to-p1500-off-min-spend-p3000-with-unionbank-lazada-credit-card/",
-    "endDate": "2026-08-11",
-    "status": "expired",
-    "firstSeen": "2026-08-08T10:52:47.482Z",
     "lastSeen": "2026-08-08T10:59:38.678Z"
   },
   {
