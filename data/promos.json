@@ -11,7 +11,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "firstTimeOnly": true
   },
   {
@@ -26,7 +26,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "firstTimeOnly": true
   },
   {
@@ -41,7 +41,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "firstTimeOnly": true
   },
   {
@@ -55,7 +55,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "discountValue": "PHP 100",
     "firstTimeOnly": true
   },
@@ -70,7 +70,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 40"
   },
@@ -85,7 +85,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "discountValue": "PHP 100"
   },
   {
@@ -100,7 +100,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "firstTimeOnly": true
   },
   {
@@ -114,7 +114,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "discountValue": "PHP 100"
   },
   {
@@ -129,7 +129,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "adebedba9944a872",
@@ -143,7 +143,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -156,7 +156,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z",
+    "lastSeen": "2026-09-12T04:15:42.053Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 100"
   },
@@ -171,7 +171,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "e3c2eaa193ae6c4e",
@@ -185,7 +185,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-15T15:42:23.784Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "43f045836b55e971",
@@ -200,19 +200,6 @@
     "status": "unknown",
     "firstSeen": "2026-08-05T07:45:05.962Z",
     "lastSeen": "2026-08-14T06:52:50.411Z"
-  },
-  {
-    "id": "af409e920d0d4560",
-    "platform": "Angkas",
-    "title": "Angkas promo code 150SC",
-    "code": "150SC",
-    "description": "SYM Cruisym 150 or CFMOTO 150SC Mga boss ano sa tingin niyo, SYM Cruisym 150 or CFMOTO 150SC? Both bumaba ang presyo tho mas mahal si SYM konti. Cavite area ako and hindi ko naman siya gagamitin daily. When it comes to durability, parts availability gas effici",
-    "discountType": "unknown",
-    "region": "Philippines",
-    "sourceUrl": "https://old.reddit.com/r/PHMotorcycles/comments/1v7yd1e/sym_cruisym_150_or_cfmoto_150sc/",
-    "status": "unknown",
-    "firstSeen": "2026-08-13T02:31:53.934Z",
-    "lastSeen": "2026-08-13T02:31:53.934Z"
   },
   {
     "id": "2852e679548974ba",
@@ -288,7 +275,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "63315a55d279bf7e",
@@ -301,7 +288,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -314,7 +301,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -327,7 +314,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "86eae33607a27894",
@@ -342,7 +329,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -357,7 +344,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -370,7 +357,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "f7bcd859268f5b57",
@@ -385,7 +372,7 @@
     "endDate": "2026-09-13",
     "status": "active",
     "firstSeen": "2026-09-01T15:11:48.021Z",
-    "lastSeen": "2026-09-11T04:16:57.680Z"
+    "lastSeen": "2026-09-12T04:15:42.053Z"
   },
   {
     "id": "946b4788c60d188d",
@@ -398,7 +385,7 @@
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-09-11",
-    "status": "active",
+    "status": "expired",
     "firstSeen": "2026-09-04T09:54:38.550Z",
     "lastSeen": "2026-09-11T04:16:57.680Z",
     "firstTimeOnly": true
@@ -414,7 +401,7 @@
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-09-11",
-    "status": "active",
+    "status": "expired",
     "firstSeen": "2026-09-04T09:54:38.550Z",
     "lastSeen": "2026-09-11T04:16:57.680Z"
   },
@@ -629,7 +616,7 @@
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "endDate": "2026-09-11",
-    "status": "active",
+    "status": "expired",
     "firstSeen": "2026-09-04T09:54:38.550Z",
     "lastSeen": "2026-09-07T16:04:51.423Z"
   },
