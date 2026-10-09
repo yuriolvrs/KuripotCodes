@@ -11,7 +11,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "firstTimeOnly": true
   },
   {
@@ -26,7 +26,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "firstTimeOnly": true
   },
   {
@@ -41,7 +41,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "firstTimeOnly": true
   },
   {
@@ -55,7 +55,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "discountValue": "PHP 100",
     "firstTimeOnly": true
   },
@@ -70,7 +70,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 40"
   },
@@ -85,7 +85,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "discountValue": "PHP 100"
   },
   {
@@ -100,7 +100,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "firstTimeOnly": true
   },
   {
@@ -114,7 +114,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "discountValue": "PHP 100"
   },
   {
@@ -129,7 +129,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "adebedba9944a872",
@@ -143,7 +143,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -156,7 +156,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 100"
   },
@@ -171,7 +171,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "e3c2eaa193ae6c4e",
@@ -185,7 +185,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-15T15:42:23.784Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "2852e679548974ba",
@@ -261,7 +261,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -274,7 +274,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -287,7 +287,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "86eae33607a27894",
@@ -302,7 +302,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -317,7 +317,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -330,7 +330,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "f7bcd859268f5b57",
@@ -345,7 +345,7 @@
     "endDate": "2026-10-18",
     "status": "active",
     "firstSeen": "2026-10-06T06:00:07.899Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "d920392c8d138a10",
@@ -360,7 +360,7 @@
     "endDate": "2026-10-31",
     "status": "active",
     "firstSeen": "2026-10-06T06:00:07.899Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "25b1da26e253bb78",
@@ -375,7 +375,7 @@
     "endDate": "2026-10-11",
     "status": "active",
     "firstSeen": "2026-10-07T11:54:32.369Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "5f13af329a821a15",
@@ -389,7 +389,7 @@
     "endDate": "2026-10-11",
     "status": "active",
     "firstSeen": "2026-10-07T11:54:32.369Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "a1345051dcb4c022",
@@ -403,7 +403,7 @@
     "endDate": "2026-10-11",
     "status": "active",
     "firstSeen": "2026-10-07T11:54:32.369Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "3655d909cc1cd6a6",
@@ -417,7 +417,7 @@
     "endDate": "2026-10-11",
     "status": "active",
     "firstSeen": "2026-10-07T11:54:32.369Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "fa2643d0ad498412",
@@ -432,7 +432,7 @@
     "endDate": "2026-10-14",
     "status": "active",
     "firstSeen": "2026-10-07T17:32:50.721Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "40a23639b173c1e8",
@@ -446,7 +446,7 @@
     "endDate": "2026-10-31",
     "status": "active",
     "firstSeen": "2026-10-08T12:09:38.524Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "f5c151f65c5e7cd7",
@@ -461,7 +461,7 @@
     "endDate": "2026-12-31",
     "status": "active",
     "firstSeen": "2026-10-08T12:09:38.524Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "6e9e9d2bb2c1da75",
@@ -475,7 +475,81 @@
     "endDate": "2026-10-11",
     "status": "active",
     "firstSeen": "2026-10-08T17:36:23.957Z",
-    "lastSeen": "2026-10-09T05:47:30.250Z"
+    "lastSeen": "2026-10-09T17:11:31.848Z"
+  },
+  {
+    "id": "66ebd880b192f603",
+    "platform": "Shopee",
+    "title": "Chance to win 1,000,000 PHP at Shopee",
+    "code": "",
+    "description": "Participate in the Shopee All-Out Mega Cash Panalo event on October 10, 2026, for a chance to win 1,000,000 PHP. Five winners will be selected from each region: Greater Manila Area, South Luzon, North Luzon, Visayas, and Mindanao.",
+    "discountType": "unknown",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/shopee",
+    "endDate": "2026-10-10",
+    "status": "active",
+    "firstSeen": "2026-10-09T17:11:31.848Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z"
+  },
+  {
+    "id": "cd2e0ee7130a4626",
+    "platform": "Lazada",
+    "title": "15% Off with EastWest Credit Card on Selected Orders Lazada 10.10",
+    "code": "",
+    "description": "Spend at least 5,000 PHP and pay with an EastWest credit card to receive a 15% discount, up to a maximum of 800 PHP.",
+    "discountType": "percent",
+    "discountValue": "15%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "endDate": "2026-10-10",
+    "status": "active",
+    "firstSeen": "2026-10-09T17:11:31.848Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z"
+  },
+  {
+    "id": "1a428337a4c4b19c",
+    "platform": "Lazada",
+    "title": "15% Off with UnionBank Credit Card on Selected Orders at Lazada",
+    "code": "",
+    "description": "Make a minimum payment of 5,000 PHP with a UnionBank credit card on Lazada and receive a discount of 15%, up to a maximum of 1,500 PHP.",
+    "discountType": "percent",
+    "discountValue": "15%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "endDate": "2026-10-11",
+    "status": "active",
+    "firstSeen": "2026-10-09T17:11:31.848Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z"
+  },
+  {
+    "id": "c0b9c1012475013d",
+    "platform": "Lazada",
+    "title": "10.10 Lazada 10% off with UnionBank installment card payments on selected orders",
+    "code": "",
+    "description": "Spend a minimum of 8,000 PHP and pay in installments with your UnionBank credit card to receive a 10% discount, capped at 1,000 PHP. This offer is valid until October 10, 2026.",
+    "discountType": "percent",
+    "discountValue": "10%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "endDate": "2026-10-10",
+    "status": "active",
+    "firstSeen": "2026-10-09T17:11:31.848Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z"
+  },
+  {
+    "id": "2f446674b552bded",
+    "platform": "Lazada",
+    "title": "Up to 90% off Women's Designer Fashion Wear, Shoes, Bags, Jewelry, & Accessories on everything",
+    "code": "",
+    "description": "Acquire women’s designer fashion, shoes, bags, jewelry, and accessories with discounts reaching as high as 90%. This offer is valid sitewide for a diverse range of products.",
+    "discountType": "percent",
+    "discountValue": "90%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/lazada",
+    "endDate": "2026-10-16",
+    "status": "active",
+    "firstSeen": "2026-10-09T17:11:31.848Z",
+    "lastSeen": "2026-10-09T17:11:31.848Z"
   },
   {
     "id": "248165e7eab675c1",
@@ -606,20 +680,5 @@
     "status": "expired",
     "firstSeen": "2026-09-25T15:34:28.411Z",
     "lastSeen": "2026-09-29T11:28:31.323Z"
-  },
-  {
-    "id": "47be68ffebec2c73",
-    "platform": "Shopee",
-    "title": "Shopee 50% off Huggies products on selected orders",
-    "code": "",
-    "description": "Take advantage of up to 50% off Huggies products during the Mega Sale on Shopee. This offer allows you to stock up on essentials at a significant discount.",
-    "discountType": "percent",
-    "discountValue": "50%",
-    "region": "Philippines",
-    "sourceUrl": "https://www.picodi.com/ph/shopee",
-    "endDate": "2026-09-25",
-    "status": "expired",
-    "firstSeen": "2026-09-24T10:19:29.354Z",
-    "lastSeen": "2026-09-25T15:34:28.411Z"
   }
 ]
