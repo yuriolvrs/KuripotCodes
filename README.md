@@ -1,120 +1,34 @@
-# Philippines Ride-Hailing Promo Aggregator
+# KuripotCodes
 
-A private Next.js dashboard and scraper framework for collecting ride-hailing promo codes, vouchers, and discounts in the Philippines.
+A promo code dashboard for ride-hailing and delivery deals in the Philippines. Scrapers collect codes from public sources, and the dashboard lets you filter them by platform, service, and status.
 
-Target platforms:
+## Why I built it
 
-- Grab
-- Angkas
-- Move It
-- inDrive
-- JoyRide
+Mostly for me and my friends. Discount codes for Grab, Angkas, Foodpanda, and the rest are scattered across coupon sites and Reddit threads, and many of them stop working before you find them. I wanted one place where the working codes are easy to find.
 
-## Stack
+The second reason was to see how far scraping tools have come. It's a good way to find out how much structured data you can pull from public pages with modern tooling, and where it still breaks.
 
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- shadcn/ui-style local components
-- Node.js
-- Local JSON storage in `data/promos.json`
+## How it works
 
-No Supabase, Firebase, PostgreSQL, Redis, or paid APIs are used.
+- **Scrapers** in `lib/scrapers/` pull codes from coupon sites, Reddit, and platform pages. Each one is isolated, so a single failing source doesn't stop the rest.
+- **Pipeline** (`lib/pipeline.ts`) runs them in parallel, normalizes the results, and merges them with what's already stored, deduplicating by platform and code.
+- **Storage** is a flat JSON file, `data/promos.json`. There is no database.
+- **Scheduling**: a GitHub Actions workflow runs the scraper every 30 minutes and commits any changes to `data/promos.json`.
+- **Dashboard** is a Next.js app that filters promos by platform, service, and status, and lets you bookmark codes or mark them as working or used.
 
-## Getting Started
+Some scrapers use plain `fetch`, and others use Puppeteer with a stealth plugin for pages that need JavaScript to render.
 
-Install dependencies:
+## Running it locally
 
 ```bash
 npm install
-```
-
-Start the app:
-
-```bash
 npm run dev
 ```
 
-Open `http://localhost:3000`.
-
-Run the scraper:
+Open `http://localhost:3001`. To run the scraper on its own:
 
 ```bash
 npm run scrape
 ```
 
-The scrape command loads current records from `data/promos.json`, runs scrapers in parallel, normalizes results into the `Promo` model, deduplicates by platform and code, updates timestamps, and writes the merged file back to disk.
-
-## Project Structure
-
-```text
-app/
-  page.tsx
-components/
-  promo-dashboard.tsx
-  promo-card.tsx
-  ui/
-data/
-  promos.json
-lib/
-  normalize.ts
-  pipeline.ts
-  storage.ts
-  types.ts
-  scrapers/
-scripts/
-  scrape.ts
-.github/workflows/
-  scrape.yml
-```
-
-## Scrapers
-
-The scraper interface lives in `lib/scrapers/types.ts`.
-
-Implemented:
-
-- `coupon-sites.ts`: scrapes iPrice, Rappler, and EverySaving coupon listing pages.
-- `picodi.ts`: scrapes Picodi's Grab coupon page.
-- `wethrift.ts`: fetches Wethrift coupon pages, extracts likely promo codes, parses discount and expiry hints, and normalizes results. Falls back to a small set of hardcoded codes per platform only when the live fetch fails or returns nothing.
-- `reddit.ts`: searches public Reddit JSON endpoints for recent posts mentioning ride-hailing promos.
-- `grab.ts`: official-source scraper for the Grab Philippines blog plus Worthepenny.
-- `angkas.ts`, `moveit.ts`, `indrive.ts`, `joyride.ts`: platform-specific scrapers combining EverySaving/Worthepenny with Reddit.
-
-Facebook and CouponFollow scraping were scaffolded but never implemented reliably (no public API access, or a stub); they were removed rather than left as always-failing/no-op entries in the pipeline.
-
-## Data Model
-
-```ts
-export interface Promo {
-  id: string;
-  platform: "Grab" | "Angkas" | "Move It" | "inDrive" | "JoyRide" | "Other";
-  title: string;
-  code: string;
-  description?: string;
-  discountType?: "percent" | "fixed" | "free_ride" | "unknown";
-  discountValue?: string;
-  region?: string;
-  sourceUrl: string;
-  startDate?: string;
-  endDate?: string;
-  status: "active" | "expired" | "unknown";
-  firstSeen: string;
-  lastSeen: string;
-}
-```
-
-## GitHub Actions
-
-`.github/workflows/scrape.yml` runs every 6 hours:
-
-```yaml
-schedule:
-  - cron: "0 */6 * * *"
-```
-
-The workflow installs dependencies, runs `npm run scrape`, commits changes to `data/promos.json`, and pushes them back to the repo.
-
-## Notes
-
-Scraping reliability depends on each source allowing unauthenticated public access. Coupon sites and social platforms can change markup or rate-limit requests, so each scraper is isolated and easy to replace or improve.
+Other commands: `npm run build`, `npm run lint`, `npm run test`, and `npm run cleanup`.
