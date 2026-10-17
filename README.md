@@ -18,17 +18,3 @@ The second reason was to see how far scraping tools have come. It's a good way t
 
 Some scrapers use plain `fetch`, and others use Puppeteer with a stealth plugin for pages that need JavaScript to render.
 
-## Running it locally
-
-```bash
-npm install
-npm run dev
-```
-
-Open `http://localhost:3001`. To run the scraper on its own:
-
-```bash
-npm run scrape
-```
-
-Other commands: `npm run build`, `npm run lint`, `npm run test`, and `npm run cleanup`.
