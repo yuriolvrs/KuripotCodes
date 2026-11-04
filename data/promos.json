@@ -11,7 +11,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "firstTimeOnly": true
   },
   {
@@ -26,7 +26,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "firstTimeOnly": true
   },
   {
@@ -41,7 +41,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "firstTimeOnly": true
   },
   {
@@ -55,7 +55,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "discountValue": "PHP 100",
     "firstTimeOnly": true
   },
@@ -70,7 +70,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 40"
   },
@@ -85,7 +85,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "discountValue": "PHP 100"
   },
   {
@@ -100,7 +100,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "firstTimeOnly": true
   },
   {
@@ -114,7 +114,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "discountValue": "PHP 100"
   },
   {
@@ -129,7 +129,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "adebedba9944a872",
@@ -143,7 +143,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -156,7 +156,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z",
+    "lastSeen": "2026-11-04T21:22:57.903Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 100"
   },
@@ -171,7 +171,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "e3c2eaa193ae6c4e",
@@ -185,7 +185,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-15T15:42:23.784Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "59984ccb9067fcb5",
@@ -197,7 +197,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ZnVGWGxXeTNuS01NeEFhMjBQYytsSlE1b0d5bms2MW1NUGVoNjdrY0VOQkVnbkd1TWlGSmRybmFPa1gwMWh1SVlUNVQ1Z3VKd0RrSXArMUNhL29kUmc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -211,7 +211,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=SmRHalBvajNUMXlzcCtyRkhES052OGJUZjdDa0Y0M0dNZCtUTnN4MHRlUGRDbEx6SlV5bUR4TzY0TVVtU0tyMlpqSVptODNWWkNkQzdXblZpbnROTHc9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -225,7 +225,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=a3piR3o0Vng2QVNxcVdybGNnTHpmUm9DMEtveks2Z2UyMUVrMVpDbmRmRG0wdXJwUE10dXVSaVh1dDIzRFUxcE4yYzJtZVh4WE4vOGZmYk83N1EvbEE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -239,7 +239,7 @@
     "discountValue": "PHP 250",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=OWZZMGo5dVFueTJNNU8zaWRyVHU2bTNKejJsU1FVMFY0VFIyV2ZJQ2N4dGFFTllmeUg4bTlCZlFUblFrZkRoQ1FHMW5pU005MzVpZjByTE1pcmdIYnc9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -283,7 +283,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ejlVUzkycEZuWWgzTEFCY2pUb2lWZkQvQ2lHTHkrS0diTnhFdnUrR1haZ1JRV0FtZE5jNzU0Z2RYSytFSE5BbjE3U3ZNelcyUmtpZlRlbS9PUkwrdkE9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -297,7 +297,7 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=YlpxenBUZFdFbUo5eTNteTZBUnlLK3kvT05UeU1lYzZtRjk1MUNRMUxpOXRKVHRrWXFlMUprbk5zNmJTQ0J5Y0xLaWdLejAxZk50RytZcm9BRHljQUE9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -311,7 +311,7 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=U0VuSHg5UmE5RkE2ME5Ua1dsRHcyaklIcXlPWHN1VTI2ZloxQi8yeGYvMXVSWnBSWnlRZEJFUU9yVHdYMU5QTGMxZWFrOHkyc25mTys5Y2U5cU9RYlE9PQ&position=10&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -431,7 +431,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=VTYxUGZSRHNBaDBubTVmR0s1eHNjNmYrbGtnSjBGVWc0dzZSSjJnaFlrZk1vSksxWE5uQWVVWDl0OVNtTndzK2U5N2JMTENCMDk0U05acTBqNWpSalE9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -445,7 +445,7 @@
     "discountValue": "60%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=M0lwWml6ZmhqNXQrbjNEUHl0aWZNaGZzU25LQkZVRmNWeGdvWXQwelp1OExiLy8vbVRHZ2lBd05JSTBFc1pKdCtVV0dSeGRCd1pQOVc2Z24ya2NaNlE9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z",
     "firstTimeOnly": true
@@ -460,7 +460,7 @@
     "discountValue": "PHP 150",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=UHlMQ29wQk5MbS9KS0F5dFkwQjdzZW94VkpnNnRTRkZJYTh0OVdqSDZsTVNkSmYzUGZCdUZJVkxRTTNvRjNPZGtxbnFGaXgxWkVmZ0o4TjVwWE91c2c9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -474,7 +474,7 @@
     "discountValue": "PHP 200",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=ekJLUWVlVEFHalIrSjJES1M4VjhsWDV3Z3RXZXgvTjREMHY0SXNydVpsQmdLTmVyTlZXaUloNnB6RUVUNlZZRnRSZ01KTUNXSjhaV011eXJhYmEwQ2c9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -488,7 +488,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=WXhCa0NZalVEbGYzb0xhb1U4blRaSWVhaENpb3pxVVNvWUZ4TFp0QnhrcDRtSC9TdGVxMG4rTjlId0t6THREVFQyd1RuTXVBWEJuNm45MHNkUGNPUEE9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -502,7 +502,7 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=a3lyUWlUc2NjYmdSM2FZSlZXVEE0Sm5MMnVUK1hoRDJITVR0QlVhaitKM1pFaHpCMytnQlF6MW9OT0U5RDJTRmFheElRM2tVbEZOaFpLSmhHQ0ZoeXc9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -531,7 +531,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MUZ5bjEwMUFSWWV1KzB4V2tHWFViUHlDdHdjYUhqS0tLSFA3QVpvNHVnSzdaQ2k3TTY5N0RCOUFMY2JHOUt3UStQaTF0eGVINldOc2FtcktVZXRmV3c9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -545,7 +545,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=NkZDS3gxTVJJV0FMOGxsdFZGZjlzVlFzVXV4QlR2YitOaTBLWEI1RWk3VjgvVU1zcnprcGxjWGJUZlNtLzN2TXZXcG5pSkJ0ZlNoaFF0MzJlSUIxQ0E9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z",
     "firstTimeOnly": true
@@ -559,7 +559,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=V1FWYnR5cnoyR0gwc1FrYlU4Z3FXQ3BRamZrQVVxdDBzZStsZTI3K3p1ZFJpb1hsdEltekUzK2V5d1NVcmlYUFROM3EreENEV1krWklydXhXVllQUWc9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -573,7 +573,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ODB6WUJuYy9aNEI4cTRSZEhRN2wwRFZjZGtHdGtNQS9rU0dVMVlpUDVVZTFQVUo4Y3ZkZG84bW1PRVpXdHVzTm43STJOOVN1U1QxLy9hVEpVek96VFE9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z",
     "firstTimeOnly": true
@@ -588,7 +588,7 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=Q3J6RERvNTNJUkRtSVlqV09MbzlqdTdCOWY2NGtCRi94eWdGTjRGU3BQWGtxTUJNZEsva0gyZkdNam5qMkc5dVpkVUVWVUg2aU5vOWtmd1hCaE9kWEE9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -602,7 +602,7 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MHZBdEVlMkFqWDZsdngwM0V6SzhFRU5rQ3dxbXdBNy9BUFZ4R2k0Y2t0MzBHcmxRaWc2ZWpnUzlzTk9mR3RnWDhEbFQ3cEVGTkZrQmMvbVdXRzRUU1E9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -706,7 +706,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -719,7 +719,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -732,7 +732,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "86eae33607a27894",
@@ -746,7 +746,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -761,7 +761,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -774,7 +774,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "00f11ce8d7d8d93d",
@@ -789,7 +789,7 @@
     "endDate": "2026-12-31",
     "status": "active",
     "firstSeen": "2026-10-13T12:51:41.286Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "f501bb7491a5c417",
@@ -803,7 +803,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-10-13T12:51:41.286Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "248165e7eab675c1",
@@ -816,7 +816,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "8de8844f82217e64",
@@ -829,7 +829,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-10-14T15:30:02.088Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "ce0c2e0574eec01c",
@@ -843,7 +843,7 @@
     "endDate": "2026-11-19",
     "status": "active",
     "firstSeen": "2026-10-30T16:49:46.976Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "58bce0d915d56591",
@@ -858,7 +858,7 @@
     "endDate": "2026-11-06",
     "status": "active",
     "firstSeen": "2026-10-30T16:49:46.976Z",
-    "lastSeen": "2026-11-04T18:14:04.269Z"
+    "lastSeen": "2026-11-04T21:22:57.903Z"
   },
   {
     "id": "205c07891f19f7e4",
@@ -1884,7 +1884,7 @@
     "region": "Philippines",
     "sourceUrl": "https://iprice.ph/weekly-exclusive/daily-flash-sale-claim-p300-off-sitewite-with-lazada-voucher/",
     "endDate": "2027-01-01",
-    "status": "expired",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2002,7 +2002,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=Mklvdk9JVklWV3BCRlErQWpVeVl1b25LOGZhTCtLcERSSWowMkJIZWNNclpOR00vUENlenROeEVTYkY1T3J2M0g4MTdIVTg1L3FvUlFRVzRaWGh3eUE9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2016,7 +2016,7 @@
     "discountValue": "PHP 196",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=elAyWFl1d0dxcEZFUE5rYytkcjlvSDlRaWM5amw1WkxFNWFLcXgyWVQySnNKRTVTeTYvQzE0Y3czZW91bnBOTHZ1ZkxZcVcwdnMrYmxIOFBzbitwc1E9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2030,7 +2030,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=TmZlYy81SXFWT3N3WEtSQzBGOUZwU1F2bTZ3YnRZa3NpVUxoU3JnTTlHY2ZiNmo4QjhBT3VWOWxiOUlnRkgwb2dRTEhaMDNNUWY1bjA1VExzM2VKQkE9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2044,7 +2044,7 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=STFiZitVeTRtRjRNV3RzVC8vRXFDQmVXbUM3TjlwTVcrby9FRUQvZlpaN2VyTHM5YkNzTnl4bUIxTEFHMXpqRThCSGZOZWIzeDdPekV3ZCtoV2NhQ3c9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2058,7 +2058,7 @@
     "discountValue": "PHP 49",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=RmxoVUJ0U3hhSjZ2TlhsYkhobUxoMzQzSVZOeEVsQytHTTV5UmxEV25OR3pWMlFpcmx0T1lzUDFLdjNhVmYzaTZEYlI5NWxIbWd4MXZHVmUwVlRvTUE9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2072,7 +2072,7 @@
     "discountValue": "PHP 19",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=UlAxUHp1NTNxdnd1UWNXMEMzbzVtaWNyMHoxM2dvZDFGTGdLeWI0aHVLUGFObGVCZk9TK0lRWlFVeTZjSFdpWDZ5OFNrYXFpQmtNVXZLZUJVMHFxK0E9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2086,7 +2086,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=dng5Q24xeE9Oa0ozcTNUQVRoVnMrejlaYmtuZm9vZE9QdVpxYUtQY0s5SnRuZElKUlhOTHhhVGhJcUhRSlBhVW02VGs4QnBwOU9yclRIL0RXSnlLZVE9PQ&position=13&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2099,7 +2099,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=bWJ5VkxjZlJ1VDJYVXdacUJLdDZhWFhudEdEVVZJZlJiTytYODNsTExSZndpVC9mdXI4ZVBxZk1vUnlBbXY2N1dDRjlyZHk4Z0pnZk1TWEVtRDRrYmc9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2113,7 +2113,7 @@
     "discountValue": "PHP 50",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=RFBvV2xVOEViYnB6eDlLRS9ncWxZVHVmcGdLZDhjY1V5a1h0VmxFd2duVDFhY3ZJNDFic1lndTFyaFlHcEFzNFNLTHI2T1VJN0hrelhLZE5KcW5EK1E9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2127,7 +2127,7 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grabfood-coupons/?_id=UDBFS3NaZmNPbC90dVF2QmFNb3RlLzU5cExxM2lvNjN5Z044VWM1MzJCMDVMQzFyTDUrKytHRXF3ZTNUeWo0T1dGcHdGa0xQdUtnanpsSVZWZ0JGbXc9PQ&position=18&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrabfood-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2141,7 +2141,7 @@
     "discountValue": "40%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/coupons-food-e-hailing/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2155,7 +2155,7 @@
     "discountValue": "PHP 670",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/coupons-food-e-hailing/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2169,7 +2169,7 @@
     "discountValue": "PHP 146",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/coupons-food-e-hailing/",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2183,7 +2183,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=MklQUUMzb05TL3B3c2piN29GaDFScHlhTEVnUkxKMXJMT2ljYUluekwzanRWK3BJaUM1QmgwU2E3SlJvMzNEWnI3aUpXY0hxdWNlSWZPQ21LSTM0T3c9PQ&position=17&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2197,7 +2197,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MUtpZks4UmJsWHZTbnBEYzA3eU1tWTNJblQ4RHVVTzdXbGZqN09nbGpTQzZ2QmJMTDRBcHBtN3pWa1hlbXNZckFIaURSSHVHV3hmM2VGTDZCSThhZ3c9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2211,7 +2211,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=VXc4bTl6U3BFemFWT21GWThmelpleHcwcWtMR3ZVZ0hOUDZGNnREVjVWbTZJSTRyRHRJM09ScUxUUzQwcGcrUitTS1pGQlhtcS9oVWo3SVZzZjVma2c9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2225,7 +2225,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Tmd0MTZ1dHRjKzd2Ri9sSGxoTHZTMk00cmROd081enc3Y0g1KzVyTER5bHRhM20vVFp6M0JFVThjaUlIMjJjSTJEN0Y5QjMzait4SVRqMFlIbDhGK1E9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2239,7 +2239,7 @@
     "discountValue": "18%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZnRydVA3THA5ZFZXeTVRL3hnNkJBN2JublIxV2hKY05KTE8wZEhabXp4Vm1DSmJPcDBaQmQ4RHNvZGI2WWVlcFhUZy94WkNHVURuSTd1bVArOWJvVVE9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2253,7 +2253,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=K0VtR2hYMm5BWUVzZm15TGNtbEFtTmRTUFRPZXp5cUx3NTFDZWk1alV5ZlFiZUtibk9rVUQrS0lHa3BKZWE5anlnckF5TnZwbjRseU9lU3dQNDZCWnc9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2267,7 +2267,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ekJTOVFKSnRIbzYvanF3eUJsT1RlMTZ2NnkrSW1XbjAzaTVQODRHNEVFc0Z6ZWdPeDBRYmQ2Rm5CRk5KK3JqWGhnVU5OaGg3OWhMcThZL1hkVkhwbnc9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z",
     "firstTimeOnly": true
@@ -2282,7 +2282,7 @@
     "discountValue": "70%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZmM3TGNmWTU5cFAyNE9Xd1pDdzZlL3JFSURYQ3lYWUpLcGdjM2VNQzB3L1UrTDJ5L2hodDhTVmtacDIyMkFtVmFwc21vOWNVTkJwM1JkVTJLQW03REE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2296,7 +2296,7 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=dTA0Zm1xVHNjYVpTUTZUdCtBdDZSSk56OGFtMGxQTXRqZkR4WFhVVCtKUm42TEc1VDdXb0VJNEdSQ1BJZ1hLSExvWVNzRzdPblNUN21MbklwREVDWHc9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2310,7 +2310,7 @@
     "discountValue": "28%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=L0o5aVpjdWIvRGtkZXVzVXdMUVUwYkRHUEtNYWtwajk1V3QrQSs2Y0hpdCtHczlvYkVaSmJ2bWMyM0hsUjNjREZzc3BKeXFPNjdyd21sMXJDcVNKT1E9PQ&position=10&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2324,7 +2324,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=N2NFeURtc3FNejd4b0dBOUNvNkZNQmNGMDRxWTJCYWkvK0Q1Nk54cjIrQWxSRmZKZVhTSklOY2tueTVvUFQ3bi93OVNGZXI1LytLT3lCNjV1UG5wMHc9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2338,7 +2338,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Vm1JUzFVQThvSk9kTFBFVWg3U0FGaDR2YTlNY0RTTjIvU0lZYTlob0w5UWZQUEM0bGVCclZ6d295a3luZnhXU3pqN1VNRjQ1NWE1NXdFNm51STY1VEE9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2351,7 +2351,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Q0RFM3ljcURFa1I3Y1ZHQUxvY3Y5V3k2MVBrVGhFZXFKT0k4dk1lS0IvSnpYd2Nna0RvMHlNaWptNm81SjRnZlpFZmpaOFpUY0xDSWZDQnpVVFRYMFE9PQ&position=13&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2365,7 +2365,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NnU5ckpqaFJOVjBLdW5DZ0RSYVJDR09jUnYwSE5YYm9Od0x0SjllOGU4MDR2blFHY2gzY2tWWVNtSjlNSlVzREhXTjNTUlJFdFJXcWFuRHE1cVVnM2c9PQ&position=14&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2379,7 +2379,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=eU16SS9IWXhGQlZDQ282OXpMMTM3RUMzNVVLZnBpd2JtN1NzamxZNGtSS3JFL1duWEJNS3JVMFZod2hwTVMzNTRFMy9JTS9aR1NrRGgxWFRsd1JHdWc9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2393,7 +2393,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NXhES2FVTCs1VC9wMFNqS2FYT2Z5UG02bzAyTDM2MGpweFdNbDNnb0dBWmZJTmlLSzlpRTBxZUhwWHorQy95aHVsdGlCTlVUN05qZkJHTjQ5aTlEVFE9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2407,7 +2407,7 @@
     "discountValue": "PHP 97",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=QXRobmlyWTNtZ2tPaituTjhsd0ZhVzJyZWtSN05Dbm5aRVk1YWp2L2lDVDdyd2VicWNJNTYrZEN3N1AyWEh2SDN2em1DREVWZms2ZjB1K2FFcUpxV1E9PQ&position=17&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2421,7 +2421,7 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ODQ2UXM3ak5XVExZV2ErUFJteHZBOEVLOExHZDZTVGYrSi9ab2M2RWVSRlRKQTJMRXhhb0txTk9HT1BUVnRnaTlPWGc5cXU4V084RVMwWUgyZHVmWmc9PQ&position=18&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2435,7 +2435,7 @@
     "discountValue": "PHP 150",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=cklKVGwwVHI1aXgrVFhWaFFwbVZ2ditpSEFBdVg5OXRHVm45NG50UjU5ZlJjWDZGQkk5am9laEVFdTYyQ0pKTFpDOXcxZkNEbHFYOXI0dGgwUmhXMHc9PQ&position=19&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2449,7 +2449,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=M2h0c243OW9mZEM2c2s2enRpak8zWUpJenRtTmRIZFpFQjhodWdrUGlUZlNlVGN6ODRaZTlpazRWbitLeGZEYU16YmpVZXQ3Ym1Gd1RGTWlkNzNqY3c9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2463,7 +2463,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=dDBnNythZ1BJSkc5MlpLRHFodVhQRzBoT2hZS3hzazhBclpWZVBLR1d5TUFxR0NzUHVwVXA2c1pXaTNHVmxCS2NoQWNLdWdzOERGWnRNWThxVkNZT1E9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2476,7 +2476,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=dkZQa0pJUnR5T25qejlMNEtBalEwaXQrL1BlRmlSTHVPU1F3L1JSMDFaTjZLaEJveUNmSzVwWVhyaDczdHp2RCtqSzJWQ1pVNC81aGRJRFBpek9lc1E9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2490,7 +2490,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UjdrRTV6eDg3L2d6VkczYzhrK0JGR1NKdjJBM0UyWE1Dd2FMenVaVDJCeUtOYUVlYTYzSVNEaXJuNlltRlM1blZXMFl4RGdGL0EvR3c4dTBWZU9EL2c9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2504,7 +2504,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Mkx0ZThndzY1dzBJeUlSdFB6OTZBT0VrR3diaU5iQVAySXNuZnBiRzNBUW93aWNrYlBlUEROTmUya0JnSlZwbnhxdnBRbEl5QVRSSjJiRktrV2pYSGc9PQ&position=24&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2518,7 +2518,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UnZCS2pGcHVYUDYzMEtwajRGSytDMWZVWVlVSmozaDNmQXdKb21PaXpEUXpNNFNJSjd0dTZMMFRwOHNoZGJGYklDWk9UbjJ3YkwvRzk3dlJhclV0Smc9PQ&position=25&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2532,7 +2532,7 @@
     "discountValue": "PHP 25",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MmxlTVdqZGtWcll2RjhBR2NWaS8rSjM3T2d4YWtBTzZLNjFwc2Mrd251Wm8zT1haZXAwM2ptc3VORXJHUU5ub250R21mUk9pZk9aa0w0RXFCUDRocGc9PQ&position=26&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2546,7 +2546,7 @@
     "discountValue": "12%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=enE1cS9VcHFUdjlmUnp0blJnMTBRWDBXaDFLOVowMThkK0czZ2JWN2RQMmRLajIwRE5leGVWVHVDd1B1MjByTXVxdjNycXVqSzR0TEZ5SG42Y2w1NkE9PQ&position=27&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2560,7 +2560,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UDk4ODZta3RpQTg4Q3RvejZ1YVE3WnBrSUJubXZ1QzBPaFkyZkV2cG5tZlQydmp5QkYyZUZJem4yUVBoY0p5RnczdkJUTTNwN0FSRXBrNlk1THEzT3c9PQ&position=28&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2574,7 +2574,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NjdXK043TG14bXhTczdxRXgxUFRSV0Q2b2g0OW5ackJnSDErallvN0hQZW9OU0tEUTBWcmNOdU41NWFUOWk5dWZnTDJwc3NFL05aM1dpRWlXa2c1RFE9PQ&position=29&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2588,7 +2588,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZjJaMjlSWUwza25CNldWWVFvSVQwSGxjeGxueW5nQzFjbHo2V3BRaGludCt3VkdkbTZZRUhtNVh2S241UXV1V1p2ZTVMUGMwZEV3SEdhWVVXSVNnYVE9PQ&position=30&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2602,7 +2602,7 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=SEttNGQrV3VRQm9wZE1UVmw5am8vZjdxdjRIbi92eE5TaGluN2ZCNjdqZ0xENUNodWU2SE12NENqQ1gyUnRUa0Z2QkhBTS8rMlV5UUNDV1NQZ3V2c3c9PQ&position=31&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2616,7 +2616,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=S0k4SW9vQ2c5WTJpTUE0eHczbUV2MWRQU3F6ZmlpOGNtNzRSMk8wdEU0SWZuMHlLL3lybE03T2VubG8rT0dJUU5mTFdiektCSnFsQ2tzN0l2U1lieXc9PQ&position=32&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2630,7 +2630,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NGhYQXRmUDJrSFdvMHhLVXE5M1JsYWlyaUNMWXpPSXFTbTN5cC9pUXZFUDZ4amtoNFpFYkNmTVFrTktDUnkxQ1JBcGltRU5SZ05XYXJwWTR4NTd6UkE9PQ&position=33&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2644,7 +2644,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZElPOUpCbzRNZXhMWi8vMXpSVWd3UEMzUHVRSEZRZ01PWXVyeHRrK2lyenY4ZjQ0QUNlZE0xS3RCRWFxWlN2UTZFZ3Ewc1dBUjg1aTd4QUhteUZXNXc9PQ&position=34&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2658,7 +2658,7 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UjZaZWNMQkRqQXB4L2FMd1B1STkvWnFXVFdubTBSOW9EU1dud0cybEdrUW8xb3RRenBNWjdkN1lMNnMvVENRK01rY3ZKVktyN2F3aUZmL082ZGVIaFE9PQ&position=35&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2672,7 +2672,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=V1hvUU5rT09yZ2Q4NFlaVHlaYzFYdFlXU0hDMGppZU9PMitaSDVBY2hvK01xdyswOStReU43T2x2OG5PM3IxRko3aTdQYy9SYUZ4UEhLcitSNzJJQUE9PQ&position=36&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2686,7 +2686,7 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Qm95VmF4aWJmUGd3ak4rRmRVcENyRXQwQ0srdWpMdTQvVGZuN0lXK2F5NnFpcUNqOXhvREc1R2xLbXo1SnppenpUdE1jck1SWENIeDF3OUhYemkyZGc9PQ&position=37&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2699,7 +2699,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MldCSzZZRUE0amFLUVcvdGZua0ltd1hMUGhkSDF6MmpMdzFBL3g1UDhNUnlEYlRlSElQWHo5b05DK3NRaVpaNks4aFBSMmV0REk5dHJKM2lXcGVEeEE9PQ&position=38&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2713,7 +2713,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MncrVFZnRXE5b1JrcnM1V2FxU1ZESlVSZFEvYUdLZm80R1hpNDd0MlRlTE9sTkFZUk45VHh2aXlKYUdaYXRFTlB4MC9QSkRwS0xDVWJaN05seVM4eVE9PQ&position=39&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2727,7 +2727,7 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=TG5vUk9oZ1EwY2hiL3d2b3B4MlMyd3ZESXg0ZkpJK3BuNkJpU2lnWG1xMFhzaHRTcFF6Y2tYd01XclBmOGswK05rT2lUSVViZlhHY3VCSUt3NFY3T3c9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2741,7 +2741,7 @@
     "discountValue": "PHP 900",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=eDIrdkdUTi9kUXlVa0JlMjRRUGt4QXc1SmUrcW1FWGU4K2JVUHFHNWNYcFkvUWN2RE93YjRYYS81OFAyYVpMb2R6QTltWXZFTThFUVh4MFl4d1UxR3c9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2755,7 +2755,7 @@
     "discountValue": "PHP 165",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=ZFBFVThUNzdsamQzazZJUFdvcVUwbUlLRGl1VUl3TTJkY2kzbC9lTDZTaFBUNkR0OUFXaXhsVHFOdnhSbCtRcFdBaUZRcE42VUxJM2lXbExMaW5sZWc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2769,7 +2769,7 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UWJpMllwVWtTVmNRblM1TXluWWYzMXhRS0RJbkcrdnUvcWJvTktBRDM3Ly8zTHN2cGIyWXF0SXJPRzI2SUVac2pUbzRsNXFjTGFVbjdyMm90MURGd1E9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2783,7 +2783,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MjZTR3YrRTFRNk9PakhtS2psSW1wMXdqRmlKYWdyRjBhMWtoQndRemQ1ZTlEeHRpSEQzOENXKzZHM0NJYWRVaWRSTm1kZ2EvbkptbmdjZFhEakxlVmc9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2797,7 +2797,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=YmsvTGNHSkhkSmVXb1NXai9pMm1WR2F5SWNueUFQdGdsSVNYbWc3djBoVnNMdm5hd3cxTWZYSWRHOWlGcXdLMlRnN3RGVjd2Q1h6NjhnM00xQlRGd2c9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2810,7 +2810,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NThwZGpNRW9lOFpHbU81Y1ExQXE1Qkg2bVU5QmhTNE1NSkE1Sk91MjlqRFF1UFVpcS9HNTJxUkgrbXhndU94L3AvVHNVWVNtVDlnU2RyQng4Zy83MFE9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2824,7 +2824,7 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=OGtmcm5MOU1SUndITEhOZ1FobTFlZ3A3ck1BWEdLZVdUKzdNM05PRjlLb3hhT0pycjJJeVVFVjh2MjZqb2dGSUVVMGhIdXkwZy9zSnBpVGxDTm94eEE9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2838,7 +2838,7 @@
     "discountValue": "7%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UHV3MUhuRXF6RmxXTWNhNU4zVkVoWjZyakhxYTN6Q2FaVlNjOFVkVnlvakJaMkU3QW1EZG5uUjQvL0I0OHFqSWJyOURCR3RjTUwrN2lsZlBCc2JsNGc9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2852,7 +2852,7 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=OEtTSldFY2NkVVpSNzVDeHAwckZlNGM3VFJDbzVzWHdRcHF5OWdrU3owUThRaUZxZXprN09RbUZzNkdCbDkvclBGd1VEdnhyR25ndUdJOVUzZ25OQnc9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2866,7 +2866,7 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=RXduODVOWVZBOUp5T2RTS01oVUJyNjhJOSt6RFRpNytXaW94OUk5M1VjVU1YaVJlY1I4NjNkeUlHRi9ZcDF5eEt2L0o3RW1aRG8zSFoyVDYwTGQ0WWc9PQ&position=10&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2880,7 +2880,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NUdmQUxuN1NKNVAzY0sxZWNpSWlURzBlcUcrN0J1NVp4QjNIeUhha3Z1My82S1grNkdOM29pUFIzb2psMFVlREJpalhWd2JnMkFZZkE5czRDSU8xU0E9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2894,7 +2894,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=QUE2elQ4VnowZENLaHF5aExmbzhMSDBUY1NGT3JGNkZTYjlxTW11MlRPVVV0cUlIMXhkOS8raDN2OXlPcGx6eGluRHE2eFVyUm01aUlaRU42Uk1GV2c9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2908,7 +2908,7 @@
     "discountValue": "12%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UHh2OWhVd1ZZbkZqWDR6TWlqWkVWV2YxVUtIa1RTSFJqSWdkSUxSOVFpK1BISTg0L25YRC9NTlliTkhWbEd6N0lLVXk4eGJUQUlZVUpmUS91UlBiM3c9PQ&position=13&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2922,7 +2922,7 @@
     "discountValue": "13%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=cnNVVWg4RCtmZkd5MWdCN2xHRDYxQytibUk2STB0L3ZsRVhjOXNQZ1ZTV2c5Wms0VS9OcXhpaDFPdit2QzlTQ1l6MFlXbkJ4WWtnUnRLN0N1bVNlMkE9PQ&position=14&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2935,7 +2935,7 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=dU9kMU1JTzhvNEJWS0l4QnlmQXRuQ2dMUlAzOTI2Zm01c2tQSWZpejMrbUR5M29ZbGJBdFRKQkt6WmF6OGZRTW5QbEpDMjEvQ3VUbmtsTUpqUGRrcGc9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2949,7 +2949,7 @@
     "discountValue": "70%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=U2t3S3liMURJOFhldVNBZTV3TldFbXVUMU14WEFVcEFxL1ZaREw2WTVFVG9Yc1E3dXdhNEZDS0ZmTGdUcldCWUozZXE4TUc2MHV5OVc1RTZ6c0tnNXc9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2963,7 +2963,7 @@
     "discountValue": "45%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MVBHMnN0dk1xL0FQeHlzY1BPSDJLcTltcGR2aS9aWDlRUXpjeXgyQUdWeUdBcHRVckQzNG1oN1cxR21xaXdTbzRnVDJ5VDVmaFVFclQzOExhQ29FV1E9PQ&position=17&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2977,7 +2977,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NXRyQ2lKcmEvNVlhUVp3SGVJd2kvbmxBcmVsWGFOd25qTjVENE9BdFVuQWJ1U0xUVjBaTTNxTTUyc3gxbTBRcTRMcEVlZDdFTjdCL3A5R2xNRmNKL0E9PQ&position=18&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -2991,7 +2991,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UkhpV3pzR2d1V1ZLS1lib3d0ZFZCRHVGRWVsNUpOV0dEdkhyMXprVDBYbFE0RWY2dkV0clA4TDk4WE91aHhwOGdkZEs0YkQ1N2NDNEZrYlo5dXVZdVE9PQ&position=19&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3005,7 +3005,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=VHc1c1hnNDI2QmJaUUovVTN2WVFLTUVvMzFFelFXbUFrbkU4d2xxaDMxdXd2M29SVi9vNzdvTGhNY3p1THFnZmVGUHV0RWhjdUhLSDNCUVkrb1QvN0E9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3019,7 +3019,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=R3RHaEtNMFM4OWVPaVpoNXBlWThmQVNjSWVKOUJ6ZWV0NUo5bXpjNmEvSk1Pb1FHN25tdVRVcmYxS2wxREZ0dEUzeGp5ZnJNZ0lIbEpsRkFlTFp0OEE9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3033,7 +3033,7 @@
     "discountValue": "PHP 800",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=YW9KMlZLaFA0bVV5alVFaGxyN1NQa1BCZXdnOW5RSFY4VjVDenp4RDgwOUlha3hSeUs0OTJlSGp4ZnIzQWpIaUN5dGNVaksvalBMTUJrUTlaZGRGa1E9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3047,7 +3047,7 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=VWcraThlWWhLSzcyeHpnd2hxNlZrV0hkd2V5bmFENlVnbXJpV05PYzlZK0lFeDZOZElRQWdYNGJMRWhtLzdyQVRVVndaeTJBd2FOdUFTYVFneVFMaHc9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3061,7 +3061,7 @@
     "discountValue": "35%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WlBGcTZ2Q1lBZ1RMeGR1c0pjdENSQXd3Zk03Y0Z5L2JtTnJyeHZCdTBJV0R5MEk1Mzc0bWxJamN3QnVTVXJObXREeTdkb0FKQ1d1bTl4Vzc3eHRQNHc9PQ&position=24&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3075,7 +3075,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=dG52aEo0aHExdElKbmRnUTZ5c2RMTmovdkYxWEdHZTIyWVFCWU5aT0wzUitjNjY0SmlVU0dYRTlTWllrSXJEbzJzdmF6UjF0WlBqR0hXL1pPSnlaVGc9PQ&position=25&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3089,7 +3089,7 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=SllYNStQbW16R1MycjFlQVFxRU1ESXFFQ2JMMHlrWjAvcmNLQ3N4YlY2bDlwVmpKdWg3dkFXRCtoampzWWRnbFRzdzAwUHJ2SmdXMDQyckVHZDdzWkE9PQ&position=26&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3103,7 +3103,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WXVtVXFhMkhUWmcyL3lGNkIwRVFHcjVUQUUwTkM1M3dZZURKV0d3ejVCQlI0R28zRllycnRaandrV3JoQ1ZQTDBvYmVBMnhCVDkwWmErb1Z4T1I5dEE9PQ&position=27&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3117,7 +3117,7 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=bkh0dFBHdzVFdW1TVGZyZEkzWGZHQmxxMHNTOXNkb2hHUklPWUhCMGRMOU85YU82Y290TzRVYWluOWJQNnZFeUhpTkVzN3FvSHZocm13WnlEa0FsbGc9PQ&position=28&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3131,7 +3131,7 @@
     "discountValue": "45%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=c0hGaUo0TzJ1R1llR3lDeEptTGh6RlYrKzlwMDR6QmsrVEZQT2RjaklkZDV3bm9HZEJrYTBMWk9iK2FtV2JWMGdhRTlObHlTeFpIZldlNUdDQ293WkE9PQ&position=29&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3145,7 +3145,7 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=THlzY01UZUVTN0dRUXRmRnNQNGRpdVpraFl6eFd0UnhVL0kxdWZObVh6UmoyQ2tXMnllRis4UC9GaWFNY1Y4N2xrTU16YldwL0FldTR0di9SMVVRRUE9PQ&position=30&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3159,7 +3159,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=TXpvQ3o5QStTb2ZjSW1MclE0SUJ1M3l5c1k5aE45MysweENiYnNqc2NpOGFQclMyZzZHRHJ1U2RxOHoydjdmY0lFQUI2dlFwOFQ5RVJQbi9OS1M3R0E9PQ&position=31&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3173,7 +3173,7 @@
     "discountValue": "PHP 130",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MUtzemY0MjVTU0oraTcyaVlrZ3E5bU5odFp1Y3R2K1pJcjlHS0dHbTN6dGd2RmZ4bG9FemZNQXVwTDlSVmRLQklhMlh1RlVVeE9oT0VJNmZDb01CRUE9PQ&position=32&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3187,7 +3187,7 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=TmJQb1lNMUZJU242NmF1bVRqckl4K0Exclp6L3ZzOXl1YnB3d0hKK25JcVRnRHE1bW1yQ0ZjRWxJVlZsVS93UnRzQUVBSkpScXBpenRzbmdPVW1CTkE9PQ&position=33&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3201,7 +3201,7 @@
     "discountValue": "PHP 800",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=bGtQTjc2aWtxcVU1aHNCZkhHcko2RHhiVEdxQ0hHQmlQMHM1MC9DRmp2RDFiRUgyTDJEQTlOL2VPZEczeXFYUjhid3M4elF4Q1BLSEltWFdUK2FrSWc9PQ&position=34&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3215,7 +3215,7 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WFlBTXQrWUg0SERhL0VSa2F3RVNMRjZ0Qnp2dXpvVWtackpXcnJlclhzajIySUpvRVF5WGVGZ2wxT3lVWExVcjFIVGhsUE5UdkQvWHNNMklhdjg0VGc9PQ&position=35&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3229,7 +3229,7 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=KzZBTTIzRVVtdDREeEZYVm5LRERkOXY1eHVlWTd4bnUzNU92MjFhV0F3Tmp5ZUcxWHlTd3ZQTGVPZFVxZk81UHFlYjJjM3Q3U2VVcXdtRTFEM2Vxc3c9PQ&position=36&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3243,7 +3243,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=My9IYmM5cEF4TUI1eG5WUm9DSXJmaFBBMTJzcTRBYkhndWNIajkyYXB1UG5paEVlcko4QlAwWlBxRU5qN3AzdjdiRHVrek5pSUZlM2FEdkU1Qk82eWc9PQ&position=37&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3257,7 +3257,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=d1JOQ0E3TU9CWG8ra05manJOU1NweGRqQjhZQkwvZ1UvUC9kcnFxMEpxT2xjdUNYNWVLclU2K1ZlNVg3VGxJdGIxTzhOSzdWWmRxZkRNU285QXpuVWc9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3271,7 +3271,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=WVovdTd6RHlnK3BGWkdsSWZVcGxiMmhISEQrNVRTT3Y1MzVuV2F6T0NnTkhQbmVid01nZkhHT0xMMFc5dU1jbGlsRm5oc0RIM0hGRFluWTJ1TEkyRFE9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3285,7 +3285,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=dzhwcllLTXhyTUpDK2IxMEZUM1ExZWMzbVFqZlBROGtoT081cktROEtkOUdWUDZ2ZTJCU3VpdkJOS3VqWDF2aE9EeGNzQ2FsT0NueWhuWjZ6Q1hjQXc9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3299,7 +3299,7 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=c1czSTRHQzRIajdyVGw1dXdEUFl5OUpmZFlmeHNRZXVvdS80ZW4rQ2Y4ejlFbDNaaFBobjJKOHFPQVdrNWdxcXB5aFl5OHlVWFVKZHVnUldVbTdjNXc9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3313,7 +3313,7 @@
     "discountValue": "40%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=Y0h1RzRZYlVyTndNUS81RnZhOU12V3V4TG5ob3g1TG5hN0krQlFBWExKaE9rTkRabWRGdVJwRGkwbVlPNnM0dm91d3V3VjFjQTZ4dFRCWWNCUjBEMWc9PQ&position=17&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3327,7 +3327,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=SE1nMG9xY0lHWUFyb2FnOHZhZUZOTE1aZktlVTNhVUFhcUZOY3NwVWdIVXArN0l5UGxUbEhpQnkwK2Z2c2c3Z21MV2kzMFVvSTVoZ1FTU2hzYTA3Q2c9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3341,7 +3341,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=UXdoc28xQnVCVGZWeWV6REZEeU9sbnNHWjFIeVUrck5GZWdFVm5WZDZ3MmhPQkt5amp0eWRyRG8yelhGOW42TitjTEdlaVlzSXp2RisvY0FobnJTRkE9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3355,7 +3355,7 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=NU84ME5pSUlJdUJuNmRKYzNVWU00ampFLzNRZHorYzh4eHNLNm9WYzlpZ3c4Zk9MMk5aeHcwRGQzYVRVRkk3a2J4aEZNbm1jKy9Tdk9sZ3R4U29qZ1E9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3369,7 +3369,7 @@
     "discountValue": "PHP 15",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=OFBuMkxLUE1wVllwL3FXdW93V3dmMEM5NVkzaXIxQlNPNVk1VjJ6Y3krQUJBVTFScVZMZHArZnI3bXNjdEJxckthVXA5dkNwaFUxcFBQTEdYeDBMeWc9PQ&position=24&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3383,7 +3383,7 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=U01uM3JiQ1BxV2tnbWpVZUdxT0FhdXRQemhENGVuVlRHbmQ2Y1VUdXh4dmZpS0Y0VUFteW9QMStOWmc5eXhicVhPd2pvcE9BKzJFeklyb1ArYXZIT1E9PQ&position=25&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3397,7 +3397,7 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=cUZhanRMM0pjSjN2RTVCMy9Hc25zdzM3QTlqLzVocWM4OWIxM0U3MU9EalZOQ2wwbDZTSGJDcW80N1BHcEhaQmRON1VXTWd6Ulp1YWxtbmFQQmlnZWc9PQ&position=26&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
@@ -3411,7 +3411,7 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=T2txL1NnUlZhcVRJSDRvLzFmNDhlY2pZTXhGdmRvUzIySlh3K0VOK2Z5WTIzbC9QRXkyMkp5ZkoycHBzdXpseW1OeGV4N0FpYVVGQmdFNTg4aC92dlE9PQ&position=27&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "active",
+    "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
     "lastSeen": "2026-11-04T18:14:04.269Z"
   },
