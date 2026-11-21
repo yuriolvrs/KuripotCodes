@@ -11,7 +11,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -26,7 +26,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/joyride",
     "status": "active",
     "firstSeen": "2026-06-03T02:44:25.821Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -41,7 +41,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -55,7 +55,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/grab",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "discountValue": "PHP 100",
     "firstTimeOnly": true
   },
@@ -70,7 +70,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/angkas",
     "status": "active",
     "firstSeen": "2026-07-19T13:11:15.213Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 40"
   },
@@ -85,7 +85,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "discountValue": "PHP 100"
   },
   {
@@ -100,7 +100,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -114,7 +114,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "discountValue": "PHP 100"
   },
   {
@@ -129,7 +129,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "adebedba9944a872",
@@ -143,7 +143,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "008eb566097fe4bf",
@@ -156,7 +156,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true,
     "discountValue": "PHP 100"
   },
@@ -171,7 +171,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e3c2eaa193ae6c4e",
@@ -185,7 +185,7 @@
     "sourceUrl": "https://ivouchercodes.ph/store/shopee",
     "status": "active",
     "firstSeen": "2026-08-15T15:42:23.784Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "59984ccb9067fcb5",
@@ -197,9 +197,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ZnVGWGxXeTNuS01NeEFhMjBQYytsSlE1b0d5bms2MW1NUGVoNjdrY0VOQkVnbkd1TWlGSmRybmFPa1gwMWh1SVlUNVQ1Z3VKd0RrSXArMUNhL29kUmc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "874436399a310f97",
@@ -211,9 +211,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=SmRHalBvajNUMXlzcCtyRkhES052OGJUZjdDa0Y0M0dNZCtUTnN4MHRlUGRDbEx6SlV5bUR4TzY0TVVtU0tyMlpqSVptODNWWkNkQzdXblZpbnROTHc9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c4b673f72b533a60",
@@ -225,9 +225,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=a3piR3o0Vng2QVNxcVdybGNnTHpmUm9DMEtveks2Z2UyMUVrMVpDbmRmRG0wdXJwUE10dXVSaVh1dDIzRFUxcE4yYzJtZVh4WE4vOGZmYk83N1EvbEE9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "986aee02890d5ee0",
@@ -239,9 +239,9 @@
     "discountValue": "PHP 250",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=OWZZMGo5dVFueTJNNU8zaWRyVHU2bTNKejJsU1FVMFY0VFIyV2ZJQ2N4dGFFTllmeUg4bTlCZlFUblFrZkRoQ1FHMW5pU005MzVpZjByTE1pcmdIYnc9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a937834f94467dc1",
@@ -256,7 +256,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "578c86f1f0e1e1ca",
@@ -271,7 +271,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "eaed7d1c9435521c",
@@ -283,9 +283,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ejlVUzkycEZuWWgzTEFCY2pUb2lWZkQvQ2lHTHkrS0diTnhFdnUrR1haZ1JRV0FtZE5jNzU0Z2RYSytFSE5BbjE3U3ZNelcyUmtpZlRlbS9PUkwrdkE9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "39e77ad027f69904",
@@ -297,9 +297,9 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=YlpxenBUZFdFbUo5eTNteTZBUnlLK3kvT05UeU1lYzZtRjk1MUNRMUxpOXRKVHRrWXFlMUprbk5zNmJTQ0J5Y0xLaWdLejAxZk50RytZcm9BRHljQUE9PQ&position=10&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "79c2f4175366c1ed",
@@ -311,9 +311,9 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=U0VuSHg5UmE5RkE2ME5Ua1dsRHcyaklIcXlPWHN1VTI2ZloxQi8yeGYvMXVSWnBSWnlRZEJFUU9yVHdYMU5QTGMxZWFrOHkyc25mTys5Y2U5cU9RYlE9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a644bf2a9ca1c03f",
@@ -328,7 +328,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7d2a91e5dab338db",
@@ -343,7 +343,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f9eeadc7a176dc0d",
@@ -358,7 +358,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3e5bb2d65ef6ba3b",
@@ -373,7 +373,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3c849aa45252dc79",
@@ -388,7 +388,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "da15717ae19f3d3c",
@@ -403,7 +403,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4eb73a755dac4f41",
@@ -418,7 +418,7 @@
     "endDate": "2028-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -431,9 +431,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=VTYxUGZSRHNBaDBubTVmR0s1eHNjNmYrbGtnSjBGVWc0dzZSSjJnaFlrZk1vSksxWE5uQWVVWDl0OVNtTndzK2U5N2JMTENCMDk0U05acTBqNWpSalE9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b3974b595d57f911",
@@ -445,9 +445,9 @@
     "discountValue": "60%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=M0lwWml6ZmhqNXQrbjNEUHl0aWZNaGZzU25LQkZVRmNWeGdvWXQwelp1OExiLy8vbVRHZ2lBd05JSTBFc1pKdCtVV0dSeGRCd1pQOVc2Z24ya2NaNlE9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -460,9 +460,9 @@
     "discountValue": "PHP 125",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=VTVCcG1EUzRhcjFrSVlrUDZXYktWcHFQSkZPNHNkQXpxY1dCUWtTeXAzRXJVM3ArMHA2blUvYmdBY21sMzFSNFJuUVd0cHUzdWNlZUx5bTFzQkl3Nnc9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "efec89411d92c1f7",
@@ -474,9 +474,9 @@
     "discountValue": "PHP 200",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=ekJLUWVlVEFHalIrSjJES1M4VjhsWDV3Z3RXZXgvTjREMHY0SXNydVpsQmdLTmVyTlZXaUloNnB6RUVUNlZZRnRSZ01KTUNXSjhaV011eXJhYmEwQ2c9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "bcf7314a893a2233",
@@ -488,9 +488,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=WXhCa0NZalVEbGYzb0xhb1U4blRaSWVhaENpb3pxVVNvWUZ4TFp0QnhrcDRtSC9TdGVxMG4rTjlId0t6THREVFQyd1RuTXVBWEJuNm45MHNkUGNPUEE9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d239a455289e227c",
@@ -502,9 +502,9 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=a3lyUWlUc2NjYmdSM2FZSlZXVEE0Sm5MMnVUK1hoRDJITVR0QlVhaitKM1pFaHpCMytnQlF6MW9OT0U5RDJTRmFheElRM2tVbEZOaFpLSmhHQ0ZoeXc9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7bda5a7cfcefe1bd",
@@ -519,7 +519,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "320b312b040db96a",
@@ -531,9 +531,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MUZ5bjEwMUFSWWV1KzB4V2tHWFViUHlDdHdjYUhqS0tLSFA3QVpvNHVnSzdaQ2k3TTY5N0RCOUFMY2JHOUt3UStQaTF0eGVINldOc2FtcktVZXRmV3c9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9db74d2260b0d53a",
@@ -545,9 +545,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=NkZDS3gxTVJJV0FMOGxsdFZGZjlzVlFzVXV4QlR2YitOaTBLWEI1RWk3VjgvVU1zcnprcGxjWGJUZlNtLzN2TXZXcG5pSkJ0ZlNoaFF0MzJlSUIxQ0E9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -559,9 +559,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=V1FWYnR5cnoyR0gwc1FrYlU4Z3FXQ3BRamZrQVVxdDBzZStsZTI3K3p1ZFJpb1hsdEltekUzK2V5d1NVcmlYUFROM3EreENEV1krWklydXhXVllQUWc9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e34edcedf2fdb321",
@@ -573,9 +573,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=ODB6WUJuYy9aNEI4cTRSZEhRN2wwRFZjZGtHdGtNQS9rU0dVMVlpUDVVZTFQVUo4Y3ZkZG84bW1PRVpXdHVzTm43STJOOVN1U1QxLy9hVEpVek96VFE9PQ&position=13&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -588,9 +588,9 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=Q3J6RERvNTNJUkRtSVlqV09MbzlqdTdCOWY2NGtCRi94eWdGTjRGU3BQWGtxTUJNZEsva0gyZkdNam5qMkc5dVpkVUVWVUg2aU5vOWtmd1hCaE9kWEE9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "47916afa87a2e794",
@@ -602,9 +602,9 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=MHZBdEVlMkFqWDZsdngwM0V6SzhFRU5rQ3dxbXdBNy9BUFZ4R2k0Y2t0MzBHcmxRaWc2ZWpnUzlzTk9mR3RnWDhEbFQ3cEVGTkZrQmMvbVdXRzRUU1E9PQ&position=24&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "2852e679548974ba",
@@ -680,7 +680,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9403e0ca3fa93ef5",
@@ -693,7 +693,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "91215517e9588ac5",
@@ -706,7 +706,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "86eae33607a27894",
@@ -720,7 +720,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4e43c93e08d09309",
@@ -735,7 +735,7 @@
     "endDate": "2099-01-15",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ba6e2110a0d97c7e",
@@ -748,7 +748,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-08-05T07:45:05.962Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "00f11ce8d7d8d93d",
@@ -763,7 +763,7 @@
     "endDate": "2026-12-31",
     "status": "active",
     "firstSeen": "2026-10-13T12:51:41.286Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f501bb7491a5c417",
@@ -777,7 +777,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-10-13T12:51:41.286Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "248165e7eab675c1",
@@ -790,7 +790,7 @@
     "sourceUrl": "https://www.picodi.com/ph/grab",
     "status": "active",
     "firstSeen": "2026-06-01T02:42:24.016Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8de8844f82217e64",
@@ -803,7 +803,7 @@
     "sourceUrl": "https://www.picodi.com/ph/shopee",
     "status": "active",
     "firstSeen": "2026-10-14T15:30:02.088Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "06f3306c7d685e65",
@@ -817,7 +817,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-11-06T13:06:57.433Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "462a125f924d95ad",
@@ -831,7 +831,7 @@
     "endDate": "2026-11-29",
     "status": "active",
     "firstSeen": "2026-11-09T21:06:01.637Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a11407eafc30f1e9",
@@ -845,7 +845,7 @@
     "endDate": "2026-11-29",
     "status": "active",
     "firstSeen": "2026-11-09T21:06:01.637Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "67cd391c0cbea2b5",
@@ -859,7 +859,7 @@
     "endDate": "2026-11-29",
     "status": "active",
     "firstSeen": "2026-11-09T21:06:01.637Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d186d6800a711460",
@@ -870,10 +870,10 @@
     "discountType": "free_ride",
     "region": "Philippines",
     "sourceUrl": "https://www.picodi.com/ph/lazada",
-    "endDate": "2026-11-22",
+    "endDate": "2026-11-23",
     "status": "active",
     "firstSeen": "2026-11-10T21:22:24.327Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "fa52a626c803b984",
@@ -888,7 +888,7 @@
     "endDate": "2026-12-31",
     "status": "active",
     "firstSeen": "2026-11-12T06:54:15.117Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -902,7 +902,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-11-14T19:59:37.942Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "312ab0087c373a5b",
@@ -915,7 +915,7 @@
     "sourceUrl": "https://www.picodi.com/ph/foodpanda",
     "status": "active",
     "firstSeen": "2026-11-14T19:59:37.942Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f5cc7f190228b5e4",
@@ -930,7 +930,7 @@
     "endDate": "2026-11-22",
     "status": "active",
     "firstSeen": "2026-11-15T17:25:06.646Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "5996e336bbd3015a",
@@ -945,7 +945,7 @@
     "endDate": "2026-11-27",
     "status": "active",
     "firstSeen": "2026-11-19T19:10:19.217Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f674b566383c7dcb",
@@ -960,22 +960,7 @@
     "endDate": "2026-11-28",
     "status": "active",
     "firstSeen": "2026-11-21T17:47:13.811Z",
-    "lastSeen": "2026-11-21T17:47:13.811Z"
-  },
-  {
-    "id": "655b00476af57dce",
-    "platform": "Shopee",
-    "title": "20% Off on Selected Orders at Herschel Supply Official Store",
-    "code": "",
-    "description": "Receive 12% off across the entire store, allowing for diverse savings on a wide range of products. Take advantage of this offer to enhance your shopping experience.",
-    "discountType": "percent",
-    "discountValue": "20%",
-    "region": "Philippines",
-    "sourceUrl": "https://www.picodi.com/ph/shopee",
-    "endDate": "2026-11-21",
-    "status": "active",
-    "firstSeen": "2026-11-14T16:43:58.212Z",
-    "lastSeen": "2026-11-21T13:38:40.340Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "205c07891f19f7e4",
@@ -990,7 +975,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7900b6f678e22079",
@@ -1005,7 +990,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8a16b59a4ee888e6",
@@ -1020,7 +1005,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "5668fb44dcef91c5",
@@ -1035,7 +1020,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f438e2bb54eb5a29",
@@ -1050,7 +1035,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8a5c432770d97588",
@@ -1065,7 +1050,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "20ff7018b1b7d80a",
@@ -1080,7 +1065,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a99fecc48f3b615c",
@@ -1095,7 +1080,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "88300e7df54a1209",
@@ -1109,7 +1094,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "df898828bda39ca1",
@@ -1124,7 +1109,7 @@
     "endDate": "2028-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "68a66b3590d27140",
@@ -1139,7 +1124,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "634ce722d0e5a88f",
@@ -1153,7 +1138,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "6efaf4c2e389b477",
@@ -1167,7 +1152,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "fe01b38d4b47b1d1",
@@ -1182,7 +1167,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ab2a14ef307f95da",
@@ -1197,7 +1182,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d99292161b3e4727",
@@ -1212,7 +1197,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "672f100ad2430f6d",
@@ -1227,7 +1212,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d75995093039e699",
@@ -1242,7 +1227,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "dd07e88720e8eb63",
@@ -1257,7 +1242,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e18d6fa073e5fef6",
@@ -1270,7 +1255,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "575e598386cb0f77",
@@ -1285,7 +1270,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "db368150d9aa0b74",
@@ -1300,7 +1285,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4e712c55ab4dfc53",
@@ -1315,7 +1300,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ce680f85c97c601a",
@@ -1330,7 +1315,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "586b493359b27f9c",
@@ -1344,7 +1329,7 @@
     "sourceUrl": "https://iprice.ph/electronics/shopee-promo-from-p119990-pre-order-samsung-galaxy-z-fold-8-ultra/",
     "status": "unknown",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e47285af0745ad06",
@@ -1359,7 +1344,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "46fdf3297f4097de",
@@ -1374,7 +1359,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b998f0b8d3e57f3c",
@@ -1389,7 +1374,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "44290bf16f74366a",
@@ -1404,7 +1389,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3906fa8ef5da5470",
@@ -1419,7 +1404,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9e9291ec83dffeff",
@@ -1434,7 +1419,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "384a4b143c7db27e",
@@ -1449,7 +1434,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "fd1ed263d213fb61",
@@ -1464,7 +1449,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b97c3ebfa8eb6e8b",
@@ -1479,7 +1464,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4ee98e9a341a3103",
@@ -1494,7 +1479,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -1510,7 +1495,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "2384b05a9cb6b1ec",
@@ -1525,7 +1510,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d870d8b1db3368ec",
@@ -1540,7 +1525,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ff28933013294719",
@@ -1554,7 +1539,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a94cf906852119cc",
@@ -1569,7 +1554,7 @@
     "endDate": "2027-01-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b528b2914e185de6",
@@ -1584,7 +1569,7 @@
     "endDate": "2026-12-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "518791357a97eb83",
@@ -1599,7 +1584,7 @@
     "endDate": "2026-12-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "646c320f801b776c",
@@ -1614,7 +1599,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "6da93a059df34e85",
@@ -1629,7 +1614,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "39a6bc5c61d67afa",
@@ -1644,7 +1629,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d3f2d2de22603145",
@@ -1659,7 +1644,7 @@
     "endDate": "2027-01-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "32c1408180852be6",
@@ -1674,7 +1659,7 @@
     "endDate": "2028-01-01",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e0d9ad672494d4ac",
@@ -1689,7 +1674,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c967bd94dca80e56",
@@ -1703,7 +1688,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "647c917a8806473d",
@@ -1718,7 +1703,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "597b6365f7ddf1e4",
@@ -1733,7 +1718,7 @@
     "endDate": "2028-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "5094cea6c5479d7e",
@@ -1748,7 +1733,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d8a8621989a62245",
@@ -1763,7 +1748,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b22952b84d4fb1ef",
@@ -1778,7 +1763,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "bc6c578cfdd0a031",
@@ -1793,7 +1778,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "53fbeb2addcd8ada",
@@ -1808,7 +1793,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9a46974b68e186da",
@@ -1821,9 +1806,9 @@
     "region": "Philippines",
     "sourceUrl": "https://iprice.ph/home-and-living/claim-p1000-off-lazada-voucher-today-on-coocaa-appliances/",
     "endDate": "2027-01-02",
-    "status": "active",
+    "status": "expired",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "94c3dd2e2acffc69",
@@ -1838,7 +1823,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "96f1d6ed2d8ae329",
@@ -1853,7 +1838,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "953c16f6b53adcd9",
@@ -1867,7 +1852,7 @@
     "endDate": "2028-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "cc6b115babc38a03",
@@ -1882,7 +1867,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "287a708088a24f67",
@@ -1897,7 +1882,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4481069e1e898ce9",
@@ -1912,7 +1897,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "68a213792659b733",
@@ -1927,7 +1912,7 @@
     "endDate": "2027-01-03",
     "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "6052385e3ce5a159",
@@ -1939,9 +1924,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=Mklvdk9JVklWV3BCRlErQWpVeVl1b25LOGZhTCtLcERSSWowMkJIZWNNclpOR00vUENlenROeEVTYkY1T3J2M0g4MTdIVTg1L3FvUlFRVzRaWGh3eUE9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "17f6507103f17bd5",
@@ -1953,9 +1938,9 @@
     "discountValue": "PHP 196",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=elAyWFl1d0dxcEZFUE5rYytkcjlvSDlRaWM5amw1WkxFNWFLcXgyWVQySnNKRTVTeTYvQzE0Y3czZW91bnBOTHZ1ZkxZcVcwdnMrYmxIOFBzbitwc1E9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "fe82a3fc5b2c191b",
@@ -1967,9 +1952,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=TmZlYy81SXFWT3N3WEtSQzBGOUZwU1F2bTZ3YnRZa3NpVUxoU3JnTTlHY2ZiNmo4QjhBT3VWOWxiOUlnRkgwb2dRTEhaMDNNUWY1bjA1VExzM2VKQkE9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "78ffb70cd112cff5",
@@ -1981,9 +1966,9 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=STFiZitVeTRtRjRNV3RzVC8vRXFDQmVXbUM3TjlwTVcrby9FRUQvZlpaN2VyTHM5YkNzTnl4bUIxTEFHMXpqRThCSGZOZWIzeDdPekV3ZCtoV2NhQ3c9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "056db5b27e6934d2",
@@ -1995,9 +1980,9 @@
     "discountValue": "PHP 49",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=RmxoVUJ0U3hhSjZ2TlhsYkhobUxoMzQzSVZOeEVsQytHTTV5UmxEV25OR3pWMlFpcmx0T1lzUDFLdjNhVmYzaTZEYlI5NWxIbWd4MXZHVmUwVlRvTUE9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e6b40b433607d62c",
@@ -2009,9 +1994,9 @@
     "discountValue": "PHP 19",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=UlAxUHp1NTNxdnd1UWNXMEMzbzVtaWNyMHoxM2dvZDFGTGdLeWI0aHVLUGFObGVCZk9TK0lRWlFVeTZjSFdpWDZ5OFNrYXFpQmtNVXZLZUJVMHFxK0E9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8374320c4a293a16",
@@ -2023,9 +2008,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=dng5Q24xeE9Oa0ozcTNUQVRoVnMrejlaYmtuZm9vZE9QdVpxYUtQY0s5SnRuZElKUlhOTHhhVGhJcUhRSlBhVW02VGs4QnBwOU9yclRIL0RXSnlLZVE9PQ&position=14&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3b7d11b64a98b248",
@@ -2036,9 +2021,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=bWJ5VkxjZlJ1VDJYVXdacUJLdDZhWFhudEdEVVZJZlJiTytYODNsTExSZndpVC9mdXI4ZVBxZk1vUnlBbXY2N1dDRjlyZHk4Z0pnZk1TWEVtRDRrYmc9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "33b275ca14bbf39c",
@@ -2050,9 +2035,9 @@
     "discountValue": "PHP 50",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=RFBvV2xVOEViYnB6eDlLRS9ncWxZVHVmcGdLZDhjY1V5a1h0VmxFd2duVDFhY3ZJNDFic1lndTFyaFlHcEFzNFNLTHI2T1VJN0hrelhLZE5KcW5EK1E9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "427aae949de6e9b0",
@@ -2064,9 +2049,9 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grabfood-coupons/?_id=UDBFS3NaZmNPbC90dVF2QmFNb3RlLzU5cExxM2lvNjN5Z044VWM1MzJCMDVMQzFyTDUrKytHRXF3ZTNUeWo0T1dGcHdGa0xQdUtnanpsSVZWZ0JGbXc9PQ&position=19&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrabfood-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "41d9107f36ccffa8",
@@ -2078,9 +2063,9 @@
     "discountValue": "40%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/coupons-food-e-hailing/",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "55e11f3e221fae45",
@@ -2092,9 +2077,9 @@
     "discountValue": "PHP 670",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/coupons-food-e-hailing/",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "6fd0f3850c304e8c",
@@ -2106,9 +2091,9 @@
     "discountValue": "PHP 146",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/coupons-food-e-hailing/",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c4205e19a986c626",
@@ -2120,9 +2105,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/grab-coupons/?_id=MklQUUMzb05TL3B3c2piN29GaDFScHlhTEVnUkxKMXJMT2ljYUluekwzanRWK3BJaUM1QmgwU2E3SlJvMzNEWnI3aUpXY0hxdWNlSWZPQ21LSTM0T3c9PQ&position=18&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fgrab-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3b310112a1c66017",
@@ -2134,9 +2119,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MUtpZks4UmJsWHZTbnBEYzA3eU1tWTNJblQ4RHVVTzdXbGZqN09nbGpTQzZ2QmJMTDRBcHBtN3pWa1hlbXNZckFIaURSSHVHV3hmM2VGTDZCSThhZ3c9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8b8a4b4143641cdc",
@@ -2148,9 +2133,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=VXc4bTl6U3BFemFWT21GWThmelpleHcwcWtMR3ZVZ0hOUDZGNnREVjVWbTZJSTRyRHRJM09ScUxUUzQwcGcrUitTS1pGQlhtcS9oVWo3SVZzZjVma2c9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c2cdcf1a2f819260",
@@ -2162,9 +2147,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Tmd0MTZ1dHRjKzd2Ri9sSGxoTHZTMk00cmROd081enc3Y0g1KzVyTER5bHRhM20vVFp6M0JFVThjaUlIMjJjSTJEN0Y5QjMzait4SVRqMFlIbDhGK1E9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "2098655d3d81e88e",
@@ -2176,9 +2161,9 @@
     "discountValue": "18%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZnRydVA3THA5ZFZXeTVRL3hnNkJBN2JublIxV2hKY05KTE8wZEhabXp4Vm1DSmJPcDBaQmQ4RHNvZGI2WWVlcFhUZy94WkNHVURuSTd1bVArOWJvVVE9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7a2be3323fb365fe",
@@ -2190,9 +2175,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=K0VtR2hYMm5BWUVzZm15TGNtbEFtTmRTUFRPZXp5cUx3NTFDZWk1alV5ZlFiZUtibk9rVUQrS0lHa3BKZWE5anlnckF5TnZwbjRseU9lU3dQNDZCWnc9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f5ae4a3152d9af49",
@@ -2204,9 +2189,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ekJTOVFKSnRIbzYvanF3eUJsT1RlMTZ2NnkrSW1XbjAzaTVQODRHNEVFc0Z6ZWdPeDBRYmQ2Rm5CRk5KK3JqWGhnVU5OaGg3OWhMcThZL1hkVkhwbnc9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z",
+    "lastSeen": "2026-11-21T20:58:20.217Z",
     "firstTimeOnly": true
   },
   {
@@ -2219,9 +2204,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NnU5ckpqaFJOVjBLdW5DZ0RSYVJDR09jUnYwSE5YYm9Od0x0SjllOGU4MDR2blFHY2gzY2tWWVNtSjlNSlVzREhXTjNTUlJFdFJXcWFuRHE1cVVnM2c9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b15cacde1bf59c26",
@@ -2233,9 +2218,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=eU16SS9IWXhGQlZDQ282OXpMMTM3RUMzNVVLZnBpd2JtN1NzamxZNGtSS3JFL1duWEJNS3JVMFZod2hwTVMzNTRFMy9JTS9aR1NrRGgxWFRsd1JHdWc9PQ&position=10&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "0b14d829bceccdec",
@@ -2247,9 +2232,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NXhES2FVTCs1VC9wMFNqS2FYT2Z5UG02bzAyTDM2MGpweFdNbDNnb0dBWmZJTmlLSzlpRTBxZUhwWHorQy95aHVsdGlCTlVUN05qZkJHTjQ5aTlEVFE9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7ff9644972377bfd",
@@ -2261,9 +2246,9 @@
     "discountValue": "PHP 97",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=QXRobmlyWTNtZ2tPaituTjhsd0ZhVzJyZWtSN05Dbm5aRVk1YWp2L2lDVDdyd2VicWNJNTYrZEN3N1AyWEh2SDN2em1DREVWZms2ZjB1K2FFcUpxV1E9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "1c9ec12e5402650f",
@@ -2275,9 +2260,9 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ODQ2UXM3ak5XVExZV2ErUFJteHZBOEVLOExHZDZTVGYrSi9ab2M2RWVSRlRKQTJMRXhhb0txTk9HT1BUVnRnaTlPWGc5cXU4V084RVMwWUgyZHVmWmc9PQ&position=13&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3dfd709b4d148931",
@@ -2289,9 +2274,9 @@
     "discountValue": "PHP 150",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=cklKVGwwVHI1aXgrVFhWaFFwbVZ2ditpSEFBdVg5OXRHVm45NG50UjU5ZlJjWDZGQkk5am9laEVFdTYyQ0pKTFpDOXcxZkNEbHFYOXI0dGgwUmhXMHc9PQ&position=14&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b7a6346ce698ad26",
@@ -2303,9 +2288,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=M2h0c243OW9mZEM2c2s2enRpak8zWUpJenRtTmRIZFpFQjhodWdrUGlUZlNlVGN6ODRaZTlpazRWbitLeGZEYU16YmpVZXQ3Ym1Gd1RGTWlkNzNqY3c9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7f06b02455e88c56",
@@ -2317,9 +2302,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=dDBnNythZ1BJSkc5MlpLRHFodVhQRzBoT2hZS3hzazhBclpWZVBLR1d5TUFxR0NzUHVwVXA2c1pXaTNHVmxCS2NoQWNLdWdzOERGWnRNWThxVkNZT1E9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "213b12ddd431c216",
@@ -2330,9 +2315,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=dkZQa0pJUnR5T25qejlMNEtBalEwaXQrL1BlRmlSTHVPU1F3L1JSMDFaTjZLaEJveUNmSzVwWVhyaDczdHp2RCtqSzJWQ1pVNC81aGRJRFBpek9lc1E9PQ&position=17&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4b3dd334b412e996",
@@ -2344,9 +2329,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UjdrRTV6eDg3L2d6VkczYzhrK0JGR1NKdjJBM0UyWE1Dd2FMenVaVDJCeUtOYUVlYTYzSVNEaXJuNlltRlM1blZXMFl4RGdGL0EvR3c4dTBWZU9EL2c9PQ&position=18&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3495e3b7803926bf",
@@ -2358,9 +2343,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Mkx0ZThndzY1dzBJeUlSdFB6OTZBT0VrR3diaU5iQVAySXNuZnBiRzNBUW93aWNrYlBlUEROTmUya0JnSlZwbnhxdnBRbEl5QVRSSjJiRktrV2pYSGc9PQ&position=19&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b71e212dfed03662",
@@ -2372,9 +2357,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UnZCS2pGcHVYUDYzMEtwajRGSytDMWZVWVlVSmozaDNmQXdKb21PaXpEUXpNNFNJSjd0dTZMMFRwOHNoZGJGYklDWk9UbjJ3YkwvRzk3dlJhclV0Smc9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "828146e4c9a507b7",
@@ -2386,9 +2371,9 @@
     "discountValue": "PHP 25",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MmxlTVdqZGtWcll2RjhBR2NWaS8rSjM3T2d4YWtBTzZLNjFwc2Mrd251Wm8zT1haZXAwM2ptc3VORXJHUU5ub250R21mUk9pZk9aa0w0RXFCUDRocGc9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c223689e8366e1c7",
@@ -2400,9 +2385,9 @@
     "discountValue": "12%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=enE1cS9VcHFUdjlmUnp0blJnMTBRWDBXaDFLOVowMThkK0czZ2JWN2RQMmRLajIwRE5leGVWVHVDd1B1MjByTXVxdjNycXVqSzR0TEZ5SG42Y2w1NkE9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "44dd29754d15fea6",
@@ -2414,9 +2399,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UDk4ODZta3RpQTg4Q3RvejZ1YVE3WnBrSUJubXZ1QzBPaFkyZkV2cG5tZlQydmp5QkYyZUZJem4yUVBoY0p5RnczdkJUTTNwN0FSRXBrNlk1THEzT3c9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e20481f6008365f7",
@@ -2428,9 +2413,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NjdXK043TG14bXhTczdxRXgxUFRSV0Q2b2g0OW5ackJnSDErallvN0hQZW9OU0tEUTBWcmNOdU41NWFUOWk5dWZnTDJwc3NFL05aM1dpRWlXa2c1RFE9PQ&position=24&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f56b126660e13570",
@@ -2442,9 +2427,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZjJaMjlSWUwza25CNldWWVFvSVQwSGxjeGxueW5nQzFjbHo2V3BRaGludCt3VkdkbTZZRUhtNVh2S241UXV1V1p2ZTVMUGMwZEV3SEdhWVVXSVNnYVE9PQ&position=25&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9bf0f7abc58f94f8",
@@ -2456,9 +2441,9 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=SEttNGQrV3VRQm9wZE1UVmw5am8vZjdxdjRIbi92eE5TaGluN2ZCNjdqZ0xENUNodWU2SE12NENqQ1gyUnRUa0Z2QkhBTS8rMlV5UUNDV1NQZ3V2c3c9PQ&position=26&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3fa82892c51da809",
@@ -2470,9 +2455,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=S0k4SW9vQ2c5WTJpTUE0eHczbUV2MWRQU3F6ZmlpOGNtNzRSMk8wdEU0SWZuMHlLL3lybE03T2VubG8rT0dJUU5mTFdiektCSnFsQ2tzN0l2U1lieXc9PQ&position=27&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "78c09d61ad599033",
@@ -2484,9 +2469,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=NGhYQXRmUDJrSFdvMHhLVXE5M1JsYWlyaUNMWXpPSXFTbTN5cC9pUXZFUDZ4amtoNFpFYkNmTVFrTktDUnkxQ1JBcGltRU5SZ05XYXJwWTR4NTd6UkE9PQ&position=28&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "424d3170566b6ac9",
@@ -2498,9 +2483,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=ZElPOUpCbzRNZXhMWi8vMXpSVWd3UEMzUHVRSEZRZ01PWXVyeHRrK2lyenY4ZjQ0QUNlZE0xS3RCRWFxWlN2UTZFZ3Ewc1dBUjg1aTd4QUhteUZXNXc9PQ&position=29&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "1db9a3cd03989a02",
@@ -2512,9 +2497,9 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=UjZaZWNMQkRqQXB4L2FMd1B1STkvWnFXVFdubTBSOW9EU1dud0cybEdrUW8xb3RRenBNWjdkN1lMNnMvVENRK01rY3ZKVktyN2F3aUZmL082ZGVIaFE9PQ&position=30&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b4a6443888c2cf97",
@@ -2526,9 +2511,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=V1hvUU5rT09yZ2Q4NFlaVHlaYzFYdFlXU0hDMGppZU9PMitaSDVBY2hvK01xdyswOStReU43T2x2OG5PM3IxRko3aTdQYy9SYUZ4UEhLcitSNzJJQUE9PQ&position=31&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "aeac2ade6e7f97de",
@@ -2540,9 +2525,9 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=Qm95VmF4aWJmUGd3ak4rRmRVcENyRXQwQ0srdWpMdTQvVGZuN0lXK2F5NnFpcUNqOXhvREc1R2xLbXo1SnppenpUdE1jck1SWENIeDF3OUhYemkyZGc9PQ&position=32&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "11cfc9f18c28994e",
@@ -2553,9 +2538,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MldCSzZZRUE0amFLUVcvdGZua0ltd1hMUGhkSDF6MmpMdzFBL3g1UDhNUnlEYlRlSElQWHo5b05DK3NRaVpaNks4aFBSMmV0REk5dHJKM2lXcGVEeEE9PQ&position=33&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a0ee4f7f2a31740b",
@@ -2567,9 +2552,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=MncrVFZnRXE5b1JrcnM1V2FxU1ZESlVSZFEvYUdLZm80R1hpNDd0MlRlTE9sTkFZUk45VHh2aXlKYUdaYXRFTlB4MC9QSkRwS0xDVWJaN05seVM4eVE9PQ&position=34&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b29131d1666faca9",
@@ -2581,9 +2566,9 @@
     "discountValue": "8%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=TG5vUk9oZ1EwY2hiL3d2b3B4MlMyd3ZESXg0ZkpJK3BuNkJpU2lnWG1xMFhzaHRTcFF6Y2tYd01XclBmOGswK05rT2lUSVViZlhHY3VCSUt3NFY3T3c9PQ&position=0&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "10bd2bdd93ee9035",
@@ -2595,9 +2580,9 @@
     "discountValue": "PHP 900",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=eDIrdkdUTi9kUXlVa0JlMjRRUGt4QXc1SmUrcW1FWGU4K2JVUHFHNWNYcFkvUWN2RE93YjRYYS81OFAyYVpMb2R6QTltWXZFTThFUVh4MFl4d1UxR3c9PQ&position=1&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b652f38ce7c1326e",
@@ -2609,9 +2594,9 @@
     "discountValue": "PHP 165",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=ZFBFVThUNzdsamQzazZJUFdvcVUwbUlLRGl1VUl3TTJkY2kzbC9lTDZTaFBUNkR0OUFXaXhsVHFOdnhSbCtRcFdBaUZRcE42VUxJM2lXbExMaW5sZWc9PQ&position=2&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "bbab459da253c48d",
@@ -2623,9 +2608,9 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UWJpMllwVWtTVmNRblM1TXluWWYzMXhRS0RJbkcrdnUvcWJvTktBRDM3Ly8zTHN2cGIyWXF0SXJPRzI2SUVac2pUbzRsNXFjTGFVbjdyMm90MURGd1E9PQ&position=3&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "27b8407667a7a118",
@@ -2637,9 +2622,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MjZTR3YrRTFRNk9PakhtS2psSW1wMXdqRmlKYWdyRjBhMWtoQndRemQ1ZTlEeHRpSEQzOENXKzZHM0NJYWRVaWRSTm1kZ2EvbkptbmdjZFhEakxlVmc9PQ&position=5&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d7c680e32b167ed6",
@@ -2651,9 +2636,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=YmsvTGNHSkhkSmVXb1NXai9pMm1WR2F5SWNueUFQdGdsSVNYbWc3djBoVnNMdm5hd3cxTWZYSWRHOWlGcXdLMlRnN3RGVjd2Q1h6NjhnM00xQlRGd2c9PQ&position=6&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b97d1f93d48d7bc6",
@@ -2664,9 +2649,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NThwZGpNRW9lOFpHbU81Y1ExQXE1Qkg2bVU5QmhTNE1NSkE1Sk91MjlqRFF1UFVpcS9HNTJxUkgrbXhndU94L3AvVHNVWVNtVDlnU2RyQng4Zy83MFE9PQ&position=7&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "1043168fdd3c08a8",
@@ -2678,9 +2663,9 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=OGtmcm5MOU1SUndITEhOZ1FobTFlZ3A3ck1BWEdLZVdUKzdNM05PRjlLb3hhT0pycjJJeVVFVjh2MjZqb2dGSUVVMGhIdXkwZy9zSnBpVGxDTm94eEE9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8c3b1ab0cb269b1c",
@@ -2692,9 +2677,9 @@
     "discountValue": "7%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UHV3MUhuRXF6RmxXTWNhNU4zVkVoWjZyakhxYTN6Q2FaVlNjOFVkVnlvakJaMkU3QW1EZG5uUjQvL0I0OHFqSWJyOURCR3RjTUwrN2lsZlBCc2JsNGc9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "5ba7541b13d39a1f",
@@ -2706,9 +2691,9 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=OEtTSldFY2NkVVpSNzVDeHAwckZlNGM3VFJDbzVzWHdRcHF5OWdrU3owUThRaUZxZXprN09RbUZzNkdCbDkvclBGd1VEdnhyR25ndUdJOVUzZ25OQnc9PQ&position=22&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "d5d9532d96f6da87",
@@ -2720,9 +2705,9 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=RXduODVOWVZBOUp5T2RTS01oVUJyNjhJOSt6RFRpNytXaW94OUk5M1VjVU1YaVJlY1I4NjNkeUlHRi9ZcDF5eEt2L0o3RW1aRG8zSFoyVDYwTGQ0WWc9PQ&position=23&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "5e385bde7ebbb9af",
@@ -2734,9 +2719,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NUdmQUxuN1NKNVAzY0sxZWNpSWlURzBlcUcrN0J1NVp4QjNIeUhha3Z1My82S1grNkdOM29pUFIzb2psMFVlREJpalhWd2JnMkFZZkE5czRDSU8xU0E9PQ&position=24&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a51fa903de497c9d",
@@ -2748,9 +2733,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=QUE2elQ4VnowZENLaHF5aExmbzhMSDBUY1NGT3JGNkZTYjlxTW11MlRPVVV0cUlIMXhkOS8raDN2OXlPcGx6eGluRHE2eFVyUm01aUlaRU42Uk1GV2c9PQ&position=25&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "0f044b6a389417cc",
@@ -2762,9 +2747,9 @@
     "discountValue": "12%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UHh2OWhVd1ZZbkZqWDR6TWlqWkVWV2YxVUtIa1RTSFJqSWdkSUxSOVFpK1BISTg0L25YRC9NTlliTkhWbEd6N0lLVXk4eGJUQUlZVUpmUS91UlBiM3c9PQ&position=26&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4afec1df5630a329",
@@ -2776,9 +2761,9 @@
     "discountValue": "13%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=cnNVVWg4RCtmZkd5MWdCN2xHRDYxQytibUk2STB0L3ZsRVhjOXNQZ1ZTV2c5Wms0VS9OcXhpaDFPdit2QzlTQ1l6MFlXbkJ4WWtnUnRLN0N1bVNlMkE9PQ&position=27&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "cc3047a7f12310cf",
@@ -2789,9 +2774,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=dU9kMU1JTzhvNEJWS0l4QnlmQXRuQ2dMUlAzOTI2Zm01c2tQSWZpejMrbUR5M29ZbGJBdFRKQkt6WmF6OGZRTW5QbEpDMjEvQ3VUbmtsTUpqUGRrcGc9PQ&position=28&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "37574203781b522d",
@@ -2803,9 +2788,9 @@
     "discountValue": "70%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=U2t3S3liMURJOFhldVNBZTV3TldFbXVUMU14WEFVcEFxL1ZaREw2WTVFVG9Yc1E3dXdhNEZDS0ZmTGdUcldCWUozZXE4TUc2MHV5OVc1RTZ6c0tnNXc9PQ&position=29&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "402904dd539a9ceb",
@@ -2817,9 +2802,9 @@
     "discountValue": "45%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MVBHMnN0dk1xL0FQeHlzY1BPSDJLcTltcGR2aS9aWDlRUXpjeXgyQUdWeUdBcHRVckQzNG1oN1cxR21xaXdTbzRnVDJ5VDVmaFVFclQzOExhQ29FV1E9PQ&position=30&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "faf869619bbf98ae",
@@ -2831,9 +2816,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NXRyQ2lKcmEvNVlhUVp3SGVJd2kvbmxBcmVsWGFOd25qTjVENE9BdFVuQWJ1U0xUVjBaTTNxTTUyc3gxbTBRcTRMcEVlZDdFTjdCL3A5R2xNRmNKL0E9PQ&position=31&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e516ced220315271",
@@ -2845,9 +2830,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=UkhpV3pzR2d1V1ZLS1lib3d0ZFZCRHVGRWVsNUpOV0dEdkhyMXprVDBYbFE0RWY2dkV0clA4TDk4WE91aHhwOGdkZEs0YkQ1N2NDNEZrYlo5dXVZdVE9PQ&position=32&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "01a463fc7c76fa64",
@@ -2859,9 +2844,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=VHc1c1hnNDI2QmJaUUovVTN2WVFLTUVvMzFFelFXbUFrbkU4d2xxaDMxdXd2M29SVi9vNzdvTGhNY3p1THFnZmVGUHV0RWhjdUhLSDNCUVkrb1QvN0E9PQ&position=33&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "3809a39aa909794e",
@@ -2873,9 +2858,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=R3RHaEtNMFM4OWVPaVpoNXBlWThmQVNjSWVKOUJ6ZWV0NUo5bXpjNmEvSk1Pb1FHN25tdVRVcmYxS2wxREZ0dEUzeGp5ZnJNZ0lIbEpsRkFlTFp0OEE9PQ&position=34&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "41fd0a372fcf03f6",
@@ -2887,9 +2872,9 @@
     "discountValue": "PHP 800",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=YW9KMlZLaFA0bVV5alVFaGxyN1NQa1BCZXdnOW5RSFY4VjVDenp4RDgwOUlha3hSeUs0OTJlSGp4ZnIzQWpIaUN5dGNVaksvalBMTUJrUTlaZGRGa1E9PQ&position=35&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c9b6db1fd2af17e6",
@@ -2901,9 +2886,9 @@
     "discountValue": "5%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=VWcraThlWWhLSzcyeHpnd2hxNlZrV0hkd2V5bmFENlVnbXJpV05PYzlZK0lFeDZOZElRQWdYNGJMRWhtLzdyQVRVVndaeTJBd2FOdUFTYVFneVFMaHc9PQ&position=36&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4bee571b83ba02e7",
@@ -2915,9 +2900,9 @@
     "discountValue": "35%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WlBGcTZ2Q1lBZ1RMeGR1c0pjdENSQXd3Zk03Y0Z5L2JtTnJyeHZCdTBJV0R5MEk1Mzc0bWxJamN3QnVTVXJObXREeTdkb0FKQ1d1bTl4Vzc3eHRQNHc9PQ&position=37&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "eb521208d2b7e99e",
@@ -2929,9 +2914,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=dG52aEo0aHExdElKbmRnUTZ5c2RMTmovdkYxWEdHZTIyWVFCWU5aT0wzUitjNjY0SmlVU0dYRTlTWllrSXJEbzJzdmF6UjF0WlBqR0hXL1pPSnlaVGc9PQ&position=38&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "810375de8775f039",
@@ -2943,9 +2928,9 @@
     "discountValue": "PHP 100",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=SllYNStQbW16R1MycjFlQVFxRU1ESXFFQ2JMMHlrWjAvcmNLQ3N4YlY2bDlwVmpKdWg3dkFXRCtoampzWWRnbFRzdzAwUHJ2SmdXMDQyckVHZDdzWkE9PQ&position=39&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "2d27beae2b445478",
@@ -2957,9 +2942,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WXVtVXFhMkhUWmcyL3lGNkIwRVFHcjVUQUUwTkM1M3dZZURKV0d3ejVCQlI0R28zRllycnRaandrV3JoQ1ZQTDBvYmVBMnhCVDkwWmErb1Z4T1I5dEE9PQ&position=40&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a9c9b4b87ff604de",
@@ -2971,9 +2956,9 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=bkh0dFBHdzVFdW1TVGZyZEkzWGZHQmxxMHNTOXNkb2hHUklPWUhCMGRMOU85YU82Y290TzRVYWluOWJQNnZFeUhpTkVzN3FvSHZocm13WnlEa0FsbGc9PQ&position=41&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "6e4399049a52f233",
@@ -2985,9 +2970,9 @@
     "discountValue": "45%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=c0hGaUo0TzJ1R1llR3lDeEptTGh6RlYrKzlwMDR6QmsrVEZQT2RjaklkZDV3bm9HZEJrYTBMWk9iK2FtV2JWMGdhRTlObHlTeFpIZldlNUdDQ293WkE9PQ&position=42&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "27fe4dab71745e8b",
@@ -2999,9 +2984,9 @@
     "discountValue": "PHP 300",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=THlzY01UZUVTN0dRUXRmRnNQNGRpdVpraFl6eFd0UnhVL0kxdWZObVh6UmoyQ2tXMnllRis4UC9GaWFNY1Y4N2xrTU16YldwL0FldTR0di9SMVVRRUE9PQ&position=43&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "f5adc2a8fbbe16a7",
@@ -3013,9 +2998,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=TXpvQ3o5QStTb2ZjSW1MclE0SUJ1M3l5c1k5aE45MysweENiYnNqc2NpOGFQclMyZzZHRHJ1U2RxOHoydjdmY0lFQUI2dlFwOFQ5RVJQbi9OS1M3R0E9PQ&position=44&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "5a3cf7b7deed4cff",
@@ -3027,9 +3012,9 @@
     "discountValue": "PHP 130",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MUtzemY0MjVTU0oraTcyaVlrZ3E5bU5odFp1Y3R2K1pJcjlHS0dHbTN6dGd2RmZ4bG9FemZNQXVwTDlSVmRLQklhMlh1RlVVeE9oT0VJNmZDb01CRUE9PQ&position=45&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4132717b83d45c15",
@@ -3041,9 +3026,9 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=TmJQb1lNMUZJU242NmF1bVRqckl4K0Exclp6L3ZzOXl1YnB3d0hKK25JcVRnRHE1bW1yQ0ZjRWxJVlZsVS93UnRzQUVBSkpScXBpenRzbmdPVW1CTkE9PQ&position=46&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "bb142591735ae0de",
@@ -3055,9 +3040,9 @@
     "discountValue": "PHP 800",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=bGtQTjc2aWtxcVU1aHNCZkhHcko2RHhiVEdxQ0hHQmlQMHM1MC9DRmp2RDFiRUgyTDJEQTlOL2VPZEczeXFYUjhid3M4elF4Q1BLSEltWFdUK2FrSWc9PQ&position=47&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "fac1368a7d30dde0",
@@ -3069,9 +3054,9 @@
     "discountValue": "PHP 500",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WFlBTXQrWUg0SERhL0VSa2F3RVNMRjZ0Qnp2dXpvVWtackpXcnJlclhzajIySUpvRVF5WGVGZ2wxT3lVWExVcjFIVGhsUE5UdkQvWHNNMklhdjg0VGc9PQ&position=48&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "62c9298af147501c",
@@ -3083,9 +3068,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=KzZBTTIzRVVtdDREeEZYVm5LRERkOXY1eHVlWTd4bnUzNU92MjFhV0F3Tmp5ZUcxWHlTd3ZQTGVPZFVxZk81UHFlYjJjM3Q3U2VVcXdtRTFEM2Vxc3c9PQ&position=49&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ca5e5f9dd126516c",
@@ -3097,9 +3082,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=My9IYmM5cEF4TUI1eG5WUm9DSXJmaFBBMTJzcTRBYkhndWNIajkyYXB1UG5paEVlcko4QlAwWlBxRU5qN3AzdjdiRHVrek5pSUZlM2FEdkU1Qk82eWc9PQ&position=50&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8575353bb2fa9893",
@@ -3111,9 +3096,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=d1JOQ0E3TU9CWG8ra05manJOU1NweGRqQjhZQkwvZ1UvUC9kcnFxMEpxT2xjdUNYNWVLclU2K1ZlNVg3VGxJdGIxTzhOSzdWWmRxZkRNU285QXpuVWc9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "7b7c173fbafb63df",
@@ -3125,9 +3110,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=WVovdTd6RHlnK3BGWkdsSWZVcGxiMmhISEQrNVRTT3Y1MzVuV2F6T0NnTkhQbmVid01nZkhHT0xMMFc5dU1jbGlsRm5oc0RIM0hGRFluWTJ1TEkyRFE9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "11f2bf78cf7447dc",
@@ -3139,9 +3124,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=dzhwcllLTXhyTUpDK2IxMEZUM1ExZWMzbVFqZlBROGtoT081cktROEtkOUdWUDZ2ZTJCU3VpdkJOS3VqWDF2aE9EeGNzQ2FsT0NueWhuWjZ6Q1hjQXc9PQ&position=19&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "1cb654f852e452e8",
@@ -3153,9 +3138,9 @@
     "discountValue": "50%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=c1czSTRHQzRIajdyVGw1dXdEUFl5OUpmZFlmeHNRZXVvdS80ZW4rQ2Y4ejlFbDNaaFBobjJKOHFPQVdrNWdxcXB5aFl5OHlVWFVKZHVnUldVbTdjNXc9PQ&position=20&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "08f0a19ba65818c0",
@@ -3167,9 +3152,9 @@
     "discountValue": "40%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=Y0h1RzRZYlVyTndNUS81RnZhOU12V3V4TG5ob3g1TG5hN0krQlFBWExKaE9rTkRabWRGdVJwRGkwbVlPNnM0dm91d3V3VjFjQTZ4dFRCWWNCUjBEMWc9PQ&position=21&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "b3d7734e277c0c76",
@@ -3181,9 +3166,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=SE1nMG9xY0lHWUFyb2FnOHZhZUZOTE1aZktlVTNhVUFhcUZOY3NwVWdIVXArN0l5UGxUbEhpQnkwK2Z2c2c3Z21MV2kzMFVvSTVoZ1FTU2hzYTA3Q2c9PQ&position=25&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9deac0a978e8b9a9",
@@ -3195,9 +3180,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=UXdoc28xQnVCVGZWeWV6REZEeU9sbnNHWjFIeVUrck5GZWdFVm5WZDZ3MmhPQkt5amp0eWRyRG8yelhGOW42TitjTEdlaVlzSXp2RisvY0FobnJTRkE9PQ&position=26&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "0f16a202907169fc",
@@ -3209,9 +3194,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=NU84ME5pSUlJdUJuNmRKYzNVWU00ampFLzNRZHorYzh4eHNLNm9WYzlpZ3c4Zk9MMk5aeHcwRGQzYVRVRkk3a2J4aEZNbm1jKy9Tdk9sZ3R4U29qZ1E9PQ&position=27&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "2b92ad26d18b2083",
@@ -3223,9 +3208,9 @@
     "discountValue": "PHP 15",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=OFBuMkxLUE1wVllwL3FXdW93V3dmMEM5NVkzaXIxQlNPNVk1VjJ6Y3krQUJBVTFScVZMZHArZnI3bXNjdEJxckthVXA5dkNwaFUxcFBQTEdYeDBMeWc9PQ&position=28&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ef6857d04fac7c03",
@@ -3237,9 +3222,9 @@
     "discountValue": "25%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=U01uM3JiQ1BxV2tnbWpVZUdxT0FhdXRQemhENGVuVlRHbmQ2Y1VUdXh4dmZpS0Y0VUFteW9QMStOWmc5eXhicVhPd2pvcE9BKzJFeklyb1ArYXZIT1E9PQ&position=29&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "32d096f7bbb03563",
@@ -3251,9 +3236,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=cUZhanRMM0pjSjN2RTVCMy9Hc25zdzM3QTlqLzVocWM4OWIxM0U3MU9EalZOQ2wwbDZTSGJDcW80N1BHcEhaQmRON1VXTWd6Ulp1YWxtbmFQQmlnZWc9PQ&position=30&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "dd6649666c0e9c5e",
@@ -3265,9 +3250,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/foodpanda-coupons/?_id=T2txL1NnUlZhcVRJSDRvLzFmNDhlY2pZTXhGdmRvUzIySlh3K0VOK2Z5WTIzbC9QRXkyMkp5ZkoycHBzdXpseW1OeGV4N0FpYVVGQmdFNTg4aC92dlE9PQ&position=31&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Ffoodpanda-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-04T18:14:04.269Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a49c41cd045beec3",
@@ -3282,7 +3267,7 @@
     "endDate": "2026-12-02",
     "status": "active",
     "firstSeen": "2026-11-13T06:14:49.279Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "433c9cd3e23f0fcb",
@@ -3297,7 +3282,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-13T06:14:49.279Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "9db6e553524e4283",
@@ -3312,7 +3297,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-13T06:14:49.279Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8df34f29d4687074",
@@ -3324,9 +3309,9 @@
     "discountValue": "PHP 700",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=dHd0Z2RESlNOUzV6YVNTWmhyZXByQ2xJeVNWa0t2bTNXYlNGbmpQeDVIUUVNMk5CUGxLQ1ArTUhKSHBlY0N4cGl5ZUwyanFrWHE2aUpZNUxIdlBqMUE9PQ&position=4&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-13T06:14:49.279Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a8600f8dd81d736c",
@@ -3338,9 +3323,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=YkhmWTA0L3RVcVkwV3o5bCtFelFNNHJHVEJ3em5GYlVETlMzb3Nzc2pCV0hjeUxlemNMc2l4SHBOVy9TUkJkSE5lY05LUThBaVE3SUN1K2UwVEFwamc9PQ&position=19&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-13T06:14:49.279Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "09b7bc8ed2a8666c",
@@ -3355,7 +3340,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ecd9c4b8f0351f51",
@@ -3370,7 +3355,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "64d89a71172332a2",
@@ -3385,7 +3370,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "ff0c30330249786d",
@@ -3400,7 +3385,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "675c94cdbac93563",
@@ -3412,9 +3397,9 @@
     "discountValue": "2%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=eWNkODhuUlIyd0JlOEpQSEJrNVo5Z1UwQ08yRDVKWWhtK01YeFFXTUhPeFF1RjRMTG56V01TYmoxUjNYem5raXFDQzNWNUdPMEYxTjNxK0R0eGI1Nnc9PQ&position=14&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "380e9f97795fd9f6",
@@ -3426,9 +3411,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=MVlOU1k4SVVyWkNWUVN0R3krQ0ZFZ0ZxWHY0OXFhc1IyNUU1WTNUWnYrR3BSV1pYKzdCd3c4UDIyRkx6MmlLODdsa2VuQ1kxalJhU0MvZ01XMGRuM3c9PQ&position=15&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c9d4bba294c1d4db",
@@ -3440,9 +3425,9 @@
     "discountValue": "20%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=NzVla0k0cnloQ055SVJDZWx4UXFlV0poWGYvZ2pndWtQVWNCYmlSRHJ0ZFlLVXJkWXpKckg2ak1xUmI1TUxSbG00cUdNUXVlK3ZpYW44ckhuVlB4ZkE9PQ&position=16&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e8742b991aba9f62",
@@ -3454,9 +3439,9 @@
     "discountValue": "PHP 400",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=dWlRVGQxUEdYVzdxdnEvdUhBdS8yY2JJUzJ1K2Uvb1Zackh3cXo3YUFKQ3YrcDE3aksvUTBlWVl0aDFQUGFtV09xaXVEeUJLSlRxaFJ5Q3VUdTdub0E9PQ&position=17&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c9c51e50d84b7348",
@@ -3468,9 +3453,9 @@
     "discountValue": "15%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=K2NNYnVQclU5WFZRR2hvYys0aDEvamtyZVNBUWJ4enR2Ym44WlpyM2xucFExV0NNaE4yN1pRbFA3M0xPWmorNmp4dGhPYXJxcW1MZTk3cTlyRGp0ZEE9PQ&position=18&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-16T20:41:18.502Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "15183c0a6f147fa6",
@@ -3485,7 +3470,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "654fbf06a49045eb",
@@ -3500,7 +3485,7 @@
     "endDate": "2026-11-22",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "c66f79290e961b57",
@@ -3515,7 +3500,7 @@
     "endDate": "2027-01-01",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "bb3d47b93eeeebbe",
@@ -3530,7 +3515,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "547578274740640e",
@@ -3545,7 +3530,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "cae3e70ed1096d63",
@@ -3560,7 +3545,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a3500b3ca8501cd5",
@@ -3575,7 +3560,7 @@
     "endDate": "2027-01-02",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "98a7e773a86da659",
@@ -3589,7 +3574,7 @@
     "sourceUrl": "https://iprice.ph/electronics/lazada-coupon-up-to-p10000-off-on-selected-huawei-products/",
     "status": "unknown",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "33668fc629f9e287",
@@ -3604,7 +3589,7 @@
     "endDate": "2026-12-01",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "253e053c80e0e491",
@@ -3619,7 +3604,7 @@
     "endDate": "2026-12-02",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "4ce4227f213e2161",
@@ -3634,7 +3619,7 @@
     "endDate": "2026-12-02",
     "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "8f74e0e91974401f",
@@ -3646,9 +3631,9 @@
     "discountValue": "30%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/shopee-coupons/?_id=WkF5UmZxRks0dzlka2k0dC9ZOFFHU1NLOFlsL1BCbnlueWZldmZFSlg0SFBkVWtBYldkVFZ6bzNyT0JZNndDaVNoVmZqemVoNnU2RGFnVmdPQzEzcFE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Fshopee-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "dba04d0300938957",
@@ -3659,9 +3644,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=R0JScWprRi81YURheU1pTHpQVHBrbCtjQ1FpZlk0TXFwekZ6azVqa1dOZm1YTE8zb09zVmViRFU4dVQwUTY0bUVYVGJsOUJORm03MUg3akJZUVF3VFE9PQ&position=8&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "13f3229331322079",
@@ -3673,9 +3658,9 @@
     "discountValue": "PHP 10",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=SkVUY3Z0OTJSNFZ6eVEzZEl4Rk5Iay9uNmo0enpYREo3cGVIbGdyeVp3OE1mbnB0QUhhY2pQMWgvVm9Dak4zT3RML1NCSTIzUy9ZdHJNaVhjckt6QWc9PQ&position=9&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "78abb3848c9e10ee",
@@ -3687,9 +3672,9 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=eWo3Mzl6ZndJRmVWYk5XWXM1NDgvZm9CL1A5dXpEcExpd1JCZVJPMmhiRWZHQWxKcno0b1N4bVY5ZWFJWlh2TEkyS0plTCtybTVBYmdSV2ZGRm80WXc9PQ&position=10&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "cd4eb0779c84bd97",
@@ -3700,9 +3685,9 @@
     "discountType": "unknown",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=QzdSdXlDdjM0NSt0ZDA1eldxOGtObWlmdnI4YVIyUEhQZm51SEdkTnVrVlJuV2t4UFRYV2tncGwwOEF2Qmp5TEUwbThjeU5rVjllY0Y0Sk1ja1I3Y1E9PQ&position=11&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "a3c35f8cb3b77235",
@@ -3714,9 +3699,9 @@
     "discountValue": "21%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=WmVwZlNqNGtxczIyWHFGbGQyT3kvYXV4Skx2MGk1NjVWTmo4dGtvdWpDd09FM21WUXRHUlRnMTd0OXI1MzcrUEROYUxKSy8wNmZ2ZElCd2czY08xbHc9PQ&position=12&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
   },
   {
     "id": "e86adb450ef09a07",
@@ -3728,9 +3713,24 @@
     "discountValue": "10%",
     "region": "Philippines",
     "sourceUrl": "https://coupons.rappler.com/lazada-coupons/?_id=b0FMcnZlZFZWdVVhMnZjVFR0bThvUTZteVZrcWM4VnBjSzB0ZjFKd1o2dDBWMmc0NVVnRmcxUnRuem1zL2UxRlIrR2w2SmtjZldrb1U3VVE4eGlkcUE9PQ&position=13&sub_product=coupon-store&_exit=https%3A%2F%2Fcoupons.rappler.com%2Flazada-coupons%2F",
-    "status": "unknown",
+    "status": "active",
     "firstSeen": "2026-11-20T06:53:32.949Z",
-    "lastSeen": "2026-11-21T06:48:09.655Z"
+    "lastSeen": "2026-11-21T20:58:20.217Z"
+  },
+  {
+    "id": "655b00476af57dce",
+    "platform": "Shopee",
+    "title": "20% Off on Selected Orders at Herschel Supply Official Store",
+    "code": "",
+    "description": "Receive 12% off across the entire store, allowing for diverse savings on a wide range of products. Take advantage of this offer to enhance your shopping experience.",
+    "discountType": "percent",
+    "discountValue": "20%",
+    "region": "Philippines",
+    "sourceUrl": "https://www.picodi.com/ph/shopee",
+    "endDate": "2026-11-21",
+    "status": "active",
+    "firstSeen": "2026-11-14T16:43:58.212Z",
+    "lastSeen": "2026-11-21T13:38:40.340Z"
   },
   {
     "id": "1b0fdfb52fcb8781",
